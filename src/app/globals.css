@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+
+body {
+  font-family: "Work Sans", sans-serif;;
+}
+
+
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 216 97% 50%;
+    /* --primary: 214, 95%, 54%; */
+    /* --primary-foreground: 210 40% 98%; */
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.gradient {
+  @apply bg-gradient-to-tr from-[#2580D3] to-[#0A2090];
+}
+
+
+/* Hide scrollbar for WebKit browsers */
+.custom-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.custom-scrollbar {
+  scrollbar-width: none;
+  /* For Firefox */
+}
+
+/* Ensure the side still scrolls */
+.custom-scrollbar {
+  -ms-overflow-style: none;
+  /* For Internet Explorer and Edge */
+}
+.scrollbar-hidden {
+  scrollbar-width: none;
+  /* For Internet Explorer and Edge */
+}
+
+
+/* header animation */
+/* From Uiverse.io by G4b413l */ 
+.header {
+  position: relative;
+  width: 300px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #fc0839, transparent);
+  overflow: hidden;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  translate: -200px 0;
+  width: 150px;
+  height: 100%;
+  background: linear-gradient(to right, transparent, #fff, transparent);
+  animation: slide 3s infinite ease-in-out;
+}
+
+@keyframes slide {
+  100% {
+    translate: 300px 0;
+  }
+}
+
+.zoom-lens {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 200% 200%; /* Zoom the image */
+  pointer-events: none;
+  display: block; /* Make the zoom lens visible when hovering */
+  transition: background-position 0.1s ease;
+}
+
+
+.relative:hover .zoom-lens {
+  display: block; /* Show the zoom lens on hover */
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1.4rem /* 16px */;
+  padding-left: 1.4rem /* 16px */;
+}
+@media (min-width: 100%) {
+  .container {
+      max-width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+      max-width: 800px;
+  }
+}
+@media (min-width: 850px) {
+  .container {
+      max-width: 850px;
+  }
+}
+@media (min-width: 900px) {
+  .container {
+      max-width: 900px;
+  }
+}
+@media (min-width: 950px) {
+  .container {
+      max-width: 950px;
+  }
+}
+@media (min-width: 960px) {
+  .container {
+      max-width: 960px;
+  }
+}
+
+@media (min-width: 980px) {
+  .container {
+      max-width: 980px;
+  }
+}
+@media (min-width: 1000px) {
+  .container {
+      max-width: 1000px;
+  }
+}
+@media (min-width: 1035px) {
+  .container {
+      max-width: 1035px;
+  }
+}
+@media (min-width: 1050px) {
+  .container {
+      max-width: 1050px;
+  }
+}
+@media (min-width: 1100px) {
+  .container {
+      max-width: 1100px;
+  }
+}
+@media (min-width: 1150px) {
+  .container {
+      max-width: 1150px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+      max-width: 1200px;
+  }
+}
+@media (min-width: 1250px) {
+  .container {
+      max-width: 1250px;
+  }
+}
+@media (min-width: 1270px) {
+  .container {
+      max-width: 1270px;
+  }
+}
+@media (min-width: 1300px) {
+  .container {
+      max-width: 1300px;
+  }
+}
+@media (min-width: 1335px) {
+  .container {
+      max-width: 1335px;
+  }
+}
+@media (min-width: 1370px) {
+  .container {
+      max-width: 1370px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+      max-width: 1400px;
+  }
+}
+@media (min-width: 1435px) {
+  .container {
+      max-width: 1435px;
+  }
+}
+@media (min-width: 1470px) {
+  .container {
+      max-width: 1470px;
+  }
+}
+@media (min-width: 1500px) {
+  .container {
+      max-width: 1500px;
+  }
+}
+@media (min-width: 1535px) {
+  .container {
+      max-width: 1535px;
+  }
+}
+@media (min-width: 1570px) {
+  .container {
+      max-width: 1570px;
+  }
+}
+@media (min-width: 1600px) {
+  .container {
+      max-width: 1600px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .container {
+      max-width: 1700px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .container {
+      max-width: 1800px;
+  }
+}
+
+@media (min-width: 1900px) {
+  .container {
+      max-width: 1900px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .container {
+      max-width: 2000px;
+  }
+}
+
+@layer utilities {
+  @media (max-width: 1024px) { /* lg and smaller */
+    .no-padding {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+    }
+  }
+}
+
+
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Adjust based on your layout */
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,61 @@
+
+/* Style to make pagination bullets vertical */
+
+.mySwiper {
+  position: relative; /* Ensures that absolute children are positioned relative to this container */
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fefeff;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;            /* Horizontal spacing between bullets */
+  border-radius: 50%;
+  box-shadow: 0 0 5px #e7e5e5; /* Optional: subtle shadow for better visibility */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ece8e8; /* Active bullet color */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #d41c1c;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 30px;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0;
+}
+
+.shadowWhite {
+  border-radius: 504px;
+  opacity: 0.3;
+  background: #d9d9d9;
+  width: 504px;
+  height: 500px;
+  flex-shrink: 0;
+  filter: blur(100px);
+}
+
+.pic {
+  display: flex;
+  width: 600px;
+  height: 420px;
+  padding: 45px 16px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+}
