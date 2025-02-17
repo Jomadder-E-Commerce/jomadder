@@ -1,6 +1,6 @@
-import { baseApi } from "@/components/Redux/api/baseApi";
+import {  frontendApi } from "@/components/Redux/api/baseApi";
 
-const paymentApi = baseApi.injectEndpoints({
+const paymentApi = frontendApi.injectEndpoints({
     endpoints:(build)=>({
         getpayment: build.query({
             query: () => ({

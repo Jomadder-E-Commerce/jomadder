@@ -28,14 +28,14 @@ const CartQuantity = ({ data }) => {
         window.location.href = `/checkout`;
      }
     return (
-        <div className='w-full  h-full xl:w-[620px] lg:my-0 my-5'>
+        <div className='w-full  h-full  '>
             <div className='w-full p-2 bg-white border rounded-md shadow-md'>
                 <h1 className='pb-2 text-xl text-center border-b'>Cart Summary</h1>
                 <div className='flex justify-between py-3'>
                     <p>Product Price</p>
                     <p>৳{totalPrice.toFixed(2)}</p>
                 </div>
-                <div className='w-full h-16 p-2 my-2 bg-gray-300 rounded-md sm:text-center text-start'>
+                <div className='w-full h-16 p-2 my-2 bg-gray-300 rounded-md  text-center'>
                     <p>Pay on delivery</p>
                     <p>৳ Freight + Tax cost</p>
                 </div>

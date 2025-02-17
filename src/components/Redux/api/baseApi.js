@@ -4,8 +4,8 @@ import { setCredentials } from '../features/AllSlice/authSlice';
 
 
 // api 
-const BASE_URL_FRONTEND = 'https://parcel-media-backend.vercel.app/api/v1';
-const BASE_URL_BACKEND = 'https://parcel-main-backend.vercel.app/api/v1';
+const BASE_URL_FRONTEND = process.env.NEXT_PUBLIC_MEDIA_API;
+const BASE_URL_BACKEND = process.env.NEXT_PUBLIC_BASE_API;
 
 
 // baseQuery instance
@@ -85,21 +85,7 @@ const baseQueryWithReauthHelper = async (args, api, extraOptions, baseQuery) => 
 
 // frontend api
 
-export const frontendApi = createApi({
-  reducerPath: 'frontendApi',
-  baseQuery: baseQueryWithReauthFrontend,
-  tagTypes: ['Wishlist', 'Banner', 'Sidebar', 'Pricing'],
-  endpoints: () => ({}),
-});
 
-// backend api
-
-export const backendApi = createApi({
-  reducerPath: 'backendApi',
-  baseQuery: baseQueryWithReauthBackend,
-  tagTypes: ['ProductList', 'Cart', 'Category', 'Coupon', 'Transaction', 'Checkout', 'Shipment', 'Support', 'User', 'Deposit'],
-  endpoints: () => ({}),
-});
 
 
 
@@ -108,56 +94,71 @@ export const backendApi = createApi({
 
 // will be deleted
 
-const baseQuery = fetchBaseQuery({
-  baseUrl: 'https://parcel-backend-ebon.vercel.app/api/v1',
-  prepareHeaders: (headers, { getState }) => {
-    const token = getState().auth.token
-    if (token) {
-      headers.set('Authorization', `Bearer ${token}`)
-    }
-    return headers
-  },
-});
+// const baseQuery = fetchBaseQuery({
+//   baseUrl: 'https://parcel-backend-ebon.vercel.app/api/v1',
+//   prepareHeaders: (headers, { getState }) => {
+//     const token = getState().auth.token
+//     if (token) {
+//       headers.set('Authorization', `Bearer ${token}`)
+//     }
+//     return headers
+//   },
+// });
 
-const baseQueryWithReauth = async (args, api, extraOptions) => {
-  const state = api.getState();
-  const token = state.auth.token;
-  if (!token) {
-    return baseQuery(args, api, extraOptions);
-  }
-  let result = await baseQuery(args, api, extraOptions);
-  if (result?.error?.status === 500) {
-   const refreshToken = getCookie("refreshToken");
-    if (refreshToken) {
-      try {
-        const refreshTokenResult = await baseQuery({
-          url: "/auth/refresh-token",
-          method: "GET",
-          headers: { "token": refreshToken },
-        }, api, extraOptions);
+// const baseQueryWithReauth = async (args, api, extraOptions) => {
+//   const state = api.getState();
+//   const token = state.auth.token;
+//   if (!token) {
+//     return baseQuery(args, api, extraOptions);
+//   }
+//   let result = await baseQuery(args, api, extraOptions);
+//   if (result?.error?.status === 500) {
+//    const refreshToken = getCookie("refreshToken");
+//     if (refreshToken) {
+//       try {
+//         const refreshTokenResult = await baseQuery({
+//           url: "/auth/refresh-token",
+//           method: "GET",
+//           headers: { "token": refreshToken },
+//         }, api, extraOptions);
 
-        if (refreshTokenResult?.data) {
-          const newToken = refreshTokenResult.data.data.accessToken;
-          api.dispatch(setCredentials({ token: newToken }));
-          result = await baseQuery(args, api, extraOptions);
-        } else {
-          toast.error('Failed to refresh token, please login');
-        }
-      } catch (error) {
-        console.error('Error during token refresh:', error);
-      }
-    }
-  }
+//         if (refreshTokenResult?.data) {
+//           const newToken = refreshTokenResult.data.data.accessToken;
+//           api.dispatch(setCredentials({ token: newToken }));
+//           result = await baseQuery(args, api, extraOptions);
+//         } else {
+//           toast.error('Failed to refresh token, please login');
+//         }
+//       } catch (error) {
+//         console.error('Error during token refresh:', error);
+//       }
+//     }
+//   }
 
-  return result;
-};
+//   return result;
+// };
 
 
-export const baseApi = createApi({
-  reducerPath: 'baseApi', 
-  baseQuery:baseQueryWithReauth,
+// export const baseApi = createApi({
+//   reducerPath: 'baseApi', 
+//   baseQuery:baseQueryWithReauth,
+//   tagTypes: ["Wishlist", "Banner", 'ProductList', 'Cart', 'Category', 'Coupon', 'Transaction', 'translation', 'Checkout', 'Point', 'Shipment', 'Support', 'User', 'Pricing','deposit'],
+//   endpoints: () => ({}),
+// });
+
+
+export const frontendApi = createApi({
+  reducerPath: 'frontendApi',
+  baseQuery: baseQueryWithReauthFrontend,
   tagTypes: ["Wishlist", "Banner", 'ProductList', 'Cart', 'Category', 'Coupon', 'Transaction', 'translation', 'Checkout', 'Point', 'Shipment', 'Support', 'User', 'Pricing','deposit'],
   endpoints: () => ({}),
 });
 
+// backend api
 
+export const backendApi = createApi({
+  reducerPath: 'backendApi',
+  baseQuery: baseQueryWithReauthBackend,
+  tagTypes: ["Wishlist", "Banner", 'ProductList', 'Cart', 'Category', 'Coupon', 'Transaction', 'translation', 'Checkout', 'Point', 'Shipment', 'Support', 'User', 'Pricing','deposit'],
+  endpoints: () => ({}),
+});

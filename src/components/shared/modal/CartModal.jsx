@@ -25,17 +25,24 @@ const CartModal = () => {
     // }, [openModal]);
     const toggleDrawer = ()=> setOpenModal((prevState) => !prevState);
 
+
+   const GoOpenModal = ()=>{
+    setCartData(getDataFromLocalStorage("cart") || [])
+    
+      setOpenModal(true)
+    }
+
   return (
     <>
       {/* Cart Button */}
       <div className="md:block hidden relative ">
-        <div onClick={() => setOpenModal(true)} className="text-3xl cursor-pointer md:flex hidden">
+        <div onClick={GoOpenModal} className="text-3xl cursor-pointer md:flex hidden">
           <BsCart2 className="font-semibold text-primary" />
         </div>
         <CartBadge count={cart.length || 0} show={cart.length > 0} />
       </div>
       <div className="md:hidden flex flex-col items-center w-[80px] relative -right-5">
-        <div onClick={() => setOpenModal(true)} className="relative">
+        <div onClick={GoOpenModal} className="relative">
           <BsCart2 className="md:text-2xl text-lg" />
           <span className="absolute -top-1 -right-3 text-white text-center h-4 font-medium bg-red-500 rounded-full px-1 text-xs">
             {cart?.length}
@@ -50,7 +57,7 @@ const CartModal = () => {
           onClose={toggleDrawer}
           direction="right"
           className="bla bla bla"
-          size="310px"
+          size="315px"
         >
           <div className="flex h-full w-full flex-col justify-between bg-white pb-10 drop-shadow-sm overflow-y-auto ">
             <X onClick={()=>{setOpenModal(false)}} className='absolute top-5 right-3 cursor-pointer text-black'/>

@@ -7,7 +7,7 @@ import { FaInfo } from 'react-icons/fa';
 
 const WishlistItem = ({ product, onRemove,handleCloseModal,handleConfirmRemove ,seeDetails}) => {
     return (
-        <div  className='sm:items-center items-start gap-5 md:p-4 sm:p-3 p-3 bg-white border rounded-lg shadow-md flex flex-col sm:flex-row'>
+        <div  className=' items-start gap-5 p-3 bg-white border rounded-lg shadow-md flex flex-col '>
             <Image unoptimized  
                 src={product?.image} 
                 alt={product?.name}
@@ -30,7 +30,7 @@ const WishlistItem = ({ product, onRemove,handleCloseModal,handleConfirmRemove ,
                     {/* Stock Alert */}
                   
                 </div>
-                <div className="md:gap-3 gap-1  mt-2 text-sm  flex items-center">
+                <div className=" gap-1  mt-2 text-sm  flex items-center">
                     
                     <button
                         className="flex items-center gap-2 px-4  py-2 text-gray-500 transition border rounded-md hover:bg-red-600 hover:text-white"
