@@ -18,7 +18,11 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
 // Helpers
-import { formatPhoneNumber, isEmail, isPhoneNumber } from "@/utils/emailPhoneChecker";
+import {
+  formatPhoneNumber,
+  isEmail,
+  isPhoneNumber,
+} from "@/utils/emailPhoneChecker";
 import {
   getLocalStorage,
   removeLocalStorage,
@@ -26,9 +30,10 @@ import {
   setLocalStorage,
 } from "@/components/shared/LocalStorage/LocalStorage";
 import { handleGoogleLogin, handleFacebookLogin } from "./formSubmitHandler";
+import { preset_api_v1 } from "@/app/control_version_api";
 
 const LoginForm = () => {
-  const baseApi = process.env.NEXT_PUBLIC_BASE_API;
+  const baseApi = process.env.NEXT_PUBLIC_BASE_API + preset_api_v1;
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
@@ -81,7 +86,8 @@ const LoginForm = () => {
     } catch (error) {
       console.error(error);
       const message =
-        error.response?.data?.message || "Something went wrong. Please try again.";
+        error.response?.data?.message ||
+        "Something went wrong. Please try again.";
       toast.error(message);
     } finally {
       setIsLoading(false);
@@ -150,7 +156,12 @@ const LoginForm = () => {
                 <div className="p-6 space-y-6 sm:p-8">
                   <div className="flex items-center justify-center gap-1">
                     <Link href="/">
-                      <Image alt="Jomadder logo" src={Logo} height={40} width={40} />
+                      <Image
+                        alt="Jomadder logo"
+                        src={Logo}
+                        height={40}
+                        width={40}
+                      />
                     </Link>
                     <p className="text-xl font-bold leading-tight text-center tracking-tight text-gray-700 md:text-3xl">
                       Jomadder
@@ -255,7 +266,7 @@ const LoginForm = () => {
             </div>
           </div>
         </div>
-      </div>  
+      </div>
     </div>
   );
 };

@@ -20,9 +20,10 @@ import OtpPage from "./OtpPage";
 import { handleGoogleLogin } from "./formSubmitHandler";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { preset_api_v1 } from "@/app/control_version_api";
 
 const RegisterForm = () => {
-  const baseApi = process.env.NEXT_PUBLIC_BASE_API
+  const baseApi = process.env.NEXT_PUBLIC_BASE_API + preset_api_v1;
   const [page, setPage] = useState(1) 
   const router = useRouter()
   const [form, setForm] = useState({})	
