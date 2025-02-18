@@ -1,11 +1,12 @@
 import { getCookie } from '@/components/shared/LocalStorage/LocalStorage';
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import { setCredentials } from '../features/AllSlice/authSlice';
+import { preset_api_v1 } from '@/app/control_version_api';
 
 
 // api 
-const BASE_URL_FRONTEND = process.env.NEXT_PUBLIC_MEDIA_API;
-const BASE_URL_BACKEND = process.env.NEXT_PUBLIC_BASE_API;
+const BASE_URL_FRONTEND = process.env.NEXT_PUBLIC_MEDIA_API + preset_api_v1;
+const BASE_URL_BACKEND = process.env.NEXT_PUBLIC_BASE_API + preset_api_v1;
 
 
 // baseQuery instance
