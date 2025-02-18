@@ -1,6 +1,6 @@
-import { baseApi } from "@/components/Redux/api/baseApi";
+import { backendApi } from "@/components/Redux/api/baseApi";
 
-const translationApi = baseApi.injectEndpoints({
+const translationApi = backendApi.injectEndpoints({
     endpoints: (build) => ({
         getTranslatedText: build.mutation({
             query: (body) => ({

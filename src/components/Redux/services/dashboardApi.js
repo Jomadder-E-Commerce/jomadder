@@ -1,6 +1,6 @@
-import { baseApi } from "@/components/Redux/api/baseApi";
+import { backendApi } from "@/components/Redux/api/baseApi";
 
-const dashboardApi = baseApi.injectEndpoints({
+const dashboardApi = backendApi.injectEndpoints({
   endpoints: (build) => ({
     getDashboard: build.query({
       query: () => ({

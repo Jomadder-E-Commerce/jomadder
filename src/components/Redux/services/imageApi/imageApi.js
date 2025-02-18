@@ -1,6 +1,6 @@
-import { baseApi } from "@/components/Redux/api/baseApi";
+import { backendApi } from "@/components/Redux/api/baseApi";
 
-const ImageApi = baseApi.injectEndpoints({
+const ImageApi = backendApi.injectEndpoints({
   endpoints: (build) => ({
     convertImage: build.mutation({
       query: (payload) => ({

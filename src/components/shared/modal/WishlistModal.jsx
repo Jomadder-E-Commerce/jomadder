@@ -22,11 +22,17 @@ const WishlistModal = () => {
     //     //  document.body.style.overflow = 'auto';
     // }, [openModal]);
     const toggleDrawer = ()=> setOpenModal((prevState) => !prevState);
+
+    const GoOpenModal = ()=>{
+setWishlistData(getDataFromLocalStorage("wishlist") || [])
+
+      setOpenModal(true)
+    }
     return (
         <>
         {/* Pay Button */}
         <div className="md:block hidden relative">
-            <div onClick={() => setOpenModal(true)} className="text-2xl cursor-pointer md:flex hidden ">
+            <div onClick={GoOpenModal} className="text-2xl cursor-pointer md:flex hidden ">
                <FaRegHeart className="font-semibold text-primary" />
             </div>
             <WishlistBadge
@@ -35,7 +41,7 @@ const WishlistModal = () => {
             />
           </div>
           <div className="md:hidden flex flex-col items-center relative ">
-            <div onClick={() => setOpenModal(true)}>
+            <div onClick={GoOpenModal}>
               <FaRegHeart className="md:text-2xl text-lg" />
               <span className="absolute -top-1 -right-0 text-white text-center h-4 font-medium bg-red-500 rounded-full px-1 text-xs">
                 {wishlist?.length}

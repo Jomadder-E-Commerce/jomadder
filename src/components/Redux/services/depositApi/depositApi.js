@@ -1,6 +1,6 @@
-import { baseApi } from "@/components/Redux/api/baseApi";
+import { backendApi } from "@/components/Redux/api/baseApi";
 
-const depositeApi = baseApi.injectEndpoints({
+const depositeApi = backendApi.injectEndpoints({
   endpoints: (build) => ({
     postdeposite: build.mutation({
       query: (body) => ({

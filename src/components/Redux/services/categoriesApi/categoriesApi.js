@@ -1,4 +1,4 @@
-import { baseApi, frontendApi } from "@/components/Redux/api/baseApi";
+import { frontendApi } from "@/components/Redux/api/baseApi";
 
 const categoriesApi = frontendApi.injectEndpoints({
     endpoints:(build)=>({

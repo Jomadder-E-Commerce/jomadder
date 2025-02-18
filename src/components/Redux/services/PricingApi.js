@@ -1,6 +1,6 @@
-import { baseApi } from "@/components/Redux/api/baseApi";
+import { backendApi } from "@/components/Redux/api/baseApi";
 
-const PricingApi = baseApi.injectEndpoints({
+const PricingApi = backendApi.injectEndpoints({
   endpoints: (build) => ({
     getAllPricing: build.query({
       query: () => ({

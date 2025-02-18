@@ -1,7 +1,7 @@
-import { baseApi } from "@/components/Redux/api/baseApi";
+import {  frontendApi } from "@/components/Redux/api/baseApi";
 import { getLocalStorage } from "@/components/shared/LocalStorage/LocalStorage";
 
-const AuthenticationApi = baseApi.injectEndpoints({
+const AuthenticationApi = frontendApi.injectEndpoints({
   endpoints: (build) => ({
     getUser: build.query({
       query: () => ({

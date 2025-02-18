@@ -1,6 +1,6 @@
-import { baseApi } from "@/components/Redux/api/baseApi";
+import { backendApi } from "@/components/Redux/api/baseApi";
 
-const couponApi = baseApi.injectEndpoints({
+const couponApi = backendApi.injectEndpoints({
   endpoints: (build) => ({
     postCoupon: build.mutation({
       query: (body) => ({

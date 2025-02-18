@@ -1,6 +1,6 @@
-import { baseApi,frontendApi } from "@/components/Redux/api/baseApi";
+import {frontendApi } from "@/components/Redux/api/baseApi";
 
-const checkoutApi = baseApi.injectEndpoints({
+const checkoutApi = frontendApi.injectEndpoints({
   endpoints: (build) => ({
     postcheckout: build.mutation({
       query: (body) => ({

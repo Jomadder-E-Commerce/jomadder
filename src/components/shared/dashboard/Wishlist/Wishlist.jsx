@@ -69,13 +69,13 @@ const Wishlist = ({data,setData,setOpenModal}) => {
     return (
         <div className=" px-4 pt-6  min-w-full container text-black">
             <div className='flex w-full  items-center justify-between mb-5'>
-                <h2 className="md:text-xl sm:text-lg text-base font-semibold">
-                    My Wishlist <span className="sm:text-sm text-[12px] text-gray-500 ">({data?.length} items)</span>
+                <h2 className="  text-base font-semibold">
+                    My Wishlist <span className=" text-[12px] text-gray-500 ">({data?.length} items)</span>
                 </h2>
-                <button onClick={handleDeletedall} className='p-2  text-[12px] sm:text-sm md:text-md text-white border rounded-md bg-primary'>Clear All</button>
+                <button onClick={handleDeletedall} className='p-2  text-[12px]   text-white border rounded-md bg-primary'>Clear All</button>
             </div>
             {data?.length > 0 ? (
-                <div className={`grid md:gap-4 gap-2 grid-cols-1 md:grid-cols-2 mb-10`}>
+                <div className={`grid  gap-2 grid-cols-1  mb-10`}>
                     {data?.map((product) => (
                         <div key={product.id} onClick={() => router.push(`/product-details/${product?.productId.replace(/\s+/g, '-')}`)} className="cursor-pointer " >
                           <WishlistItem

@@ -15,12 +15,12 @@ const CartPage = ({data,setData}) => {
     //     return <CartSkeleton/>
     // }
     return (
-       <div className='w-full container no-padding text-black'>
-         <div className='md:pb-10 pb-5 md:pt-10 pt-5 container'>
-            <div className="md:p-4  mb-6 bg-white rounded-md shadow-md border">
+       <div className='w-full container  text-black'>
+         <div className='   pt-5 '>
+            <div className="  mb-6 bg-white rounded-md shadow-md border">
                 <div className="flex items-center justify-between p-3 border-b">
-                    <h1 className="sm:text-2xl text-xl font-bold">CART</h1>
-                    <p className="text-gray-600 sm:text-base text-sm">{moment().format('LL')}</p>
+                    <h1 className="text-xl font-bold">CART</h1>
+                    <p className="text-gray-600 text-sm">{moment().format('LL')}</p>
                 </div> 
             </div>
             {
@@ -31,9 +31,12 @@ const CartPage = ({data,setData}) => {
                         subTitle={'Looks like you haven’t added anything to your cart yet.'}
                     />
                 ) : (
-                    <div className="justify-between gap-5 mx-auto xl:flex">
+                    <div className="flex flex-col gap-4">
                         <CartProduct setData={setData} data={data} />
+                        <div className="">
                         <CartQuantity data={data} />
+                        </div>
+                        
                     </div>
                 )
             }
