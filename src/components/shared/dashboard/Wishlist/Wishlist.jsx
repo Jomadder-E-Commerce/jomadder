@@ -92,7 +92,7 @@ const Wishlist = ({data,setData,setOpenModal}) => {
                     ))}
                 </div>
             ) : (
-                <div className="flex items-center justify-center h-64 bg-gray-100 border rounded-md">
+                <div className="flex items-center justify-center py-10 bg-gray-100 border rounded-md">
                     <div className="flex flex-col items-center text-center">
                         <p className="text-lg font-semibold">Your wishlist is empty</p>
                         <p className="mb-4 text-gray-500">You can easily fix that by browsing through our top categories or go to the products you like.</p>

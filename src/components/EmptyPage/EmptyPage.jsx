@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 
 export default function EmptyPage({ title, subTitle, img }) {
   return (
-    <div className="flex flex-col items-center justify-center  bg-gray-50 px-4 py-12 sm:px-6 lg:px-8 w-full ">
+    <div className="flex flex-col items-center justify-center  bg-gray-50 px-4 py-12  w-full ">
       <div className="w-full min-w-full flex flex-col gap-3 text-center">
         {img}
         <h2 className=" text-3xl font-extrabold text-gray-900">{title}</h2>
