@@ -29,9 +29,10 @@ setWishlistData(getDataFromLocalStorage("wishlist") || [])
       setOpenModal(true)
     }
     return (
-        <>
+      <>
+       <div>
         {/* Pay Button */}
-        <div className="md:block hidden relative">
+        <div className="md:block hidden relative ">
             <div onClick={GoOpenModal} className="text-2xl cursor-pointer md:flex hidden ">
                <FaRegHeart className="font-semibold text-primary" />
             </div>
@@ -39,8 +40,8 @@ setWishlistData(getDataFromLocalStorage("wishlist") || [])
               count={wishlist.length || 0}
               show={wishlist.length > 0 }
             />
-          </div>
-          <div className="md:hidden flex flex-col items-center relative ">
+        </div>
+        <div className="md:hidden flex flex-col items-center relative ">
             <div onClick={GoOpenModal}>
               <FaRegHeart className="md:text-2xl text-lg" />
               <span className="absolute -top-1 -right-0 text-white text-center h-4 font-medium bg-red-500 rounded-full px-1 text-xs">
@@ -48,8 +49,11 @@ setWishlistData(getDataFromLocalStorage("wishlist") || [])
               </span>
             </div>
             <h3 className="text-[11px] font-medium">Wishlist</h3>
-          </div>
-          <Drawer
+        </div>
+       
+        </div>
+        <div>
+             <Drawer
           open={openModal}
           onClose={toggleDrawer}
           direction="right"
@@ -65,7 +69,9 @@ setWishlistData(getDataFromLocalStorage("wishlist") || [])
           </div>
         
         </Drawer>
-        </>
+        </div>
+      </>
+       
     );
 };
 

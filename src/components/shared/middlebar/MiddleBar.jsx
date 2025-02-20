@@ -90,7 +90,7 @@ const MiddleBar = () => {
         </div>
      
         {/* Navigation Icons */}
-        <nav className="flex items-center gap-5 lg:w-[30%] justify-end">
+        <nav className="flex items-center gap-3 lg:w-[30%] justify-end">
           {/* Wishlist */}
          <Link target="_blank" className="flex gap-1 font-semibold items-center text-lg ml-3 text-black" href="/shipping-rate"><IoIosCalculator />Shipping Rate</Link>
 
