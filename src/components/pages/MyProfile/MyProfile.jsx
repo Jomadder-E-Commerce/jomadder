@@ -13,6 +13,7 @@ import AccountInformation from "@/components/pages/MyProfile/AccountInformation"
 import { bangladeshData } from "@/lib/CountryData";
 import ShopAddress from "./ShopAddress";
 import SidebarText from "@/components/shared/Siderbar/SidebarText";
+import useLocationData from "@/hooks/useDivisions";
 const MyProfile= ({ type })=> {
   const [updateUser] = useUpdateUserMutation();
   const { data, isLoading, isError: getUserError, refetch } = useGetUserQuery();
@@ -45,6 +46,9 @@ const MyProfile= ({ type })=> {
     shopAddress: "",
     photo: "",
   });
+
+
+  const { data: divisions, loading, error } = useLocationData("divisions");
 
   // Whenever userData is received from the query, update both formData and our optimistic state.
   useEffect(() => {
@@ -155,10 +159,10 @@ const MyProfile= ({ type })=> {
     if (e) e.preventDefault();
   
     // Validate required fields
-    if (!formData.name || !formData.email || !formData.phone) {
-      toast.error("Please fill in all required fields.");
-      return;
-    }
+    // if (!formData.email && !formData.phone) {
+    //   toast.error("Please fill in all required fields.");
+    //   return;
+    // }
   
     let photoUrl = formData.photo;
     setAddressEditMode(false);
@@ -240,8 +244,8 @@ const MyProfile= ({ type })=> {
   };
 
   return (
-    <div className="mx-auto bg-gray-50 md:bg-white md:px-6 px-3 md:py-6 py-2 rounded-2xl">
-      {/* <h2 className="text-lg md:text-xl font-semibold text-slate-700 hidden md:block">
+    <div className="px-3 py-2 mx-auto bg-gray-50 md:bg-white md:px-6 md:py-6 rounded-2xl">
+      {/* <h2 className="hidden text-lg font-semibold md:text-xl text-slate-700 md:block">
         {type === "user" ? "My Profile" : "User Profile"}
       </h2> */}
       <SidebarText text="My Profile"/>
@@ -269,7 +273,7 @@ const MyProfile= ({ type })=> {
         handleChange={handleChange}
         handleSubmit={handleSubmit}
         loading={isLoading}
-        divisionsData={bangladeshData}
+        divisionsData={divisions}
         onDivisionChange={handleDivisionChange}
         onDistrictChange={handleDistrictChange}
         onThanaChange={handleThanaChange}
@@ -284,7 +288,7 @@ const MyProfile= ({ type })=> {
         handleChange={handleChange}
         handleSubmit={handleSubmit}
         loading={isLoading}
-        divisionsData={bangladeshData}
+        divisionsData={divisions}
         onShopDivisionChange={handleShopDivisionChange}
         onShopDistrictChange={handleShopDistrictChange}
         onShopThanaChange={handleShopThanaChange}

@@ -19,12 +19,7 @@ const Category = () => {
     };
 
     const onMouseLeave = ()=>{
-      if(path.startsWith("/all-product") || path.startsWith("/searchImage")){
-        setIsSidebarOpen(true)
-      }
-      else{
-        setIsSidebarOpen(false)
-      }
+        setIsSidebarOpen(false) 
     }
     return (
         <div

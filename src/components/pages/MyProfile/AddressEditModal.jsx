@@ -12,6 +12,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { DynamicSelect } from "@/components/ui/DynamicSelect";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import useLocationData from "@/hooks/useDivisions";
+
 
 const AddressEditModal = ({
   isOpen,
@@ -25,16 +27,12 @@ const AddressEditModal = ({
  onThanaChange
 }) => {
 
-  const Division = divisionsData.find(
-    (div) => div.division === data.division
-  );
-  const Districts = Division?.districts || [];
-  const thanas = Districts.flatMap((district) =>
-    district.policeStations
-      ? district.policeStations.map((station) => station)
-      : []
-  );
-  // Fetch country data
+
+  const { data: districts } = useLocationData("divisions", data.division);
+  const { data: thanas } = useLocationData("district", data.district);
+
+  console.log('district', data, districts);
+
 
 
   return (
@@ -45,7 +43,7 @@ const AddressEditModal = ({
         </DialogHeader>
         <ScrollArea className="max-h-[60vh] overflow-y-auto pr-4">
           <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
               {/* Country Dropdown */}
               <div className="space-y-2">
                 <Label htmlFor="country" className="text-sm font-medium">
@@ -64,7 +62,7 @@ const AddressEditModal = ({
                 </Label>
                 <DynamicSelect
                   className="w-full"
-                  options={divisionsData.map((div) => div.division)}
+                  options={districts?.map((div) => div?.division)}
                   value={data?.division}
                   placeholder="Select Division"
                   onValueChange={(value) => {
@@ -79,7 +77,7 @@ const AddressEditModal = ({
                 </Label>
                 <DynamicSelect
                   className="w-full"
-                  options={Districts.map((state) => state.district)}
+                  options={districts?.map((state) => state.district)}
                   value={data?.district}
                   placeholder="Select State"
                   onValueChange={(value) => {onDistrictChange(value);}}
@@ -91,13 +89,12 @@ const AddressEditModal = ({
                 <Label htmlFor="city" className="text-sm font-medium">
                   City
                 </Label>
-                <DynamicSelect
-                  className="w-full"
+                  <Input
                   id="city"
-                  options={thanas.map((state) => state)}
-                  onValueChange={(value)=>{onThanaChange(value)}}
-                  value={data?.city}
-                  placeholder="Enter your city"
+                  value={data.city}
+                  onChange={handleChange}
+                  className="w-full"
+                  placeholder="Enter city name"
                 />
               </div>
 
