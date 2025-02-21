@@ -174,8 +174,8 @@ const PaymentPage = () => {
                       <div className="flex items-center justify-between">
                         <div className="flex items-center flex-col sm:flex-row gap-4">
                           <div className='flex gap-4'>
-                            <div className='sm:w-12 sm:h-12 w-full h-full  mb-1'>
-                              <Image unoptimized src={product.productImage} alt="Product" width={100} height={64} className="object-cover w-full h-full" />
+                            <div className='sm:w-12 sm:h-12   mb-1'>
+                              <Image unoptimized src={product.productImage} alt="Product" width={100} height={40} className="object-cover w-full h-full" />
                             </div>
                           </div>
                           <div>

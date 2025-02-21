@@ -27,11 +27,11 @@ const AddressEditModal = ({
  onThanaChange
 }) => {
 
-
+  const { data: division } = useLocationData("divisions");
   const { data: districts } = useLocationData("divisions", data.division);
   const { data: thanas } = useLocationData("district", data.district);
 
-  console.log('district', data, districts);
+  console.log('district', data, division?.map(div => div?.division));
 
 
 
@@ -62,13 +62,14 @@ const AddressEditModal = ({
                 </Label>
                 <DynamicSelect
                   className="w-full"
-                  options={districts?.map((div) => div?.division)}
-                  value={data?.division}
+                  options={division?.map(div => div?.division)}
+                  value={data.division}
                   placeholder="Select Division"
                   onValueChange={(value) => {
                     onDivisionChange(value);
                   }}
                 />
+
               </div>
               {/* State Dropdown */}
               <div className="space-y-2">
@@ -78,10 +79,18 @@ const AddressEditModal = ({
                 <DynamicSelect
                   className="w-full"
                   options={districts?.map((state) => state.district)}
-                  value={data?.district}
+                  value={data.district}
                   placeholder="Select State"
                   onValueChange={(value) => {onDistrictChange(value);}}
+                  disabled={!data.division}
                 />
+                {/* <DynamicSelect
+              options={districts?.map(dist => dist.district)}
+              value={formData.district}
+              onValueChange={value => handleSelectChange("district", value)}
+              placeholder="Select District"
+              disabled={!formData.division}
+            /> */}
               </div>
 
               {/* City Dropdown */}
