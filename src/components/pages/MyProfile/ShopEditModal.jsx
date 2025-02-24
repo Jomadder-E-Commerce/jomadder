@@ -11,8 +11,9 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { DynamicSelect } from "@/components/ui/DynamicSelect";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import useLocationData from "@/hooks/useDivisions";
 
+import { Country, State, City } from "country-state-city";
+import useLocationData from "@/hooks/useDivisions";
 
 const ShopEditModal = ({
   isOpen,
@@ -25,11 +26,11 @@ const ShopEditModal = ({
   onShopThanaChange,
   divisionsData
 }) => {
-  // Fetch districts based on selected division
-  const { data: districts } = useLocationData("division", data.shopDivision);
-  
-  // Fetch thanas based on selected district
-  const { data: thanas } = useLocationData("district", data.shopDistrict);
+
+
+  const { data: Districts } = useLocationData("division", data.shopDivision);
+
+  console.log('shop edit data', data);
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
@@ -47,12 +48,13 @@ const ShopEditModal = ({
                 </Label>
                 <Input
                   className="w-full"
-                  value="Bangladesh"
-                  readOnly
+
+                  value="Bangladesh" // Default value
+                  placeholder="Select Country"
+                  onChange={handleChange}
                 />
               </div>
 
-              {/* Division Selector */}
               <div className="space-y-2">
                 <Label htmlFor="shopDivision" className="text-sm font-medium">
                   Shop Division
@@ -65,6 +67,36 @@ const ShopEditModal = ({
                   onValueChange={(value) => {
                     onShopDivisionChange(value);
                   }}
+
+                />
+
+              </div>
+
+              {/* State Dropdown */}
+              <div className="space-y-2">
+                <Label htmlFor="shopDistrict" className="text-sm font-medium">
+                  Shop District
+                </Label>
+                <DynamicSelect
+                  className="w-full"
+                  options={Districts?.map((state) => state.district)}
+                  value={data?.shopDistrict}
+                  placeholder="Select district"
+                  onValueChange={(value) => { onShopDistrictChange(value); }}
+                />
+              </div>
+
+              {/* City Dropdown */}
+              <div className="space-y-2">
+                <Label htmlFor="shopCity" className="text-sm font-medium">
+                  City
+                </Label>
+                <Input
+                  id="shopCity"
+                  value={data.shopCity}
+                  onChange={handleChange}
+                  className="w-full"
+                  placeholder="Enter your postal code"
                 />
               </div>
 
@@ -123,8 +155,9 @@ const ShopEditModal = ({
                 />
               </div>
 
-              {/* Address Field */}
-              <div className="space-y-2 md:col-span-2">
+
+              {/* Address */}
+              <div className="space-y-2">
                 <Label htmlFor="shopAddress" className="text-sm font-medium">
                   Address
                 </Label>
@@ -143,7 +176,7 @@ const ShopEditModal = ({
           <Button type="button" variant="outline" onClick={onClose}>
             Cancel
           </Button>
-          <Button type="submit" onClick={handleSubmit}>
+          <Button className="mb-3 sm:mb-0" type="submit" onClick={handleSubmit}>
             Save changes
           </Button>
         </DialogFooter>

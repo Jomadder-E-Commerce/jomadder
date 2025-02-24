@@ -93,11 +93,11 @@ const AccountInformation = ({
   return (
     <>
       {/* Profile & Information Card */}
-      <div className="border p-6 rounded-xl my-6 shadow-sm bg-white">
-        <div className="flex flex-col md:flex-row items-start gap-8">
+      <div className="p-6 my-6 bg-white border shadow-sm rounded-xl">
+        <div className="flex flex-col items-start gap-8 md:flex-row">
           {/* Profile Section */}
           <div className="flex flex-col items-center md:border-r md:pr-8">
-            <div className="relative w-24 h-24 bg-gray-100 rounded-full overflow-hidden shadow-md">
+            <div className="relative w-24 h-24 overflow-hidden bg-gray-100 rounded-full shadow-md">
               <Image
                 alt="User Profile"
                 src={imagePreview || avatar}
@@ -106,7 +106,7 @@ const AccountInformation = ({
                 className="object-cover w-full h-full"
               />
               {type === "user" && edit && (
-                <label className="absolute bottom-0 right-0 bg-gray-200 rounded-full p-2 cursor-pointer hover:bg-gray-300 transition-colors ">
+                <label className="absolute bottom-0 right-0 p-2 transition-colors bg-gray-200 rounded-full cursor-pointer hover:bg-gray-300">
                   <input
                     type="file"
                     accept="image/*"
@@ -115,7 +115,7 @@ const AccountInformation = ({
                     disabled={isImageUploading}
                   />
                   {isImageUploading ? (
-                    <div className="w-4 h-4 border-2 border-gray-600 border-t-transparent rounded-full animate-spin" />
+                    <div className="w-4 h-4 border-2 border-gray-600 rounded-full border-t-transparent animate-spin" />
                   ) : (
                     <MdOutlineEdit className="w-4 h-4 text-gray-600" />
                   )}
@@ -130,43 +130,43 @@ const AccountInformation = ({
           {/* Information Section */}
           <div className="flex-1">
             <div className="flex items-center justify-between gap-2">
-              <h2 className="sm:text-2xl text-xl  font-semibold text-gray-900">
+              <h2 className="text-xl font-semibold text-gray-900 sm:text-2xl">
                 Personal Information
               </h2>
               <button
                 onClick={openModal}
                 aria-label="Edit Personal Information"
-                className="text-gray-500 hover:text-gray-700 transition-colors"
+                className="text-gray-500 transition-colors hover:text-gray-700"
               >
                 <MdOutlineEdit className="w-6 h-6" />
               </button>
             </div>
-            <div className="mt-4 flex flex-col md:gap-4">
-              <div className="grid md:grid-cols-2 grid-cols-1">
-                <div className="flex flex-row items-center  pb-2">
-                  <Label className=" text-gray-700">Name:</Label>
-                  <span className="text-gray-600 ml-2">
+            <div className="flex flex-col mt-4 overflow-auto md:gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2">
+                <div className="flex flex-row items-center pb-2">
+                  <Label className="text-gray-700 ">Name:</Label>
+                  <span className="ml-2 text-gray-600">
                     {userData?.name || "-"}
                   </span>
                 </div>
-                <div className="flex flex-row items-center  pb-2">
-                  <Label className=" text-gray-700">Email:</Label>
-                  <span className="text-gray-600 ml-2">
+                <div className="flex flex-row items-center pb-2">
+                  <Label className="text-gray-700 ">Email:</Label>
+                  <span className="ml-2 text-gray-600 text-wrap">
                     {userData?.email || "-"}
                   </span>
                 </div>
               </div>
 
-              <div className="grid md:grid-cols-2 grid-cols-1">
-                <div className="flex flex-row items-center  pb-2">
-                  <Label className=" text-gray-700">Phone:</Label>
-                  <span className="text-gray-600 ml-2">
+              <div className="grid grid-cols-1 md:grid-cols-2">
+                <div className="flex flex-row items-center pb-2">
+                  <Label className="text-gray-700 ">Phone:</Label>
+                  <span className="ml-2 text-gray-600">
                     {userData?.phone || "-"}
                   </span>
                 </div>
-                <div className="flex flex-row items-center  pb-2">
-                  <Label className=" text-gray-700">Date of Birth:</Label>
-                  <span className="text-gray-600 ml-2">
+                <div className="flex flex-row items-center pb-2">
+                  <Label className="text-gray-700 ">Date of Birth:</Label>
+                  <span className="ml-2 text-gray-600">
                     {userData?.dateofbirth || "-"}
                   </span>
                 </div>
@@ -234,7 +234,7 @@ const AccountInformation = ({
                   name="gender"
                   value={user.gender}
                   onChange={handleChange}
-                  className="w-full p-2 border rounded mt-1 text-gray-700"
+                  className="w-full p-2 mt-1 text-gray-700 border rounded"
                 >
                   <option value="">Select Gender</option>
                   <option value="male">Male</option>
@@ -255,7 +255,7 @@ const AccountInformation = ({
                 </button>
                 <button
                   onClick={closeModal}
-                  className="bg-gray-200 text-gray-700 px-5 py-2 rounded hover:bg-gray-300 transition-colors"
+                  className="px-5 py-2 text-gray-700 transition-colors bg-gray-200 rounded hover:bg-gray-300"
                 >
                   Cancel
                 </button>

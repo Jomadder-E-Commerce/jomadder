@@ -12,8 +12,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { DynamicSelect } from "@/components/ui/DynamicSelect";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import useDivisions from "@/hooks/useDivisions";
 import useLocationData from "@/hooks/useDivisions";
-
 
 const AddressEditModal = ({
   isOpen,
@@ -21,18 +21,14 @@ const AddressEditModal = ({
   data,
   handleChange,
   handleSubmit,
- onDistrictChange,
- onDivisionChange,
- divisionsData,
- onThanaChange
+  onDistrictChange,
+  onDivisionChange,
+  divisionsData,
+  onThanaChange
 }) => {
 
-  const { data: division } = useLocationData("divisions");
-  const { data: districts } = useLocationData("divisions", data.division);
-  const { data: thanas } = useLocationData("district", data.district);
 
-  // console.log('district', data, division?.map(div => div?.division));
-
+  const { data: districts } = useLocationData("division", data.division);
 
 
   return (
@@ -62,14 +58,13 @@ const AddressEditModal = ({
                 </Label>
                 <DynamicSelect
                   className="w-full"
-                  options={division?.map(div => div?.division)}
-                  value={data.division}
+                  options={divisionsData?.map((div) => div?.division)}
+                  value={data?.division}
                   placeholder="Select Division"
                   onValueChange={(value) => {
                     onDivisionChange(value);
                   }}
                 />
-
               </div>
               {/* State Dropdown */}
               <div className="space-y-2">
@@ -79,18 +74,10 @@ const AddressEditModal = ({
                 <DynamicSelect
                   className="w-full"
                   options={districts?.map((state) => state.district)}
-                  value={data.district}
+                  value={data?.district}
                   placeholder="Select State"
-                  onValueChange={(value) => {onDistrictChange(value);}}
-                  disabled={!data.division}
+                  onValueChange={(value) => { onDistrictChange(value); }}
                 />
-                {/* <DynamicSelect
-              options={districts?.map(dist => dist.district)}
-              value={formData.district}
-              onValueChange={value => handleSelectChange("district", value)}
-              placeholder="Select District"
-              disabled={!formData.division}
-            /> */}
               </div>
 
               {/* City Dropdown */}
@@ -98,17 +85,26 @@ const AddressEditModal = ({
                 <Label htmlFor="city" className="text-sm font-medium">
                   City
                 </Label>
-                  <Input
+
+                <Input
+                  id="city"
+                  value={data.city}
+                  onChange={handleChange}
+                  className="w-full"
+                  placeholder="Enter your postal code"
+                />
+                {/* <DynamicSelect
+                  className="w-full"
                   id="city"
                   value={data.city}
                   onChange={handleChange}
                   className="w-full"
                   placeholder="Enter city name"
-                />
+                />*/}
               </div>
 
               {/* Postal Code */}
-              <div className="space-y-2 md:col-span-2">
+              <div className="space-y-2">
                 <Label htmlFor="postCode" className="text-sm font-medium">
                   Postal Code
                 </Label>
@@ -121,7 +117,7 @@ const AddressEditModal = ({
                 />
               </div>
               {/* Address */}
-              <div className="space-y-2 md:col-span-2">
+              <div className="space-y-2">
                 <Label htmlFor="address" className="text-sm font-medium">
                   Address
                 </Label>
@@ -140,7 +136,7 @@ const AddressEditModal = ({
           <Button type="button" variant="outline" onClick={onClose}>
             Cancel
           </Button>
-          <Button type="submit" onClick={handleSubmit}>
+          <Button className="mb-3 sm:mb-0" type="submit" onClick={handleSubmit}>
             Save changes
           </Button>
         </DialogFooter>
