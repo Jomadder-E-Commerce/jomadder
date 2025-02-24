@@ -31,7 +31,7 @@ const AddressEditModal = ({
   const { data: districts } = useLocationData("divisions", data.division);
   const { data: thanas } = useLocationData("district", data.district);
 
-  console.log('district', data, division?.map(div => div?.division));
+  // console.log('district', data, division?.map(div => div?.division));
 
 
 

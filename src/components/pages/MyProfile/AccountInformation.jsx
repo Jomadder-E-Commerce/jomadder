@@ -106,7 +106,7 @@ const AccountInformation = ({
                 className="object-cover w-full h-full"
               />
               {type === "user" && edit && (
-                <label className="absolute bottom-0 right-0 bg-gray-200 rounded-full p-2 cursor-pointer hover:bg-gray-300 transition-colors">
+                <label className="absolute bottom-0 right-0 bg-gray-200 rounded-full p-2 cursor-pointer hover:bg-gray-300 transition-colors ">
                   <input
                     type="file"
                     accept="image/*"

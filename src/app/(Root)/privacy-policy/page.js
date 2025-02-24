@@ -18,7 +18,7 @@ const page = () => {
                 1. Introduction
               </h2>
               <p className="text-gray-700 leading-relaxed">
-                Welcome to Jomadder International. Your privacy is important to us, and we are
+                Welcome to Jomadder. Your privacy is important to us, and we are
                 committed to protecting your personal information. This Privacy Policy explains how
                 we collect, use, and share your information when you use our website and services.
               </p>

@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Edit2 } from 'lucide-react';
 import AddressEditModal from "./AddressEditModal";
 import AddressField from "./AddressField";
+import { DynamicSelect } from "@/components/ui/DynamicSelect";
 
 const Address = ({
   data,
