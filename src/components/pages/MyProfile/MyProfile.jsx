@@ -13,6 +13,7 @@ import AccountInformation from "@/components/pages/MyProfile/AccountInformation"
 import { bangladeshData } from "@/lib/CountryData";
 import ShopAddress from "./ShopAddress";
 import SidebarText from "@/components/shared/Siderbar/SidebarText";
+import useDivisions from "@/hooks/useDivisions";
 import useLocationData from "@/hooks/useDivisions";
 const MyProfile= ({ type })=> {
   const [updateUser] = useUpdateUserMutation();
@@ -211,8 +212,6 @@ const MyProfile= ({ type })=> {
   
     // Merge the new changes into our optimistic data so that the UI updates immediately.
     const updatedUserData = {
-      ...optimisticUserData,
-      ...filteredPayload,
       address: {
         ...optimisticUserData?.address,
         ...filteredPayload.address,

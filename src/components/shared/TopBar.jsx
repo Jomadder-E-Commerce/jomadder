@@ -78,7 +78,7 @@ const TopBar = () => {
     <div className="z-50 w-full md:py-3  md:bg-primary  text-primary border-b-2 md:border-none border-primary container no-padding">
       <div className="md:flex hidden items-center  justify-between gap-4 container no-padding">
         <p className="block text-sm text-white">
-          Welcome to Jomadder International, Explore your best experience
+          Welcome to Jomadder, Explore your best experience
         </p>
 
         

@@ -197,19 +197,19 @@ const Footer = () => {
               <span className="text-gray-700">Follow Us</span>
               <div className="flex gap-4 flex-wrap justify-center items-center">
                 {SocialMedia?.map((item, index) => (
-                  <Link key={index} href={item.href}>
+                  <a target="_blank" key={index} href={item.href}>
                     <div className="text-gray-800 bg-[#F2F2F2] flex justify-center items-center md:p-2 p-1.5 rounded-full hover:text-[#0D6EFD]">
                       {item.icon}
                     </div>
-                  </Link>
+                  </a>
                 ))}
-                <Link
+                <a target="_blank"
                   href={"https://www.tiktok.com/@parceltradebd"}
                   key={"Tiktok"}
                   className="text-gray-800 bg-[#F2F2F2] md:p-2 p-1.5 rounded-full hover:text-[#0D6EFD]"
                 >
                   <PiTiktokLogoLight className="md:text-2xl text-lg" />
-                </Link>
+                </a>
               </div>
             </div>
           </div>

@@ -67,7 +67,7 @@ const Wishlist = ({data,setData,setOpenModal}) => {
 
 
     return (
-        <div className=" px-4 pt-6  min-w-full container text-black">
+        <div className=" px-5 pt-6  min-w-full container text-black">
             <div className='flex w-full  items-center justify-between mb-5'>
                 <h2 className="  text-base font-semibold">
                     My Wishlist <span className=" text-[12px] text-gray-500 ">({data?.length} items)</span>
@@ -92,11 +92,11 @@ const Wishlist = ({data,setData,setOpenModal}) => {
                     ))}
                 </div>
             ) : (
-                <div className="flex items-center justify-center py-10 bg-gray-100 border rounded-md">
+                <div className="flex items-center justify-center py-10 px-3 bg-gray-100 border rounded-md">
                     <div className="flex flex-col items-center text-center">
                         <p className="text-lg font-semibold">Your wishlist is empty</p>
-                        <p className="mb-4 text-gray-500">You can easily fix that by browsing through our top categories or go to the products you like.</p>
-                        <CiShoppingCart className='md:text-[150px]' />
+                        <p className="mb-4 text-gray-500 text-sm">You can easily fix that by browsing through our top categories or go to the products you like.</p>
+                        <CiShoppingCart className='text-[70px]' />
                     </div>
                 </div>
             )}

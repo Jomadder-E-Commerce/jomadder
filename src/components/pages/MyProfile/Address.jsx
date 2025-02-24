@@ -26,16 +26,16 @@ const Address = ({
 
   return (
     <Card className="w-full">
-      <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+      <CardHeader className="flex flex-row items-center justify-between pb-2 space-y-0">
         <CardTitle className="text-2xl font-bold">Address</CardTitle>
         {edit && (
           <Button variant="outline" size="icon" onClick={openModal}>
-            <Edit2 className="h-4 w-4" />
+            <Edit2 className="w-4 h-4" />
           </Button>
         )}
       </CardHeader>
       <CardContent>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-5 pt-2 pb-5">
+        <div className="grid grid-cols-1 gap-4 px-5 pt-2 pb-5 md:grid-cols-2">
           <AddressField label="Country" value="Bangladesh" loading={loading} />
           <AddressField label="Division" value={userAddress?.division} loading={loading} />
           <AddressField label="District" value={userAddress?.district} loading={loading} />

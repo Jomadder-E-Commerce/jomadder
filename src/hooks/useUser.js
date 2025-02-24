@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import { getLocalStorage } from '@/components/shared/LocalStorage/LocalStorage'; 
+import { getLocalStorage } from '@/components/shared/LocalStorage/LocalStorage';
 
 const useUser = () => {
   const [user, setUser] = useState(null);
   const [userRole, setUserRole] = useState(null);
-  const [loading, setLoading] = useState(true); 
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const storedUser = getLocalStorage('user');
@@ -14,7 +14,7 @@ const useUser = () => {
       setUserRole(parsedUser?.role);
     }
     setLoading(false);
-  }, []);
+  }, []); // Convert props to an array for dependencies
 
   return { user, userRole, loading };
 };

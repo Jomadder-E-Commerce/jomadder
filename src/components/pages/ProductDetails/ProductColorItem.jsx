@@ -29,7 +29,7 @@ const ProductColorItem = ({ item,handleChooseProductJustText,selected, handleCho
     return (
       <div className="relative inline-block">
       {quantity !== undefined && quantity > 0 && (
-        <span className="absolute z-50 bg-gray-700 px-2 py-1 min-w-[30px] text-center text-white text-xs rounded-full -top-2 -right-2">
+        <span className="absolute z-[30] bg-gray-700 px-2 py-1 min-w-[30px] text-center text-white text-xs rounded-full -top-2 -right-2">
           {quantity}
         </span>
       )}

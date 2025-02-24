@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import useLocationData from "@/hooks/useDivisions";
+import CheckoutSkeleton from "./CheckoutSkeleton";
 
 const CheckoutForm = () => {
   const { data, isLoading, error } = useGetUserQuery();
@@ -133,7 +134,7 @@ const handleSelectChange = useCallback((name, value) => {
     dispatch(setFormData(formData));
   }, [formData, validateForm, dispatch]);
 
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading) return <CheckoutSkeleton/>;
   if (error) return <div>Error loading user data</div>;
   return (
     <div className="w-full">

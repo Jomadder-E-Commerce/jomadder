@@ -17,8 +17,8 @@ export default function ContactInfo() {
         link="mailto:parceltradeint@gmail.com"
       />      <InfoCard
       icon={<Facebook />}
-      title="Gmail"
-      description="hello@parceltrade.com"
+      title="Facebook"
+      description="facebook.com/parceltradeinternational"
       link="https://www.facebook.com/parceltradeinternational"
     />
 

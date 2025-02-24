@@ -140,7 +140,7 @@ const MiddleBar = () => {
                 <FaUserCircle className="text-primary size-6" />
               )}
             </button>
-            <UserDropdown dropdownOpen={dropdownOpen} handleLogout={handleLogout} token={token} userRole={userRole} />
+            <UserDropdown dropdownOpen={dropdownOpen} handleLogout={handleLogout}  />
           </div>
         </nav>
       </div>

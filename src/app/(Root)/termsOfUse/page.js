@@ -21,7 +21,7 @@ const page = () => {
                 1. Introduction
               </h2>
               <p className="text-gray-700 leading-relaxed">
-                Welcome to Jomadder International. These Terms and Conditions govern your use
+                Welcome to Jomadder. These Terms and Conditions govern your use
                 of our website and services. By accessing or using our services, you agree to comply
                 with and be bound by these terms.
               </p>
