@@ -30,8 +30,6 @@ export default function RootLayout({ children }) {
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
           <div> {children} </div>
-
-      
           <ToastContainer autoClose={1999} closeOnClick/>
         </body>
       </html>

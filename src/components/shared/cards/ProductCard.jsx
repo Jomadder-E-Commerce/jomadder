@@ -11,17 +11,17 @@ import { GetfullPricing, getPercentageForPrice } from "../pricing/Pricing";
 
 
 const ProductCard = ({ name, price, discount, image, id }) => {
-    const [productPrice, setProductPrice] = useState(0);
+    const [productPrice, setProductPrice] = useState(Math.round(getPercentageForPrice(price)));
     const [isInWishlist, setIsInWishlist] = useState(false);
   
-    useEffect(() => {
+//     useEffect(() => {
 
-      // console.log(data?.data)
-      const pricingData = Math.round(getPercentageForPrice(price))
+//       // console.log(data?.data)
+//       const pricingData = Math.round(getPercentageForPrice(price))
 
-      setProductPrice(pricingData)
+//       setProductPrice(pricingData)
 
-}, [price])
+// }, [price])
   
     useEffect(() => {
       const wishlist =  [];

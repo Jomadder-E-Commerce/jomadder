@@ -4,6 +4,14 @@ import ProductCard from "@/components/shared/cards/ProductCard";
 
 const ShopProducts = ({id}) => {
     const { data } = useGetProductsByShopQuery(id);
+    const [price_start, setprice_start] = useState(null);
+    const [price_end, setprice_end] = useState(null);
+    const [sort, setSort] = useState("");
+    const [currentPage, setCurrentPage] = useState(1);
+    const [perPage, setPerPage] = useState(10);
+    const minPriceRef = useRef(null);
+    const maxPriceRef = useRef(null);
+    
     const products = data?.data?.data?.items;
   return (
     <div className="container">
