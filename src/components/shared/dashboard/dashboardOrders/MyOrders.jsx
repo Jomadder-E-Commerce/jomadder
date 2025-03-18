@@ -9,8 +9,8 @@ const MyOrders = () => {
   const { data } = useGetCheckoutQuery();
   const orderColumns = [
     { label: "OrderId", key: "orderId" },
-    { label: "Price", key: "price" },
-    { label: "Charge", key: "charge" },
+    { label: "Amount", key: "price" },
+    // { label: "Charge", key: "charge" },
     // { label: "District", key: "district" },
     { label: "Status", key: "Status" },
     { label: "Details", key: "details", type: "button" },

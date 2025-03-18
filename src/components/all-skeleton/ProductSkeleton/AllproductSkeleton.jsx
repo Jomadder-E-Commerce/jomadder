@@ -21,7 +21,7 @@ const AllproductSkeleton = () => {
         <div>
                <div className="grid items-start justify-between w-full  gap-3 justify-items-center lg:grid-cols-4 sm:grid-cols-3 xl:grid-cols-5 grid-cols-2">
                        {
-                            [...Array(20)].map((item, key) => (
+                            [...Array(10)].map((item, key) => (
                                 <ProductCardSkeleton key={key} />
                             ))
                        }

@@ -14,6 +14,8 @@ import { DynamicSelect } from "@/components/ui/DynamicSelect";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import useDivisions from "@/hooks/useDivisions";
 import useLocationData from "@/hooks/useDivisions";
+import useGetDivision from "@/hooks/useGetDivision";
+import useGetDistrict from "@/hooks/useGetDistrict";
 
 const AddressEditModal = ({
   isOpen,
@@ -28,7 +30,21 @@ const AddressEditModal = ({
 }) => {
 
 
-  const { data: districts } = useLocationData("division", data.division);
+  const {
+    allDivisions,
+    getDistrictsByDivision,
+    allDistricts,
+    needDistricts
+  }  = useGetDistrict();
+  
+  // console.log("division data",division)
+  useEffect(()=>{
+  if(data.division){
+    const id = allDivisions?.find((div) => div?.name === data?.division)?.id;
+    getDistrictsByDivision(id);
+  }
+  },[data.division])
+
 
 
   return (
@@ -58,11 +74,13 @@ const AddressEditModal = ({
                 </Label>
                 <DynamicSelect
                   className="w-full"
-                  options={divisionsData?.map((div) => div?.division)}
+                  options={allDivisions?.map((div) => div?.name)}
                   value={data?.division}
                   placeholder="Select Division"
                   onValueChange={(value) => {
                     onDivisionChange(value);
+                     const id = allDivisions?.find((div) => div?.name === value)?.id;
+                     getDistrictsByDivision(id);
                   }}
                 />
               </div>
@@ -73,7 +91,7 @@ const AddressEditModal = ({
                 </Label>
                 <DynamicSelect
                   className="w-full"
-                  options={districts?.map((state) => state.district)}
+                  options={needDistricts?.map((state) => state.name)}
                   value={data?.district}
                   placeholder="Select State"
                   onValueChange={(value) => { onDistrictChange(value); }}
@@ -83,7 +101,7 @@ const AddressEditModal = ({
               {/* City Dropdown */}
               <div className="space-y-2">
                 <Label htmlFor="city" className="text-sm font-medium">
-                  City
+                  Thana
                 </Label>
 
                 <Input
@@ -91,20 +109,12 @@ const AddressEditModal = ({
                   value={data.city}
                   onChange={handleChange}
                   className="w-full"
-                  placeholder="Enter your postal code"
+                  placeholder="Enter your Thana"
                 />
-                {/* <DynamicSelect
-                  className="w-full"
-                  id="city"
-                  value={data.city}
-                  onChange={handleChange}
-                  className="w-full"
-                  placeholder="Enter city name"
-                />*/}
               </div>
 
               {/* Postal Code */}
-              <div className="space-y-2">
+              <div className="space-y-2 md:col-span-2">
                 <Label htmlFor="postCode" className="text-sm font-medium">
                   Postal Code
                 </Label>
@@ -117,7 +127,7 @@ const AddressEditModal = ({
                 />
               </div>
               {/* Address */}
-              <div className="space-y-2">
+              <div className="space-y-2 md:col-span-2">
                 <Label htmlFor="address" className="text-sm font-medium">
                   Address
                 </Label>

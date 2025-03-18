@@ -62,8 +62,8 @@ const TransactionsTable = ({ data, loading, columns }) => {
                 <TableCell>{item.transactionId}</TableCell>
                 <TableCell className="text-nowrap">{moment(item?.date).format("DD-MM-YYYY")}</TableCell>
                 <TableCell>{item?.paidBy ?? "payment"}</TableCell>
-                <TableCell>{item.amount}</TableCell>
-                <TableCell>{item?.charge || 0}</TableCell>
+                <TableCell>{item?.charge ? item?.amount + item?.charge : item?.amount}</TableCell>
+                {/* <TableCell>{item?.charge || 0}</TableCell> */}
                 <TableCell>
                   <button
                     className={`py-1 px-3 rounded ${getButtonClass(
@@ -98,15 +98,16 @@ const TransactionsTable = ({ data, loading, columns }) => {
 
       {/* Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white p-6 rounded-md max-w-md w-full">
+        <div className="fixed inset-0 z-[1000] flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white p-6 rounded-md max-w-md w-full ">
             <h2 className="text-xl font-bold mb-4">Slip Image</h2>
-            {slipImage ? (
+            <div className="max-h-[60vh]  overflow-y-auto">{slipImage ? (
               <Image  height={400}
               width={400} unoptimized src={slipImage} alt="Slip" className="w-full h-auto border rounded-md" />
             ) : (
               <p className="text-center text-gray-500">No Slip Image</p>
-            )}
+            )}</div>
+            
             <button
               onClick={closeModal}
               className="mt-6 px-4 py-2 bg-red-500 text-white rounded-md"

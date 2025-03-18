@@ -27,7 +27,7 @@ const AllProducts = ({ categories }) => {
     size: perPage,
     price_start: price_start !== null ? price_start / 17 : undefined,
     price_end: price_end !== null ? price_end / 17 : undefined,
-    sort: sort || undefined, 
+    sort: sort || 'default', 
   });
   const products = data?.data?.data?.items;
   // console.log(products)

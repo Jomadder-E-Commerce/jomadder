@@ -27,15 +27,27 @@ const SideDrawer = () => {
     }
   };
 
+  const Links = [
+    { title: "My Profile", href: "/profile" },
+    { title: "Login", href: "/login" },
+    { title: "Cart", href: "/cart" },
+    { title: "Wishlist", href: "/wishlist" },
+    { title: "FAQ", href: "/faq" },
+    { title: "Privacy Policy", href: "/privacy-policy" },
+    { title: "Terms of Use", href: "/termsOfUse" },
+
+    { title: "Contact", href: "/contact-us" },
+  ];
+
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);
   };
 
   return (
-    <div className="relative">
+    <div className="relative z-50">
       {/* Drawer Toggle Icon */}
       <FiAlignJustify
-        className="md:text-2xl text-lg cursor-pointer"
+        className="text-lg cursor-pointer md:text-2xl"
         onClick={toggleDrawer}
       />
 
@@ -44,6 +56,7 @@ const SideDrawer = () => {
         open={isOpen}
         onClose={toggleDrawer}
         direction="left"
+        size="300px"
         className="custom-drawer overflow-auto"
       >
         {/* Drawer Header */}
@@ -56,7 +69,7 @@ const SideDrawer = () => {
         </div>
 
         {/* Drawer Search Bar (Mobile Only) */}
-        <div className="md:hidden px-4 py-2">
+        <div className="px-4 py-2 md:hidden">
           <Search />
         </div>
 
@@ -69,13 +82,20 @@ const SideDrawer = () => {
 
           {/* Menu Tab */}
           <TabsContent value="menu">
-            <CardContent className="space-y-4 px-4 cursor-pointer text-gray-800">
+            <CardContent className="px-4 space-y-4 text-gray-800 cursor-pointer">
               {/* <Link href="/" className="block hover:underline">
                 Blog
               </Link> */}
-              <Link href="/contact-us" className="block hover:underline">
+              {
+                Links.map((link, index) => (
+                  <Link key={index} href={link.href} className="block hover:underline">
+                    {link.title}
+                  </Link>
+                ))
+              }
+              {/* <Link href="/contact-us" className="block hover:underline">
                 Contact Us
-              </Link>
+              </Link> */}
             </CardContent>
           </TabsContent>
 
@@ -87,11 +107,11 @@ const SideDrawer = () => {
                   {categories.map((category) => (
                     <li
                       key={category.name}
-                      className="py-2 hover:bg-gray-100 rounded-md text-gray-800"
+                      className="py-2 text-gray-800 rounded-md hover:bg-gray-100"
                       onClick={() => handleCategoryClick(category.name)}
                     >
-                      <div className="flex justify-between items-center px-4">
-                        <div className="flex gap-2 items-center">
+                      <div className="flex items-center justify-between px-4">
+                        <div className="flex items-center gap-2">
                           <Image
                             src={category.icon}
                             alt={category.name}
@@ -108,7 +128,7 @@ const SideDrawer = () => {
               ) : (
                 <div>
                   {/* Subcategories */}
-                  <div className="flex items-center gap-2 mb-2 px-4">
+                    <div className="flex items-center gap-2 px-4 mb-2">
                     <button onClick={() => setSelectedCategory(null)}>
                       <IoIosArrowRoundBack className="text-xl text-gray-800" />
                     </button>
@@ -123,14 +143,14 @@ const SideDrawer = () => {
                       ?.subcategories.map((subcategory, index) => (
                         <li
                           key={index}
-                          className="py-2 hover:bg-gray-100 rounded-md text-gray-800"
+                          className="py-2 text-gray-800 rounded-md hover:bg-gray-100"
                         >
                           <Link
                             href={`/all-product?q=${subcategory.replace(
                               /\s+/g,
                               "-"
                             )}`}
-                            className="flex justify-between items-center px-4"
+                            className="flex items-center justify-between px-4"
                           >
                             <span>{subcategory}</span>
                             <MdKeyboardArrowRight className="text-xl" />

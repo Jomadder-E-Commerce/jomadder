@@ -16,6 +16,7 @@ import islamiBank from "@/assets/footer/islamibank.png";
 import bangladesh from "@/assets/footer/bangladesh.png";
 import china  from "@/assets/footer/china.png";
 import { PiTiktokLogoLight } from "react-icons/pi";
+import ScrollToTop from "../scroll/ScrollToTop";
 
 const countryFlags = [
   {
@@ -35,6 +36,8 @@ const Footer = () => {
   const formRef = useRef();
   const [selectedCountry, setSelectedCountry] = useState(countryFlags[0]);
   const [isOpen, setIsOpen] = useState(false);
+  // Create a ref for the dropdown container
+  const dropdownRef = useRef(null);
 
   // Retrieve saved country from local storage on component mount
   useEffect(() => {
@@ -49,6 +52,20 @@ const Footer = () => {
     }
   }, []);
 
+  // Close dropdown when clicking outside of it
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   // Function to refresh the page
   const RefreshPage = () => {
     if (window.location.pathname === "/") {
@@ -59,14 +76,15 @@ const Footer = () => {
   };
 
   const Accounts = [
-    { title: "My Profile", href: "/profile" },
-    { title: "Login", href: "/login" },
-    { title: "Cart", href: "/cart" },
-    { title: "Wishlist", href: "/wishlist" },
+    // { title: "My Profile", href: "/profile" },
+    // { title: "Login", href: "/login" },
+    // { title: "Cart", href: "/cart" },
+    // { title: "Wishlist", href: "/wishlist" },
+    { title: "FAQ", href: "/faq" },
     { title: "Privacy Policy", href: "/privacy-policy" },
     { title: "Terms of Use", href: "/termsOfUse" },
-    { title: "FAQ", href: "/faq" },
-    { title: "Contact", href: "/contact-us" },
+
+    // { title: "Contact", href: "/contact-us" },
   ];
 
   const QuickLinks = [
@@ -120,21 +138,30 @@ const Footer = () => {
       href: "https://www.youtube.com/channel/UCbV5Gv9l6ZV0K4E3V2t5L5g",
       icon: <Youtube className="md:w-6 w-4 md:h-6 h-4" />,
     },
+    {
+      href: "https://www.tiktok.com/@parceltradebd",
+      icon: <PiTiktokLogoLight className="md:text-2xl text-lg" />,
+      name: "Tiktok",
+    },
   ];
 
   return (
     <>
-      <footer className="w-full border-t bg-white md:pb-0 pb-14">
+      <footer className="w-full border-t bg-white md:pb-0 pb-14 relative">
         {/* Top Section */}
-        <div className="mx-auto py-6">
+        <div className="mx-auto py-4">
           <div className="flex flex-col md:flex-row justify-around items-center gap-5 container">
             {/* Company Location */}
             <div className="flex flex-col items-center gap-2">
               <h3 className="text-gray-700 font-medium">Jommader in</h3>
-              <div className="relative w-64">
+              {/* Attach the ref to the container */}
+              <div className="relative w-64" ref={dropdownRef}>
                 <div
                   className="flex items-center justify-between bg-white border rounded-md pl-3 max-w-[140px] mx-auto py-2 cursor-pointer hover:bg-gray-50"
-                  onClick={() => setIsOpen(!isOpen)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsOpen(!isOpen);
+                  }}
                 >
                   <div className="flex items-center gap-2">
                     <Image
@@ -148,7 +175,7 @@ const Footer = () => {
                 </div>
 
                 {isOpen && (
-                  <ul className="absolute left-14 mt-1 w-full bg-white border rounded-md shadow-lg z-10">
+                  <ul className="absolute left-14 mt-1 w-full bg-white max-w-[160px] border rounded-md shadow-lg z-10 transition-all duration-300 ease-out">
                     {countryFlags.map((item) => (
                       <li
                         key={item.id}
@@ -203,13 +230,6 @@ const Footer = () => {
                     </div>
                   </a>
                 ))}
-                <a target="_blank"
-                  href={"https://www.tiktok.com/@parceltradebd"}
-                  key={"Tiktok"}
-                  className="text-gray-800 bg-[#F2F2F2] md:p-2 p-1.5 rounded-full hover:text-[#0D6EFD]"
-                >
-                  <PiTiktokLogoLight className="md:text-2xl text-lg" />
-                </a>
               </div>
             </div>
           </div>
@@ -219,25 +239,11 @@ const Footer = () => {
         <div className="border-t bg-gray-100">
           <div className="container mx-auto py-6">
             <div className="flex flex-col md:flex-row justify-between items-center container gap-4">
-              {/* Company Info */}
-              <div className="font-medium text-gray-600 md:block hidden">
-                Jomadder
-                <br />
-                Contact: +8801767559231
-              </div>
-              <div className="md:hidden block">
-                <p className="text-sm text-gray-500 font-medium">
-                  @2025 Jomadder. All rights reserved
+              <div className="">
+                <p className="text-sm text-gray-900 font-medium">
+                  ©️ 2025 Jomadder. All rights reserved
                 </p>
               </div>
-              {/* Payment Methods */}
-              <div className="flex items-center gap-3 md:flex-row flex-wrap justify-center">
-                <Image src={bkash} alt="bKash" className="max-w-14" />
-                <Image src={nagad} alt="Nagad" className="max-w-14" />
-                <Image src={islamiBank} alt="Cash on Delivery" className="max-w-14" />
-              </div>
-
-              {/* Links */}
               <div className="flex flex-wrap justify-center gap-3 text-sm">
                 {Accounts?.map((account, key) => (
                   <Link
@@ -249,6 +255,13 @@ const Footer = () => {
                   </Link>
                 ))}
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="border-t bg-primary">
+          <div className="container mx-auto py-5">
+            <div className="flex md:justify-center justify-start items-center container gap-4">
+              <ScrollToTop className={"border border-white absolute bg-primary md:bottom-5 bottom-[75px]"} />
             </div>
           </div>
         </div>

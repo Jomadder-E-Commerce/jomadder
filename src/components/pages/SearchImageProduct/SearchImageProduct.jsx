@@ -6,6 +6,7 @@ import AllProductPage from '../allProduct/AllProductPage';
 import Sidebar from '@/components/shared/Siderbar/Sidebar';
 
 const SearchImageProduct = ({ image }) => {
+  console.log("hello arif",image)
   const router = useRouter();
   const searchParams = useSearchParams();
   const [findProductByImage] = useFindProductByImageMutation()

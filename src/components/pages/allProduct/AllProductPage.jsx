@@ -43,6 +43,7 @@ const AllProductPage = ({
       <SelectContent>
         <SelectItem value="low-to-high">Low to High</SelectItem>
         <SelectItem value="high-to-low">High to Low</SelectItem>
+        <SelectItem value="popular">Popular</SelectItem>
       </SelectContent>
     </Select>
   </div>

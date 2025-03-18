@@ -9,9 +9,9 @@ const Page = () => {
 
     return (
         <div>
-            <ProtectedPageWrapper>
+            {/* <ProtectedPageWrapper> */}
             <RegisterForm />
-            </ProtectedPageWrapper>
+            {/* </ProtectedPageWrapper> */}
         </div>
     );
 };

@@ -78,7 +78,7 @@ const DesktopLayout = () => {
                 return item?.underRoutes ? (
                   <LayoutBar item={item} key={_id} />
                 ) : (
-                  <> <Link
+                  <> <a
                     key={_id}
                     className={`flex items-center gap-2 hover:bg-secondary ${
                       isActive
@@ -90,7 +90,7 @@ const DesktopLayout = () => {
                   >
                     <span className="text-2xl">{item?.icon}</span>
                     {item?.name}
-                  </Link>
+                  </a>
                   </>
                  
                 );

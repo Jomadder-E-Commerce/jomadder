@@ -13,8 +13,8 @@ export default function ContactInfo() {
       <InfoCard
         icon={<Mail />}
         title="Mail"
-        description="parceltradeint@gmail.com"
-        link="mailto:parceltradeint@gmail.com"
+        description="jomadder.org@gmail.com"
+        link="mailto:jomadder.org@gmail.com"
       />      <InfoCard
       icon={<Facebook />}
       title="Facebook"

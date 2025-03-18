@@ -6,15 +6,14 @@ import { DynamicSelect } from "@/components/ui/DynamicSelect";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import useLocationData from "@/hooks/useDivisions";
 import CheckoutSkeleton from "./CheckoutSkeleton";
+import useGetDistrict from "@/hooks/useGetDistrict";
 
 const CheckoutForm = () => {
   const { data, isLoading, error } = useGetUserQuery();
   const dispatch = useDispatch();
   const userData = data?.data?.user;
 
-  // State initialization
   const [formData, setFormDataFull] = useState({
     orderName: "",
     orderEmail: "",
@@ -28,56 +27,45 @@ const CheckoutForm = () => {
   });
 
   const [errors, setErrors] = useState({});
+  const { allDivisions, getDistrictsByDivision, needDistricts } = useGetDistrict();
 
-  // Location data fetching
-  const { data: divisions } = useLocationData("divisions");
-  const { data: districts } = useLocationData("division", formData.division);
-  const { data: cities } = useLocationData("district", formData.district);
-
-
-  // Pre-fill form with user data on load
+  // Fixed initialization with stable dependencies
   useEffect(() => {
-    if (userData?.address) {
-      setFormDataFull({
+    if (userData) {
+      const address = userData?.address || {};
+      const userDivision = allDivisions.find(d => d.name == address.division);
+      
+      // Only update if division exists in current divisions
+      if (userDivision) {
+        getDistrictsByDivision(userDivision.id);
+      }
+
+      // Prevent unnecessary state updates
+      setFormDataFull(prev => ({
+        ...prev,
         orderName: userData.name || "",
         orderEmail: userData.email || "",
         OrderPhone: userData.phone || "",
-        division: userData.address.division || "",
-        district: userData.address.district || "",
-        city: userData.address.city || "",
-        shippingAddress: userData.address.address || "",
-        postCode: userData.address.postCode || "",
-        orderNote: "",
-      });
+        division: address.division || "",
+        district: address.district || "",
+        city: address.city || "",
+        shippingAddress: address.address || "",
+        postCode: address.postCode || "",
+      }));
     }
-  }, [userData]);
+  }, [userData]); // Removed getDistrictsByDivision from dependencies
 
-  // Update dependent options when userData loads
-  // useEffect(() => {
-  //   if (userData && userData.address) {
-  //     const division = userData.address.division;
-  //     const district = userData.address.district;
-  //     const selectedDivision = bangladeshData.find((div) => div.division === division);
-  //     if (selectedDivision) {
-  //       setDistricts(selectedDivision.districts || []);
-  //       const selectedDistrict = selectedDivision.districts.find(
-  //         (dist) => dist.district === district
-  //       );
-  //       if (selectedDistrict) {
-  //         setCities(selectedDistrict.policeStations || []);
-  //       }
-  //     }
-  //   }
-  // }, [userData]);
-
-const handleSelectChange = useCallback((name, value) => {
+  const handleSelectChange = useCallback((name, value) => {
     setFormDataFull(prev => {
       const newData = { ...prev, [name]: value };
       
-      // Reset dependent fields
       if (name === "division") {
         newData.district = "";
         newData.city = "";
+        const selectedDivision = allDivisions.find(d => d.name === value);
+        if (selectedDivision) {
+          getDistrictsByDivision(selectedDivision.id);
+        }
       }
       if (name === "district") {
         newData.city = "";
@@ -85,9 +73,11 @@ const handleSelectChange = useCallback((name, value) => {
       
       return newData;
     });
-    
     setErrors(prev => ({ ...prev, [name]: "" }));
-  }, []);
+  }, [allDivisions, userData]);
+
+  // Handle select changes with proper data fetching
+
 
   // Handle input changes
   const handleInputChange = (e) => {
@@ -96,65 +86,52 @@ const handleSelectChange = useCallback((name, value) => {
     setErrors(prev => ({ ...prev, [name]: "" }));
   };
 
-  // Validate form fields (all required except postCode and orderNote)
+  // Form validation
   const validateForm = useCallback(() => {
     const newErrors = {};
+    const requiredFields = [
+      'orderName', 'orderEmail', 'OrderPhone', 
+      'division', 'district', 'city', 'shippingAddress'
+    ];
 
-    if (!formData.orderName.trim()) {
-      newErrors.orderName = "Please give name";
-    }
-    if (!formData.orderEmail.trim()) {
-      newErrors.orderEmail = "Please provide an email";
-    }
-    if (!formData.OrderPhone.trim()) {
-      newErrors.OrderPhone = "Please provide a phone number";
-    }
-    if (!formData.division.trim()) {
-      newErrors.division = "Please select a division";
-    }
-    if (!formData.district.trim()) {
-      newErrors.district = "Please select a district";
-    }
-    if (!formData.city.trim()) {
-      newErrors.city = "Please provide your city or thana";
-    }
-    if (!formData.shippingAddress.trim()) {
-      newErrors.shippingAddress = "Please provide your shipping address";
-    }
-    // postCode is optional, so no error if it is empty
+    requiredFields.forEach(field => {
+      if (!formData[field]?.trim()) {
+        newErrors[field] = `Please ${field.startsWith('order') ? 'provide' : 'select'} ${field.replace(/[A-Z]/g, m => " " + m.toLowerCase())}`;
+      }
+    });
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   }, [formData]);
 
-  // Validate form and dispatch actions on form data change
+  // Update global state
   useEffect(() => {
-    const isFormValid = validateForm();
-    dispatch(setFormValid(isFormValid));
-    dispatch(setFormData(formData));
-  }, [formData, validateForm, dispatch]);
+    const isValid = validateForm();
+    dispatch(setFormValid(isValid));
+    console.log('I am coming here.')
 
-  if (isLoading) return <CheckoutSkeleton/>;
+    dispatch(setFormData(formData));
+  }, [formData]);
+
+  if (isLoading) return <CheckoutSkeleton />;
   if (error) return <div>Error loading user data</div>;
+
   return (
     <div className="w-full">
       <form className="p-6 bg-white border rounded shadow-md">
         <h2 className="mb-4 text-xl font-semibold">CHECKOUT</h2>
 
-        {/* Name, Email, Phone */}
+        {/* Personal Information */}
         <div className="grid grid-cols-1 gap-4 mb-4 md:grid-cols-2">
           <div>
             <Label>Name *</Label>
             <Input
-              type="text"
               name="orderName"
               value={formData.orderName}
               onChange={handleInputChange}
               placeholder="Enter your name"
             />
-            {errors.orderName && (
-              <p className="text-red-500 text-sm">{errors.orderName}</p>
-            )}
+            {errors.orderName && <FormError message={errors.orderName} />}
           </div>
           <div>
             <Label>Email *</Label>
@@ -165,86 +142,78 @@ const handleSelectChange = useCallback((name, value) => {
               onChange={handleInputChange}
               placeholder="Enter your email"
             />
-            {errors.orderEmail && (
-              <p className="text-red-500 text-sm">{errors.orderEmail}</p>
-            )}
+            {errors.orderEmail && <FormError message={errors.orderEmail} />}
           </div>
         </div>
 
+        {/* Contact Information */}
         <div className="grid grid-cols-1 gap-4 mb-4 md:grid-cols-2">
           <div>
             <Label>Phone *</Label>
             <Input
-              type="text"
               name="OrderPhone"
               value={formData.OrderPhone}
               onChange={handleInputChange}
               placeholder="Enter your phone number"
             />
-            {errors.OrderPhone && (
-              <p className="text-red-500 text-sm">{errors.OrderPhone}</p>
-            )}
+            {errors.OrderPhone && <FormError message={errors.OrderPhone} />}
           </div>
           <div>
             <Label>Country *</Label>
             <DynamicSelect
               options={["Bangladesh"]}
-              value={"Bangladesh"}
+              value="Bangladesh"
               placeholder="Select Country"
+              disabled
             />
           </div>
         </div>
 
-        {/* Division, District, City */}
+        {/* Location Information */}
         <div className="grid grid-cols-1 gap-4 mb-4 md:grid-cols-2">
           <div>
             <Label>Division *</Label>
             <DynamicSelect
-              options={divisions?.map(div => div.division)}
+              options={allDivisions?.map(d => d.name)}
               value={formData.division}
               onValueChange={value => handleSelectChange("division", value)}
               placeholder="Select Division"
             />
-            {errors.division && <p className="text-red-500 text-sm">{errors.division}</p>}
+            {errors.division && <FormError message={errors.division} />}
           </div>
-
           <div>
             <Label>District *</Label>
             <DynamicSelect
-              options={districts?.map(dist => dist.district)}
+              options={needDistricts?.map(d => d.name)}
               value={formData.district}
               onValueChange={value => handleSelectChange("district", value)}
               placeholder="Select District"
               disabled={!formData.division}
             />
-            {errors.district && <p className="text-red-500 text-sm">{errors.district}</p>}
+            {errors.district && <FormError message={errors.district} />}
           </div>
         </div>
 
+        {/* Address Details */}
         <div className="grid grid-cols-1 gap-4 mb-4 md:grid-cols-2">
           <div>
-            <Label>City / Thana *</Label>
+            <Label>City/Thana *</Label>
             <Input
-              type="text"
               name="city"
               value={formData.city}
               onChange={handleInputChange}
               placeholder="Your city or thana"
             />
-            {errors.city && <p className="text-red-500 text-sm">{errors.city}</p>}
+            {errors.city && <FormError message={errors.city} />}
           </div>
           <div>
             <Label>Post Code (Optional)</Label>
             <Input
-              type="text"
               name="postCode"
               value={formData.postCode}
               onChange={handleInputChange}
               placeholder="Enter Post Code"
             />
-            {errors.postCode && (
-              <p className="text-red-500 text-sm">{errors.postCode}</p>
-            )}
           </div>
         </div>
 
@@ -256,13 +225,12 @@ const handleSelectChange = useCallback((name, value) => {
             value={formData.shippingAddress}
             onChange={handleInputChange}
             placeholder="Enter your address"
+            rows="3"
           />
-          {errors.shippingAddress && (
-            <p className="text-red-500 text-sm">{errors.shippingAddress}</p>
-          )}
+          {errors.shippingAddress && <FormError message={errors.shippingAddress} />}
         </div>
 
-        {/* Order Note */}
+        {/* Order Notes */}
         <div className="mb-4">
           <Label>Order Note</Label>
           <Textarea
@@ -270,11 +238,17 @@ const handleSelectChange = useCallback((name, value) => {
             value={formData.orderNote}
             onChange={handleInputChange}
             placeholder="Leave a note (optional)"
+            rows="2"
           />
         </div>
       </form>
     </div>
   );
 };
+
+// Helper component for error messages
+const FormError = ({ message }) => (
+  <p className="mt-1 text-sm text-red-500">{message}</p>
+);
 
 export default CheckoutForm;

@@ -17,7 +17,7 @@ const saveDataIntoLocalStorage = (key, data) => {
 };
 
 const addNewDataIntoLocalStorage = (key, data) => {
-  console.log("data data", key, data);
+  
   try {
     const existingData = getDataFromLocalStorage(key)
       ? getDataFromLocalStorage(key)

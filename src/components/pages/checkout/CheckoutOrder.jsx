@@ -30,7 +30,7 @@ const CheckoutOrder = ({ data }) => {
   const [finalCoupon, setFinalCoupon] = useState("")
   const [couponAmount, setCouponAmount] = useState(0)
   const [selectedProduct, setSelectedProduct] = useState(null);
-
+  console.log(data,"checkout data order")
   const path = usePathname();
   const products = Array.isArray(data) ? data : [data];
   // const { data: Checkall } = useGetCheckallQuery();
@@ -38,9 +38,11 @@ const CheckoutOrder = ({ data }) => {
     let totalPrice = 0;
   
     if (path && path.includes('buyNow') && selectedProduct) {
-      const product = selectedProduct?.skus[0];
-      if (product) {
-        totalPrice += product.quantity * parseFloat(product.price || 0);
+      const products = selectedProduct?.skus;
+      if (selectedProduct?.skus?.length) {
+        products?.forEach((sku) => {
+          totalPrice += sku.quantity * parseFloat(sku.price || 0);
+        });
       }
     } else if (products?.length) {
       products.forEach((product) => {
@@ -51,7 +53,6 @@ const CheckoutOrder = ({ data }) => {
         }
       });
     }
-  
     return totalPrice || 0; // Default to 0 if no valid products are found
   };
   const totalPrice = Math.round(calculateTotal().toFixed(2));
@@ -80,7 +81,13 @@ const CheckoutOrder = ({ data }) => {
             if(res?.data?.data?.transaction?.orderId){
               router.push(`/payment?orderId=${res?.data?.data?.transaction?.orderId}`)
               console.log(res?.data?.data?.transaction?.orderId, "this is res");
-              removeDataFromLocalStorage("cart")
+              if (path && path.includes('buyNow')){
+                removeDataFromLocalStorage("buyNowData")
+              }
+              else{
+                removeDataFromLocalStorage("cart")
+              }
+              
             }
         } else {
             // Show modal with validation message

@@ -39,7 +39,7 @@ const Address = ({
           <AddressField label="Country" value="Bangladesh" loading={loading} />
           <AddressField label="Division" value={userAddress?.division} loading={loading} />
           <AddressField label="District" value={userAddress?.district} loading={loading} />
-          <AddressField label="City" value={userAddress?.city} loading={loading} />
+          <AddressField label="Thana" value={userAddress?.city} loading={loading} />
           <AddressField label="Postal Code" value={userAddress?.postCode} loading={loading} />
           <AddressField label="Address" value={userAddress?.address} loading={loading} />
         </div>
