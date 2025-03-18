@@ -15,16 +15,20 @@ import { useGetSingleProductQuery } from "@/components/Redux/services/productApi
 import { usePostCartMutation } from "@/components/Redux/services/cartApi";
 import { getLocalStorage } from "@/components/shared/LocalStorage/LocalStorage";
 import ProductNotFound from "@/components/pages/ProductDetails/Not-found/ProductNotFound";
-import { addNewDataIntoLocalStorage, findDataFromLocalStorage } from "@/utils/localstorage";
+import { addNewDataIntoLocalStorage, findDataFromLocalStorage, saveDataIntoLocalStorage } from "@/utils/localstorage";
+import useUser from "@/hooks/useUser";
+import useCart from "@/hooks/useCart";
 
 const ProductPage = ({ params }) => {
+  const {cart, AddIntocart, RemoveFromcart, removeAllcart,UpdateCartQuantity} = useCart()
   const router = useRouter();
   const id = params?.id;
-  const userData = typeof window !== 'undefined' && window.localStorage.getItem('user');
-  const user = JSON.parse(userData);
+  // const userData = typeof window !== 'undefined' && window.localStorage.getItem('user');
+  // const user = JSON.parse(userData);
+  const {user, loading} = useUser()
   
   const { data, isLoading, isError } = useGetSingleProductQuery(id);
-  const [postCart] = usePostCartMutation();
+  // const [postCart] = usePostCartMutation();
   const [type,setType] = useState("image");
   const [selectedImage, setSelectedImage] = useState("");
   const [productSku, setProductSku] = useState([]);
@@ -87,7 +91,8 @@ const ProductPage = ({ params }) => {
         toast.error("Already added to cart")
         return;
        };
-         addNewDataIntoLocalStorage("cart", cartData);
+        //  addNewDataIntoLocalStorage("cart", cartData);
+        AddIntocart(cartData);
            
 
         toast.success("Added to cart");
@@ -100,13 +105,17 @@ const ProductPage = ({ params }) => {
   };
 
   const handleBuyNow = () => {
+    if(!user){
+      saveDataIntoLocalStorage("redirect", window.location.pathname);
+       window.location.href = "/login"
+    }
     if (productSku.length === 0) {
       toast.info("Please select product!");
       return;
     }
 
     const buyNowData = {
-      productId: String(data?.data?.item_id),
+      id: String(data?.data?.item_id),
       userId: user._id,
       productTitle: data?.data?.title,
       productImage: data?.data?.main_imgs[0],
@@ -117,23 +126,23 @@ const ProductPage = ({ params }) => {
     router.push('/buyNow');
   };
   return (
-      <div className=" pb-4 pt-2 container">
+      <div className="container pt-2 pb-4 ">
         {/* Breadcrumb */}
-        <nav className="flex items-center  mb-5 text-sm  gap-1 relative left-1 container no-padding">
-          <Link className="hover:text-primary text-gray-600" href="/"><span className=" font-bold">Home</span></Link>
-          <span className="text-gray-400 font-bold">{">"}</span>
-         <Link className="hover:text-primary text-gray-600" href={`/product-details/${id}`}><span className=" font-bold">Product Details</span></Link> 
+        <nav className="container relative flex items-center gap-1 mb-5 text-sm left-1 no-padding">
+          <Link className="text-gray-600 hover:text-primary" href="/"><span className="font-bold ">Home</span></Link>
+          <span className="font-bold text-gray-400">{">"}</span>
+         <Link className="text-gray-600 hover:text-primary" href={`/product-details/${id}`}><span className="font-bold ">Product Details</span></Link> 
         </nav>
 
         {/* Main Content */}
         {
           !isLoading && !data?.data ? <ProductNotFound/> 
           :
-          <div className="flex flex-col xl:flex-row xl:gap-6  container no-padding">
+          <div className="container flex flex-col xl:flex-row xl:gap-6 no-padding">
           {/* Product Info Container */}
           <div className="flex-1 ">
             {/* Product Gallery and Details Container */}
-            <div className=" rounded-lg  overflow-hidden">
+            <div className="overflow-hidden rounded-lg ">
               <div className="flex flex-col md:flex-row">
                 {/* Product Gallery */}
                 <div className="md:w-[40%] ">
@@ -167,7 +176,7 @@ const ProductPage = ({ params }) => {
               </div>
 
               {/* Mobile Shipping Details */}
-              <div className="xl:hidden mt-10 border-t border-gray-100">
+              <div className="mt-10 border-t border-gray-100 xl:hidden">
                 <ShippingDetails
                   CompleteTheAddtoCart={CompleteTheAddtoCart}
                   handleBuyNow={handleBuyNow}
@@ -181,14 +190,14 @@ const ProductPage = ({ params }) => {
             </div>
 
             {/* Product Description Tabs */}
-            <div className="bg-white rounded-lg shadow-sm mt-6">
+            <div className="mt-6 bg-white rounded-lg shadow-sm">
               <DetailsTab isLoading={isLoading} productData={data?.data} isError={isError} />
             </div>
           </div>
 
           {/* Right Sidebar - Shipping Details */}
-          <div className="hidden xl:block   flex-shrink-0 ">
-            <div className="sticky top-20  rounded-lg shadow-sm">
+          <div className="flex-shrink-0 hidden xl:block ">
+            <div className="sticky rounded-lg shadow-sm top-20">
               <ShippingDetails
                 CompleteTheAddtoCart={CompleteTheAddtoCart}
                 handleBuyNow={handleBuyNow}

@@ -87,8 +87,8 @@ const DepositTable = ({data,isLoading}) => {
             isLoading && <div className="w-full py-4 bg-white mx-auto flex justify-center items-center">Loading...</div>
           }
            {isModalOpen && (
-                  <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-                    <div className="bg-white p-6 rounded-md max-w-md w-full">
+                  <div className="fixed z-[200] inset-0 flex items-center justify-center bg-black bg-opacity-50 overflow-auto ">
+                    <div className="bg-white p-6 rounded-md max-w-md w-full max-h-[800px]">
                       <h2 className="text-xl font-bold mb-4">Slip Image</h2>
                       {slip ? (
                         <Image  height={400}

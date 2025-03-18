@@ -10,7 +10,9 @@ import { toast } from 'react-toastify';
 import { getDataFromLocalStorage, updateLocalStorageCartQuantity,removeOneDataFromLocalStorage } from '@/utils/localstorage';
 import Swal from 'sweetalert2'
 import Link from 'next/link';
-const CartProduct = ( { data,setData} ) => {
+import useCart from '@/hooks/useCart';
+const CartProduct = ({ data} ) => {
+    const {cart, AddIntocart, RemoveFromcart, removeAllcart,UpdateCartQuantity} = useCart()
     const [updateCheckbox, {isLoading:checkboxLoading}] = useUpdateCheckboxMutation()
     const [count, setCount] = useState(1);
     const [products, setproduct] = useState({})
@@ -31,8 +33,8 @@ const CartProduct = ( { data,setData} ) => {
         // // }
         // console.log(sku, newQuantity)
         try{
-            updateLocalStorageCartQuantity("cart",productId,sku, newQuantity)
-            setData(getDataFromLocalStorage("cart") || [])
+            // updateLocalStorageCartQuantity("cart",productId,sku, newQuantity)
+            UpdateCartQuantity(productId,sku,newQuantity)
             
         }
         catch(err){
@@ -59,8 +61,8 @@ const CartProduct = ( { data,setData} ) => {
             confirmButtonText: "Yes, delete it!"
           }).then((result) => {
             if (result.isConfirmed) {
-                removeOneDataFromLocalStorage("cart",id);
-                setData(getDataFromLocalStorage("cart") || [])
+                // removeOneDataFromLocalStorage("cart",id);
+                RemoveFromcart(id)
               Swal.fire({
                 title: "Deleted!",
                 text: "Your file has been deleted.",
@@ -81,7 +83,7 @@ const CartProduct = ( { data,setData} ) => {
 
     return (
         <div className='w-full  '>
-            {data?.map((product, index) => (
+            {cart?.map((product, index) => (
                 <div className=' bg-white w-full px-6 my-4 pb-4 border-2 rounded-md shadow-md border-red-50 ' key={product._id}>
                     <div className="pt-4 border-b">
                         <div className="flex items-center justify-between">

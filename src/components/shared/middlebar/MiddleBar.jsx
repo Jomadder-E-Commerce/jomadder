@@ -12,7 +12,7 @@ import { logout } from "../../Redux/features/AllSlice/authSlice";
 import { useGetwhishListQuery } from "../../Redux/services/wishlistApi/wishlistApi";
 import { useGetCartListQuery } from "../../Redux/services/cartApi";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import useUser from "@/hooks/useUser";
 import { BsCart2 } from "react-icons/bs";
 import WishlistBadge from "../badge/WishlistBadge";
@@ -29,11 +29,12 @@ const MiddleBar = () => {
   const dispatch = useDispatch();
   const token = getLocalStorage("token");
   const [loading, setLoading] = useState(false);
-
+   // Create a ref for the dropdown container
   const [cart,setCartData] = useState(getDataFromLocalStorage("cart") || []);
   const [wishlist,setWishlistData]=useState(getDataFromLocalStorage("wishlist") || []);
    console.log(cart,wishlist)
   const path = usePathname();
+  const dropdownRef = useRef(null);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const handleLogout = () => {
@@ -46,8 +47,30 @@ const MiddleBar = () => {
 
   const toggleDropdown = (state) => setDropdownOpen(state);
 
-  const showCategory = !path.includes("/all-product/") && !path.includes("/searchImage/");
+  const showCategory = (!path.includes("/all-product") && !path.includes("/searchImage/")) && !path.includes("/shop-products/");
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setDropdownOpen(false);
+      }
+    };
 
+    const handleEscape = (event) => {
+      if (event.key === "Escape") {
+        setDropdownOpen(false);
+      }
+    };
+
+    if (dropdownOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+      document.addEventListener("keydown", handleEscape);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleEscape);
+    };
+  }, [dropdownOpen]);
 
     const RefreshPage = () => {
       if(window.location.href == "/"){
@@ -61,14 +84,14 @@ const MiddleBar = () => {
     <>
 
 {loading && (
-        <div className="fixed inset-0 z-[1000] flex items-center justify-center bg-black bg-opacity-70">
+        <div className="fixed inset-0 z-[50] flex items-center justify-center bg-black bg-opacity-70">
           {/* A simple spinner using Tailwind CSS */}
-          <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-white"></div>
+          <div className="w-16 h-16 border-t-4 border-b-4 border-white rounded-full animate-spin"></div>
         </div>
       )}
-    <div className="bg-gray-100 sticky md:top-0 top-[44px]  z-[200] w-full ">
-     <div className="sticky hidden top-0 z-50 md:flex flex-col mb-3 border-b container no-padding border-secondary">
-      <div className="w-full container flex items-center justify-between py-0">
+    <div className="bg-gray-100 sticky md:top-0 top-[44px]  z-[50] w-full ">
+     <div className="container sticky top-0 z-50 flex-col hidden mb-3 border-b md:flex no-padding border-secondary">
+      <div className="container flex items-center justify-between w-full py-0">
         {/* Logo and Category */}
         <div className="flex gap-16 items-center lg:w-[30%]">
           <div onClick={RefreshPage} className="flex items-center cursor-pointer">
@@ -85,14 +108,14 @@ const MiddleBar = () => {
         </div>
 
         {/* Search Bar */}
-        <div className="hidden  w-2/5 gap-5 p-2 md:flex">
+        <div className="hidden w-2/5 gap-5 p-2 md:flex">
           <Search />
         </div>
      
         {/* Navigation Icons */}
         <nav className="flex items-center gap-3 lg:w-[30%] justify-end">
           {/* Wishlist */}
-         <Link target="_blank" className="flex gap-1 font-semibold items-center text-lg ml-3 text-black" href="/shipping-rate"><IoIosCalculator />Shipping Rate</Link>
+         <Link target="_blank" className="flex items-center gap-1 ml-3 text-lg font-semibold text-black" href="/shipping-rate"><IoIosCalculator />Shipping Rate</Link>
 
           {/* <div className="relative">
             <Link href="/wishlist" className="text-2xl">
@@ -122,11 +145,11 @@ const MiddleBar = () => {
           <div
             // onMouseEnter={() => toggleDropdown(true)}
             // onMouseLeave={() => toggleDropdown(false)}
-            onClick={() => toggleDropdown(!dropdownOpen)}
-            onMouseLeave={() => toggleDropdown(false)}
+            ref={dropdownRef}
+            // onMouseLeave={() => toggleDropdown(false)}
             className="relative mt-2"
           >
-            <button className="p-4 -m-4">
+            <button className="p-4 -m-4" onClick={() => toggleDropdown(!dropdownOpen)}>
               {user?.photoURL ? (
                 <Image
                   src={user?.photoURL}

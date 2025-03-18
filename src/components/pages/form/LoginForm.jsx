@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import Image from "next/image";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
@@ -31,12 +31,18 @@ import {
 } from "@/components/shared/LocalStorage/LocalStorage";
 import { handleGoogleLogin, handleFacebookLogin } from "./formSubmitHandler";
 import { preset_api_v1 } from "@/app/control_version_api";
+import { useDispatch } from "react-redux";
+import { setCredentials } from "@/components/Redux/features/AllSlice/authSlice";
 
 const LoginForm = () => {
   const baseApi = process.env.NEXT_PUBLIC_BASE_API + preset_api_v1;
   const router = useRouter();
+  const pathname = usePathname()
+  const dispatch = useDispatch()
   const [isLoading, setIsLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
+
+
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -72,17 +78,27 @@ const LoginForm = () => {
         throw new Error("No data returned from API");
       }
 
+      dispatch(setCredentials({
+        user: data,
+        token: data.accessToken,
+        refreshtoken: data.refreshtoken
+      }));
+
       // Save tokens and user information
       setLocalStorage("user", data);
       setCookie(data.refreshToken);
       setLocalStorage("token", data.accessToken);
 
       // Retrieve and then clear redirect path (if any)
-      const redirectPath = getLocalStorage("redirectPath") || "/";
-      removeLocalStorage("redirectPath");
+      let redirectPath = getLocalStorage("redirect") || "/";
+      redirectPath = redirectPath.replace(/^"(.*)"$/, '$1');
+      removeLocalStorage("redirect");
+
 
       toast.success("Login successful");
-      router.push(redirectPath);
+
+      router.replace(redirectPath);
+
     } catch (error) {
       console.error(error);
       const message =
@@ -147,39 +163,39 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen py-5  md:px-5  bg-gradient-to-r from-gray-200 to-blue-200">
+    <div className="flex items-center justify-center min-h-screen py-5 md:px-5 bg-gradient-to-r from-gray-200 to-blue-200">
       <div className="md:rounded-xl overflow-hidden w-full md:w-[600px]">
         <div className="flex items-center justify-center w-full">
           <div className="flex flex-col justify-between flex-grow">
             <div className="flex flex-col items-center justify-center">
-              <div className="w-full bg-gray-50 rounded-md">
+              <div className="w-full rounded-md bg-gray-50">
                 <div className="p-6 space-y-6 sm:p-8">
-                  <div className="flex items-center justify-center gap-1">
-                    <Link href="/">
-                      <Image
-                        alt="Jomadder logo"
-                        src={Logo}
-                        height={40}
-                        width={40}
-                      />
-                    </Link>
-                    <p className="text-xl font-bold leading-tight text-center tracking-tight text-gray-700 md:text-3xl">
+                  {/* <div> */}
+                  <Link href="/" className="flex items-center justify-center gap-1">
+                    <Image
+                      alt="Jomadder logo"
+                      src={Logo}
+                      height={40}
+                      width={40}
+                    />
+                    <p className="text-xl font-bold leading-tight tracking-tight text-center text-gray-700 md:text-3xl">
                       Jomadder
                     </p>
-                  </div>
+                  </Link>
+                  {/* </div> */}
                   <div className="text-center">
                     <p className="text-xl font-bold leading-tight tracking-tight text-gray-600 md:text-2xl">
                       Sign In
                     </p>
-                    <p className="text-gray-400 mt-2">
+                    <p className="mt-2 text-gray-400">
                       Welcome back! Log in to your account
                     </p>
                   </div>
-                  <div className="flex flex-col md:flex-row gap-2">
+                  <div className="flex flex-col gap-2 md:flex-row">
                     <Button
                       onClick={handleGoogle}
                       variant="outline"
-                      className="w-full bg-white flex items-center justify-center space-x-2"
+                      className="flex items-center justify-center w-full space-x-2 bg-white"
                     >
                       <Image
                         src={GoogleLogo}
@@ -188,10 +204,10 @@ const LoginForm = () => {
                       />
                       <span>Sign in with Google</span>
                     </Button>
-                    <Button
+                    {/* <Button
                       onClick={handleFacebook}
                       variant="outline"
-                      className="w-full flex items-center justify-center space-x-2"
+                      className="flex items-center justify-center w-full space-x-2"
                     >
                       <Image
                         src={FacebookLogo}
@@ -199,7 +215,7 @@ const LoginForm = () => {
                         className="w-5 h-5"
                       />
                       <span>Sign in with Facebook</span>
-                    </Button>
+                    </Button> */}
                   </div>
                   <p className="text-center">or</p>
                   <form onSubmit={handleLogin}>
@@ -224,7 +240,7 @@ const LoginForm = () => {
                         type={showPassword ? "text" : "password"}
                       />
                       <div
-                        className="absolute right-0 flex items-center pr-3 cursor-pointer top-1/2 transform -translate-y-1/2"
+                        className="absolute right-0 flex items-center pr-3 cursor-pointer  top-[50px] transform -translate-y-1/2"
                         onClick={() => setShowPassword((prev) => !prev)}
                       >
                         {showPassword ? (
@@ -244,13 +260,13 @@ const LoginForm = () => {
                     </div>
                     <button
                       type="submit"
-                      className="py-3 text-white rounded-md w-full bg-primary"
+                      className="w-full py-3 text-white rounded-md bg-primary"
                       disabled={isLoading}
                     >
                       {isLoading ? "Signing in..." : "Sign In"}
                     </button>
                   </form>
-                  <p className="flex items-center justify-between w-full sm:text-base text-sm">
+                  <p className="flex items-center justify-between w-full text-sm sm:text-base">
                     <span className="text-slate-700">
                       Don’t have an account?
                     </span>

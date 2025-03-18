@@ -8,32 +8,36 @@ import {   getDataFromLocalStorage,
     addNewDataIntoLocalStorage,
     removeOneDataFromLocalStorage, } from "@/utils/localstorage";
 import { GetfullPricing, getPercentageForPrice } from "../pricing/Pricing";
+import useWishlist from "@/hooks/useWishlist";
+
 
 
 const ProductCard = ({ name, price, discount, image, id }) => {
-    const [productPrice, setProductPrice] = useState(0);
+    const [productPrice, setProductPrice] = useState(Math.round(getPercentageForPrice(price)));
     const [isInWishlist, setIsInWishlist] = useState(false);
+  const {wishlist:wishlistData, AddIntoWishlist, RemoveFromWishlist} = useWishlist()
+//     useEffect(() => {
+
+//       // console.log(data?.data)
+//       const pricingData = Math.round(getPercentageForPrice(price))
+
+//       setProductPrice(pricingData)
+
+// }, [price])
   
     useEffect(() => {
-
-      // console.log(data?.data)
-      const pricingData = Math.round(getPercentageForPrice(price))
-
-      setProductPrice(pricingData)
-
-}, [price])
-  
-    useEffect(() => {
-      const wishlist =  [];
-      console.log("data data data",wishlist)
+      const wishlist =  [...wishlistData];
+      
       const productInWishlist = wishlist?.find((item) => item.id === id);
       setIsInWishlist(productInWishlist);
     }, [id]);
   
     const handleWishlistClick = () => {
       if (isInWishlist) {
-        removeOneDataFromLocalStorage("wishlist", id);
+        // removeOneDataFromLocalStorage("wishlist", id);
+        RemoveFromWishlist(id)
         setIsInWishlist(false);
+
       } else {
         const newWishlistItem = {
           id,
@@ -41,7 +45,8 @@ const ProductCard = ({ name, price, discount, image, id }) => {
           price: productPrice,
           image,
         };
-        addNewDataIntoLocalStorage("wishlist", newWishlistItem);
+        AddIntoWishlist(newWishlistItem)
+        // addNewDataIntoLocalStorage("wishlist", newWishlistItem);
         setIsInWishlist(true);
       }
     };

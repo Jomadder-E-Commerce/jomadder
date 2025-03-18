@@ -8,29 +8,40 @@ import CartPage from '@/components/pages/cart/CartPage';
 import { X } from 'lucide-react';
 import WishlistModal from './WishlistModal';
 import { AnimatePresence, motion } from 'framer-motion';
-import  Drawer  from 'react-modern-drawer';
+import Drawer from 'react-modern-drawer';
+import useCart from '@/hooks/useCart';
+import WishlistBadge from '../badge/WishlistBadge';
 
 const CartModal = () => {
-  const [cart, setCartData] = useState(getDataFromLocalStorage("cart") || []);
-    const [openModal, setOpenModal] = useState(false);
-    // useEffect(() => {
-    //     if (openModal) {
-    //         document.body.style.overflow = 'hidden';
-    //     } else {
-    //         document.body.style.overflowY = 'auto';
-    //     }
+  const { cart, AddIntocart, RemoveFromcart, removeAllcart } = useCart();
+  const [openModal, setOpenModal] = useState(false);
+  const [drawerSize, setDrawerSize] = useState(305); // Default to smaller size
 
-    //     setWishlistData(getDataFromLocalStorage("wishlist") || [])
-    //     //  document.body.style.overflow = 'auto';
-    // }, [openModal]);
-    const toggleDrawer = ()=> setOpenModal((prevState) => !prevState);
+  // Handle window resize for responsive drawer size
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) { // Adjust breakpoint as needed
+        setDrawerSize(500);
+      } else {
+        setDrawerSize(280);
+      }
+    };
 
-
-   const GoOpenModal = ()=>{
-    setCartData(getDataFromLocalStorage("cart") || [])
+    // Set initial size
+    handleResize();
     
-      setOpenModal(true)
-    }
+    // Add event listener
+    window.addEventListener('resize', handleResize);
+    
+    // Cleanup
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const toggleDrawer = () => setOpenModal((prevState) => !prevState);
+
+  const GoOpenModal = () => {
+    setOpenModal(true);
+  };
 
   return (
     <>
@@ -39,35 +50,35 @@ const CartModal = () => {
         <div onClick={GoOpenModal} className="text-3xl cursor-pointer md:flex hidden">
           <BsCart2 className="font-semibold text-primary" />
         </div>
-        <CartBadge count={cart.length || 0} show={cart.length > 0} />
+        <WishlistBadge count={cart?.length} show={cart?.length} />
       </div>
       <div className="md:hidden flex flex-col items-center w-[80px] relative -right-5">
         <div onClick={GoOpenModal} className="relative">
           <BsCart2 className="md:text-2xl text-lg" />
-          <span className="absolute -top-1 -right-3 text-white text-center h-4 font-medium bg-red-500 rounded-full px-1 text-xs">
+          <span className="absolute -top-2 left-[26%] sm:left-[28%] md:left-[65%] text-white text-center h-4 font-medium bg-red-500 rounded-full px-1 text-xs">
             {cart?.length}
           </span>
         </div>
         <h3 className="text-[11px] font-medium">Cart</h3>
       </div>
 
-      {/* Animate the modal with AnimatePresence */}
       <Drawer
-          open={openModal}
-          onClose={toggleDrawer}
-          direction="right"
-          className="bla bla bla"
-          size="315px"
-        >
-          <div className="flex h-full w-full flex-col justify-between bg-white pb-10 drop-shadow-sm overflow-y-auto ">
-            <X onClick={()=>{setOpenModal(false)}} className='absolute top-5 right-3 cursor-pointer text-black'/>
-            <div className="mt-8">
-          <CartPage setData={setCartData} data={cart} setOpenModal={setOpenModal} />    
-            </div>
-          
+        open={openModal}
+        onClose={toggleDrawer}
+        direction="right"
+        size={drawerSize}
+        style={{ zIndex: 9999 }} // Ensure drawer is on top
+      >
+        <div className="flex bg-white z-50 h-full w-full flex-col justify-between pb-10 drop-shadow-sm overflow-y-auto">
+          <X
+            onClick={() => { setOpenModal(false) }}
+            className='absolute top-5 right-3 cursor-pointer text-black'
+          />
+          <div className="mt-8">
+            <CartPage setOpenModal={setOpenModal} />
           </div>
-        
-        </Drawer>
+        </div>
+      </Drawer>
     </>
   );
 };

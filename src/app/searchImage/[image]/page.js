@@ -6,6 +6,7 @@ import TopBar from "@/components/shared/TopBar";
 
 const searchImage = ({ params }) => {
   const image = decodeURIComponent(params?.image);
+  console.log("params",decodeURIComponent(params?.image))
   return (
     <div>
       <TopBar />

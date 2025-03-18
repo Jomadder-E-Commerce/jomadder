@@ -52,7 +52,7 @@ const Navbar = () => {
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={!path.startsWith("/all-product") ? () => setIsSidebarOpen(false) : undefined}
                     >
-                       <div>
+                            <div className={`${path.startsWith("/all-product") && 'hidden'} hidden `}>
                          <Accordion type="single" collapsible value={isSidebarOpen ? "item-1" : undefined}>
                             <AccordionItem value="item-1">
                                 <AccordionTrigger className="p-2.5 rounded-md font-bold">

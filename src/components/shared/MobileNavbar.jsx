@@ -23,6 +23,7 @@ import { getLocalStorage } from "./LocalStorage/LocalStorage";
 import { getDataFromLocalStorage } from "@/utils/localstorage";
 import WishlistModal from "./modal/WishlistModal";
 import CartModal from "./modal/CartModal";
+import SpeedDial from "../pages/homePage/SpeedDial";
 
 const MobileNavbar = () => {
   const { userRole, user } = useUser();
@@ -53,7 +54,7 @@ const MobileNavbar = () => {
   return (
     <div className="relative ">
       {/* Bottom Fixed Navbar */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 flex justify-between items-center text-primary bg-white shadow-md border-t py-2 px-4">
+      <div className="fixed bottom-0 left-0 right-0 z-[40] flex justify-between items-center text-primary bg-white shadow-md border-t py-2 px-4">
         {/* Left Side: Category and Wishlist */}
         <div className="flex items-center gap-4">
           <div className="flex flex-col items-center">
@@ -61,22 +62,22 @@ const MobileNavbar = () => {
             <h3 className="text-[11px] font-medium">Category</h3>
           </div>
 
-          {/* <div className="flex flex-col items-center relative">
+          {/* <div className="relative flex flex-col items-center">
             <Link href="/wishlist">
-              <FaRegHeart className="md:text-2xl text-lg" />
-              <span className="absolute -top-1 -right-0 text-white text-center h-4 font-medium bg-red-500 rounded-full px-1 text-xs">
+              <FaRegHeart className="text-lg md:text-2xl" />
+              <span className="absolute h-4 px-1 text-xs font-medium text-center text-white bg-red-500 rounded-full -top-1 -right-0">
                 {wishlist?.length}
               </span>
             </Link>
             <h3 className="text-[11px] font-medium">Wishlist</h3>
           </div> */}
-          <WishlistModal/>
+          <WishlistModal />
         </div>
 
         {/* Center Logo */}
         <div
           onClick={RefreshPage}
-          className="absolute left-1/2 transform -translate-x-1/2 -top-6 bg-white rounded-full p-2 shadow-lg"
+          className="absolute p-2 transform -translate-x-1/2 bg-white rounded-full shadow-lg left-1/2 -top-6"
         >
           <Image
             unoptimized
@@ -92,14 +93,19 @@ const MobileNavbar = () => {
         <div className="flex items-center gap-4">
           {/* <div className="flex flex-col items-center  w-[80px] ">
             <Link href="/cart" className="relative">
-              <BsCart2 className="md:text-2xl text-lg" />
-              <span className="absolute -top-1 -right-3 text-white text-center h-4 font-medium bg-red-500 rounded-full px-1 text-xs">
+              <BsCart2 className="text-lg md:text-2xl" />
+              <span className="absolute h-4 px-1 text-xs font-medium text-center text-white bg-red-500 rounded-full -top-1 -right-3">
                 {cart?.length}
               </span>
             </Link>
             <h3 className="text-[11px] font-medium">Cart</h3>
           </div> */}
-          <CartModal/>
+          <CartModal />
+
+          <div className="fixed md:bottom-4 bottom-12 md:right-12 right-9">
+            <SpeedDial className='' />
+            {/* <SpeedDialPortal/> */}
+          </div>
 
           <button onClick={toggleDrawer} className="flex flex-col items-center invisible">
             <GoPerson className="text-2xl" />

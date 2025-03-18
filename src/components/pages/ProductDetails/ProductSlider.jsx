@@ -7,7 +7,7 @@ import "swiper/css/thumbs";
 import "swiper/css/bundle";
 import ProductSliderSkeleton from "@/components/all-skeleton/ProductSkeleton/ProductSliderSkeleton";
 import ShopDetailsBar from "./shopDetails/ShopDetailsBar";
-
+import { FaPlay } from "react-icons/fa";
 const ProductSlider = ({ productData, isError, isLoading, selectedImage, handleChooseImage, type, setType }) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [zoomed, setZoomed] = useState(false);
@@ -68,7 +68,7 @@ const ProductSlider = ({ productData, isError, isLoading, selectedImage, handleC
                   width={1000}
                   height={1200}
                   loading="lazy"
-                  className="cursor-pointer object-cover  rounded-lg object-center  w-full  md:h-[400px] sm:h-[300px] h-[200px]"
+                  className="cursor-pointer object-cover  rounded-lg object-center h-full w-full  md:max-h-[600px] sm:max-h-[400px] max-h-[400px]"
                   alt="Product Image"
                 />
                 {zoomed && (
@@ -89,26 +89,27 @@ const ProductSlider = ({ productData, isError, isLoading, selectedImage, handleC
         )}
 
         <div className="gap-2.5 justify-start my-2.5 grid grid-cols-4 md:grid-cols-6 w-full">
-          {video && (
-            <div
-              className="relative rounded-md w-full border hover:border-blue-900 cursor-pointer overflow-hidden"
-              onClick={() => handleFewthings(productData?.video_url)}
-            >
-              {/* Video Thumbnail */}
-              <video
-                className="object-cover border rounded-lg object-center max-h-[60px] h-full w-full"
-                src={video}
-                muted
-                loop
-                playsInline
-              ></video>
+  {/* Video Thumbnail */}
+  {video && (
+        <div
+          className="relative rounded-md w-full border hover:border-blue-900 cursor-pointer overflow-hidden"
+          onClick={() => handleFewthings(video)}
+        >
+          {/* Thumbnail Preview */}
+          <video
+            className="object-cover border rounded-lg object-center max-h-[60px] h-full w-full"
+            src={video}
+            muted
+            loop
+            playsInline
+          ></video>
 
-              {/* Play Button Overlay */}
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-100 transition-opacity duration-300">
-                <button className="bg-white text-black rounded-full p-2 shadow-lg">▶</button>
-              </div>
-            </div>
-          )}
+          {/* Play Button Overlay */}
+          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+            <button className="bg-white text-black rounded-full p-2 shadow-lg"><FaPlay className="text-[12px]" /></button>
+          </div>
+        </div>
+      )}
 
           {productData?.main_imgs.length > 0 &&
             productData?.main_imgs.map((imageUrl, idx) => (

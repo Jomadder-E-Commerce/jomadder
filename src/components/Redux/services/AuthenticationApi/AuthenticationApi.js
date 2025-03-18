@@ -30,7 +30,7 @@ const AuthenticationApi = frontendApi.injectEndpoints({
         url: "/user",
         method: "PATCH",
         body: userData,
-        headers: { Authorization: `Bearer ${getLocalStorage("tokens")}` },
+        headers: { Authorization: `Bearer ${getLocalStorage("token")}` },
       }),
     }),
     PostForgetPassword: build.mutation({
@@ -44,7 +44,7 @@ const AuthenticationApi = frontendApi.injectEndpoints({
         url: "/user",
         method: "PATCH",
         body: userData,
-        headers: { Authorization: `Bearer ${getLocalStorage("tokens")}` },
+        headers: { Authorization: `Bearer ${getLocalStorage("token")}` },
       }),
     }),
     ChangePassword: build.mutation({
@@ -52,7 +52,7 @@ const AuthenticationApi = frontendApi.injectEndpoints({
         url: "/auth/changepassword",
         method: "PATCH",
         body: userData,
-        headers: { Authorization: `Bearer ${getLocalStorage("tokens")}` },
+        headers: { Authorization: `Bearer ${getLocalStorage("token")}` },
       }),
     }),
     VerifyCode: build.mutation({

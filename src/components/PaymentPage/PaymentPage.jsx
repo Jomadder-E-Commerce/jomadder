@@ -91,7 +91,7 @@ const PaymentPage = () => {
       const res = await updateTransaction({ id: orderId, body }).unwrap();
       if (res.success) {
         toast.success('Transaction  successfully');
-        router.push(`/review-page`)
+        router.push(`/order-confirmation/${orderId}`)
       } else {
         toast.error('Transaction Failed');
       }
@@ -155,11 +155,11 @@ const PaymentPage = () => {
           </div>
         </div>
         {/* Order Status */}
-        <div className="bg-white p-6 rounded shadow-md mb-6 text-center border">
+        {/* <div className="bg-white p-6 rounded shadow-md mb-6 text-center border">
           <Image unoptimized src={cart} alt="Order Success" className='mx-auto' width={150} height={150} />
           <h2 className="text-2xl font-semibold mt-4">Order Placed Successfully</h2>
           <p className="text-gray-500">Please pay now to confirm your order.</p>
-        </div>
+        </div> */}
         <div className="flex flex-col xl:flex-row relative gap-4">
           <div className=" xl:w-[55%] w-full">
             {

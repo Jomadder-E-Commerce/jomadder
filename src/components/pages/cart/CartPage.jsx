@@ -7,8 +7,10 @@ import { ShoppingCart } from 'lucide-react';
 import CartSkeleton from '@/components/all-skeleton/cartSkeleton/CartSkeleton';
 import moment from 'moment';
 import { getDataFromLocalStorage } from '@/utils/localstorage';
+import useCart from '@/hooks/useCart';
 
-const CartPage = ({data,setData}) => {
+const CartPage = () => {
+    const {cart, AddIntocart, RemoveFromcart, removeAllcart} = useCart()
     // const { data, isLoading } = useGetCartListQuery();
     // const [data, setData] = useState(getDataFromLocalStorage("cart") || []);
     // if(isLoading){
@@ -24,7 +26,7 @@ const CartPage = ({data,setData}) => {
                 </div> 
             </div>
             {
-                data?.length === 0 ? (
+               cart?.length == 0 ? (
                     <EmptyPage
                         img={<ShoppingCart className="w-full text-gray-400" />}
                         title={'Your cart is empty!'}
@@ -32,9 +34,9 @@ const CartPage = ({data,setData}) => {
                     />
                 ) : (
                     <div className="flex flex-col gap-4">
-                        <CartProduct setData={setData} data={data} />
+                        <CartProduct data={cart} />
                         <div className="">
-                        <CartQuantity data={data} />
+                        <CartQuantity data={cart} />
                         </div>
                         
                     </div>

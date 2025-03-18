@@ -21,6 +21,7 @@ import  Drawer  from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import logo from "/src/assets/logo/logo.png";
 import { UserDropdown } from "./middlebar/UserDropdown";
+import { ClipboardList } from "lucide-react";
 
 const TopBar = () => {
   const { userRole = "", user = {} } = useUser();
@@ -69,7 +70,7 @@ const TopBar = () => {
   return (
     <>
     {loading && (
-        <div className="fixed inset-0 z-[1000] flex items-center justify-center bg-black bg-opacity-70">
+        <div className="fixed inset-0 z-[40] flex items-center justify-center bg-black bg-opacity-70">
           {/* A simple spinner using Tailwind CSS */}
           <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-white"></div>
         </div>
@@ -136,6 +137,9 @@ const TopBar = () => {
           /></div>
          
           <div className="flex gap-4 items-center ">
+          <Link  className="text-white" href="/profile/order" >
+              <ClipboardList className="text-lg text-white" />
+            </Link>
             <Link  className="text-white" href="tel:8801767559231" >
               <FaPhoneVolume className="text-lg text-white" />
             </Link>
@@ -143,7 +147,7 @@ const TopBar = () => {
                         // onMouseEnter={() => toggleDropdown(true)}
                         // onMouseLeave={() => toggleDropdown(false)}
                         onClick={() => toggleDropdown(!dropdownOpen)}
-                        onMouseLeave={() => toggleDropdown(false)}
+                        // onMouseLeave={() => toggleDropdown(false)}
                         className="relative "
                       >
                       

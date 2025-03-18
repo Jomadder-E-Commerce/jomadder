@@ -33,7 +33,7 @@ const MyProfile= ({ type })=> {
     email: "",
     role: "",
     phone: "",
-    gender: "male",
+    gender: "",
     dateofbirth: "",
     division: "",
     district: "",
@@ -46,6 +46,7 @@ const MyProfile= ({ type })=> {
     shopCode: "",
     shopAddress: "",
     photo: "",
+    shopName:""
   });
 
 
@@ -72,6 +73,7 @@ const MyProfile= ({ type })=> {
         address: userData?.address?.address || "",
 
         // Shop fields
+        shopName: userData?.shop?.name || "",
         shopDivision: userData?.shop?.division || "",
         shopDistrict: userData?.shop?.district || "",
         shopCity: userData?.shop?.city || "",
@@ -90,6 +92,14 @@ const MyProfile= ({ type })=> {
     }));
   };
 
+  const handleGenderChange = (selectedGender)=>{
+    console.log(selectedGender)
+    setFormData((prevState) => ({
+      ...prevState,
+      gender: selectedGender,
+    }));
+  }
+
   const handleShopDivisionChange = (selectedDivision) => {
     setFormData((prevState) => ({
       ...prevState,
@@ -104,8 +114,6 @@ const MyProfile= ({ type })=> {
       ...prevState,
       district: selectedDistrict,
       city: "",
-      postCode: "",
-      address: "",
     }));
   };
 
@@ -133,6 +141,7 @@ const MyProfile= ({ type })=> {
 
   const handleChange = (e) => {
     const { id, value } = e.target;
+    console.log("value of changing ",{ id, value })
     setFormData((prevState) => ({
       ...prevState,
       [id]: value,
@@ -195,6 +204,7 @@ const MyProfile= ({ type })=> {
       district: formData.shopDistrict,
       postCode: formData.shopCode,
       division: formData.shopDivision,
+      name: formData.shopName
     };
   
     // Build the payload—only sending values that are not empty.
@@ -238,6 +248,7 @@ const MyProfile= ({ type })=> {
     } catch (error) {
       toast.error("Error updating profile");
       // On error, revert the optimistic update.
+      console.log(error)
       setOptimisticUserData(previousUserData);
     }
   };
@@ -251,9 +262,11 @@ const MyProfile= ({ type })=> {
       <AccountInformation
         type={type}
         edit={true}
+        handleGenderChange={handleGenderChange}
         editMode={bannerEditMode}
         setEditMode={setBannerEditMode}
         user={formData}
+        loading={isLoading}
         userData={optimisticUserData}
         handleImageChange={handleImageChange}
         handleChange={handleChange}

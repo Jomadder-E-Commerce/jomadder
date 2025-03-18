@@ -5,7 +5,6 @@ import MobileNavbar from "@/components/shared/MobileNavbar";
 import Navbar from "@/components/shared/Navbar";
 import TopBar from "@/components/shared/TopBar";
 import React from "react";
-
 const layout = ({ children }) => {
   return (
     <div className="">
@@ -16,10 +15,10 @@ const layout = ({ children }) => {
       </div>
       {/* <Navbar /> */}
       {children}
-                <div className="fixed md:bottom-4 bottom-12 md:right-12 right-9 z-50">
-                <SpeedDial className=''/>
-              {/* <SpeedDialPortal/> */}
-            </div>
+      <div className="fixed md:bottom-4 hidden md:block bottom-12 md:right-12 right-9 z-[40]">
+        <SpeedDial className='' />
+        {/* <SpeedDialPortal/> */}
+      </div>
       <Footer />
       {/* {"orgId":"team_6iM3ycdvBV4YAVgb30qJDD6K","projectId":"prj_54WoYMLD0FxCEZHbdiv3Q4boxjzX"} */}
     </div>

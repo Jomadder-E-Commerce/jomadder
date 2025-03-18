@@ -18,7 +18,6 @@ export const getPricingData = async (price) => {
 export function getPercentageForPrice(price) {
   // Sort categories by limit in ascending order
   const sortedCategories = [...pricing]?.sort((a, b) => a.limit - b.limit);
-  console.log("pricing",price)
   // Iterate through the sorted categories
   for (let i = 0; i < sortedCategories.length; i++) {
     const currentCategory = sortedCategories[i];

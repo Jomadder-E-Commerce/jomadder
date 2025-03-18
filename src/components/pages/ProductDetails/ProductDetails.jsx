@@ -88,13 +88,15 @@ const ProductDetails = ({
   const AddToCart = (payload) => {
     let itemFound = false;
 
-    if (payload.quantity == 1) {
+    console.log(payload)
+
+    if (payload.situation == 1) {
       const update = productSku?.map((single) => {
         if (single?.size == payload?.size && single?.color == payload?.color) {
           itemFound = true;
           return {
             ...single,
-            quantity: single?.quantity + 1,
+            quantity: single?.quantity + payload?.quantity,
           };
         }
         return single;
@@ -103,7 +105,7 @@ const ProductDetails = ({
         update?.push({ ...payload, quantity: payload?.quantity || 1 });
       }
       setProductSku([...update]);
-    } else if (payload?.quantity == -1) {
+    } else if (payload?.situation == -1) {
       const updateSku = productSku
         ?.map((single) => {
           if (
@@ -112,7 +114,7 @@ const ProductDetails = ({
           ) {
             return {
               ...single,
-              quantity: single?.quantity - 1,
+              quantity: single?.quantity - payload?.quantity,
             };
           } else {
             return single;

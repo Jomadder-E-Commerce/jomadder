@@ -3,11 +3,14 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { getLocalStorage } from '@/components/shared/LocalStorage/LocalStorage';
 import { toast } from 'react-toastify';
+import { saveDataIntoLocalStorage } from '@/utils/localstorage';
+import useCart from '@/hooks/useCart';
 
-const CartQuantity = ({ data }) => {
+const CartQuantity = () => {
+    const {cart, AddIntocart, RemoveFromcart, removeAllcart,UpdateCartQuantity} = useCart()
     const calculateTotal = () => {
         let totalPrice = 0;
-        data?.forEach(product => {
+        cart?.forEach(product => {
             if (product.checked) {
                 product.skus.forEach(sku => {
                     totalPrice += sku.quantity * parseFloat(sku.price);
@@ -19,12 +22,13 @@ const CartQuantity = ({ data }) => {
     const totalPrice =  calculateTotal() 
      const SendCheckoutPage = async() => {
         const token = getLocalStorage("token");
-    
+        saveDataIntoLocalStorage("redirect", window.location.pathname);
         if (!token) {
           toast.info("Please login to order");
           window.location.href = "/login";
           return;
         }
+        
         window.location.href = `/checkout`;
      }
     return (

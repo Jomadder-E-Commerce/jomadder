@@ -20,13 +20,13 @@ const OrdersTable = ({ data, user, loading, columns }) => {
   const getButtonClass = (status) => {
     const cleanedStatus = status ? status.trim() : "";
     if (cleanedStatus === "pending") {
-      return "bg-green-400 text-white";
+      return "bg-green-600 text-white";
     } else if (cleanedStatus === "cancelled") {
-      return "bg-red-400 text-white";
-    } else if (cleanedStatus === "payment reviewing") {
-      return "bg-blue-400 text-white";
+      return "bg-red-600 text-white";
+    } else if (cleanedStatus === "pending payment") {
+      return "bg-blue-600 text-white";
     } else {
-      return "bg-gray-300 text-black";
+      return "bg-gray-600 text-black";
     }
   };
 
@@ -78,8 +78,8 @@ const OrdersTable = ({ data, user, loading, columns }) => {
             {data.map((item, index) => (
               <TableRow key={index}>
 <TableCell>{item?._id}</TableCell>
-                <TableCell>{Number(item.price)}</TableCell>
-                <TableCell>{item.charge}</TableCell>
+                <TableCell>{Number(item.price) + Number(item?.charge)}</TableCell>
+                {/* <TableCell>{item.charge}</TableCell> */}
                 
                
                 <TableCell>
@@ -90,8 +90,8 @@ const OrdersTable = ({ data, user, loading, columns }) => {
                   >
                     {item.status}
                   </button>
-                  {(item.status === "pending" ||
-                    item.status === "pending payment") && (
+                  {
+                    item.status === "pending payment" && (
                     <button
                       onClick={() => handleStatusChange("cancelled", item._id)}
                       className="ml-2 px-2 py-1 text-red-500 transition border border-red-500 rounded-md"
@@ -107,7 +107,20 @@ const OrdersTable = ({ data, user, loading, columns }) => {
                     </button>
                   </Link>
                 </TableCell>
-                <TableCell>{item.transactionId ? item?.transactionId : <Link href={`/payment?orderId=${item?._id}`} className="px-2 py-1 text-white transition border bg-primary rounded-md">Complete Payment</Link>}</TableCell>
+                <TableCell>
+                  {item.status === "pending payment" ? (
+                    <Link
+                      href={`/payment?orderId=${item?._id}`}
+                      className="px-2 py-1 text-white transition bg-green-600 rounded-md hover:bg-green-700"
+                    >
+                      Complete Payment
+                    </Link>
+                  ) : item.transactionId ? (
+                    item.transactionId
+                  ) : (
+                    "N/A"
+                  )}
+                </TableCell>
                 <TableCell>
                   <SupportDialog orderId={`${item._id}`} />
                 </TableCell>

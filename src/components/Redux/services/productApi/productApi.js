@@ -3,7 +3,7 @@ import { frontendApi } from "@/components/Redux/api/baseApi";
 const productApi = frontendApi.injectEndpoints({
   endpoints: (build) => ({
     getProducts: build.query({
-      query: ({ category, page, size, price_start, price_end }) => ({
+      query: ({ category, page, size, price_start, price_end , sort }) => ({
         url: `/product/category/${category}`,
         method: "GET",
         params: {
@@ -11,6 +11,7 @@ const productApi = frontendApi.injectEndpoints({
           size,
           price_start,
           price_end,
+          sort
         },
       }),
       providesTags: ['ProductList'],
@@ -31,9 +32,16 @@ const productApi = frontendApi.injectEndpoints({
       providesTags: ['ProductList'],
     }),
     getProductsByShop: build.query({
-      query: (id) => ({
-        url: `product/shop/${id}`,
+      query: ({shopId, page, size, price_start, price_end,sort}) => ({
+        url: `product/shop/${shopId}`,
         method: 'GET',
+        params: {
+          page,
+          size,
+          price_start,
+          price_end,
+          sort
+        },
       }),
       providesTags: ['ProductList'],
     }),

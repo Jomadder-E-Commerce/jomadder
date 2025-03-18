@@ -15,6 +15,7 @@ import { cn } from "@/lib/utils";
 import { IoMdChatboxes } from "react-icons/io";
 import Link from "next/link";
 import { FaCopy } from "react-icons/fa";
+import { RxCross2 } from "react-icons/rx";
 
 const SpeedDial = () => {
 
@@ -75,7 +76,7 @@ const SpeedDial = () => {
   ];
 
   return (
-    <div className="h-[300px] relative rotate-180 z-0">
+    <div className="h-[300px] relative rotate-180">
 
       <div className="group flex flex-col items-center justify-center w-max mx-auto absolute md:top-0 -top-10 left-[50%] -translate-x-1/2">
         {/* + icon */}
@@ -83,8 +84,9 @@ const SpeedDial = () => {
  <span className="text-[11px] text-primary font-medium md:hidden rotate-180">Chat</span>
 
         <div className={cn("flex justify-center  bg-[#0095FF] rounded-full items-center  hover:bg-[#0095FF]/80 duration-500", { 'rotate-180': selectedQR })}>
-          <IoMdChatboxes className="sm:p-2 p-1 text-white  md:size-10 sm:size-8 size-6" />
-         
+          <IoMdChatboxes className="sm:p-2 p-1 text-white  md:size-10 sm:size-8 size-6 transition-all group-hover:opacity-0 opacity-100 block group-hover:hidden" />
+                   <RxCross2 className="sm:p-2 p-1 text-white  md:size-10 sm:size-8 size-6 transition-all group-hover:opacity-100 opacity-0 hidden group-hover:block" />
+
         </div>
 
         {/* Icon container */}
@@ -111,7 +113,7 @@ const SpeedDial = () => {
           </div>:   <Link
                 href={svg.link}
                 target="_blank"
-                className="flex items-center justify-center w-full h-full duration-300  rounded-full "
+                    className="flex items-center justify-center w-full h-full duration-300 rounded-full "
               >
                 {svg.svg}
               </Link>
@@ -132,7 +134,7 @@ const SpeedDial = () => {
           ID: disalamin94
           <FaCopy
             onClick={handleCopy}
-            className="ml-2 cursor-pointer text-gray-500 hover:text-gray-700"
+              className="ml-2 text-gray-500 cursor-pointer hover:text-gray-700"
             title="Copy ID"
           /> {copied && (
             <span className="text-green-500 text-[12px] pl-2">

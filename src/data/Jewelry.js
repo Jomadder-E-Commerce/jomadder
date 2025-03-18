@@ -1,1271 +1,21 @@
 export const Jewelry = [
     [
         {
-            "item_id": "844969287697",
-            "product_url": "https://detail.1688.com/offer/844969287697.html",
-            "title": "Letter H Light Luxury Enamel Micro Set Ring Women's Oil Dropping 18K Gold High-Level Open Finger Ring Unique Niche Ring",
-            "origin_title": "字母H轻奢珐琅微镶戒指女滴油18K金高级感开口食指戒独特小众指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01bFhZrK1i1j4i6N1UZ_!!2208551784353-0-cib.jpg",
+            "item_id": "653138458322",
+            "product_url": "https://detail.1688.com/offer/653138458322.html",
+            "title": "Pleated Opening Retro Light Luxury Personalized Thai Silver Copper Ring Women's ins Cold Style Niche Design Sense Bracelet for Foreign Trade",
+            "title_origin": "褶皱开口复古轻奢个性泰银铜戒指女ins冷淡风小众设计感手饰外贸",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01R925dz2JAYBUtNCxO_!!2210992789381-0-cib.jpg",
             "price": "2.5",
             "price_info": {
                 "price": "2.5",
                 "price_min": "2.5",
-                "price_max": "4.8"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "64682"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
-        },
-        {
-            "item_id": "704807336505",
-            "product_url": "https://detail.1688.com/offer/704807336505.html",
-            "title": "Fashion Cartoon Cute Cat's Claw Footprint Set Zircon Opening Adjustable Ring Women's Japanese and Korean Style Simple Ring",
-            "origin_title": "时尚卡通可爱猫爪脚印镶锆石开口可调节戒指女日韩简约戒指",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01ErG2Dw1K33R30M0Yr_!!2215472041107-0-cib.jpg",
-            "price": "1.49",
-            "price_info": {
-                "price": "1.49",
-                "price_min": "1.49",
-                "price_max": "1.49"
-            },
-            "currency": "CNY",
-            "quantity_begin": "2",
-            "sale_info": {
-                "sale_quantity_90days": "1855"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "838575271639",
-            "product_url": "https://detail.1688.com/offer/838575271639.html",
-            "title": "vintage Antique Enamel Oil Drop Artistic Retro Zircon Ring Collection Tiger Eye Finger Ring Adjustable",
-            "origin_title": "vintage中古风珐琅滴油文艺复古锆石戒指合集虎眼石食指戒可调节",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01UzJR971R7MTVH5tTj_!!2212727932064-0-cib.jpg",
-            "price": "5.56",
-            "price_info": {
-                "price": "5.56",
-                "price_min": "5.56",
-                "price_max": "11.13"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "6567"
-            },
-            "goods_score": "4.9",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
-        },
-        {
-            "item_id": "657168602307",
-            "product_url": "https://detail.1688.com/offer/657168602307.html",
-            "title": "European and American gossip snake chain ring women do not fade niche love butterfly skull wholesale joint ring set",
-            "origin_title": "欧美八卦蛇链条戒指女不掉色小众爱心蝴蝶骷髅批发关节戒指套装",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01Y90Biz1GPiXDVW7VO_!!2202830230615-0-cib.jpg",
-            "price": "1.5",
-            "price_info": {
-                "price": "1.5",
-                "price_min": "1.5",
-                "price_max": "3.9"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "683"
-            },
-            "goods_score": "4.8",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "692380445332",
-            "product_url": "https://detail.1688.com/offer/692380445332.html",
-            "title": "Snake Designer Ring Female ins Student Niche Design Cold Style Advanced Open Finger Ring Tide Ring",
-            "origin_title": "蛇形设计师戒指女ins学生小众设计冷淡风高级开口食指戒潮指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01C6l4B61aIea7TJ8db_!!3357163307-0-cib.jpg",
-            "price": "1.08",
-            "price_info": {
-                "price": "1.08",
-                "price_min": "1.08",
-                "price_max": "1.08"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "6600"
-            },
-            "goods_score": "4.6",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
-        },
-        {
-            "item_id": "858301235420",
-            "product_url": "https://detail.1688.com/offer/858301235420.html",
-            "title": "925 Sterling Silver Irregular Geometric Ring Women's ins2024 Year New Niche Design Sense Fashion Personalized Finger Ring",
-            "origin_title": "925纯银不规则几何戒指女ins2024年新款小众设计感时尚个性食指戒",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN013XItGM1QgL7xqtPJM_!!2218934992005-0-cib.jpg",
-            "price": "1.88",
-            "price_info": {
-                "price": "1.88",
-                "price_min": "1.88",
-                "price_max": "2.88"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "989"
-            },
-            "goods_score": "4.9",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "861488803707",
-            "product_url": "https://detail.1688.com/offer/861488803707.html",
-            "title": "Red Riding Book Explosive Drawstring Pigeon Egg Ring Women's Middle Ancient vintage Flash Diamond Wide Bead Rings Court Wind Ring",
-            "origin_title": "小红书爆款拉丝鸽子蛋戒指女中古vintage闪钻宽版排珠宫廷风指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN015mC4l025ca7uWpjNF_!!2218524677547-0-cib.jpg",
-            "price": "8.7",
-            "price_info": {
-                "price": "8.7",
-                "price_min": "8.7",
-                "price_max": "8.7"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "1475"
-            },
-            "goods_score": "4.5",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": true,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "765532413725",
-            "product_url": "https://detail.1688.com/offer/765532413725.html",
-            "title": "Titanium steel ring female non-fading six diamond men and women couple ring ins stainless steel ring jewelry wholesale hot sale",
-            "origin_title": "钛钢戒指女不掉色六钻男女情侣对戒 ins不锈钢指环手饰品批发热卖",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01SgBnfC1wkyqDhhTp4_!!4260686347-0-cib.jpg",
-            "price": "2.5",
-            "price_info": {
-                "price": "2.5",
-                "price_min": "2.5",
-                "price_max": "3.6"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "10775"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
-        },
-        {
-            "item_id": "847618271313",
-            "product_url": "https://detail.1688.com/offer/847618271313.html",
-            "title": "999 Foot Silver Ancient Style Ring Women's Fashionable Distinctive Simple Index Finger Tail Ring Niche High-grade Essentialance Ring Closed Mouth Finger Ring",
-            "origin_title": "999足银古法戒指女时尚个性简约食指尾戒小众高级感素圈闭口指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01m7VUly1SRnlxdWKDr_!!2218789092244-0-cib.jpg",
-            "price": "11.0",
-            "price_info": {
-                "price": "11.0",
-                "price_min": "11.0",
-                "price_max": "11.0"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "1793"
-            },
-            "goods_score": "4.8",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "639029721685",
-            "product_url": "https://detail.1688.com/offer/639029721685.html",
-            "title": "Acrylic Resin Ring Multicolor Rendering Mike Ring Finger Ring Food Finger Ring Men's and Women's ",
-            "origin_title": "欧美亚克力树脂戒指  多色渲染好麦克戒指指环食指戒男女款跨境",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01Rb09JQ22S5rMrn88R_!!3293527118-0-cib.jpg",
-            "price": "1.88",
-            "price_info": {
-                "price": "1.88",
-                "price_min": "1.88",
-                "price_max": "1.88"
-            },
-            "currency": "CNY",
-            "quantity_begin": "3",
-            "sale_info": {
-                "sale_quantity_90days": "3965"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "522091713378",
-            "product_url": "https://detail.1688.com/offer/522091713378.html",
-            "title": "ing Fashion European and American Niche Titanium Steel Frosted Ring Women's Korean Style Fashion Couple's Ring Men's Cross-border Hand Jewelry",
-            "origin_title": "ing风潮 欧美小众钛钢磨砂戒指女 韩版时尚情侣戒指男 跨境手饰品",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/11740761203_359903398.jpg",
-            "price": "0.9",
-            "price_info": {
-                "price": "0.9",
-                "price_min": "0.9",
-                "price_max": "1.9"
-            },
-            "currency": "CNY",
-            "quantity_begin": "2",
-            "sale_info": {
-                "sale_quantity_90days": "37232"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
-        },
-        {
-            "item_id": "847417199257",
-            "product_url": "https://detail.1688.com/offer/847417199257.html",
-            "title": "Ancora Red Drop Oil Opening Ring Collection Women's Autumn and Winter New Fashionable Exquisite All-match Ring Ring",
-            "origin_title": "安可拉红滴油开口戒指合集女秋冬新款个性时尚精致百搭指环戒子",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01Fd0DDn1IVKepkhZqj_!!4258620898-0-cib.jpg",
-            "price": "5.99",
-            "price_info": {
-                "price": "5.99",
-                "price_min": "5.99",
-                "price_max": "9.99"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "44"
-            },
-            "goods_score": "",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "833381798847",
-            "product_url": "https://detail.1688.com/offer/833381798847.html",
-            "title": "Decompression can be pressed merit wooden fish ring creative design exquisite wooden fish knock worry all eliminate niche ring",
-            "origin_title": "解压可按动功德木鱼戒指创意设计精致木鱼敲敲烦恼全消小众指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN019gstKN20LZJ6GWQYf_!!2532416833-0-cib.jpg",
-            "price": "0.6",
-            "price_info": {
-                "price": "0.6",
-                "price_min": "0.6",
-                "price_max": "0.6"
-            },
-            "currency": "CNY",
-            "quantity_begin": "2",
-            "sale_info": {
-                "sale_quantity_90days": "13102"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
-        },
-        {
-            "item_id": "762841527254",
-            "product_url": "https://detail.1688.com/offer/762841527254.html",
-            "title": "Retro craft Phoenix ring simple fashion woven sweater ring personality crochet with thread ring sweater ring",
-            "origin_title": "复古工艺凤凰戒指 简约时尚织毛衣戒指个性钩针带线指环毛衣戒指",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01d2p2D31O0XeQtX0Fg_!!2216378661643-0-cib.jpg",
-            "price": "0.8",
-            "price_info": {
-                "price": "0.8",
-                "price_min": "0.8",
-                "price_max": "5.39"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "1486"
-            },
-            "goods_score": "",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "848154405047",
-            "product_url": "https://detail.1688.com/offer/848154405047.html",
-            "title": "European and American new jewelry simple smear letters Just Breathe love lady opening adjustable ring",
-            "origin_title": "欧美新款饰品 简约抹黑字母Just Breathe爱心女士开口可调节戒指",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01IRNcHC1QN6S47GWs3_!!2208011271963-0-cib.jpg",
-            "price": "1.5",
-            "price_info": {
-                "price": "1.5",
-                "price_min": "1.5",
-                "price_max": "1.71"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "165"
-            },
-            "goods_score": "",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "836080706560",
-            "product_url": "https://detail.1688.com/offer/836080706560.html",
-            "title": "Fenjia Double F Letter Black and White Oil Drops 22 New European and American Couple Ring Fashion Simple Titanium Steel Ring suit",
-            "origin_title": "芬家双F字母黑白色滴油22新款欧美情侣戒指时尚简约钛钢指环套装",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01IxowOS1faa8addO8m_!!2108974023-0-cib.jpg",
-            "price": "18.0",
-            "price_info": {
-                "price": "18.0",
-                "price_min": "18.0",
-                "price_max": "26.0"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "24"
-            },
-            "goods_score": "",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "828110940844",
-            "product_url": "https://detail.1688.com/offer/828110940844.html",
-            "title": "New Fashion Hollow Brass Ring Women's Adjustable Ring Inlaid Zircon Hand Jewelry Fashionable and Exquisite Jewelry",
-            "origin_title": "新款时尚镂空黄铜戒指女式可调节指环镶嵌锆石手饰品时髦精致首饰",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01xTTT0D1Rs4pFIatV0_!!1837732166-0-cib.jpg",
-            "price": "8.0",
-            "price_info": {
-                "price": "8.0",
-                "price_min": "8.0",
-                "price_max": "8.0"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "2"
-            },
-            "goods_score": "",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "847253224570",
-            "product_url": "https://detail.1688.com/offer/847253224570.html",
-            "title": "Hollow Love Ring Women's Simple Fashion Color Block Letter S925 Silver Open Ring Sweet Cool Stacked Food Finger Ring Fashion",
-            "origin_title": "镂空爱心戒指女简约时尚拼色字母S925银开口指环甜酷叠戴食指戒潮",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01CrNwGc2DCwjFH4vT4_!!2207784838574-0-cib.jpg",
-            "price": "4.5",
-            "price_info": {
-                "price": "4.5",
-                "price_min": "4.5",
-                "price_max": "5.0"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "15"
-            },
-            "goods_score": "",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "832748648818",
-            "product_url": "https://detail.1688.com/offer/832748648818.html",
-            "title": "R4 Smart Ring for Finger Ring Technology Co., Ltd. Selfie Lord of the Rings Bus Card NFC Ring Polar",
-            "origin_title": "R4智能戒指 适用手指环科技有限公司自拍魔戒公交卡NFC指环极控者",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01laj0an2L2smsTr8T6_!!2257499635-0-cib.jpg",
-            "price": "89.0",
-            "price_info": {
-                "price": "89.0",
-                "price_min": "89.0",
-                "price_max": "89.0"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "1"
-            },
-            "goods_score": "",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "843119822353",
-            "product_url": "https://detail.1688.com/offer/843119822353.html",
-            "title": "Amazon Jewelry Tungsten Steel Ring Personality Flower Diamond Tungsten Gold Jewelry Couple Wide Narrow Niche Jewelry in stock",
-            "origin_title": "亚马逊饰品 钨钢戒指个性批花菱形钨金首饰情侣宽窄小众首饰现货",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01qHNP6X1zNZItaYtEq_!!2200741206702-0-cib.jpg",
-            "price": "20.0",
-            "price_info": {
-                "price": "20.0",
-                "price_min": "20.0",
-                "price_max": "26.0"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "4"
-            },
-            "goods_score": "",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        }
-    ],[
-        {
-            "item_id": "784684118624",
-            "product_url": "https://detail.1688.com/offer/784684118624.html",
-            "title": "Simulation couple live pair ring fairy tale diamond ring dense set with flower small red book with ring wedding props wholesale",
-            "origin_title": "仿真情侣活口对戒童话款钻戒密镶花型小红书同款戒指婚礼道具批发",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01JqSirt1eDr33HpF0d_!!2209533933838-0-cib.jpg",
-            "price": "3.0",
-            "price_info": {
-                "price": "3.0",
-                "price_min": "3.0",
-                "price_max": "4.0"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "6957"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
-        },
-        {
-            "item_id": "725902204969",
-            "product_url": "https://detail.1688.com/offer/725902204969.html",
-            "title": "New Titanium Steel Color-free Waterproof Diamond Plaid Ring ins Advanced Sense Internet Celebrity Same Style Flower Finger Ring",
-            "origin_title": "新款钛钢不掉色防水菱格纹戒指ins高级感网红同款批花指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01vL8bX21Zny6aM1WRP_!!2214007913240-0-cib.jpg",
-            "price": "2.5",
-            "price_info": {
-                "price": "2.5",
-                "price_min": "2.5",
-                "price_max": "2.8"
-            },
-            "currency": "CNY",
-            "quantity_begin": "2",
-            "sale_info": {
-                "sale_quantity_90days": "655"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "775965615155",
-            "product_url": "https://detail.1688.com/offer/775965615155.html",
-            "title": "Cross-border ExporT HoT-selling Amazon Zircon T-shaped Ring Women's Simple Fashion ins Index Finger Ring Small and ExquisiTe Ring",
-            "origin_title": "跨境外贸热销亚马逊锆石T形戒指女简约时尚ins食指环小巧精致指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01RosrWi1OAcNzFq7yE_!!2217605791665-0-cib.jpg",
-            "price": "3.5",
-            "price_info": {
-                "price": "3.5",
-                "price_min": "3.5",
                 "price_max": "3.5"
             },
             "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "1865"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "665263670054",
-            "product_url": "https://detail.1688.com/offer/665263670054.html",
-            "title": "Palace style S925 silver geometric ring Women's retro fashion color drop glaze open finger ring art food finger ring",
-            "origin_title": "宫廷风S925银几何戒指女复古时尚彩色滴釉开口指环文艺食指戒",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01ZeFn1y2DCwb8tpQ0c_!!2207784838574-0-cib.jpg",
-            "price": "3.0",
-            "price_info": {
-                "price": "3.0",
-                "price_min": "3.0",
-                "price_max": "8.0"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "909"
-            },
-            "goods_score": "4.6",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "775098475156",
-            "product_url": "https://detail.1688.com/offer/775098475156.html",
-            "title": "Cartoon funny black cat ring female niche design open ring cute simple suit index finger ring",
-            "origin_title": "卡通搞怪黑色猫咪戒指女小众设计开口指环童趣可爱简约套装食指戒",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01VOv0Ru1cLWR8EoFMw_!!2214082583584-0-cib.jpg",
-            "price": "1.5",
-            "price_info": {
-                "price": "1.5",
-                "price_min": "1.5",
-                "price_max": "1.8"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "4503"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "777927237681",
-            "product_url": "https://detail.1688.com/offer/777927237681.html",
-            "title": "Monologue British Museum Series Bird Love Ring Niche Design Retro Old Light Luxury Advanced Sense Ring",
-            "origin_title": "独白大英博物馆系列飞鸟爱心戒指小众设计复古做旧轻奢高级感指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01kLeXyJ1EZfuTCovGK_!!2216552440366-0-cib.jpg",
-            "price": "7.8",
-            "price_info": {
-                "price": "7.8",
-                "price_min": "7.8",
-                "price_max": "7.8"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "4614"
-            },
-            "goods_score": "4.9",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "721680491014",
-            "product_url": "https://detail.1688.com/offer/721680491014.html",
-            "title": "Topaz Snake Ring Valentine's Day Gift Snake Silver Jewelry for Men and Women New Design Sense All-match Niche",
-            "origin_title": "托帕石灵蛇戒指情人节礼物男女蛇形银色手饰新款设计感百搭小众",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01gN4jUN1RAZ62htDS9_!!2215790222071-0-cib.jpg",
-            "price": "0.62",
-            "price_info": {
-                "price": "0.62",
-                "price_min": "0.62",
-                "price_max": "0.62"
-            },
-            "currency": "CNY",
-            "quantity_begin": "20",
-            "sale_info": {
-                "sale_quantity_90days": "11994"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
-        },
-        {
-            "item_id": "822807510988",
-            "product_url": "https://detail.1688.com/offer/822807510988.html",
-            "title": "Light Luxury High-grade Color Diamond Snake Ring Women's vintage Sweet Cool Spice Girl Wind Ring Personalized Design Finger Ring",
-            "origin_title": "轻奢高级感彩钻灵蛇戒指女vintage甜酷辣妹风指环个性设计食指戒",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01fbHFSt1xOpGVLSIMy_!!2218078166434-0-cib.jpg",
-            "price": "5.4",
-            "price_info": {
-                "price": "5.4",
-                "price_min": "5.4",
-                "price_max": "5.4"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "1400"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "687008300690",
-            "product_url": "https://detail.1688.com/offer/687008300690.html",
-            "title": "Advanced Sense ins Simple Light Luxury Titanium Steel Love Ring Women's Niche Geometric Chain Heart-Shaped Ring Interlocking Ring",
-            "origin_title": "高级感ins简约轻奢钛钢爱心戒指女小众几何链条心形环环相扣指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01R1jBco2FrMqCAxCqJ_!!2200580288933-0-cib.jpg",
-            "price": "7.5",
-            "price_info": {
-                "price": "7.5",
-                "price_min": "7.5",
-                "price_max": "7.5"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "1048"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "771050624208",
-            "product_url": "https://detail.1688.com/offer/771050624208.html",
-            "title": "Coffee yioumei new 1pc Silver Rose cross ring vintage Victoria style cross ring",
-            "origin_title": "咖亿欧美新款1pc银色玫瑰勺形戒指 复古维多利亚风 十字架戒指",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01zMweNW1X8dCfnsEt7_!!2819952879-0-cib.jpg",
-            "price": "2.2",
-            "price_info": {
-                "price": "2.2",
-                "price_min": "2.2",
-                "price_max": "2.2"
-            },
-            "currency": "CNY",
             "quantity_begin": "2",
             "sale_info": {
-                "sale_quantity_90days": "2084"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "845385627948",
-            "product_url": "https://detail.1688.com/offer/845385627948.html",
-            "title": "Italian Vintage Brushed Thorns and Vines Gem Ring Vintage Plated 18K Gold Brushed Small Flower Ring",
-            "origin_title": "意大利复古拉丝荆棘藤蔓宝石戒指 Vintage镀18K金 拉丝小花朵戒指",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01hp7HJF1LB82qfkMRy_!!2765001260-0-cib.jpg",
-            "price": "14.99",
-            "price_info": {
-                "price": "14.99",
-                "price_min": "14.99",
-                "price_max": "48.99"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "692"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "852213320947",
-            "product_url": "https://detail.1688.com/offer/852213320947.html",
-            "title": "Maillard Tiger Eye Opening Adjustable Ring Women's Niche Design Sense Finger Ring Retro Heavy Industry Oval Ring",
-            "origin_title": "美拉德虎眼石开口可调节戒指女小众设计感食指戒复古重工椭圆指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01kCJiBl1kGxUDbQjx3_!!2210335964657-0-cib.jpg",
-            "price": "0.88",
-            "price_info": {
-                "price": "0.88",
-                "price_min": "0.88",
-                "price_max": "1.08"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "4738"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "741457852932",
-            "product_url": "https://detail.1688.com/offer/741457852932.html",
-            "title": "Fall in Love couple ring men and women a pair of light luxury niche high-grade light luxury wedding ring lettering proposal ring wholesale",
-            "origin_title": "坠入爱河情侣戒指男女一对轻奢小众高级轻奢婚戒刻字求婚对戒批发",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01J1250i1PaYNQhuWrl_!!2213225281857-0-cib.jpg",
-            "price": "2.1",
-            "price_info": {
-                "price": "2.1",
-                "price_min": "2.1",
-                "price_max": "2.4"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "2007"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "666737778908",
-            "product_url": "https://detail.1688.com/offer/666737778908.html",
-            "title": "Cross-border European and American Women's Set Ring Bohemia New 15PCs Set Ring Jewelry",
-            "origin_title": "跨境 欧美女式套装戒指 波西米亚新款15pcs套装戒指饰品",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01QrXKMb1L08GlUyqfI_!!3491221236-0-cib.jpg",
-            "price": "3.0",
-            "price_info": {
-                "price": "3.0",
-                "price_min": "3.0",
-                "price_max": "3.0"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "4950"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "796261125635",
-            "product_url": "https://detail.1688.com/offer/796261125635.html",
-            "title": "2024 Small Fresh Star Earth Ring Women's Japanese and Korean-style Micro-inlaid Open Food Ring Niche Design Ins Ring",
-            "origin_title": "2024年小清新星星地球戒指女日韩微镶开口食指环小众设计ins指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01fPo5lF29MKTWFbPmg_!!2216982908053-0-cib.jpg",
-            "price": "2.3",
-            "price_info": {
-                "price": "2.3",
-                "price_min": "2.3",
-                "price_max": "2.3"
-            },
-            "currency": "CNY",
-            "quantity_begin": "2",
-            "sale_info": {
-                "sale_quantity_90days": "504"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "602127496727",
-            "product_url": "https://detail.1688.com/offer/602127496727.html",
-            "title": "Wish Ring Fashion Zircon Women's Ring Two-piece Micro Set Emerald Ring Jewelry",
-            "origin_title": "Wish戒指 时尚搭锆石女士戒指 两件套微镶绿宝石戒指饰品",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/12043235211_221468121.jpg",
-            "price": "2.5",
-            "price_info": {
-                "price": "2.5",
-                "price_min": "2.5",
-                "price_max": "2.5"
-            },
-            "currency": "CNY",
-            "quantity_begin": "2",
-            "sale_info": {
-                "sale_quantity_90days": "2170"
-            },
-            "goods_score": "4.7",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "638283391223",
-            "product_url": "https://detail.1688.com/offer/638283391223.html",
-            "title": "s999 Foot Silver Ring Women's Men's Plain Ring Sterling Silver Tail Ring Pinkie ins Fashionable Personalized Korean Birthday Gift",
-            "origin_title": "S999足银戒指女男素圈纯银尾戒小指ins潮人时尚个性韩版生日礼物",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN011Sa6hp1UdMunPMGCV_!!1804432540-0-cib.jpg",
-            "price": "15.8",
-            "price_info": {
-                "price": "15.8",
-                "price_min": "15.8",
-                "price_max": "19.2"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "7810"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
-        },
-        {
-            "item_id": "739491077891",
-            "product_url": "https://detail.1688.com/offer/739491077891.html",
-            "title": "High carbon stone diamond ring couple wedding ring sterling silver pair simulation proposal ceremony on-site fake ring",
-            "origin_title": "高碳石钻戒情侣结婚对戒镀银一对仿真订求婚礼仪式现场假戒指",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01Gryxqm1eiXW6KlAe2_!!2211864873905-0-cib.jpg",
-            "price": "2.4",
-            "price_info": {
-                "price": "2.4",
-                "price_min": "2.4",
-                "price_max": "4.0"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "2245"
-            },
-            "goods_score": "4.6",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "842928150325",
-            "product_url": "https://detail.1688.com/offer/842928150325.html",
-            "title": "Empress Dowager Vivian Stacked Diamond Ring Women's Copper Plated 18k Gold Double Layer Zircon Saturn Finger Ring Premium Sense",
-            "origin_title": "西太后薇薇安叠戴镶钻戒指女铜镀18k金双层锆石土星食指戒高级感",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01Zgp9Mn1evMVX7M8Ka_!!2212991433933-0-cib.jpg",
-            "price": "26.0",
-            "price_info": {
-                "price": "26.0",
-                "price_min": "26.0",
-                "price_max": "26.0"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "6"
-            },
-            "goods_score": "",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "847965085092",
-            "product_url": "https://detail.1688.com/offer/847965085092.html",
-            "title": "Cold Style Light Luxury Exquisite Diamond Super Flash Zircon Open Ring Design Sense Niche High-end Elegant All-match Ring",
-            "origin_title": "冷淡风轻奢精致满钻超闪锆石开口戒设计感小众高级气质百搭戒指",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01jogXhT1GEj2aT45BW_!!2215058960591-0-cib.jpg",
-            "price": "5.08",
-            "price_info": {
-                "price": "5.08",
-                "price_min": "5.08",
-                "price_max": "5.09"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "368"
-            },
-            "goods_score": "",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        }
-    ],[
-        {
-            "item_id": "860128756974",
-            "product_url": "https://detail.1688.com/offer/860128756974.html",
-            "title": "Jieding European and American Stainless Steel Exaggerated Retro Ring High-grade Sense Niche Ring Titanium Steel Hand Jewelry Cross-border rings",
-            "origin_title": "杰鼎欧美不锈钢夸张复古戒指高级感小众指环钛钢手饰品跨境rings",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01PfjgBL2ElaS6t2O5w_!!2210913638785-0-cib.jpg",
-            "price": "8.5",
-            "price_info": {
-                "price": "8.5",
-                "price_min": "8.5",
-                "price_max": "18.5"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "325"
-            },
-            "goods_score": "",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "826755115564",
-            "product_url": "https://detail.1688.com/offer/826755115564.html",
-            "title": "Sansheng III Titanium Steel Ring Women's Niche High-end Heart-to-Heart Gymnopus Stainless Steel Love Four-leaf Clover Ring",
-            "origin_title": "三生三世钛钢戒指女 小众高档连心满天星不锈钢爱心四叶草戒指",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01Uuf3AC1fiN5YoGNWL_!!3997534040-0-cib.jpg",
-            "price": "0.8",
-            "price_info": {
-                "price": "0.8",
-                "price_min": "0.8",
-                "price_max": "1.6"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "103345"
-            },
-            "goods_score": "4.8",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
-        },
-        {
-            "item_id": "639471893762",
-            "product_url": "https://detail.1688.com/offer/639471893762.html",
-            "title": "ring adjuster ring adjuster ring size adjusting pad transparent ring invisible adjuster",
-            "origin_title": "ring adjuster 戒指调节器 戒指大小调节垫透明戒指隐形调节器",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01TPyazK1C8X4nlWr6a_!!2333030036-0-cib.jpg",
-            "price": "3.4",
-            "price_info": {
-                "price": "3.4",
-                "price_min": "3.4",
-                "price_max": "3.6"
-            },
-            "currency": "CNY",
-            "quantity_begin": "4",
-            "sale_info": {
-                "sale_quantity_90days": "26309"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
-        },
-        {
-            "item_id": "584768878817",
-            "product_url": "https://detail.1688.com/offer/584768878817.html",
-            "title": "Europe and the United States cross-border explosions couples ultra-fine glossy titanium steel Women's ring simple food tail ring ring stainless steel jewelry",
-            "origin_title": "欧美跨境爆款情侣极细光面钛钢女戒指 简约食尾戒指环不锈钢饰品",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/10181781861_1806221926.jpg",
-            "price": "0.9",
-            "price_info": {
-                "price": "0.9",
-                "price_min": "0.9",
-                "price_max": "1.6"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "19696"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
-        },
-        {
-            "item_id": "687085338016",
-            "product_url": "https://detail.1688.com/offer/687085338016.html",
-            "title": "New minimalist niche design broken silver pearl ring women's fashion Joker high-end sense adjustable ring wholesale",
-            "origin_title": "新款简约小众设计碎银子珍珠戒指女时尚百搭高级感可调节指环批发",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01EUWYAS1mLejXeTdal_!!2213366304938-0-cib.jpg",
-            "price": "2.19",
-            "price_info": {
-                "price": "2.19",
-                "price_min": "2.19",
-                "price_max": "5.69"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "4742"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "570737150307",
-            "product_url": "https://detail.1688.com/offer/570737150307.html",
-            "title": "European and American jewelry vintage diamond carved crown Starry Sky Gem 13-piece set combination suit ring",
-            "origin_title": "欧美饰品复古镶钻雕花皇冠星空宝石13件套组合套装戒指",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/8961167427_917145012.jpg",
-            "price": "2.65",
-            "price_info": {
-                "price": "2.65",
-                "price_min": "2.65",
-                "price_max": "2.65"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "1529"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "822318080355",
-            "product_url": "https://detail.1688.com/offer/822318080355.html",
-            "title": "[August Clearance Ring] Niche Design Joker Minimalist Graffiti Wave Edge Exquisite Fashion Temperament Pacha Dog",
-            "origin_title": "【8月清仓戒指】小众设计百搭极简涂鸦波浪边精致时尚气质帕恰狗",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01TcyzgG20NrH28r6of_!!2208956906838-0-cib.jpg",
-            "price": "0.2",
-            "price_info": {
-                "price": "0.2",
-                "price_min": "0.2",
-                "price_max": "2.1"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "66223"
-            },
-            "goods_score": "3.7",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
-        },
-        {
-            "item_id": "705739997220",
-            "product_url": "https://detail.1688.com/offer/705739997220.html",
-            "title": "Niche design sterling silver irregular geometric ring 2024 new fashion personality food finger ring explosion personality",
-            "origin_title": "小众设计纯银不规则几何戒指2024年新款时尚个性食指戒爆款个性",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01Gc70jW1ag0o6IBvVW_!!2208429593358-0-cib.jpg",
-            "price": "2.5",
-            "price_info": {
-                "price": "2.5",
-                "price_min": "2.5",
-                "price_max": "7.2"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "3450"
-            },
-            "goods_score": "4.8",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "610207253770",
-            "product_url": "https://detail.1688.com/offer/610207253770.html",
-            "title": "Zircon Chain Fine Ring Vintage Simple Elegant Elegant Korean Fashion All-match Internet Celebrity Personalized Hand Ring",
-            "origin_title": "锆石链条细戒指 复古简约优雅气质韩国时尚百搭网红个性手饰指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/14619618479_1737644040.jpg",
-            "price": "9.3",
-            "price_info": {
-                "price": "9.3",
-                "price_min": "9.3",
-                "price_max": "9.3"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "469"
+                "sale_quantity_90days": "1548"
             },
             "goods_score": "5.0",
             "shop_info": {
@@ -1280,7 +30,7 @@ export const Jewelry = [
             "item_id": "799747972305",
             "product_url": "https://detail.1688.com/offer/799747972305.html",
             "title": "925 Silver Needle Exquisite Snake Ring Women's Fingerring Distinctive Fingertip Accessories Tail Ring Niche Design for Summer",
-            "origin_title": "925银针精致小灵蛇戒指女指环个性指尖配饰尾戒小众设计夏",
+            "title_origin": "925银针精致小灵蛇戒指女指环个性指尖配饰尾戒小众设计夏",
             "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01ovbzRJ1RVdQmeUxA0_!!2601062117-0-cib.jpg",
             "price": "2.8",
             "price_info": {
@@ -1291,7 +41,7 @@ export const Jewelry = [
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "3039"
+                "sale_quantity_90days": "5561"
             },
             "goods_score": "4.7",
             "shop_info": {
@@ -1300,24 +50,102 @@ export const Jewelry = [
             },
             "is_free_shipping": false,
             "is_new_item": false,
-            "is_hot_item": false
+            "is_hot_item": true
         },
         {
-            "item_id": "840287983837",
-            "product_url": "https://detail.1688.com/offer/840287983837.html",
-            "title": "S925 Sterling Silver Green Eye Snake Zodiac Snake Ring for Men and Women National Fashion Ethnic Style Personalized Creative All-match Open Ring",
-            "origin_title": "S925纯银绿眼灵蛇生肖蛇戒指男女国潮民族风个性创意百搭开口指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01LYMLEE1I4JJqwcdB2_!!2218562520839-0-cib.jpg",
-            "price": "19.5",
+            "item_id": "783470471719",
+            "product_url": "https://detail.1688.com/offer/783470471719.html",
+            "title": "Couple ring platinum ring opening adjustable jewelry factory wholesale Korean simple net red Valentine's Day gift",
+            "title_origin": "情侣戒指镀白金对戒开口可调节首饰工厂批发韩版简约网红情人节礼",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01H0HIWJ2B9ci3BPnOp_!!2217718888296-0-cib.jpg",
+            "price": "1.68",
             "price_info": {
-                "price": "19.5",
-                "price_min": "19.5",
-                "price_max": "19.5"
+                "price": "1.68",
+                "price_min": "1.68",
+                "price_max": "5.88"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "2779"
+                "sale_quantity_90days": "216123"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "691067306803",
+            "product_url": "https://detail.1688.com/offer/691067306803.html",
+            "title": "Super Flash ~ Light Luxury Full Zirconium Double-Layer Set Ring Women's ins High-Level Niche Design Exquisite Ring Opening Fashion Elegant",
+            "title_origin": "超闪~轻奢满锆双层套戒女ins高级感小众设计精致指环开口时尚气质",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01SCTEus1Y7XjFV31bq_!!2208897773012-0-cib.jpg",
+            "price": "2.6",
+            "price_info": {
+                "price": "2.6",
+                "price_min": "2.6",
+                "price_max": "3.2"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "5521"
+            },
+            "goods_score": "4.4",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "770977699690",
+            "product_url": "https://detail.1688.com/offer/770977699690.html",
+            "title": "Empty support ring 6*6M inlaid with pointed bottom S29 Hua Zi drill flat bottom egg surface finger ring small red book with live supply",
+            "title_origin": "空托戒指6*6M镶嵌尖底S29华子钻平底蛋面指环小红书同款直播货源",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN012vmQGn1qjhxtBv6b2_!!2217529285532-0-cib.jpg",
+            "price": "3.5",
+            "price_info": {
+                "price": "3.5",
+                "price_min": "3.5",
+                "price_max": "3.5"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "10519"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "762105997859",
+            "product_url": "https://detail.1688.com/offer/762105997859.html",
+            "title": "Silver single diamond zircon titanium steel ring female niche design plain ring female light luxury High sense tail ring index ring",
+            "title_origin": "单钻锆石钛钢戒指女小众设计对戒素圈戒指女轻奢高级感尾戒食指环",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01CyiXNw2EfAoE4qO6M_!!2214733348771-0-cib.jpg",
+            "price": "4.9",
+            "price_info": {
+                "price": "4.9",
+                "price_min": "4.9",
+                "price_max": "5.3"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "1099"
             },
             "goods_score": "5.0",
             "shop_info": {
@@ -1329,77 +157,51 @@ export const Jewelry = [
             "is_hot_item": false
         },
         {
-            "item_id": "783823855992",
-            "product_url": "https://detail.1688.com/offer/783823855992.html",
-            "title": "2024 New Ruyi Rope Ring Gold Retro New Chinese Antique High-end Jewelry",
-            "origin_title": "2024年新款如意编绳戒指金色复古新中式古风手饰高级",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01E1MsgN1N8UwsyKvPC_!!2209700901525-0-cib.jpg",
-            "price": "4.0",
+            "item_id": "739491077891",
+            "product_url": "https://detail.1688.com/offer/739491077891.html",
+            "title": "High carbon stone diamond ring couple wedding ring sterling silver pair simulation proposal ceremony on-site fake ring",
+            "title_origin": "高碳石钻戒情侣结婚对戒镀银一对仿真订求婚礼仪式现场假戒指",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01Gryxqm1eiXW6KlAe2_!!2211864873905-0-cib.jpg",
+            "price": "2.4",
             "price_info": {
-                "price": "4.0",
-                "price_min": "4.0",
+                "price": "2.4",
+                "price_min": "2.4",
                 "price_max": "4.0"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "673"
+                "sale_quantity_90days": "3714"
             },
-            "goods_score": "5.0",
+            "goods_score": "4.6",
             "shop_info": {
                 "is_gold_manufacturer": false,
-                "is_verified": false
+                "is_verified": true
             },
-            "is_free_shipping": false,
+            "is_free_shipping": true,
             "is_new_item": false,
             "is_hot_item": false
         },
         {
-            "item_id": "822940202722",
-            "product_url": "https://detail.1688.com/offer/822940202722.html",
-            "title": "Cross-border AliExpress Full Diamond Micro-inlaid Couple Princess Square Diamond Ring European and American Fashion Luxury Engagement Ring for Women",
-            "origin_title": "跨境速卖通满钻微镶情侣公主方钻套戒欧美时尚奢华订婚戒指女款",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01Mf3bID1tHies9Cns9_!!2210977695877-0-cib.jpg",
-            "price": "13.0",
+            "item_id": "834633687952",
+            "product_url": "https://detail.1688.com/offer/834633687952.html",
+            "title": "2024 New Korean Style Ins Fashionable Elegant Sweet Niche All-match Design Sense Ring Daily Commuter Finger Ring",
+            "title_origin": "2025新款韩版ins潮气质甜美小众百搭设计感指环日常通勤食指戒",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN010LHqiP1mdybcn7CM9_!!2211075024978-0-cib.jpg",
+            "price": "0.7",
             "price_info": {
-                "price": "13.0",
-                "price_min": "13.0",
-                "price_max": "13.0"
+                "price": "0.7",
+                "price_min": "0.7",
+                "price_max": "1.98"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "402"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "736982530081",
-            "product_url": "https://detail.1688.com/offer/736982530081.html",
-            "title": "Natural Fidelity raw ore purple gold sand ring birth year high content cinnabar ring men's and women's birth year jewelry",
-            "origin_title": "天然保真原矿紫金砂戒指本命年高含量朱砂指环男女款本命年饰品",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01qnt10u1rY5TZ0ecR1_!!2215531185642-0-cib.jpg",
-            "price": "5.8",
-            "price_info": {
-                "price": "5.8",
-                "price_min": "5.8",
-                "price_max": "9.2"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "1417"
+                "sale_quantity_90days": "2788"
             },
             "goods_score": "4.9",
             "shop_info": {
-                "is_gold_manufacturer": false,
+                "is_gold_manufacturer": true,
                 "is_verified": false
             },
             "is_free_shipping": false,
@@ -1407,21 +209,47 @@ export const Jewelry = [
             "is_hot_item": false
         },
         {
-            "item_id": "750079257194",
-            "product_url": "https://detail.1688.com/offer/750079257194.html",
-            "title": "Sweet style Maillard cartoon bear pearl ring 2023 new niche girl heart fashion ring jewelry",
-            "origin_title": "甜美风美拉德卡通小熊珍珠戒指2023年新款小众少女心时尚指环饰品",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01vjFJyI1adivMYAeiO_!!2213365383353-0-cib.jpg",
-            "price": "4.8",
+            "item_id": "857705068199",
+            "product_url": "https://detail.1688.com/offer/857705068199.html",
+            "title": "Dachshund Pearl Ring Women's Autumn and Winter Simple All-match Unique Ring 2024 New Design Sense Finger Ring",
+            "title_origin": "腊肠狗珍珠戒指女秋冬简约百搭个性独特指环2024新款设计感食指戒",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01GGIXdo1oMguafH2sm_!!3498075211-0-cib.jpg",
+            "price": "3.5",
             "price_info": {
-                "price": "4.8",
-                "price_min": "4.8",
-                "price_max": "4.8"
+                "price": "3.5",
+                "price_min": "3.5",
+                "price_max": "3.5"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "1763"
+                "sale_quantity_90days": "852"
+            },
+            "goods_score": "4.5",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "584764348280",
+            "product_url": "https://detail.1688.com/offer/584764348280.html",
+            "title": "Japanese and Korean Style Extremely Fine One-grain Single Diamond Ring Rose Gold Micro Diamond Couple Ring Women's Titanium Steel Ring",
+            "title_origin": "日韩版极细款一粒单钻戒指 玫瑰金微镶钻石情侣对戒女款钛钢戒指",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/10298147075_1806221926.jpg",
+            "price": "2.5",
+            "price_info": {
+                "price": "2.5",
+                "price_min": "2.5",
+                "price_max": "3.5"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "4049"
             },
             "goods_score": "5.0",
             "shop_info": {
@@ -1433,73 +261,21 @@ export const Jewelry = [
             "is_hot_item": false
         },
         {
-            "item_id": "794082554971",
-            "product_url": "https://detail.1688.com/offer/794082554971.html",
-            "title": "Cross-border hot-selling literary retro small goldfish ring opening can adjust the size of the upstream two-color ring",
-            "origin_title": "跨境热销文艺复古小金鱼戒指开口可以调节尺寸逆流而上双色戒指",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01XiJhRv1c3f0cQ3tHI_!!2211011253545-0-cib.jpg",
-            "price": "1.2",
+            "item_id": "737318480198",
+            "product_url": "https://detail.1688.com/offer/737318480198.html",
+            "title": "12 constellation ring opening adjustable student creative personality ring twelve constellation zircon girlfriends couple gift",
+            "title_origin": "12星座戒指开口可调节学生创意个性戒子十二星座锆石闺蜜情侣礼物",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01V2Tnze2IfrpaQD46n_!!2837009314-0-cib.jpg",
+            "price": "1.25",
             "price_info": {
-                "price": "1.2",
-                "price_min": "1.2",
-                "price_max": "1.2"
+                "price": "1.25",
+                "price_min": "1.25",
+                "price_max": "1.25"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "519"
-            },
-            "goods_score": "",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "722459682286",
-            "product_url": "https://detail.1688.com/offer/722459682286.html",
-            "title": "New Japanese Style Set with Natural Cordierite Lafite Hollow Ring Female Happy Olive Leaf Purple Diamond Zircon Ring",
-            "origin_title": "新品日系镶天然堇青石拉长石镂空指环女幸福橄榄树叶紫钻锆石戒指",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01VyX8N826jHMezqI2R_!!2211403797697-0-cib.jpg",
-            "price": "4.8",
-            "price_info": {
-                "price": "4.8",
-                "price_min": "4.8",
-                "price_max": "4.8"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "1052"
-            },
-            "goods_score": "4.7",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "805068001484",
-            "product_url": "https://detail.1688.com/offer/805068001484.html",
-            "title": "Jasmine ~ S925 Silver Plated 14K Gold Olive Zircon Chain Adjustable Soft Ring Female Japanese Niche Design Sense",
-            "origin_title": "s925小茉莉金橄榄可调节链条纯银戒指女不掉色日系小众高级感饰品",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01kIaJpX1HCGWjF4X7x_!!2212010860721-0-cib.jpg",
-            "price": "12.8",
-            "price_info": {
-                "price": "12.8",
-                "price_min": "12.8",
-                "price_max": "12.8"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "1953"
+                "sale_quantity_90days": "5016"
             },
             "goods_score": "5.0",
             "shop_info": {
@@ -1508,24 +284,24 @@ export const Jewelry = [
             },
             "is_free_shipping": false,
             "is_new_item": false,
-            "is_hot_item": false
+            "is_hot_item": true
         },
         {
-            "item_id": "844165560472",
-            "product_url": "https://detail.1688.com/offer/844165560472.html",
-            "title": "Foreign ins blogger French retro niche texture INS irregular tassel shape metal ring jewelry women",
-            "origin_title": "国外ins博主法式复古小众质感INS不规则流苏造型金属戒指手饰女",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN018b6RJr1Bs2wpPQfly_!!0-0-cib.jpg",
-            "price": "6.9",
+            "item_id": "891306113053",
+            "product_url": "https://detail.1688.com/offer/891306113053.html",
+            "title": "Ice Flower Cut Red Corundum Pigeon Egg Ring Women's Wire-drawing Heavy Industry High-grade Retro Colored Diamond Wide Gold Ring",
+            "title_origin": "冰花切红刚玉鸽子蛋戒指女 拉丝重工高级感复古彩钻宽面金色戒指",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01NlFNXD2By0LzDSsgi_!!3416108406-0-cib.jpg",
+            "price": "7.9",
             "price_info": {
-                "price": "6.9",
-                "price_min": "6.9",
-                "price_max": "6.9"
+                "price": "7.9",
+                "price_min": "7.9",
+                "price_max": "7.9"
             },
             "currency": "CNY",
-            "quantity_begin": "1",
+            "quantity_begin": "2",
             "sale_info": {
-                "sale_quantity_90days": "27"
+                "sale_quantity_90days": "0"
             },
             "goods_score": "",
             "shop_info": {
@@ -1533,20 +309,20 @@ export const Jewelry = [
                 "is_verified": false
             },
             "is_free_shipping": false,
-            "is_new_item": false,
+            "is_new_item": true,
             "is_hot_item": false
         },
         {
-            "item_id": "828965515738",
-            "product_url": "https://detail.1688.com/offer/828965515738.html",
-            "title": "Wish New European and American Fashion Retro Bracelet High-grade Sense Alloy Ring Retro Two-color Men's and Women's Ring",
-            "origin_title": "wish新款欧美时尚复古手饰 高级感合金指环复古双色 男女戒指",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01KUt7Rs1TI0ZtOQFoF_!!2206709272358-0-cib.jpg",
-            "price": "4.3",
+            "item_id": "843506321715",
+            "product_url": "https://detail.1688.com/offer/843506321715.html",
+            "title": "European and American Casual Style Titanium Steel Ring Cup Handles Simple Niche All-match Couple's Ring Cross-border Jewelry",
+            "title_origin": "欧美休闲风 钛钢戒指环 杯把形 简约小众百搭情侣对戒指跨境饰品",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01J4tPMh1HtmB5c7zwL_!!2218341180816-0-cib.jpg",
+            "price": "6.83",
             "price_info": {
-                "price": "4.3",
-                "price_min": "4.3",
-                "price_max": "4.3"
+                "price": "6.83",
+                "price_min": "6.83",
+                "price_max": "7.36"
             },
             "currency": "CNY",
             "quantity_begin": "1",
@@ -1561,362 +337,153 @@ export const Jewelry = [
             "is_free_shipping": false,
             "is_new_item": false,
             "is_hot_item": false
-        }
-    ],[
-        {
-            "item_id": "815020486108",
-            "product_url": "https://detail.1688.com/offer/815020486108.html",
-            "title": "Cross-border Hot Sale Women's Simple Style Electroplated Gold Diamond Stainless Steel Ring Simple Single Rai Diamond Thin Titanium Steel Ring",
-            "origin_title": "跨境热卖女式简风电镀金色镶钻不锈钢戒指简约单排钻细款钛钢指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01EOn3A51fiN4tHia7T_!!3997534040-0-cib.jpg",
-            "price": "1.0",
-            "price_info": {
-                "price": "1.0",
-                "price_min": "1.0",
-                "price_max": "1.2"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "11837"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
         },
         {
-            "item_id": "711924374789",
-            "product_url": "https://detail.1688.com/offer/711924374789.html",
-            "title": "Europe and the United States cold wind zircon snake ring niche high-end design food finger ring new all-match jewelry wholesale women",
-            "origin_title": "欧美冷淡风锆石蛇形戒指小众高级感设计食指戒新款百搭饰品批发女",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01jwMIqz1RiSSXUepmW_!!3494832145-0-cib.jpg",
-            "price": "8.9",
+            "item_id": "886153144658",
+            "product_url": "https://detail.1688.com/offer/886153144658.html",
+            "title": "Inheriting the ancient method of sand gold phoenix dance nine-day ring new Chinese court style gradient enamel color point feather golden phoenix female ring",
+            "title_origin": "传承古法沙金凤舞九天戒指新中式宫廷风渐变珐琅彩点羽金凤凰女戒",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN011t1vzK1KXk0Y2sarX_!!2829231174-0-cib.jpg",
+            "price": "14.47",
             "price_info": {
-                "price": "8.9",
-                "price_min": "8.9",
-                "price_max": "9.9"
+                "price": "14.47",
+                "price_min": "14.47",
+                "price_max": "14.47"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "1482"
+                "sale_quantity_90days": "23"
             },
-            "goods_score": "5.0",
+            "goods_score": "",
             "shop_info": {
                 "is_gold_manufacturer": false,
                 "is_verified": false
             },
             "is_free_shipping": false,
-            "is_new_item": false,
+            "is_new_item": true,
             "is_hot_item": false
         },
         {
-            "item_id": "724381929682",
-            "product_url": "https://detail.1688.com/offer/724381929682.html",
-            "title": "925 Silver Plated Flash Diamond Ring Niche Advanced Finger Ring Tail Ring Women's Light Luxury Ring Open Ring",
-            "origin_title": "925镀银闪钻戒指小众高级感食指戒尾戒女轻奢素圈开口戒",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01NhHTAI1RVdJzRIX9w_!!2601062117-0-cib.jpg",
-            "price": "2.6",
-            "price_info": {
-                "price": "2.6",
-                "price_min": "2.6",
-                "price_max": "2.6"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "2311"
-            },
-            "goods_score": "4.6",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "660151200137",
-            "product_url": "https://detail.1688.com/offer/660151200137.html",
-            "title": "Cold Wind ~ French metal ring opening adjustable ins2022 tide Net red silver ring",
-            "origin_title": "冷淡风法式金属感银色食指戒高级感开口可调节潮流简约戒指指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01xYekDc1UIku6Boh5B_!!2597552495-0-cib.jpg",
-            "price": "4.85",
-            "price_info": {
-                "price": "4.85",
-                "price_min": "4.85",
-                "price_max": "4.85"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "513"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "742576620747",
-            "product_url": "https://detail.1688.com/offer/742576620747.html",
-            "title": "Retro niche design high-grade open ring female ins trendy cold style ring elegant simple tail ring wholesale",
-            "origin_title": "复古小众设计高级感开口戒指女ins潮冷淡风指环气质简约尾戒批发",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01e4RgXU1bIU90Cplxw_!!2207714103442-0-cib.jpg",
-            "price": "1.3",
-            "price_info": {
-                "price": "1.3",
-                "price_min": "1.3",
-                "price_max": "6.7"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "7706"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
-        },
-        {
-            "item_id": "841331802815",
-            "product_url": "https://detail.1688.com/offer/841331802815.html",
-            "title": "Diablo Crow Ring Sweet Cool Wind Advanced Sense Niche Finger Caution Love and Deep Space Qin Che Ring",
-            "origin_title": "暗黑乌鸦戒指甜酷风高级感小众食指戒恋与深空秦彻指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01bXV6KB1qSlNYdnRQ6_!!2218406045495-0-cib.jpg",
-            "price": "3.52",
-            "price_info": {
-                "price": "3.52",
-                "price_min": "3.52",
-                "price_max": "3.52"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "2378"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "631625514884",
-            "product_url": "https://detail.1688.com/offer/631625514884.html",
-            "title": "South Korea Dongdaemun ins Style Jewelry Retro Ring Ring Women's Cold Style Chain Simple Fashion Trend Europe and America",
-            "origin_title": "韩国东大门ins风饰品复古指环戒指女冷淡风链条简约时尚潮流欧美",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/22613901021_1547786160.jpg",
-            "price": "2.27",
-            "price_info": {
-                "price": "2.27",
-                "price_min": "2.27",
-                "price_max": "3.49"
-            },
-            "currency": "CNY",
-            "quantity_begin": "2",
-            "sale_info": {
-                "sale_quantity_90days": "8963"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
-        },
-        {
-            "item_id": "783164340829",
-            "product_url": "https://detail.1688.com/offer/783164340829.html",
-            "title": "Raw Cinnabar Beads Ring Female Garnet Index Finger Gold Pixiu Ring Tail Niche Design Ring Antique Style",
-            "origin_title": "原矿朱砂珠戒指女 石榴石食指金貔貅指环尾小众设计戒指古风",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01CwH31S1VAnrqs6Le4_!!3882572613-0-cib.jpg",
+            "item_id": "891293825324",
+            "product_url": "https://detail.1688.com/offer/891293825324.html",
+            "title": "Xiaozhong Heavy Industry Diamond-encrusted Oval Ring Women's Stacked Korean-style Zircon Middle-ancient Light Luxury High-grade All-match Retro Ring",
+            "title_origin": "小众重工镶钻椭圆戒指女叠戴韩系锆石中古轻奢高级百搭复古指环",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN012E0bLA2MNKQ2uCq9G_!!2208443039815-0-cib.jpg",
             "price": "5.5",
             "price_info": {
                 "price": "5.5",
                 "price_min": "5.5",
-                "price_max": "6.5"
+                "price_max": "5.5"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "1040"
+                "sale_quantity_90days": "0"
             },
-            "goods_score": "5.0",
+            "goods_score": "",
             "shop_info": {
                 "is_gold_manufacturer": false,
                 "is_verified": false
             },
             "is_free_shipping": false,
-            "is_new_item": false,
+            "is_new_item": true,
             "is_hot_item": false
         },
         {
-            "item_id": "680776483789",
-            "product_url": "https://detail.1688.com/offer/680776483789.html",
-            "title": "Korean style super fairy micro inlaid zircon butterfly ring open personality niche light luxury high-grade index finger ring female fashion",
-            "origin_title": "韩版超仙微镶锆石蝴蝶戒指开口个性小众轻奢高级感食指戒女时尚",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN018kD6K71FSdG4dFgDn_!!2213203750486-0-cib.jpg",
-            "price": "2.8",
+            "item_id": "890874998834",
+            "product_url": "https://detail.1688.com/offer/890874998834.html",
+            "title": "V gold high version coco rhombus ring narrow version small fragrant smooth full diamond for men and women couples plated 18k rose gold ring",
+            "title_origin": "v金高版本coco菱格戒指窄版小香光面满钻男女情侣镀18k玫瑰金对戒",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01evJG8L2H8975HWSBS_!!2217590849105-0-cib.jpg",
+            "price": "39.99",
             "price_info": {
-                "price": "2.8",
-                "price_min": "2.8",
-                "price_max": "2.8"
-            },
-            "currency": "CNY",
-            "quantity_begin": "2",
-            "sale_info": {
-                "sale_quantity_90days": "524"
-            },
-            "goods_score": "4.5",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "667506388304",
-            "product_url": "https://detail.1688.com/offer/667506388304.html",
-            "title": "Niche Design Original Snake Drop Glue Advanced Sense ins Cold Wind Irregular Index Finger Ring Trendy Cool Girl Ring",
-            "origin_title": "小众设计原创蛇滴胶高级感ins冷淡风不规则食指戒指潮酷女指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01AYN2cx20IMHYPQmFX_!!2212485876826-0-cib.jpg",
-            "price": "7.0",
-            "price_info": {
-                "price": "7.0",
-                "price_min": "7.0",
-                "price_max": "7.0"
+                "price": "39.99",
+                "price_min": "39.99",
+                "price_max": "47.0"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "4567"
+                "sale_quantity_90days": "1"
             },
-            "goods_score": "4.9",
+            "goods_score": "",
             "shop_info": {
                 "is_gold_manufacturer": false,
                 "is_verified": false
             },
             "is_free_shipping": false,
-            "is_new_item": false,
+            "is_new_item": true,
             "is_hot_item": false
         },
         {
-            "item_id": "743363379186",
-            "product_url": "https://detail.1688.com/offer/743363379186.html",
-            "title": "Snake ring female design niche fashion personality rose index finger ring 925 sterling silver high-grade ins fashion ring",
-            "origin_title": "蛇形戒指女设计小众时尚个性玫瑰花食指戒925纯银高级感ins潮指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN012oyrEU1t7dqsItqH6_!!2211540245855-0-cib.jpg",
-            "price": "0.45",
+            "item_id": "891682476048",
+            "product_url": "https://detail.1688.com/offer/891682476048.html",
+            "title": "2025 Gold Shop Full Circle Zircon Pigeon Egg Wire-drawing Ring Light Luxury Exquisite Middle Ancient Texture Finger Ring",
+            "title_origin": "2025金店同款满圈锆石鸽子蛋拉丝戒指轻奢精致中古纹理感食指戒",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01yQNklg2GjPoWV6dl5_!!2216402139051-0-cib.jpg",
+            "price": "8.99",
             "price_info": {
-                "price": "0.45",
-                "price_min": "0.45",
-                "price_max": "0.85"
+                "price": "8.99",
+                "price_min": "8.99",
+                "price_max": "8.99"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "1880"
+                "sale_quantity_90days": "1"
             },
-            "goods_score": "5.0",
+            "goods_score": "",
             "shop_info": {
                 "is_gold_manufacturer": false,
                 "is_verified": false
             },
             "is_free_shipping": false,
-            "is_new_item": false,
+            "is_new_item": true,
             "is_hot_item": false
         },
         {
-            "item_id": "673422036143",
-            "product_url": "https://detail.1688.com/offer/673422036143.html",
-            "title": "Ring Women's Color-free Retro Moonstone Spanish Opening Niche Design Advanced Sense Cold Wind Pearl Ring",
-            "origin_title": "戒指女不掉色复古月光石西班牙开口小众设计高级感冷淡风珍珠指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01HcVOzo2IpwQExx9GQ_!!2213302039336-0-cib.jpg",
-            "price": "2.47",
+            "item_id": "891325993965",
+            "product_url": "https://detail.1688.com/offer/891325993965.html",
+            "title": "Zhuo Zhifan Jewelry New S925 Sterling Silver 5*5mm Ace Pagoda Cut White Diamond Sugar Ring Nan Female ins",
+            "title_origin": "卓之凡珠宝新款S925纯银5*5mm阿斯切宝塔切白钻方糖戒指楠女ins款",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01jEoctC1N0FthvlFir_!!2215914071507-0-cib.jpg",
+            "price": "45.99",
             "price_info": {
-                "price": "2.47",
-                "price_min": "2.47",
-                "price_max": "5.12"
+                "price": "45.99",
+                "price_min": "45.99",
+                "price_max": "45.99"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "30280"
+                "sale_quantity_90days": "0"
             },
-            "goods_score": "4.9",
+            "goods_score": "",
             "shop_info": {
                 "is_gold_manufacturer": false,
                 "is_verified": false
             },
             "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
+            "is_new_item": true,
+            "is_hot_item": false
         },
         {
-            "item_id": "623378641941",
-            "product_url": "https://detail.1688.com/offer/623378641941.html",
-            "title": "Ning Zi wish Hot Sale New 18K Rose Plated Gold Princess Square Diamond Internet Celebrity Ring European and American Engagement Ring",
-            "origin_title": "wish合金热卖新款镀18k玫瑰金公主方钻网红戒指欧美订婚交叉指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/18485642447_454515205.jpg",
-            "price": "1.8",
+            "item_id": "862350800414",
+            "product_url": "https://detail.1688.com/offer/862350800414.html",
+            "title": "Xinjiang Hetian jade ring jasper ring saddle ring green chalcedony jasper ring a generation of hair",
+            "title_origin": "新疆和田玉色戒指碧玉色指环鞍戒指绿玉髓碧玉戒指一件代发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/16248564849_1540754568.jpg",
+            "price": "8.0",
             "price_info": {
-                "price": "1.8",
-                "price_min": "1.8",
-                "price_max": "1.8"
+                "price": "8.0",
+                "price_min": "8.0",
+                "price_max": "8.0"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "3856"
-            },
-            "goods_score": "4.7",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "849207647834",
-            "product_url": "https://detail.1688.com/offer/849207647834.html",
-            "title": "Gold shop with gold sand gold diamond fox ring new Chinese ancient French color Fang Hua ring women's fashion temperament high-end",
-            "origin_title": "金店同款沙金点钻狐狸戒指新中式古法国色芳华戒指女时尚气质高级",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01d0buYw1Swwi7YPA0X_!!2217319692312-0-cib.jpg",
-            "price": "13.0",
-            "price_info": {
-                "price": "13.0",
-                "price_min": "13.0",
-                "price_max": "13.0"
-            },
-            "currency": "CNY",
-            "quantity_begin": "2",
-            "sale_info": {
-                "sale_quantity_90days": "1548"
+                "sale_quantity_90days": "110"
             },
             "goods_score": "",
             "shop_info": {
@@ -1928,153 +495,23 @@ export const Jewelry = [
             "is_hot_item": false
         },
         {
-            "item_id": "821287105985",
-            "product_url": "https://detail.1688.com/offer/821287105985.html",
-            "title": "Simple Ins Cold Style Ring Double Layer Zircon Women's Simple Personality Diamond-encrusted Gold Ring Opening Ring Jewelry",
-            "origin_title": "简约ins冷淡风戒指双层锆石女简约个性镶钻金色戒指开口指环饰品",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01f3M3lL1GEj3GzunmC_!!2215058960591-0-cib.jpg",
-            "price": "1.5",
+            "item_id": "881417319006",
+            "product_url": "https://detail.1688.com/offer/881417319006.html",
+            "title": "Fashion personality geometric cold wind asymmetric design female 2024 titanium steel is not easy to fade new gold and silver jewelry",
+            "title_origin": "时尚个性几何冷淡风不对称设计感女2024钛钢不易掉色新款金银首饰",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01h2601Q1HTDBYoBCZX_!!2217851990758-0-cib.jpg",
+            "price": "2.21",
             "price_info": {
-                "price": "1.5",
-                "price_min": "1.5",
-                "price_max": "4.1"
+                "price": "2.21",
+                "price_min": "2.21",
+                "price_max": "3.21"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "8821"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
-        },
-        {
-            "item_id": "814320053385",
-            "product_url": "https://detail.1688.com/offer/814320053385.html",
-            "title": "Explosive opening ring women tourmaline light luxury niche design food finger ring retro color crystal beads ring wholesale",
-            "origin_title": "爆款开口戒指女碧玺轻奢小众设计食指戒复古彩色水晶珠子指环批发",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01N6ZL391CEwm3opg35_!!2218147340050-0-cib.jpg",
-            "price": "1.67",
-            "price_info": {
-                "price": "1.67",
-                "price_min": "1.67",
-                "price_max": "4.88"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "5401"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
-        },
-        {
-            "item_id": "762299654793",
-            "product_url": "https://detail.1688.com/offer/762299654793.html",
-            "title": "Retro obsession ring men's fashion personalized open ring fashion hip hop style single men's Thorn ring fashion",
-            "origin_title": "复古执念戒指男款潮流个性开口指环时尚嘻哈风单身男士荆棘戒指潮",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01CzIlqb1m7SPSvyvl8_!!2211697784907-0-cib.jpg",
-            "price": "0.7",
-            "price_info": {
-                "price": "0.7",
-                "price_min": "0.7",
-                "price_max": "0.7"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "4674"
+                "sale_quantity_90days": "25"
             },
             "goods_score": "",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "757605356882",
-            "product_url": "https://detail.1688.com/offer/757605356882.html",
-            "title": "Internet celebrity style 925 silver-plated fashion women's ring empty holder diy inlaid round Chinese pointed bottom Diamond flat egg surface ring holder",
-            "origin_title": "网红款925镀银时尚女戒指空托diy镶嵌圆形华子尖底钻平底蛋面戒托",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN014LQhiQ1Cf3I05oKtS_!!2217089640107-0-cib.jpg",
-            "price": "2.8",
-            "price_info": {
-                "price": "2.8",
-                "price_min": "2.8",
-                "price_max": "3.5"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "2311"
-            },
-            "goods_score": "4.8",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "693360130051",
-            "product_url": "https://detail.1688.com/offer/693360130051.html",
-            "title": "Ins-style South Korea plain ring knotted knitted open ring women's non-fading simple niche design high-end all-match",
-            "origin_title": "ins风韩国素圈打结编织开口戒指女不掉色简约小众设计高级感百搭",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01g6jMLv1mLeg1w24fQ_!!2213366304938-0-cib.jpg",
-            "price": "2.39",
-            "price_info": {
-                "price": "2.39",
-                "price_min": "2.39",
-                "price_max": "3.99"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "1299"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "773374428005",
-            "product_url": "https://detail.1688.com/offer/773374428005.html",
-            "title": "Italian mid-ancient brushed light luxury high-grade jewelry 925 sterling silver brushed craft forged surface ring for Women New",
-            "origin_title": "意大利中古拉丝轻奢高级感珠宝925纯银拉丝工艺锻面戒指女新款",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01sNvjsI2426tJPu23G_!!2013887332-0-cib.jpg",
-            "price": "39.9",
-            "price_info": {
-                "price": "39.9",
-                "price_min": "39.9",
-                "price_max": "59.9"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "1474"
-            },
-            "goods_score": "3.8",
             "shop_info": {
                 "is_gold_manufacturer": false,
                 "is_verified": false
@@ -2083,153 +520,24 @@ export const Jewelry = [
             "is_new_item": false,
             "is_hot_item": false
         }
-    ],[
+    ],
+    [
         {
-            "item_id": "642902281418",
-            "product_url": "https://detail.1688.com/offer/642902281418.html",
-            "title": "New Fashion Gold Plated Stainless Steel Chunky Ring Women's Creative Adjustable Cross Opening Ring Jewelry",
-            "origin_title": "新款时尚镀金不锈钢矮胖戒指女士创意可调式交叉开口戒指珠宝首饰",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01EmCqdf2ElaIkFrCbJ_!!2210913638785-0-cib.jpg",
-            "price": "15.0",
+            "item_id": "852213320947",
+            "product_url": "https://detail.1688.com/offer/852213320947.html",
+            "title": "Maillard Tiger Eye Opening Adjustable Ring Women's Niche Design Sense Finger Ring Retro Heavy Industry Oval Ring",
+            "title_origin": "美拉德虎眼石开口可调节戒指女小众设计感食指戒复古重工椭圆指环",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01kCJiBl1kGxUDbQjx3_!!2210335964657-0-cib.jpg",
+            "price": "0.88",
             "price_info": {
-                "price": "15.0",
-                "price_min": "15.0",
-                "price_max": "16.0"
+                "price": "0.88",
+                "price_min": "0.88",
+                "price_max": "1.08"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "2162"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "814755771658",
-            "product_url": "https://detail.1688.com/offer/814755771658.html",
-            "title": "Diablo vintage creative spades A card ring five suit women's personalized jewelry AliExpress hot sale",
-            "origin_title": "暗黑系复古创意黑桃A纸牌戒指五件套装 女个性手饰速卖通热销",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01e5sSXX1qTft8AHKfc_!!2211414035497-0-cib.jpg",
-            "price": "1.79",
-            "price_info": {
-                "price": "1.79",
-                "price_min": "1.79",
-                "price_max": "4.49"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "19858"
-            },
-            "goods_score": "",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
-        },
-        {
-            "item_id": "779863156725",
-            "product_url": "https://detail.1688.com/offer/779863156725.html",
-            "title": "Yingkai Original Design Light Luxury Lightning Ring Advanced Black Niche Design Sense Men and Women Couple Opening to Ring Tide",
-            "origin_title": "迎开原创设计轻奢闪电戒指高级黑色小众设计感男女情侣开口对戒潮",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01EAKZiu1ZnVnb1geZk_!!2217252893239-0-cib.jpg",
-            "price": "1.6",
-            "price_info": {
-                "price": "1.6",
-                "price_min": "1.6",
-                "price_max": "1.6"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "2564"
-            },
-            "goods_score": "",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "694006156926",
-            "product_url": "https://detail.1688.com/offer/694006156926.html",
-            "title": "Sand gold ring for women, no fading for a long time, niche high-grade light luxury design, national fashion Chinese knot open retro imitation gold jewelry",
-            "origin_title": "沙金戒指女久不掉色小众高级轻奢设计国潮中国结开口复古仿黄金饰",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01UHYS7d1VD5hRTy2Im_!!959712618-0-cib.jpg",
-            "price": "3.0",
-            "price_info": {
-                "price": "3.0",
-                "price_min": "3.0",
-                "price_max": "3.5"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "2325"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "721883809139",
-            "product_url": "https://detail.1688.com/offer/721883809139.html",
-            "title": "Niche Design Sense Pink Love Thorn Cat's Eye Zircon Ring Women's Sweet Cool Style Fashion Elegant All-match Ring",
-            "origin_title": "跨境小众感粉色爱心荆棘猫眼石锆石戒指女甜酷风时尚气质百搭指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01jCKqmw1TDQo7xEY8N_!!2207667062348-0-cib.jpg",
-            "price": "0.86",
-            "price_info": {
-                "price": "0.86",
-                "price_min": "0.86",
-                "price_max": "11.9"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "35763"
-            },
-            "goods_score": "4.9",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
-        },
-        {
-            "item_id": "848476376390",
-            "product_url": "https://detail.1688.com/offer/848476376390.html",
-            "title": "\"Koluberos\" \"KINOMOTO SAKURA\" Derived from Childlike Anime Ring Cartoon Design All-match Ring",
-            "origin_title": "「可鲁贝洛斯」「百变小樱」衍生童趣动漫戒指卡通设计感百搭戒指",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01il4F6C2HGOJP7mz6l_!!2218343229123-0-cib.jpg",
-            "price": "2.2",
-            "price_info": {
-                "price": "2.2",
-                "price_min": "2.2",
-                "price_max": "2.2"
-            },
-            "currency": "CNY",
-            "quantity_begin": "2",
-            "sale_info": {
-                "sale_quantity_90days": "7604"
+                "sale_quantity_90days": "11481"
             },
             "goods_score": "5.0",
             "shop_info": {
@@ -2244,7 +552,7 @@ export const Jewelry = [
             "item_id": "708907041066",
             "product_url": "https://detail.1688.com/offer/708907041066.html",
             "title": "Titanium Steel Ring Gold Collection Niche Design High-end Light Luxury Retro Personalized Finger Ring Women's Color-free Bracelet",
-            "origin_title": "钛钢戒指金色合集小众设计高级感轻奢复古个性食指环女不掉色手饰",
+            "title_origin": "钛钢戒指金色合集小众设计高级感轻奢复古个性食指环女不掉色手饰",
             "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01y37H0M1Iu3sXKbRSD_!!2207906730952-0-cib.jpg",
             "price": "2.8",
             "price_info": {
@@ -2255,59 +563,7 @@ export const Jewelry = [
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "12043"
-            },
-            "goods_score": "4.9",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
-        },
-        {
-            "item_id": "798485283975",
-            "product_url": "https://detail.1688.com/offer/798485283975.html",
-            "title": "Cross-border hot selling explosions diamond lattice couples stainless steel ring manufacturers supply carved small fragrant wind index finger ring",
-            "origin_title": "跨境热卖爆款菱格纹情侣不锈钢戒指厂家货源精雕小香风食指指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN018eKjlM1WiWehSeAJH_!!2200540792822-0-cib.jpg",
-            "price": "1.69",
-            "price_info": {
-                "price": "1.69",
-                "price_min": "1.69",
-                "price_max": "2.29"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "519"
-            },
-            "goods_score": "",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "853100609719",
-            "product_url": "https://detail.1688.com/offer/853100609719.html",
-            "title": "Korean-style Niche High-grade Ring Light Luxury High-grade Sense-element Ring suit Finger Ring All-match Elegant Ring for Couple Women",
-            "origin_title": "韩版小众高级戒指轻奢高级感素圈套装食指戒百搭气质指环情侣女",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01DsXtJf2Bae94VH0Oc_!!2218873058355-0-cib.jpg",
-            "price": "1.3",
-            "price_info": {
-                "price": "1.3",
-                "price_min": "1.3",
-                "price_max": "4.29"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "7342"
+                "sale_quantity_90days": "7081"
             },
             "goods_score": "5.0",
             "shop_info": {
@@ -2319,21 +575,73 @@ export const Jewelry = [
             "is_hot_item": true
         },
         {
-            "item_id": "650499499669",
-            "product_url": "https://detail.1688.com/offer/650499499669.html",
-            "title": "Explosion looks good without fading 0.5mm arc smooth surface 14K Joker ultra-fine ring female plain ring joint ring small finger ring",
-            "origin_title": "爆炸好看不掉色0.5mm圆弧光面14k百搭超细戒指女素圈关节戒小指戒",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01LgjHSu2JiRUcvEUd1_!!2200631439455-0-cib.jpg",
-            "price": "6.35",
+            "item_id": "848157514132",
+            "product_url": "https://detail.1688.com/offer/848157514132.html",
+            "title": "[Angel's Eye] German Small Horse Eye Diamond Ring Women's High Carbon Diamond Light Luxury High-end All-match Ring Ring",
+            "title_origin": "【天使之眼】德国小众马眼钻石戒指女高碳钻轻奢高级感百搭指环戒",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN012EabqD1URSiJA9aaO_!!2217829142514-0-cib.jpg",
+            "price": "11.0",
             "price_info": {
-                "price": "6.35",
-                "price_min": "6.35",
-                "price_max": "6.35"
+                "price": "11.0",
+                "price_min": "11.0",
+                "price_max": "11.0"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "618"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "821287105985",
+            "product_url": "https://detail.1688.com/offer/821287105985.html",
+            "title": "Simple Ins Cold Style Ring Double Layer Zircon Women's Simple Personality Diamond-encrusted Gold Ring Opening Ring Jewelry",
+            "title_origin": "简约ins冷淡风戒指双层锆石女简约个性镶钻金色戒指开口指环饰品",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01f3M3lL1GEj3GzunmC_!!2215058960591-0-cib.jpg",
+            "price": "1.5",
+            "price_info": {
+                "price": "1.5",
+                "price_min": "1.5",
+                "price_max": "4.1"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "9869"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "663737316059",
+            "product_url": "https://detail.1688.com/offer/663737316059.html",
+            "title": "Longlongjin New Full Diamond Row Ring Lace Ring Women's Simple Personalized Thin Stacked Ring Fashionable Trendy Style",
+            "title_origin": "隆隆金新款满钻排戒蕾丝戒指女简约个性细薄叠戴戒指时尚潮流款",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01HkaPSJ1pcXxP5T3BE_!!2201436135381-0-cib.jpg",
+            "price": "34.0",
+            "price_info": {
+                "price": "34.0",
+                "price_min": "34.0",
+                "price_max": "34.0"
             },
             "currency": "CNY",
             "quantity_begin": "2",
             "sale_info": {
-                "sale_quantity_90days": "1773"
+                "sale_quantity_90days": "457"
             },
             "goods_score": "5.0",
             "shop_info": {
@@ -2345,23 +653,23 @@ export const Jewelry = [
             "is_hot_item": false
         },
         {
-            "item_id": "858028316368",
-            "product_url": "https://detail.1688.com/offer/858028316368.html",
-            "title": "Light Luxury Zircon Flash Diamond Snake Shape Ring silver Open Finger Ring High-grade Texture Simple All-match Fashion Cool Jewelry for Women",
-            "origin_title": "轻奢锆石闪钻灵蛇形戒指银色开口指环高级质感简约百搭潮酷手饰女",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01ctjTdZ2DxfHV5R4Pz_!!4079378676-0-cib.jpg",
-            "price": "5.24",
+            "item_id": "824788686648",
+            "product_url": "https://detail.1688.com/offer/824788686648.html",
+            "title": "Fashion niche design high-end bow female ring opening adjustable gold-plated ring brass plated gold wholesale",
+            "title_origin": "时尚小众设计高级感蝴蝶结女戒开口可调节镀金戒指黄铜镀沙金批发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01FSgPfN28vJ8CP5Mkt_!!2218447227994-0-cib.jpg",
+            "price": "2.5",
             "price_info": {
-                "price": "5.24",
-                "price_min": "5.24",
-                "price_max": "17.75"
+                "price": "2.5",
+                "price_min": "2.5",
+                "price_max": "6.0"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "2586"
+                "sale_quantity_90days": "1939"
             },
-            "goods_score": "5.0",
+            "goods_score": "4.5",
             "shop_info": {
                 "is_gold_manufacturer": false,
                 "is_verified": false
@@ -2371,47 +679,21 @@ export const Jewelry = [
             "is_hot_item": false
         },
         {
-            "item_id": "793451274560",
-            "product_url": "https://detail.1688.com/offer/793451274560.html",
-            "title": "Cross-border Hot Selling Stainless Steel Ring Jewelry Men's and Women's Fashion Ayatul Coursi Strip Cross Opening Ring",
-            "origin_title": "跨境热销不锈钢指环饰品男女时尚阿亚图尔库尔西条状交叉开口戒指",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01U841Gi1pKEIg1QnRQ_!!945805341-0-cib.jpg",
-            "price": "3.2",
+            "item_id": "639471893762",
+            "product_url": "https://detail.1688.com/offer/639471893762.html",
+            "title": "ring adjuster ring adjuster ring size adjusting pad transparent ring invisible adjuster",
+            "title_origin": "ring adjuster 戒指调节器 戒指大小调节垫透明戒指隐形调节器",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01TPyazK1C8X4nlWr6a_!!2333030036-0-cib.jpg",
+            "price": "3.4",
             "price_info": {
-                "price": "3.2",
-                "price_min": "3.2",
-                "price_max": "4.3"
+                "price": "3.4",
+                "price_min": "3.4",
+                "price_max": "3.6"
             },
             "currency": "CNY",
-            "quantity_begin": "1",
+            "quantity_begin": "10",
             "sale_info": {
-                "sale_quantity_90days": "4464"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "770709459782",
-            "product_url": "https://detail.1688.com/offer/770709459782.html",
-            "title": "Jin Zhixiu same style Flower hand Flower big Flower ring female ring pink Flower open Ring Dance props accessories",
-            "origin_title": "金智秀同款Flower手花大花朵戒指女指环粉色花开口戒舞蹈道具配饰",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN010n0vfx22lKlDOyMyf_!!986567160-0-cib.jpg",
-            "price": "2.1",
-            "price_info": {
-                "price": "2.1",
-                "price_min": "2.1",
-                "price_max": "2.1"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "6149"
+                "sale_quantity_90days": "60576"
             },
             "goods_score": "5.0",
             "shop_info": {
@@ -2423,89 +705,11 @@ export const Jewelry = [
             "is_hot_item": true
         },
         {
-            "item_id": "719691554291",
-            "product_url": "https://detail.1688.com/offer/719691554291.html",
-            "title": "Light Luxury Niche Super Flash Zircon Love Ring Women's ins Style Advanced Design Sense Open Index Finger Ring Wholesale",
-            "origin_title": "轻奢小众超闪锆石爱心戒指女ins风高级设计感开口食指戒指环批发",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01a4M29g1Dc8JOUCkPE_!!2209053490236-0-cib.jpg",
-            "price": "1.4",
-            "price_info": {
-                "price": "1.4",
-                "price_min": "1.4",
-                "price_max": "5.6"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "8408"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
-        },
-        {
-            "item_id": "761674678685",
-            "product_url": "https://detail.1688.com/offer/761674678685.html",
-            "title": "Cross-border foreign trade Amazon heart-shaped cross ring, adjustable ring factory direct sales",
-            "origin_title": "跨境 外贸  亚马逊 心形十字架戒指，可调节戒指  厂家直销",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01kUk1hb21w2OAehXqT_!!2212819817048-0-cib.jpg",
-            "price": "1.4",
-            "price_info": {
-                "price": "1.4",
-                "price_min": "1.4",
-                "price_max": "1.4"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "5225"
-            },
-            "goods_score": "4.7",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
-        },
-        {
-            "item_id": "711239679300",
-            "product_url": "https://detail.1688.com/offer/711239679300.html",
-            "title": "Sansheng III Shili Peach Blossom Will Turn Ring Female Niche Design Food Finger Ring Birthday Gift for Girlfriend New",
-            "origin_title": "三生三世十里桃花会转动戒指女小众设计食指环生日礼物送女友新款",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01oCF3Ux1WTPSIDyE5s_!!2215452252789-0-cib.jpg",
-            "price": "3.8",
-            "price_info": {
-                "price": "3.8",
-                "price_min": "3.8",
-                "price_max": "3.8"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "1593"
-            },
-            "goods_score": "",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "692842235315",
-            "product_url": "https://detail.1688.com/offer/692842235315.html",
-            "title": "INS pink dripping oil ring sweet five-pointed star ring butterfly Daisy hug letter female ring wholesale",
-            "origin_title": "INS粉色滴油戒指 甜美五角星戒指 蝴蝶小雏菊拥抱字母女戒批发",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01tpSwBF1WlGrru9ax7_!!2318052828-0-cib.jpg",
+            "item_id": "741659632248",
+            "product_url": "https://detail.1688.com/offer/741659632248.html",
+            "title": "S925 sterling silver ring Women's Light luxury niche design fashion personality girlfriends plain ring index ring gift",
+            "title_origin": "S925纯银戒指女款轻奢小众设计时尚个性闺蜜素圈食指环送礼物",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01WmoCqC1OUJMi1pgi5_!!995561708-0-cib.jpg",
             "price": "4.5",
             "price_info": {
                 "price": "4.5",
@@ -2515,7 +719,111 @@ export const Jewelry = [
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "3483"
+                "sale_quantity_90days": "764"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "847901031413",
+            "product_url": "https://detail.1688.com/offer/847901031413.html",
+            "title": "Extremely fine without fading! Knock flash not afraid of waterwheel flower temperament all-match ring tail ring personality element ring food finger ring",
+            "title_origin": "极细不掉色！敲闪不怕水车花气质百搭戒指尾戒个性素圈食指戒",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01qPaoLd1OM4M5110Y9_!!2214747931690-0-cib.jpg",
+            "price": "1.69",
+            "price_info": {
+                "price": "1.69",
+                "price_min": "1.69",
+                "price_max": "1.89"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "1375"
+            },
+            "goods_score": "4.8",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "650471345187",
+            "product_url": "https://detail.1688.com/offer/650471345187.html",
+            "title": "2022 European and American Amazon Fashion Elegant Women's Light Luxury Transfer Beads Hip Hop Geometric European and American Cold Wind Ring",
+            "title_origin": "2025欧美亚马逊时尚气质女式轻奢转运珠嘻哈几何型欧美冷淡风戒指",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01hAraYO1Qrmhm7Gq3Q_!!2209240342030-0-cib.jpg",
+            "price": "4.23",
+            "price_info": {
+                "price": "4.23",
+                "price_min": "4.23",
+                "price_max": "4.98"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "1163"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "680327576497",
+            "product_url": "https://detail.1688.com/offer/680327576497.html",
+            "title": "Elegant camellia flower ring female 2024 trendy niche design high-grade Pearl opening adjustable index finger ring",
+            "title_origin": "气质山茶花戒指女2024潮小众设计高级感珍珠开口可调节食指戒指环",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01Pkf6gZ2CI9WpA01jx_!!2208411428450-0-cib.jpg",
+            "price": "4.4",
+            "price_info": {
+                "price": "4.4",
+                "price_min": "4.4",
+                "price_max": "4.4"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "837"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "862079333269",
+            "product_url": "https://detail.1688.com/offer/862079333269.html",
+            "title": "Leo Altman Ring of Lion's Pupil Bandai Warrior Transformer Children's Anime Ace Transformed Fashion Jewelry",
+            "title_origin": "狮子之瞳雷欧奥特曼戒指万代战士变身器儿童动漫艾斯变身时尚饰品",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN010rhPII25xBbNlQzxZ_!!3878457592-0-cib.jpg",
+            "price": "6.8",
+            "price_info": {
+                "price": "6.8",
+                "price_min": "6.8",
+                "price_max": "6.8"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "133"
             },
             "goods_score": "",
             "shop_info": {
@@ -2527,42 +835,16 @@ export const Jewelry = [
             "is_hot_item": false
         },
         {
-            "item_id": "854857799690",
-            "product_url": "https://detail.1688.com/offer/854857799690.html",
-            "title": "Cross-border Hot Pangjiadora White Copper Silver Plated Rose Love Ring Fashion Simple Couple Ring Factory Price Direct Sales",
-            "origin_title": "跨境热销潘家多拉白铜镀银玫色爱心戒指时尚简约情侣对戒厂价直销",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01DBVSqI1pmAYkoIhMb_!!2218237195402-0-cib.jpg",
-            "price": "7.0",
+            "item_id": "891306525474",
+            "product_url": "https://detail.1688.com/offer/891306525474.html",
+            "title": "Cross-border Cartoon Adjustable Children's Ring Cute Girl Princess Alloy Oil Dropping Jewelry 36 Boxes",
+            "title_origin": "跨境卡通可调节儿童戒指环可爱女孩公主合金滴油饰品36枚盒装",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01XV5eYS1fRQMqbe0ni_!!2214104084003-0-cib.jpg",
+            "price": "16.0",
             "price_info": {
-                "price": "7.0",
-                "price_min": "7.0",
-                "price_max": "7.0"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "5138"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
-        },
-        {
-            "item_id": "866279516567",
-            "product_url": "https://detail.1688.com/offer/866279516567.html",
-            "title": "Retro domineering Chinese dragon ring men's Chinese style zodiac dragon personality simple fashion Thai silver opening creative ring",
-            "origin_title": "复古霸气中国龙戒指男中国风生肖龙个性简约时尚泰银开口创意指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01UV5khg1RbaWDL2tEd_!!2200583302130-0-cib.jpg",
-            "price": "5.88",
-            "price_info": {
-                "price": "5.88",
-                "price_min": "5.88",
-                "price_max": "5.88"
+                "price": "16.0",
+                "price_min": "16.0",
+                "price_max": "16.0"
             },
             "currency": "CNY",
             "quantity_begin": "1",
@@ -2579,21 +861,177 @@ export const Jewelry = [
             "is_hot_item": false
         },
         {
-            "item_id": "862233507354",
-            "product_url": "https://detail.1688.com/offer/862233507354.html",
-            "title": "Genuine authorized pony Polly family series jewelry children's toys jewelry gift ring 981",
-            "origin_title": "正版授权小马宝莉家族系列饰品儿童玩具首饰礼物戒指981",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01J8Wp7V236P1h6S6BA_!!1942177206-0-cib.jpg",
-            "price": "7.2",
+            "item_id": "891572360271",
+            "product_url": "https://detail.1688.com/offer/891572360271.html",
+            "title": "Mayili factory direct foreign trade jewelry new Yiwu summer beach alloy 7 open foot ring finger set",
+            "title_origin": "玛伊莉厂家直销外贸饰品新款义乌夏天沙滩合金7件开口脚戒指套",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/18925555831_917145012.jpg",
+            "price": "2.0",
             "price_info": {
-                "price": "7.2",
-                "price_min": "7.2",
-                "price_max": "7.2"
+                "price": "2.0",
+                "price_min": "2.0",
+                "price_max": "2.0"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "14"
+                "sale_quantity_90days": "0"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": true,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "891609780493",
+            "product_url": "https://detail.1688.com/offer/891609780493.html",
+            "title": "Niche Design Sense S925 Sterling Silver Small Square Sugar Wave Ring Women's Light Luxury Gold-plated Silver Jewelry Jewelry",
+            "title_origin": "小众设计感 s925 纯银小方糖波浪戒指环女轻奢镀金银饰品首饰",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01KNEUjI2I4JPUl8C7Q_!!2212767909232-0-cib.jpg",
+            "price": "21.8",
+            "price_info": {
+                "price": "21.8",
+                "price_min": "21.8",
+                "price_max": "21.8"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "0"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": true,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "891849989802",
+            "product_url": "https://detail.1688.com/offer/891849989802.html",
+            "title": "925 Sterling Silver Small Square Sugar Imitation Hetian Jade Ring for Women Niche Design National Style Ring with Open Index Finger Fashion Personality",
+            "title_origin": "925纯银小方糖仿和田玉戒指女小众设计国风素圈食指开口时尚个性",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01Egk9sH1fFyOBZabQL_!!2215164633978-0-cib.jpg",
+            "price": "4.52",
+            "price_info": {
+                "price": "4.52",
+                "price_min": "4.52",
+                "price_max": "4.52"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "0"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": true,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "891656304670",
+            "product_url": "https://detail.1688.com/offer/891656304670.html",
+            "title": "TikTok New Wave Breaking Cross Drawing Ring Explosive Fashion High-end Sense Design Light Luxury Personalized Accessories for Women",
+            "title_origin": "抖音新款破浪交叉拉丝戒爆款时尚潮流高级感设计轻奢个性饰品女",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01hzMSSY1vXru2vioTl_!!2218671176183-0-cib.jpg",
+            "price": "3.8",
+            "price_info": {
+                "price": "3.8",
+                "price_min": "3.8",
+                "price_max": "3.8"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "0"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": true,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "891574332208",
+            "product_url": "https://detail.1688.com/offer/891574332208.html",
+            "title": "Yabin in stock direct fashion retro DIY jewelry adjustable size brass ring holder",
+            "title_origin": "雅缤 现货直销潮流复古diy饰品 可调节大小铜戒托",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01VwILwH28INUbrDPg4_!!941477909-0-cib.jpg",
+            "price": "0.7",
+            "price_info": {
+                "price": "0.7",
+                "price_min": "0.7",
+                "price_max": "1.0"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "0"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": true,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "891566480518",
+            "product_url": "https://detail.1688.com/offer/891566480518.html",
+            "title": "S925 Silver Plated Goose Egg Diamond Ring Women's Eight Heart Eight Arrows with Diamond Ring Simulation Zircon Oval Carat Wedding Jewelry",
+            "title_origin": "镀s925纯银鹅蛋钻戒女八心八箭带钻戒指仿真锆石椭圆克拉结婚饰品",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/2019/624/116/10694611426_1492657371.jpg",
+            "price": "7.5",
+            "price_info": {
+                "price": "7.5",
+                "price_min": "7.5",
+                "price_max": "7.5"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "0"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": true,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "891872529867",
+            "product_url": "https://detail.1688.com/offer/891872529867.html",
+            "title": "S925 sterling silver simple hollow love tail ring fashion personality versatile jewelry",
+            "title_origin": "S925纯银简约款镂空爱心尾戒时尚个性百搭首饰",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01OfDxYc1r1ZP023D8U_!!2209925425571-0-cib.jpg",
+            "price": "20.0",
+            "price_info": {
+                "price": "20.0",
+                "price_min": "20.0",
+                "price_max": "20.0"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "0"
             },
             "goods_score": "",
             "shop_info": {
@@ -2604,21 +1042,648 @@ export const Jewelry = [
             "is_new_item": true,
             "is_hot_item": false
         }
-    ],[
+    ],
+    [
         {
-            "item_id": "669466214403",
-            "product_url": "https://detail.1688.com/offer/669466214403.html",
-            "title": "Korean Style Diamond-encrusted Zircon Couple's Ring Women's Fashionable Distinctive Four-claw Zircon Couple's Ring Simple Jewelry",
-            "origin_title": "韩版镶钻锆石情侣戒指女时尚个性四爪锆石情侣戒指对戒简约首饰",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01P3ZAdp1TgHejVlyky_!!3026752411-0-cib.jpg",
-            "price": "3.6",
+            "item_id": "719276902688",
+            "product_url": "https://detail.1688.com/offer/719276902688.html",
+            "title": "Internet Celebrant Cute Sweet Japanese and Korean Cat Head Ring Girl Cartoon Soft Girl Ring Girlfriend Simple for Girlfriend",
+            "title_origin": "网红同款可爱甜美日韩猫头戒指少女卡通软妹指环闺蜜简约送女友",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01dvl3iq1RAZ5leGqOE_!!2215790222071-0-cib.jpg",
+            "price": "0.4",
             "price_info": {
-                "price": "3.6",
-                "price_min": "3.6",
-                "price_max": "5.8"
+                "price": "0.4",
+                "price_min": "0.4",
+                "price_max": "0.4"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "20980"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "802935868257",
+            "product_url": "https://detail.1688.com/offer/802935868257.html",
+            "title": "Pure Silver 9999 Three-sided Crushed Ice Closed Ring for Women, Accessible Luxury and High-end CNC Seiko Explosive Sterling Silver Ring Trend",
+            "title_origin": "足银9999三面碎冰冰闭口戒指女轻奢高级感CNC精工爆闪纯银指环潮",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01VroTFe1kG2e7gkU4z_!!2216758524655-0-cib.jpg",
+            "price": "35.8",
+            "price_info": {
+                "price": "35.8",
+                "price_min": "35.8",
+                "price_max": "42.8"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "1055"
+            },
+            "goods_score": "4.9",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "635435791183",
+            "product_url": "https://detail.1688.com/offer/635435791183.html",
+            "title": "South Korea ring cold style S925 sterling silver ring female retro distressed texture cross twist woven ring hipster",
+            "title_origin": "韩国戒指冷淡风S925纯银戒指女复古做旧纹理交叉麻花编织指环潮人",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/23700038641_1215620411.jpg",
+            "price": "4.5",
+            "price_info": {
+                "price": "4.5",
+                "price_min": "4.5",
+                "price_max": "4.5"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "2740"
+            },
+            "goods_score": "4.8",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "826322338942",
+            "product_url": "https://detail.1688.com/offer/826322338942.html",
+            "title": "Emerald Design Sense Ring Women's High-end Sense Fashionable Sex Cold Style Niche Opening Finger Ring Ins Ring",
+            "title_origin": "祖母绿设计感戒指女高级感时尚个性冷淡风小众开口食指戒ins指环",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01jAYg5T1LuvdEWrKBY_!!2216919171360-0-cib.jpg",
+            "price": "0.65",
+            "price_info": {
+                "price": "0.65",
+                "price_min": "0.65",
+                "price_max": "1.1"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "36810"
+            },
+            "goods_score": "4.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "802444617633",
+            "product_url": "https://detail.1688.com/offer/802444617633.html",
+            "title": "Cross-border new geometric color zircon ring gold women's personality simple high sense ring wholesale",
+            "title_origin": "跨境新款几何彩色锆石戒指金色女式个性简约高级感戒指批发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01k5dLfU1DmfXjNVCNp_!!3982340259-0-cib.jpg",
+            "price": "6.0",
+            "price_info": {
+                "price": "6.0",
+                "price_min": "6.0",
+                "price_max": "6.0"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "514"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "784684118624",
+            "product_url": "https://detail.1688.com/offer/784684118624.html",
+            "title": "Simulation couple live pair ring fairy tale diamond ring dense set with flower small red book with ring wedding props wholesale",
+            "title_origin": "仿真情侣活口对戒童话款钻戒密镶花型小红书同款戒指婚礼道具批发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01JqSirt1eDr33HpF0d_!!2209533933838-0-cib.jpg",
+            "price": "3.0",
+            "price_info": {
+                "price": "3.0",
+                "price_min": "3.0",
+                "price_max": "4.0"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "6325"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "849954176095",
+            "product_url": "https://detail.1688.com/offer/849954176095.html",
+            "title": "Palace ~ Stacked vintage Ring Niche Unique Antique Finger Ring Women's Advanced Finger Ring Adjustable Opening",
+            "title_origin": "宫廷~叠戴vintage戒指小众独特古着食指戒女高级感指环开口可调节",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01kXJpd720LZK7ILXnE_!!2532416833-0-cib.jpg",
+            "price": "1.1",
+            "price_info": {
+                "price": "1.1",
+                "price_min": "1.1",
+                "price_max": "1.4"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "8335"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "854346843458",
+            "product_url": "https://detail.1688.com/offer/854346843458.html",
+            "title": "Handmade Brushed Ring for Women Niche Design Wide-faced Retro Light Luxury Jewelry Light Luxury High-level Simple Niche Finger Ring",
+            "title_origin": "手工拉丝戒指女小众设计宽面复古轻奢手饰轻奢高级感简约小众指戒",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01yedEFl1KxqZGUBm6n_!!2217092331231-0-cib.jpg",
+            "price": "41.9",
+            "price_info": {
+                "price": "41.9",
+                "price_min": "41.9",
+                "price_max": "41.9"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "478"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "840204530830",
+            "product_url": "https://detail.1688.com/offer/840204530830.html",
+            "title": "Small Snake Spirit Snake Oval Denier 4*6 Zircon Ring Inlaid with Mosan Diamond Egg Face Ring Small Red Book with Explosions",
+            "title_origin": "小红书爆款饰品灵蛇指环椭圆蛋形锆石蛇形戒指镶嵌蛋面莫桑钻戒指",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01azKBkD20h5xEO1YTu_!!2216358626880-0-cib.jpg",
+            "price": "4.2",
+            "price_info": {
+                "price": "4.2",
+                "price_min": "4.2",
+                "price_max": "4.2"
             },
             "currency": "CNY",
             "quantity_begin": "2",
+            "sale_info": {
+                "sale_quantity_90days": "3077"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "854919696537",
+            "product_url": "https://detail.1688.com/offer/854919696537.html",
+            "title": "Kitty Cat Opening Ring Female Student Best Friend Cute Kitty Meow Ring Cartoon Sweet Cat Ring",
+            "title_origin": "kitty猫开口戒指女学生闺蜜 可爱萌凯蒂喵戒指 卡通甜美猫咪戒指",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01O7zR2i1o8UdEchncy_!!2215450265180-0-cib.jpg",
+            "price": "0.9",
+            "price_info": {
+                "price": "0.9",
+                "price_min": "0.9",
+                "price_max": "0.9"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "11263"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "846542204525",
+            "product_url": "https://detail.1688.com/offer/846542204525.html",
+            "title": "Cross-border explosive accessories 2 3 4 6 8MM titanium steel ring smooth ring stainless steel inner and outer arc ring",
+            "title_origin": "跨境爆款配饰 2 3 4 6 8MM钛钢素圈光面戒指 不锈钢内外圆弧戒指",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01MO2Ym21fiN6j7X7Ly_!!3997534040-0-cib.jpg",
+            "price": "0.5",
+            "price_info": {
+                "price": "0.5",
+                "price_min": "0.5",
+                "price_max": "5.0"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "15663"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "861878024767",
+            "product_url": "https://detail.1688.com/offer/861878024767.html",
+            "title": "Maillard Pearl Crystal Beaded Ring Stacked Rope Artistic Stacked Finger Ring High-grade Handmade Finger Ring",
+            "title_origin": "美拉德珍珠水晶串珠戒指弹力绳文艺叠戴食指戒高级感手工指环",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01iC4SBR1QgL8AAXaZ1_!!2218934992005-0-cib.jpg",
+            "price": "1.96",
+            "price_info": {
+                "price": "1.96",
+                "price_min": "1.96",
+                "price_max": "3.78"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "2982"
+            },
+            "goods_score": "4.6",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "732797320746",
+            "product_url": "https://detail.1688.com/offer/732797320746.html",
+            "title": "Ancient style heritage plain ring artificial gold 18K ring Sansheng III tail ring couple ring for girlfriend",
+            "title_origin": "古法传承素圈戒指仿真黄金18K指环三生三世尾戒指情侣对戒送女友",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01UEd79u1axsIo7tfk9_!!2216132383397-0-cib.jpg",
+            "price": "6.8",
+            "price_info": {
+                "price": "6.8",
+                "price_min": "6.8",
+                "price_max": "6.8"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "587"
+            },
+            "goods_score": "4.5",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "775549408893",
+            "product_url": "https://detail.1688.com/offer/775549408893.html",
+            "title": "2024 Crocore Ring Trendy Brand Finger Ring Eternal Iris Domineering ins Old Retro European and American Tail Ring Wholesale",
+            "title_origin": "2024克罗心戒指潮牌指环永恒鸢尾花霸气ins做旧复古欧美尾戒批发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01kNhrjD1pS13jiSxec_!!2216526005358-0-cib.jpg",
+            "price": "6.99",
+            "price_info": {
+                "price": "6.99",
+                "price_min": "6.99",
+                "price_max": "14.68"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "840"
+            },
+            "goods_score": "4.7",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "805274290155",
+            "product_url": "https://detail.1688.com/offer/805274290155.html",
+            "title": "Gold shop with broken ice ring all over the sky star ring plated real gold 2mm narrow version flash ring ring female ring",
+            "title_origin": "金店同款碎碎冰戒指满天星条戒镀真金2mm窄版爆闪对戒素圈女指环",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01dsCgdi1zblflVDdQM_!!2211364556733-0-cib.jpg",
+            "price": "8.0",
+            "price_info": {
+                "price": "8.0",
+                "price_min": "8.0",
+                "price_max": "8.0"
+            },
+            "currency": "CNY",
+            "quantity_begin": "2",
+            "sale_info": {
+                "sale_quantity_90days": "31149"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "892271952858",
+            "product_url": "https://detail.1688.com/offer/892271952858.html",
+            "title": "European and American Fashionable Ins Internet Celebrity Super Cool Same Style Millennium Spice Girl y2k Tuku Blade Tail Ring Fingertip Ring",
+            "title_origin": "欧美时髦ins网红超酷同款千禧辣妹y2k土酷刀锋尾戒指尖戒指环",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01nejWe01tq4NmXcBOj_!!2217648635952-0-cib.jpg",
+            "price": "0.69",
+            "price_info": {
+                "price": "0.69",
+                "price_min": "0.69",
+                "price_max": "0.69"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "0"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": true,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "892346712224",
+            "product_url": "https://detail.1688.com/offer/892346712224.html",
+            "title": "925 Sterling Silver Hetian Jade Ring Women's New Chinese Style All-match Broken Silver Ring Bumped Rope Beaded Adjustable Food Finger Ring",
+            "title_origin": "925纯银和田玉戒指女新中式百搭碎银子指环弹力绳串珠可调食指戒",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01AJzFGL1XnOUFY5uwj_!!2210314132968-0-cib.jpg",
+            "price": "15.79",
+            "price_info": {
+                "price": "15.79",
+                "price_min": "15.79",
+                "price_max": "18.05"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "0"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": true,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "837104042901",
+            "product_url": "https://detail.1688.com/offer/837104042901.html",
+            "title": "Leather Magnetic Neck Hanging Glasses Bag Necklace Women's Storage Bag Sunglasses Pendant Bag 2024 New Style Exquisite Woolen Chain",
+            "title_origin": "皮革磁吸挂脖眼镜包项链女收纳包墨镜挂件包2024年新款精致毛衣链",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01aTzd3k1adj0A9oMUx_!!2213365383353-0-cib.jpg",
+            "price": "2.99",
+            "price_info": {
+                "price": "2.99",
+                "price_min": "2.99",
+                "price_max": "13.0"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "3227"
+            },
+            "goods_score": "4.8",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "824649956888",
+            "product_url": "https://detail.1688.com/offer/824649956888.html",
+            "title": "Little Red Riding Book with Bursting Flower Butterfly Bracelet New Chinese Super Fairy Butterfly Bracelet for Girlfriends Birthday Gift",
+            "title_origin": "小红书同款爆裂碎花蝴蝶手串新中式超仙蝴蝶手饰送闺蜜生日礼物",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01BDdvE01eeQ3L3OdeW_!!2211717143896-0-cib.jpg",
+            "price": "1.05",
+            "price_info": {
+                "price": "1.05",
+                "price_min": "1.05",
+                "price_max": "2.8"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "21558"
+            },
+            "goods_score": "4.5",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "834208738543",
+            "product_url": "https://detail.1688.com/offer/834208738543.html",
+            "title": "Personalized neck magnetic leather geometric glasses clip necklace simple Joker sweater chain retro trend necklace wholesale",
+            "title_origin": "个性挂脖可颂牛角包包皮革几何眼镜包项链百搭毛衣链复古潮流项饰",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01amMlbd2DxfG0cBt5f_!!4079378676-0-cib.jpg",
+            "price": "4.73",
+            "price_info": {
+                "price": "4.73",
+                "price_min": "4.73",
+                "price_max": "14.18"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "2869"
+            },
+            "goods_score": "4.9",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        }
+    ],
+    [
+        {
+            "item_id": "854110918771",
+            "product_url": "https://detail.1688.com/offer/854110918771.html",
+            "title": "Childish Cute Puppy Glaze Ring Niche Design Simple Cartoon Sweet Exquisite Girly Heart All-match Ring",
+            "title_origin": "童趣可爱小狗滴釉戒指小众设计感简约卡通甜美精致少女心百搭戒指",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01VxJ2hi1adj1Dt0Egq_!!2213365383353-0-cib.jpg",
+            "price": "1.99",
+            "price_info": {
+                "price": "1.99",
+                "price_min": "1.99",
+                "price_max": "3.2"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "1435"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "781214296492",
+            "product_url": "https://detail.1688.com/offer/781214296492.html",
+            "title": "Korean version of exquisite high-end feeling suit ring women's ins style niche light luxury pearl opening finger ring bracelet wholesale",
+            "title_origin": "韩版精致高级感套装戒指女ins风小众轻奢珍珠开口食指环手饰批发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01gJi4Ck1ngYP22LySA_!!2206858205119-0-cib.jpg",
+            "price": "2.1",
+            "price_info": {
+                "price": "2.1",
+                "price_min": "2.1",
+                "price_max": "6.8"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "495"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "719691554291",
+            "product_url": "https://detail.1688.com/offer/719691554291.html",
+            "title": "Light Luxury Niche Super Flash Zircon Love Ring Women's ins Style Advanced Design Sense Open Index Finger Ring Wholesale",
+            "title_origin": "轻奢小众超闪锆石爱心戒指女ins风高级设计感开口食指戒指环批发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01a4M29g1Dc8JOUCkPE_!!2209053490236-0-cib.jpg",
+            "price": "1.4",
+            "price_info": {
+                "price": "1.4",
+                "price_min": "1.4",
+                "price_max": "5.2"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "9809"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "691854608901",
+            "product_url": "https://detail.1688.com/offer/691854608901.html",
+            "title": "Jieding jewelry European and American retro stainless steel gemstone ring 18k gold plated ring wholesale jewelry medieval rings women",
+            "title_origin": "杰鼎饰品欧美复古不锈钢宝石戒指18k镀金指环批发首饰中古rings女",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01slulzD2ElaEKVRDGR_!!2210913638785-0-cib.jpg",
+            "price": "9.0",
+            "price_info": {
+                "price": "9.0",
+                "price_min": "9.0",
+                "price_max": "13.5"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "2283"
+            },
+            "goods_score": "4.9",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "694507172555",
+            "product_url": "https://detail.1688.com/offer/694507172555.html",
+            "title": "Lace Ring Ancient Style Phoenix Wedding Ring Adjustable Fashion Exquisite Light Luxury Gold Personalized Design Advanced",
+            "title_origin": "高级感国潮戒指古法凤凰婚嫁活口戒可调节时尚精致轻奢金色个性",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01t4cO7e1YNZbwVDxMc_!!2212901793047-0-cib.jpg",
+            "price": "15.0",
+            "price_info": {
+                "price": "15.0",
+                "price_min": "15.0",
+                "price_max": "15.0"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
             "sale_info": {
                 "sale_quantity_90days": "920"
             },
@@ -2632,21 +1697,21 @@ export const Jewelry = [
             "is_hot_item": false
         },
         {
-            "item_id": "840755652422",
-            "product_url": "https://detail.1688.com/offer/840755652422.html",
-            "title": "2024 New National Fashion New Chinese Jade Gourd Ring Women's Light Luxury Exquisite Niche Design Gorgeous High-grade Finger Ring",
-            "origin_title": "2024新款国潮新中式玉葫芦戒指女轻奢精致小众设计华丽高级感指戒",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01PhpJEh2DDPGBombho_!!2218660448575-0-cib.jpg",
-            "price": "5.9",
+            "item_id": "845881963281",
+            "product_url": "https://detail.1688.com/offer/845881963281.html",
+            "title": "Golden National Fashion Stellar Micro-inlaid Open Ring Women's Simple Star Sweet Cool Elegant All-match Niche Tail Ring",
+            "title_origin": "金色国潮风星芒微镶开口戒指女简约星星甜酷气质百搭小众尾指环",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01oYMbLJ1cLytiYmSHX_!!2214588063585-0-cib.jpg",
+            "price": "4.8",
             "price_info": {
-                "price": "5.9",
-                "price_min": "5.9",
-                "price_max": "5.9"
+                "price": "4.8",
+                "price_min": "4.8",
+                "price_max": "4.8"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "1357"
+                "sale_quantity_90days": "1185"
             },
             "goods_score": "5.0",
             "shop_info": {
@@ -2658,21 +1723,47 @@ export const Jewelry = [
             "is_hot_item": false
         },
         {
-            "item_id": "756428273584",
-            "product_url": "https://detail.1688.com/offer/756428273584.html",
-            "title": "2024 New S999 sterling silver ring Little Prince and rose campus couple ring E-Commerce TikTok hot",
-            "origin_title": "2024年新款S999纯银戒指小王子与玫瑰校园情侣对戒电商抖音热款",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01MPRxda2Jx6NzPm70J_!!2206861409487-0-cib.jpg",
-            "price": "28.0",
+            "item_id": "817361860118",
+            "product_url": "https://detail.1688.com/offer/817361860118.html",
+            "title": "A Shui Same Style Maillard Chocolate Premium wine red Enamel Glaze Double Opening Double Layer Ring Design Ring",
+            "title_origin": "阿水同款美拉德巧克力高级酒红色珐琅釉双开口双层戒指设计感指环",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01oHzS6Z1vVZrqHN3qg_!!2201401006178-0-cib.jpg",
+            "price": "9.8",
             "price_info": {
-                "price": "28.0",
-                "price_min": "28.0",
-                "price_max": "63.0"
+                "price": "9.8",
+                "price_min": "9.8",
+                "price_max": "11.5"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "483"
+                "sale_quantity_90days": "1002"
+            },
+            "goods_score": "4.9",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "751299326874",
+            "product_url": "https://detail.1688.com/offer/751299326874.html",
+            "title": "Student girl heart eye mirror Japanese and Korean style Mori open ring adjustable ring buckle tail ring fashion ring",
+            "title_origin": "学生少女心眼镜仔日韩版森系开口戒指可调节指环指扣尾戒时尚戒指",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01uI0wNg20NrCQQeajg_!!2208956906838-0-cib.jpg",
+            "price": "0.74",
+            "price_info": {
+                "price": "0.74",
+                "price_min": "0.74",
+                "price_max": "0.74"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "3729"
             },
             "goods_score": "5.0",
             "shop_info": {
@@ -2684,21 +1775,309 @@ export const Jewelry = [
             "is_hot_item": false
         },
         {
-            "item_id": "702698488074",
-            "product_url": "https://detail.1688.com/offer/702698488074.html",
-            "title": "Twist small diamond ring stacked open fashion Ins simple basic plain ring square sugar ring 2023 New",
-            "origin_title": "麻花小钻戒指叠戴开口时尚Ins简约基础款素圈方糖指环2023年新款",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01GkKYdz1EOgGkgdLVo_!!2208393620342-0-cib.jpg",
-            "price": "2.9",
+            "item_id": "747261739247",
+            "product_url": "https://detail.1688.com/offer/747261739247.html",
+            "title": "2023 cross-border new Amazon European and American Easter ring gift children's jewelry PVC soft glue wholesale",
+            "title_origin": "2023跨境新款亚马逊欧美复活节戒指 礼品儿童饰品PVC软胶批发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01u7BYoK1ffccj8uguL_!!2200531974034-0-cib.jpg",
+            "price": "0.35",
             "price_info": {
-                "price": "2.9",
-                "price_min": "2.9",
-                "price_max": "2.9"
+                "price": "0.35",
+                "price_min": "0.35",
+                "price_max": "0.35"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "1646"
+                "sale_quantity_90days": "59646"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "705559813406",
+            "product_url": "https://detail.1688.com/offer/705559813406.html",
+            "title": "Tiktok live streaming hot selling imitation S925 silver moissanite ring female classic 1 karat female ring open mouth couple Ring Ring",
+            "title_origin": "抖音直播热销仿S925银莫桑石戒指女经典一克拉女戒活口情侣戒指环",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01hq8lwM25Oq2nu9aFE_!!2215506297517-0-cib.jpg",
+            "price": "1.8",
+            "price_info": {
+                "price": "1.8",
+                "price_min": "1.8",
+                "price_max": "9.5"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "18576"
+            },
+            "goods_score": "4.7",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "654375553761",
+            "product_url": "https://detail.1688.com/offer/654375553761.html",
+            "title": "ins Simple Geometric Joint Personality Light Luxury Niche Design Sense Ring Set Cold Style Finger Ring Bracelet for Women",
+            "title_origin": "ins简约几何关节个性轻奢小众设计感戒指套装冷淡风指环手饰女",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN018INt6s29RoyKY7THt_!!1811978065-0-cib.jpg",
+            "price": "1.35",
+            "price_info": {
+                "price": "1.35",
+                "price_min": "1.35",
+                "price_max": "1.5"
+            },
+            "currency": "CNY",
+            "quantity_begin": "2",
+            "sale_info": {
+                "sale_quantity_90days": "1514"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "862673084701",
+            "product_url": "https://detail.1688.com/offer/862673084701.html",
+            "title": "Spelling Duoduo Stall Silver Plated Ring Gladiohedral Opening Accessories Gold Plated Ring for Men and Women Same Couple Ring",
+            "title_origin": "拼多多地摊镀银戒指光面开口配饰镀金戒指男女同款情侣戒指对戒",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01XbdxfS2N6DDdV2flR_!!2214288809913-0-cib.jpg",
+            "price": "0.65",
+            "price_info": {
+                "price": "0.65",
+                "price_min": "0.65",
+                "price_max": "0.65"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "50874"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "750170764453",
+            "product_url": "https://detail.1688.com/offer/750170764453.html",
+            "title": "South Korea 925 sterling silver plain ring female non-fading niche ins style design high-grade all-match opening adjustment",
+            "title_origin": "韩国925纯银素圈戒指女不掉色小众ins风设计高级感百搭开口调节",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01D36nfG2MNKHpU4eZd_!!2208443039815-0-cib.jpg",
+            "price": "1.97",
+            "price_info": {
+                "price": "1.97",
+                "price_min": "1.97",
+                "price_max": "3.5"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "495563"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": true,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "850752208380",
+            "product_url": "https://detail.1688.com/offer/850752208380.html",
+            "title": "Jingdong Jewelry Natural Brazil Kyanite Bracelet Crystal Cat's Eye Fashion Light Luxury Men's and Women's Gift Bracelet Wholesale",
+            "title_origin": "晶东珠宝 天然巴西蓝晶石手链水晶猫眼时尚轻奢男女礼物手饰批发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01wTmuLt1mOP9XghJhV_!!2212755274944-0-cib.jpg",
+            "price": "17.5",
+            "price_info": {
+                "price": "17.5",
+                "price_min": "17.5",
+                "price_max": "225.0"
+            },
+            "currency": "CNY",
+            "quantity_begin": "2",
+            "sale_info": {
+                "sale_quantity_90days": "329"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "843576618256",
+            "product_url": "https://detail.1688.com/offer/843576618256.html",
+            "title": "Autumn and Winter All-match Collarbone Chain Star Necklace Female Niche Design Collarbone Ins Simple Cold Accessories",
+            "title_origin": "秋冬百搭锁骨链星星项链女小众设计锁骨ins简约冷淡配饰",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01K3pqPt2JorLPGXGn5_!!2207650139469-0-cib.jpg",
+            "price": "0.7",
+            "price_info": {
+                "price": "0.7",
+                "price_min": "0.7",
+                "price_max": "4.85"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "23666"
+            },
+            "goods_score": "4.3",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "803033081932",
+            "product_url": "https://detail.1688.com/offer/803033081932.html",
+            "title": "Fever leather love hemp rope necklace niche design large spades adjustable fashionable clavicle chain",
+            "title_origin": "fever同款皮质爱心麻绳项链小众设计大颗黑桃心可调节时髦锁骨链",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01HtvCMU1c0SF4zClvt_!!2863603538-0-cib.jpg",
+            "price": "4.5",
+            "price_info": {
+                "price": "4.5",
+                "price_min": "4.5",
+                "price_max": "4.5"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "3490"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "768981849054",
+            "product_url": "https://detail.1688.com/offer/768981849054.html",
+            "title": "Magnetic suction buckle mother shell beads pink pearl necklace women's all-match High sense new Chinese beaded clavicle chain necklace jewelry",
+            "title_origin": "磁吸扣彩贝珠珍珠项链女配饰锁骨链轻奢高级感串珠毛衣链颈链饰品",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01F6svdI2NCAH5kEaxS_!!2209499559926-0-cib.jpg",
+            "price": "37.0",
+            "price_info": {
+                "price": "37.0",
+                "price_min": "37.0",
+                "price_max": "39.0"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "2508"
+            },
+            "goods_score": "4.8",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "653447801125",
+            "product_url": "https://detail.1688.com/offer/653447801125.html",
+            "title": "Korean retro titanium steel necklace women's versatile high-end pearl pendant ins style niche clavicle chain jewelry wholesale",
+            "title_origin": "韩系复古钛钢项链女百搭高级感珍珠吊坠ins风小众锁骨链饰品批发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01xvWVXi2MdoaIcYg9B_!!2206822159851-0-cib.jpg",
+            "price": "1.8",
+            "price_info": {
+                "price": "1.8",
+                "price_min": "1.8",
+                "price_max": "6.2"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "14739"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "567581966795",
+            "product_url": "https://detail.1688.com/offer/567581966795.html",
+            "title": "Jewelry a generation fee to add the information to the purchase order can be sent on behalf of the link.",
+            "title_origin": "珠宝 一件代发费用 把该信息加入进货单就可以代发链接",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/14525742816_1279916484.jpg",
+            "price": "0.5",
+            "price_info": {
+                "price": "0.5",
+                "price_min": "0.5",
+                "price_max": "25.0"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "5304"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": true
+        }
+    ],
+    [
+        {
+            "item_id": "865770968415",
+            "product_url": "https://detail.1688.com/offer/865770968415.html",
+            "title": "Personalized Snake-Shaped Zircon Open Ring Women's Niche Design Advanced Sense Unique Finger Ring Cold Style All-Match Ring",
+            "title_origin": "个性蛇形锆石开口戒指女小众设计高级感独特食指戒冷淡风百搭指环",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01qhx9IR1CbqczHOW8S_!!2215906740100-0-cib.jpg",
+            "price": "1.4",
+            "price_info": {
+                "price": "1.4",
+                "price_min": "1.4",
+                "price_max": "1.4"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "1880"
             },
             "goods_score": "4.7",
             "shop_info": {
@@ -2710,23 +2089,23 @@ export const Jewelry = [
             "is_hot_item": false
         },
         {
-            "item_id": "851534892636",
-            "product_url": "https://detail.1688.com/offer/851534892636.html",
-            "title": "New Year ~ Middle Ancient vintage Rai Diamond Red Gangstone Ring French Retro Advanced Light Luxury Autumn and Winter High Version Ring",
-            "origin_title": "新年~中古vintage排钻红刚石戒指法式复古高级轻奢秋冬高版本指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01CzoyRX1URSiUyC344_!!2217829142514-0-cib.jpg",
-            "price": "16.0",
+            "item_id": "833603945381",
+            "product_url": "https://detail.1688.com/offer/833603945381.html",
+            "title": "Cross-border hot-selling jewelry diamond ring foreign trade simple fashion live square claw diamond ring exquisite gift ring",
+            "title_origin": "跨境热销手饰钻戒外贸简约时尚活口四方爪钻戒指精致礼品指环",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01l1I9Um283inqRPPrc_!!4157917877-0-cib.jpg",
+            "price": "0.15",
             "price_info": {
-                "price": "16.0",
-                "price_min": "16.0",
-                "price_max": "16.0"
+                "price": "0.15",
+                "price_min": "0.15",
+                "price_max": "0.15"
             },
             "currency": "CNY",
-            "quantity_begin": "1",
+            "quantity_begin": "20",
             "sale_info": {
-                "sale_quantity_90days": "5569"
+                "sale_quantity_90days": "333690"
             },
-            "goods_score": "4.6",
+            "goods_score": "",
             "shop_info": {
                 "is_gold_manufacturer": false,
                 "is_verified": false
@@ -2736,21 +2115,673 @@ export const Jewelry = [
             "is_hot_item": true
         },
         {
-            "item_id": "674955191996",
-            "product_url": "https://detail.1688.com/offer/674955191996.html",
-            "title": "Independent Station Snake Set Ring Devil's Eye Gold and Silver Snake Ancient Silver Ring Set",
-            "origin_title": "独立站蛇形套装戒指恶魔之眼金银蛇形古银戒指套装",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN018z6h8V1ZB2LGLNRTk_!!2209044933155-0-cib.jpg",
-            "price": "2.9",
+            "item_id": "864427100032",
+            "product_url": "https://detail.1688.com/offer/864427100032.html",
+            "title": "Micro-inlaid Full Diamond Spirit Snake Copper Ring Women's Opening Adjustable Niche Design Finger Ring Light Luxury High-grade Sense Snake Ring",
+            "title_origin": "微镶满钻灵蛇铜戒指女开口可调小众设计食指戒轻奢高级感蛇形戒指",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01C2d6UJ1FSB75pVQg1_!!2211617990485-0-cib.jpg",
+            "price": "1.8",
             "price_info": {
-                "price": "2.9",
-                "price_min": "2.9",
-                "price_max": "2.9"
+                "price": "1.8",
+                "price_min": "1.8",
+                "price_max": "1.8"
             },
             "currency": "CNY",
-            "quantity_begin": "3",
+            "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "2154"
+                "sale_quantity_90days": "1113"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "853950647480",
+            "product_url": "https://detail.1688.com/offer/853950647480.html",
+            "title": "Japanese and Korean Heart-shaped Love Three-piece Set Split Combination Ring Trendy Internet Celebrant Finger Ring Tail Ring Women's Jewelry",
+            "title_origin": "日韩心形爱心三件套可拆分组合戒指  潮人网红食指戒尾戒女士饰品",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01dVHoMf1JEDUYydNec_!!3984750996-0-cib.jpg",
+            "price": "2.6",
+            "price_info": {
+                "price": "2.6",
+                "price_min": "2.6",
+                "price_max": "3.6"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "1180"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "873236296455",
+            "product_url": "https://detail.1688.com/offer/873236296455.html",
+            "title": "Hong Kong Style Vintage Maillard Tiger Eye Ring Women's Fashion All-match Elegant Open Finger Ring Internet Celebrity Same Style Ring",
+            "title_origin": "港风复古美拉德虎眼石戒指女时尚百搭气质开口食指戒网红同款指环",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01kSqifi2KtjCNdceX8_!!2580729615-0-cib.jpg",
+            "price": "2.7",
+            "price_info": {
+                "price": "2.7",
+                "price_min": "2.7",
+                "price_max": "3.0"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "2422"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": true,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "631926504512",
+            "product_url": "https://detail.1688.com/offer/631926504512.html",
+            "title": "New Women's Irregular Wave Pattern Jewelry Vintage Elegant Simple Style Geometric Ring Ring for Women",
+            "title_origin": "新款爆款女不规则图案珠宝首饰戒指复古气质简约风几何指环戒",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/23102088728_1964995966.jpg",
+            "price": "3.0",
+            "price_info": {
+                "price": "3.0",
+                "price_min": "3.0",
+                "price_max": "3.3"
+            },
+            "currency": "CNY",
+            "quantity_begin": "2",
+            "sale_info": {
+                "sale_quantity_90days": "1641"
+            },
+            "goods_score": "4.8",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "623378641941",
+            "product_url": "https://detail.1688.com/offer/623378641941.html",
+            "title": "Ning Zi wish Hot Sale New 18K Rose Plated Gold Princess Square Diamond Internet Celebrity Ring European and American Engagement Ring",
+            "title_origin": "wish合金热卖新款镀18k玫瑰金公主方钻网红戒指欧美订婚交叉指环",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/18485642447_454515205.jpg",
+            "price": "1.8",
+            "price_info": {
+                "price": "1.8",
+                "price_min": "1.8",
+                "price_max": "1.8"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "2865"
+            },
+            "goods_score": "4.7",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "638283391223",
+            "product_url": "https://detail.1688.com/offer/638283391223.html",
+            "title": "s999 Foot Silver Ring Women's Men's Plain Ring Sterling Silver Tail Ring Pinkie ins Fashionable Personalized Korean Birthday Gift",
+            "title_origin": "S999足银戒指女男素圈纯银尾戒小指ins潮人时尚个性韩版生日礼物",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN011Sa6hp1UdMunPMGCV_!!1804432540-0-cib.jpg",
+            "price": "15.8",
+            "price_info": {
+                "price": "15.8",
+                "price_min": "15.8",
+                "price_max": "19.2"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "7090"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "738742214655",
+            "product_url": "https://detail.1688.com/offer/738742214655.html",
+            "title": "European and American 26 English letter ring female opening adjustable fashion personality Internet celebrity ins hipster ring manufacturer A",
+            "title_origin": "欧美26个英文字母戒指女开口可调节时尚个性网红ins潮人指环厂家A",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01Pe4Lkc28M2WwZdZlx_!!4043987917-0-cib.jpg",
+            "price": "0.99",
+            "price_info": {
+                "price": "0.99",
+                "price_min": "0.99",
+                "price_max": "0.99"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "8061"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "730352351973",
+            "product_url": "https://detail.1688.com/offer/730352351973.html",
+            "title": "New Japanese style light luxury exquisite style exquisite inlaid blue purple stone zircon ring female open mouth adjustable temperament",
+            "title_origin": "新品日系轻奢精致风精工镶蓝紫坦桑石色锆石戒指女活口可调节气质",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01ALG3C226jHNZSKmqx_!!2211403797697-0-cib.jpg",
+            "price": "4.2",
+            "price_info": {
+                "price": "4.2",
+                "price_min": "4.2",
+                "price_max": "4.2"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "1411"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "839890822135",
+            "product_url": "https://detail.1688.com/offer/839890822135.html",
+            "title": "Pure Natural Moonstone Opal Pearl Ring with Live Buckle Adjustable Blue Light Grey Moonlight All-match Korean Style Student Gift",
+            "title_origin": "纯天然月光石欧泊珍珠戒指活扣可调节蓝光灰月光百搭韩版学生礼物",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01jj8Kv11EZfxG4b4XN_!!2216552440366-0-cib.jpg",
+            "price": "8.2",
+            "price_info": {
+                "price": "8.2",
+                "price_min": "8.2",
+                "price_max": "8.2"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "633"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "687549641843",
+            "product_url": "https://detail.1688.com/offer/687549641843.html",
+            "title": "Animation Surrounding Spells Back to War Five Enlightenment Two Sides of Nuo Polygonum Stick Youren Fu Hei Hui Ring cos Accessories",
+            "title_origin": "动漫周边咒术回战五条悟两面宿傩虎杖悠仁伏黑惠戒指cos配饰",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01ulknsm1rj4tYNLQxN_!!2214342165666-0-cib.jpg",
+            "price": "1.7",
+            "price_info": {
+                "price": "1.7",
+                "price_min": "1.7",
+                "price_max": "7.9"
+            },
+            "currency": "CNY",
+            "quantity_begin": "2",
+            "sale_info": {
+                "sale_quantity_90days": "744"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "758971980289",
+            "product_url": "https://detail.1688.com/offer/758971980289.html",
+            "title": "beier stainless steel casting fashion simple branch ring hip hop trend Thorn titanium steel ring jewelry wholesale",
+            "title_origin": "beier不锈钢铸造时尚简约树枝戒指 嘻哈潮流荆棘钛钢指环饰品批发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01KsNSco1Dd3AzFdnMz_!!1106030238-0-cib.jpg",
+            "price": "11.8",
+            "price_info": {
+                "price": "11.8",
+                "price_min": "11.8",
+                "price_max": "11.8"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "1261"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "634886791214",
+            "product_url": "https://detail.1688.com/offer/634886791214.html",
+            "title": "Cross-border Explosions Jewelry European and American Hip-hop Zircon Chain Ring Cuba Ring 8mm Electroplated Gold Men's Ring",
+            "title_origin": "跨境爆款首饰 欧美嘻哈锆石链戒指 古巴指环 8mm电镀金色男士戒指",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01AKBDtO1JDIKn7CjZg_!!6000000000994-0-cib.jpg",
+            "price": "3.6",
+            "price_info": {
+                "price": "3.6",
+                "price_min": "3.6",
+                "price_max": "3.6"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "3860"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "775969899645",
+            "product_url": "https://detail.1688.com/offer/775969899645.html",
+            "title": "vivienne Empress Dowager Saturn Necklace Orb Three-dimensional sweater chain Bow clavicle chain",
+            "title_origin": "vivienne西太后土星项链orb 立体毛衣链蝴蝶结锁骨链精致时尚",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN017LnFT22Mb4Cp7CQON_!!2213850859845-0-cib.jpg",
+            "price": "29.0",
+            "price_info": {
+                "price": "29.0",
+                "price_min": "29.0",
+                "price_max": "29.0"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "341"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "771674379631",
+            "product_url": "https://detail.1688.com/offer/771674379631.html",
+            "title": "2024 popular light luxury niche pearl necklace women's all-match high-grade butterfly titanium steel clavicle chain necklace",
+            "title_origin": "2024年爆款轻奢小众珍珠项链女百搭高级感蝴蝶钛钢锁骨链颈链批发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01Mcd0IA2Ktj6SpF6kT_!!2580729615-0-cib.jpg",
+            "price": "2.1",
+            "price_info": {
+                "price": "2.1",
+                "price_min": "2.1",
+                "price_max": "10.8"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "26510"
+            },
+            "goods_score": "4.9",
+            "shop_info": {
+                "is_gold_manufacturer": true,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "738940442009",
+            "product_url": "https://detail.1688.com/offer/738940442009.html",
+            "title": " new jewelry girl's neck strap pink love pendant necklace Choker item clavicle chain butterfly necklace",
+            "title_origin": "跨境新品饰品少女颈带粉色爱心吊坠颈链Choker项款锁骨链蝴蝶项链",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01ZQQZ0g1JUhcFiRWuB_!!3188951032-0-cib.jpg",
+            "price": "1.7",
+            "price_info": {
+                "price": "1.7",
+                "price_min": "1.7",
+                "price_max": "2.4"
+            },
+            "currency": "CNY",
+            "quantity_begin": "2",
+            "sale_info": {
+                "sale_quantity_90days": "7461"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "803228994525",
+            "product_url": "https://detail.1688.com/offer/803228994525.html",
+            "title": "[White Copper 999] Tassel Snowflake Planet Necklace Women's Summer Light Luxury Niche Design Sense Cold Style Ins Clavicle Chain",
+            "title_origin": "【白铜999】流苏雪花星球项链女夏轻奢小众设计感冷淡风ins锁骨链",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01lr6xCl23sUbAb4gmv_!!2217940717311-0-cib.jpg",
+            "price": "9.9",
+            "price_info": {
+                "price": "9.9",
+                "price_min": "9.9",
+                "price_max": "9.9"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "298"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        }
+    ],
+    [
+        {
+            "item_id": "756009449213",
+            "product_url": "https://detail.1688.com/offer/756009449213.html",
+            "title": "Korean style new ins style niche sweet rot engraved heart-shaped ring female fashion personality titanium steel index finger ring",
+            "title_origin": "韩式新款ins风小众甜美腐刻爱心心形戒指女时尚个性钛钢食指指环",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01B9bSY02F2X01jJ9he_!!2206415798822-0-cib.jpg",
+            "price": "5.0",
+            "price_info": {
+                "price": "5.0",
+                "price_min": "5.0",
+                "price_max": "5.0"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "2338"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "858028316368",
+            "product_url": "https://detail.1688.com/offer/858028316368.html",
+            "title": "Light Luxury Zircon Flash Diamond Snake Shape Ring silver Open Finger Ring High-grade Texture Simple All-match Fashion Cool Jewelry for Women",
+            "title_origin": "轻奢锆石闪钻灵蛇形戒指银色开口指环高级质感简约百搭潮酷手饰女",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01ctjTdZ2DxfHV5R4Pz_!!4079378676-0-cib.jpg",
+            "price": "5.24",
+            "price_info": {
+                "price": "5.24",
+                "price_min": "5.24",
+                "price_max": "17.75"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "5787"
+            },
+            "goods_score": "4.8",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "666482896393",
+            "product_url": "https://detail.1688.com/offer/666482896393.html",
+            "title": "Euro gold 24k gold plated spring ring imitation gold personality ladies spring ring transfer bead ring wholesale",
+            "title_origin": "欧币沙金24K镀金弹簧戒指 仿黄金个性女士弹簧女戒转运珠戒指批发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01fJUgwt27pyf9rQ8ph_!!2210956627847-0-cib.jpg",
+            "price": "2.8",
+            "price_info": {
+                "price": "2.8",
+                "price_min": "2.8",
+                "price_max": "2.8"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "755"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "694064971159",
+            "product_url": "https://detail.1688.com/offer/694064971159.html",
+            "title": "Silver Pigment Ring Zircon Open Ring Set Women's Cold Style Elegant Couple's Ring Fashion Personalized Finger Ring Fashion",
+            "title_origin": "银色素圈锆石开口戒指套装女冷淡风气质情侣指环时尚个性食指戒潮",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01cuGVte20IMLKUtdt8_!!2212485876826-0-cib.jpg",
+            "price": "3.5",
+            "price_info": {
+                "price": "3.5",
+                "price_min": "3.5",
+                "price_max": "3.5"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "1094"
+            },
+            "goods_score": "4.8",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "739540519378",
+            "product_url": "https://detail.1688.com/offer/739540519378.html",
+            "title": "European and American cross-border jewelry niche fashion design geometric Arc ring joint ring exaggerated open suit ring",
+            "title_origin": "欧美跨境饰品小众潮流设计感几何弧面指环关节戒夸张开口套装戒指",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01UxzE9p1DbDYbqEj6V_!!3484130234-0-cib.jpg",
+            "price": "2.5",
+            "price_info": {
+                "price": "2.5",
+                "price_min": "2.5",
+                "price_max": "6.8"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "6476"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "598848984076",
+            "product_url": "https://detail.1688.com/offer/598848984076.html",
+            "title": "European and American retro style ring flower rose gold smoking ring for men and women adjustable fine cigarette holder gift ring",
+            "title_origin": "欧美复古风戒圈 花朵玫瑰金抽烟指环男女 可调节细烟烟托礼品戒指",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01M5bk931WxBN1O7dyx_!!931932854-0-cib.jpg",
+            "price": "7.9",
+            "price_info": {
+                "price": "7.9",
+                "price_min": "7.9",
+                "price_max": "7.9"
+            },
+            "currency": "CNY",
+            "quantity_begin": "2",
+            "sale_info": {
+                "sale_quantity_90days": "3102"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "725570823982",
+            "product_url": "https://detail.1688.com/offer/725570823982.html",
+            "title": "European and American cross-border new fashion simple sweet love ruby ring heart-shaped diamond-embedded zircon ring",
+            "title_origin": "欧美跨境新品时尚简约优甜美爱心红宝石戒指环心形仿镶钻锆石指环",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01DOjO2K216HZC9pR0s_!!2215508726935-0-cib.jpg",
+            "price": "1.8",
+            "price_info": {
+                "price": "1.8",
+                "price_min": "1.8",
+                "price_max": "1.8"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "410"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "719158832281",
+            "product_url": "https://detail.1688.com/offer/719158832281.html",
+            "title": "2023 Cross-border Exclusive for Niche Decompression and Anti-anxiety Gear Batch of Rotatable Ring Source Manufacturer Large Quantity Excellent",
+            "title_origin": "2023年跨境专供小众减压抗焦虑齿轮批花可转动戒指源头厂家量大优",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN013mg7U31ro7J97IDq7_!!2843405677-0-cib.jpg",
+            "price": "4.0",
+            "price_info": {
+                "price": "4.0",
+                "price_min": "4.0",
+                "price_max": "4.0"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "18292"
+            },
+            "goods_score": "4.5",
+            "shop_info": {
+                "is_gold_manufacturer": true,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "831527702585",
+            "product_url": "https://detail.1688.com/offer/831527702585.html",
+            "title": "Glacier Blue Star Moon Ring 2024 New Niche Design Premium Finger Ring Adjustable Ring for Women",
+            "title_origin": "冰川蓝星星月亮戒指2024新款小众设计高级感食指戒可调节指环女",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01WT7RFj1iGNjaKl35Z_!!2215809374385-0-cib.jpg",
+            "price": "0.95",
+            "price_info": {
+                "price": "0.95",
+                "price_min": "0.95",
+                "price_max": "0.95"
+            },
+            "currency": "CNY",
+            "quantity_begin": "2",
+            "sale_info": {
+                "sale_quantity_90days": "2883"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "873485961779",
+            "product_url": "https://detail.1688.com/offer/873485961779.html",
+            "title": "Cross-border Trend Animal Ring Retro Chinese Year Zodiac Snake with Gemstone Eye Titanium Steel Color-free Ring for Men",
+            "title_origin": "跨境潮流动物指环 复古本命年生肖蛇镶宝石眼睛钛钢不掉色戒指男",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01k9MPrv26toedrQd6E_!!3043767720-0-cib.jpg",
+            "price": "20.0",
+            "price_info": {
+                "price": "20.0",
+                "price_min": "20.0",
+                "price_max": "20.0"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "291"
             },
             "goods_score": "5.0",
             "shop_info": {
@@ -2765,7 +2796,7 @@ export const Jewelry = [
             "item_id": "852513065974",
             "product_url": "https://detail.1688.com/offer/852513065974.html",
             "title": "Xiangjia coco rhombus ring titanium steel silver plated high version narrow version wide version no diamond ring CNC carved jewelry",
-            "origin_title": "香家coco菱格纹戒指钛钢镀银高版本窄版宽版无钻戒指CNC精雕手饰",
+            "title_origin": "香家coco菱格纹戒指钛钢镀银高版本窄版宽版无钻戒指CNC精雕手饰",
             "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01hduxdh1fBqzg0vsCS_!!2216186783969-0-cib.jpg",
             "price": "23.0",
             "price_info": {
@@ -2776,7 +2807,7 @@ export const Jewelry = [
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "628"
+                "sale_quantity_90days": "1322"
             },
             "goods_score": "5.0",
             "shop_info": {
@@ -2788,73 +2819,73 @@ export const Jewelry = [
             "is_hot_item": false
         },
         {
-            "item_id": "625409558824",
-            "product_url": "https://detail.1688.com/offer/625409558824.html",
-            "title": "Cross-border accessories European and American fashion women's gold-plated ring wish Amazon hot selling color separation wedding ring ring",
-            "origin_title": "跨境配饰欧美时尚女士镀金戒指 wish亚马逊热卖分色婚礼戒指戒指",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/2020/179/208/19760802971_122229604.jpg",
-            "price": "3.0",
+            "item_id": "732371332195",
+            "product_url": "https://detail.1688.com/offer/732371332195.html",
+            "title": "Contrast color Opal star ring female ins fashion personality couple index finger ring niche temperament all-Match ring",
+            "title_origin": "撞色猫眼石星星戒指女ins潮时尚个性情侣食指戒小众气质百搭指环",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01qCpeiM1cLWMl1CheI_!!2214082583584-0-cib.jpg",
+            "price": "0.7",
             "price_info": {
-                "price": "3.0",
-                "price_min": "3.0",
-                "price_max": "3.0"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "1565"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "676851944078",
-            "product_url": "https://detail.1688.com/offer/676851944078.html",
-            "title": "Ancient style heritage plain ring glossy ring female Vietnam sand gold frosted matte solid closed ring factory wholesale",
-            "origin_title": "古法传承素圈光面戒指女越南沙金磨砂哑光实心闭口指环厂家批发",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01OVT6p51NkVdd4DG0q_!!2211199131608-0-cib.jpg",
-            "price": "2.5",
-            "price_info": {
-                "price": "2.5",
-                "price_min": "2.5",
-                "price_max": "2.5"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "6182"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
-        },
-        {
-            "item_id": "824788686648",
-            "product_url": "https://detail.1688.com/offer/824788686648.html",
-            "title": "Fashion niche design high-end bow female ring opening adjustable gold-plated ring brass plated gold wholesale",
-            "origin_title": "时尚小众设计高级感蝴蝶结女戒开口可调节镀金戒指黄铜镀沙金批发",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01FSgPfN28vJ8CP5Mkt_!!2218447227994-0-cib.jpg",
-            "price": "2.5",
-            "price_info": {
-                "price": "2.5",
-                "price_min": "2.5",
+                "price": "0.7",
+                "price_min": "0.7",
                 "price_max": "6.0"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "763"
+                "sale_quantity_90days": "6452"
+            },
+            "goods_score": "4.6",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "675195387970",
+            "product_url": "https://detail.1688.com/offer/675195387970.html",
+            "title": "Fever Same Style Pearl Necklace Women's Clavicle Chain 2024 New Fashionable Light Luxury Elegant French Style Necklace",
+            "title_origin": "fever同款珍珠项链女锁骨链2025新款潮轻奢气质法式感项链",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01QkWmuF25akYn2sLWf_!!3894697543-0-cib.jpg",
+            "price": "2.1",
+            "price_info": {
+                "price": "2.1",
+                "price_min": "2.1",
+                "price_max": "3.6"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "5826"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "825277834069",
+            "product_url": "https://detail.1688.com/offer/825277834069.html",
+            "title": "New Western Queen Mother High Version ORB Full Series UFO Saturn Necklace Advanced Necklace Manufacturers a generation of hair",
+            "title_origin": "新款西太后高版本ORB全系列飞碟土星项链高级感项饰厂家一件代发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN019fbco91TJO5n9epC9_!!2218355292361-0-cib.jpg",
+            "price": "40.0",
+            "price_info": {
+                "price": "40.0",
+                "price_min": "40.0",
+                "price_max": "90.0"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "2437"
             },
             "goods_score": "5.0",
             "shop_info": {
@@ -2866,47 +2897,21 @@ export const Jewelry = [
             "is_hot_item": false
         },
         {
-            "item_id": "675521903092",
-            "product_url": "https://detail.1688.com/offer/675521903092.html",
-            "title": "2022 Amazon Simple European and American Creative Personality Stacked Wear Combination Ring Set 10 Piece Set Black Ring",
-            "origin_title": "2022亚马逊简约欧美创意个性叠戴组合戒指套装10件套黑色戒指",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01rUO2Ty29BKlWXefpv_!!1007608029-0-cib.jpg",
-            "price": "0.99",
+            "item_id": "816660007045",
+            "product_url": "https://detail.1688.com/offer/816660007045.html",
+            "title": "European and American Hot Hollow Tree of Life Necklace Stainless Steel Tree Pendant Personalized All-match Accessories Hot Wholesale",
+            "title_origin": "跨境热销春天饰品生命之树项链不锈钢钛钢吊坠个性百搭蛇骨链批发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01pTW6eD1DnaLXhXrRs_!!2209049290261-0-cib.jpg",
+            "price": "2.5",
             "price_info": {
-                "price": "0.99",
-                "price_min": "0.99",
-                "price_max": "4.1"
+                "price": "2.5",
+                "price_min": "2.5",
+                "price_max": "5.8"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "491"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "589154615658",
-            "product_url": "https://detail.1688.com/offer/589154615658.html",
-            "title": "Amazon best seller curved step silicone ring European and American ring men's outdoor sports ring",
-            "origin_title": "亚马逊best seller弧度台阶款 硅胶戒指欧美戒指男士户外运动指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01GDFv5Z1ZJHjsb7Jgx_!!1940043173-0-cib.jpg",
-            "price": "1.5",
-            "price_info": {
-                "price": "1.5",
-                "price_min": "1.5",
-                "price_max": "1.5"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "18947"
+                "sale_quantity_90days": "7697"
             },
             "goods_score": "5.0",
             "shop_info": {
@@ -2918,47 +2923,46 @@ export const Jewelry = [
             "is_hot_item": true
         },
         {
-            "item_id": "814669356379",
-            "product_url": "https://detail.1688.com/offer/814669356379.html",
-            "title": "French Light Luxury Design Sense Gestapo Pearl Zircon Open Ring Exquisite High-end All-match Elegant Finger Ring",
-            "origin_title": "法式轻奢设计感满天星珍珠锆石开口戒指精致高级感百搭气质食指戒",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01GGexgi1n6N8rxHAIf_!!3019585040-0-cib.jpg",
-            "price": "9.8",
+            "item_id": "831491250988",
+            "product_url": "https://detail.1688.com/offer/831491250988.html",
+            "title": "Children's Bracelet Cartoon Sanrio Jelly Beaded Cute Girl Baby Bracelet Student Jewelry Bracelet Jewelry",
+            "title_origin": "儿童手链卡通三丽鸥果冻色串珠可爱女童宝宝手环学生首饰手镯饰品",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01ElQBY31zjYRAfUTYX_!!2828936750-0-cib.jpg",
+            "price": "1.4",
             "price_info": {
-                "price": "9.8",
-                "price_min": "9.8",
-                "price_max": "9.8"
-            },
-            "currency": "CNY",
-            "quantity_begin": "2",
-            "sale_info": {
-                "sale_quantity_90days": "984"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "853028874889",
-            "product_url": "https://detail.1688.com/offer/853028874889.html",
-            "title": "European and American Ins Style Hip Hop Punk Fashion Trend Men's Jewelry Creative AG Ring Blue Glue Masonic Ring",
-            "origin_title": "欧美ins风嘻哈朋克时尚潮流男士饰品创意AG戒指蓝胶共济会指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01wdVy771eLdqJ73llm_!!3216483855-0-cib.jpg",
-            "price": "11.5",
-            "price_info": {
-                "price": "11.5",
-                "price_min": "11.5",
-                "price_max": "13.0"
+                "price": "1.4",
+                "price_min": "1.4",
+                "price_max": "1.4"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "323"
+                "sale_quantity_90days": "143837"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": true
+        },{
+            "item_id": "891682476048",
+            "product_url": "https://detail.1688.com/offer/891682476048.html",
+            "title": "2025 Gold Shop Full Circle Zircon Pigeon Egg Wire-drawing Ring Light Luxury Exquisite Middle Ancient Texture Finger Ring",
+            "title_origin": "2025金店同款满圈锆石鸽子蛋拉丝戒指轻奢精致中古纹理感食指戒",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01yQNklg2GjPoWV6dl5_!!2216402139051-0-cib.jpg",
+            "price": "8.99",
+            "price_info": {
+                "price": "8.99",
+                "price_min": "8.99",
+                "price_max": "8.99"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "1"
             },
             "goods_score": "",
             "shop_info": {
@@ -2966,46 +2970,20 @@ export const Jewelry = [
                 "is_verified": false
             },
             "is_free_shipping": false,
-            "is_new_item": false,
+            "is_new_item": true,
             "is_hot_item": false
         },
         {
-            "item_id": "798298520653",
-            "product_url": "https://detail.1688.com/offer/798298520653.html",
-            "title": "Star Weaving Ring Women's Ins Niche Design Diamond Ring 1 karat Loose Twist Arm Light Luxury Advanced Ring Factory Outlet",
-            "origin_title": "星织戒指女ins小众设计钻戒一克拉活口扭臂轻奢高级指环厂家直销",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN011acw2k1Rn2TqVHbXt_!!2208561142155-0-cib.jpg",
-            "price": "3.4",
+            "item_id": "891325993965",
+            "product_url": "https://detail.1688.com/offer/891325993965.html",
+            "title": "Zhuo Zhifan Jewelry New S925 Sterling Silver 5*5mm Ace Pagoda Cut White Diamond Sugar Ring Nan Female ins",
+            "title_origin": "卓之凡珠宝新款S925纯银5*5mm阿斯切宝塔切白钻方糖戒指楠女ins款",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01jEoctC1N0FthvlFir_!!2215914071507-0-cib.jpg",
+            "price": "45.99",
             "price_info": {
-                "price": "3.4",
-                "price_min": "3.4",
-                "price_max": "3.4"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "4008"
-            },
-            "goods_score": "4.1",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "862356080547",
-            "product_url": "https://detail.1688.com/offer/862356080547.html",
-            "title": "Yilu has your niche style necklace women's ins style Japanese and Korean simple design pendant network explosion clavicle chain accessories",
-            "origin_title": "一鹿有你小众风项链女ins风日韩简约设计吊坠网络爆款锁骨链配饰",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN0137BN3Q1h56BH81RFU_!!2208251784225-0-cib.jpg",
-            "price": "5.0",
-            "price_info": {
-                "price": "5.0",
-                "price_min": "5.0",
-                "price_max": "5.0"
+                "price": "45.99",
+                "price_min": "45.99",
+                "price_max": "45.99"
             },
             "currency": "CNY",
             "quantity_begin": "1",
@@ -3022,21 +3000,21 @@ export const Jewelry = [
             "is_hot_item": false
         },
         {
-            "item_id": "848105435105",
-            "product_url": "https://detail.1688.com/offer/848105435105.html",
-            "title": "COA family classic logo ladies drop glue enamel tricyclic necklace C9446 white black rose gold milk white clavicle chain",
-            "origin_title": "COA蔻家经典标志女士滴胶珐琅三环项链C9446白黑玫瑰金奶白锁骨链",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01oz26YP1rZSjcbi1N2_!!2216795275645-0-cib.jpg",
-            "price": "10.0",
+            "item_id": "862350800414",
+            "product_url": "https://detail.1688.com/offer/862350800414.html",
+            "title": "Xinjiang Hetian jade ring jasper ring saddle ring green chalcedony jasper ring a generation of hair",
+            "title_origin": "新疆和田玉色戒指碧玉色指环鞍戒指绿玉髓碧玉戒指一件代发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/16248564849_1540754568.jpg",
+            "price": "8.0",
             "price_info": {
-                "price": "10.0",
-                "price_min": "10.0",
-                "price_max": "40.0"
+                "price": "8.0",
+                "price_min": "8.0",
+                "price_max": "8.0"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "19"
+                "sale_quantity_90days": "110"
             },
             "goods_score": "",
             "shop_info": {
@@ -3048,21 +3026,438 @@ export const Jewelry = [
             "is_hot_item": false
         },
         {
-            "item_id": "867275112143",
-            "product_url": "https://detail.1688.com/offer/867275112143.html",
-            "title": "Original S925 Sterling Silver Fugui Auspicious Snake Gold Snake Entwined Zodiac Birth Year Necklace Three-Piece Set for Hair",
-            "origin_title": "原创S925纯银富贵吉祥巳蛇金蛇缠绕生肖本命年项链三件套代发",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01OZITVA1KUzbGpU2q6_!!2904881168-0-cib.jpg",
-            "price": "53.45",
+            "item_id": "881417319006",
+            "product_url": "https://detail.1688.com/offer/881417319006.html",
+            "title": "Fashion personality geometric cold wind asymmetric design female 2024 titanium steel is not easy to fade new gold and silver jewelry",
+            "title_origin": "时尚个性几何冷淡风不对称设计感女2024钛钢不易掉色新款金银首饰",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01h2601Q1HTDBYoBCZX_!!2217851990758-0-cib.jpg",
+            "price": "2.21",
             "price_info": {
-                "price": "53.45",
-                "price_min": "53.45",
-                "price_max": "59.04"
+                "price": "2.21",
+                "price_min": "2.21",
+                "price_max": "3.21"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "45"
+                "sale_quantity_90days": "25"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        }
+    ],
+    [
+        {
+            "item_id": "822807510988",
+            "product_url": "https://detail.1688.com/offer/822807510988.html",
+            "title": "Light Luxury High-grade Color Diamond Snake Ring Women's vintage Sweet Cool Spice Girl Wind Ring Personalized Design Finger Ring",
+            "title_origin": "轻奢高级感彩钻灵蛇戒指女vintage甜酷辣妹风指环个性设计食指戒",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01fbHFSt1xOpGVLSIMy_!!2218078166434-0-cib.jpg",
+            "price": "5.9",
+            "price_info": {
+                "price": "5.9",
+                "price_min": "5.9",
+                "price_max": "5.9"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "1538"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "805187521187",
+            "product_url": "https://detail.1688.com/offer/805187521187.html",
+            "title": "Explosive European and American Cross-border Fashion Luxury Square Bag Heart-shaped Star Track Flash Diamond Ring for Women Light Luxury High-end Sense Couple Ring",
+            "title_origin": "爆款欧美跨境时尚豪华方包心形星轨闪钻戒指女轻奢高级感情侣对戒",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01RXupJv1NmnoizgbZ8_!!2216927241613-0-cib.jpg",
+            "price": "2.8",
+            "price_info": {
+                "price": "2.8",
+                "price_min": "2.8",
+                "price_max": "5.8"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "767"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "743078350332",
+            "product_url": "https://detail.1688.com/offer/743078350332.html",
+            "title": "Luxury Design imitation moissanite Oval pigeon egg carat diamond ring White Gold Group inlaid zircon ring female wholesale",
+            "title_origin": "奢华设计款仿莫桑石椭圆鸽子蛋克拉钻戒白金色群镶锆石戒指女批发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01MvuXrh1pB4LvPBBTi_!!2210206745321-0-cib.jpg",
+            "price": "7.0",
+            "price_info": {
+                "price": "7.0",
+                "price_min": "7.0",
+                "price_max": "7.0"
+            },
+            "currency": "CNY",
+            "quantity_begin": "2",
+            "sale_info": {
+                "sale_quantity_90days": "22726"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "566585080141",
+            "product_url": "https://detail.1688.com/offer/566585080141.html",
+            "title": "Gold Plated Men's Ring Fat Fortune Gold Ring Emerald Ring Black Onyx Ring Gold Plated Jewelry",
+            "title_origin": "镀金男士戒指 发福财字金戒指 绿宝石戒指 黑玛瑙指环 镀金饰品",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/2018/564/712/9400217465_74652292.jpg",
+            "price": "9.28",
+            "price_info": {
+                "price": "9.28",
+                "price_min": "9.28",
+                "price_max": "9.28"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "3737"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "844367659828",
+            "product_url": "https://detail.1688.com/offer/844367659828.html",
+            "title": "Athena Long Ring Minimalist Cold Wind Australian White Matte Handmade Sand Niche High-end Adjustable Jewelry for Men and Women",
+            "title_origin": "雅典娜长款戒指极简冷淡风澳白哑光手工砂小众高级饰品可调节男女",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN0153d2ii29BnPLTJz4f_!!2929428030-0-cib.jpg",
+            "price": "2.8",
+            "price_info": {
+                "price": "2.8",
+                "price_min": "2.8",
+                "price_max": "2.8"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "570"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "726213434569",
+            "product_url": "https://detail.1688.com/offer/726213434569.html",
+            "title": "2022 new handmade Topaz spirit snake ring good cut custom jewelry sterling silver handmade light luxury",
+            "title_origin": "2022年新款手工托帕石灵蛇戒指善琢自定义首饰纯银色手工轻奢",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01W1wT3L1l5Ktr4o7GC_!!2216005864767-0-cib.jpg",
+            "price": "1.28",
+            "price_info": {
+                "price": "1.28",
+                "price_min": "1.28",
+                "price_max": "1.28"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "1840"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "675207902047",
+            "product_url": "https://detail.1688.com/offer/675207902047.html",
+            "title": "Huajie cross-border new Europe and the United States 14k platinum white zircon ring interwoven pattern drill ring jewelry wholesale",
+            "title_origin": "华杰跨境新款欧美14K白金白色锆石戒指交织花纹点钻戒指饰品批发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01iV36AQ1ZNrcCzo6vF_!!2214020193183-0-cib.jpg",
+            "price": "1.6",
+            "price_info": {
+                "price": "1.6",
+                "price_min": "1.6",
+                "price_max": "1.6"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "3860"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "665703550586",
+            "product_url": "https://detail.1688.com/offer/665703550586.html",
+            "title": "European and American fashion exaggerated metal alloy pearl flower ring simple retro creative design Open index finger ring",
+            "title_origin": "欧美时尚夸张金属合金珍珠花朵戒指简约复古创意设计开口食指戒指",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01ComBCu21msHT5okUe_!!1121057028-0-cib.jpg",
+            "price": "3.99",
+            "price_info": {
+                "price": "3.99",
+                "price_min": "3.99",
+                "price_max": "3.99"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "999"
+            },
+            "goods_score": "4.7",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "788232829262",
+            "product_url": "https://detail.1688.com/offer/788232829262.html",
+            "title": "Cross-border New Hot Sale European and American Fashion Retro Moonstone Ring Wide Face Men's Ring Personalized Fashion Jewelry",
+            "title_origin": "跨境新款热卖欧美时尚复古月光石戒指宽面男士指环个性风潮手饰",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01Bf1UGY1yUbr94EdgQ_!!2217008496582-0-cib.jpg",
+            "price": "2.52",
+            "price_info": {
+                "price": "2.52",
+                "price_min": "2.52",
+                "price_max": "2.52"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "947"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "673422036143",
+            "product_url": "https://detail.1688.com/offer/673422036143.html",
+            "title": "Ring Women's Color-free Retro Moonstone Spanish Opening Niche Design Advanced Sense Cold Wind Pearl Ring",
+            "title_origin": "戒指女不掉色复古月光石西班牙开口小众设计高级感冷淡风珍珠指环",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01HcVOzo2IpwQExx9GQ_!!2213302039336-0-cib.jpg",
+            "price": "2.47",
+            "price_info": {
+                "price": "2.47",
+                "price_min": "2.47",
+                "price_max": "5.12"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "48121"
+            },
+            "goods_score": "4.9",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "773374428005",
+            "product_url": "https://detail.1688.com/offer/773374428005.html",
+            "title": "Italian mid-ancient brushed light luxury high-grade jewelry 925 sterling silver brushed craft forged surface ring for Women New",
+            "title_origin": "意大利中古拉丝轻奢高级感珠宝925纯银拉丝工艺锻面戒指女新款",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01sNvjsI2426tJPu23G_!!2013887332-0-cib.jpg",
+            "price": "39.9",
+            "price_info": {
+                "price": "39.9",
+                "price_min": "39.9",
+                "price_max": "59.9"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "1001"
+            },
+            "goods_score": "3.6",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "746098115335",
+            "product_url": "https://detail.1688.com/offer/746098115335.html",
+            "title": "Cinnabar Pixiu Five-way God of Wealth Bracelet for Men and Women, Zodiac Sign, Rabbit, Rat, Dragon and Chicken Gift, Low Content",
+            "title_origin": "朱砂貔貅五路财神男女款手链本命年生肖兔鼠龙鸡礼物低含量",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01qwRuxW1dZYBPHFREZ_!!2216756633750-0-cib.jpg",
+            "price": "1.15",
+            "price_info": {
+                "price": "1.15",
+                "price_min": "1.15",
+                "price_max": "6.8"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "20210"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "819246726717",
+            "product_url": "https://detail.1688.com/offer/819246726717.html",
+            "title": "Natural obsidian bracelet high goods black bright avoid blocking all-match donghai ketang crystal round bead gem wholesale",
+            "title_origin": "天然黑曜石手串高货乌黑光亮避挡防百搭东海可塘水晶圆珠宝石批发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01Ln1bAx1iIfhgrWvLX_!!2217580684390-0-cib.jpg",
+            "price": "7.8",
+            "price_info": {
+                "price": "7.8",
+                "price_min": "7.8",
+                "price_max": "28.0"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "969"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "621772916639",
+            "product_url": "https://detail.1688.com/offer/621772916639.html",
+            "title": "Cross-border e-commerce new Bohemian bracelet hand-woven leather bracelet alloy magnetic buckle ladies fashion bracelet",
+            "title_origin": "跨境电商新品波西米亚手链手工编织皮革手环合金磁扣女士时尚手镯",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/17628382070_745325296.jpg",
+            "price": "7.5",
+            "price_info": {
+                "price": "7.5",
+                "price_min": "7.5",
+                "price_max": "7.5"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "14976"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "566752282787",
+            "product_url": "https://detail.1688.com/offer/566752282787.html",
+            "title": "Cross-border Explosions Fashion Personalized Accessories Flower Opening Ring European and American Simple Creative Women's Adjustable Ring Bracelet",
+            "title_origin": "跨境爆款时尚个性配饰花朵开口戒指欧美简约创意女可调节指环手饰",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01brYz021pH1aHASfMI_!!2552245334-0-cib.jpg",
+            "price": "3.78",
+            "price_info": {
+                "price": "3.78",
+                "price_min": "3.78",
+                "price_max": "3.78"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "1175"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },{
+            "item_id": "891682476048",
+            "product_url": "https://detail.1688.com/offer/891682476048.html",
+            "title": "2025 Gold Shop Full Circle Zircon Pigeon Egg Wire-drawing Ring Light Luxury Exquisite Middle Ancient Texture Finger Ring",
+            "title_origin": "2025金店同款满圈锆石鸽子蛋拉丝戒指轻奢精致中古纹理感食指戒",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01yQNklg2GjPoWV6dl5_!!2216402139051-0-cib.jpg",
+            "price": "8.99",
+            "price_info": {
+                "price": "8.99",
+                "price_min": "8.99",
+                "price_max": "8.99"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "1"
             },
             "goods_score": "",
             "shop_info": {
@@ -3074,21 +3469,47 @@ export const Jewelry = [
             "is_hot_item": false
         },
         {
-            "item_id": "848535901172",
-            "product_url": "https://detail.1688.com/offer/848535901172.html",
-            "title": "Big explosions! Light Luxury Socialite Shell Letter Exquisite Stacked Ring Women's Instagram Niche High-end Fashion Ring",
-            "origin_title": "大爆款！轻奢名媛贝壳字母精致叠戴戒指女ins小众高级感时尚指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01TBzvZ41Bs2ypRQBwU_!!0-0-cib.jpg",
-            "price": "0.8",
+            "item_id": "891325993965",
+            "product_url": "https://detail.1688.com/offer/891325993965.html",
+            "title": "Zhuo Zhifan Jewelry New S925 Sterling Silver 5*5mm Ace Pagoda Cut White Diamond Sugar Ring Nan Female ins",
+            "title_origin": "卓之凡珠宝新款S925纯银5*5mm阿斯切宝塔切白钻方糖戒指楠女ins款",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01jEoctC1N0FthvlFir_!!2215914071507-0-cib.jpg",
+            "price": "45.99",
             "price_info": {
-                "price": "0.8",
-                "price_min": "0.8",
-                "price_max": "1.55"
+                "price": "45.99",
+                "price_min": "45.99",
+                "price_max": "45.99"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "15"
+                "sale_quantity_90days": "0"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": true,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "862350800414",
+            "product_url": "https://detail.1688.com/offer/862350800414.html",
+            "title": "Xinjiang Hetian jade ring jasper ring saddle ring green chalcedony jasper ring a generation of hair",
+            "title_origin": "新疆和田玉色戒指碧玉色指环鞍戒指绿玉髓碧玉戒指一件代发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/16248564849_1540754568.jpg",
+            "price": "8.0",
+            "price_info": {
+                "price": "8.0",
+                "price_min": "8.0",
+                "price_max": "8.0"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "110"
             },
             "goods_score": "",
             "shop_info": {
@@ -3100,21 +3521,21 @@ export const Jewelry = [
             "is_hot_item": false
         },
         {
-            "item_id": "850405538245",
-            "product_url": "https://detail.1688.com/offer/850405538245.html",
-            "title": "S925 Sterling Silver Wire-drawing Winding Snake Ring Women's Unique and Exquisite Cool Feeling Year of the Snake Finger Ring Advanced Snake Shape",
-            "origin_title": "S925纯银拉丝缠绕蛇戒指女独特精致清冷感蛇年食指戒高级蛇形",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01mwHuxS2FERNnLjXBa_!!2216142368848-0-cib.jpg",
-            "price": "42.8",
+            "item_id": "881417319006",
+            "product_url": "https://detail.1688.com/offer/881417319006.html",
+            "title": "Fashion personality geometric cold wind asymmetric design female 2024 titanium steel is not easy to fade new gold and silver jewelry",
+            "title_origin": "时尚个性几何冷淡风不对称设计感女2024钛钢不易掉色新款金银首饰",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01h2601Q1HTDBYoBCZX_!!2217851990758-0-cib.jpg",
+            "price": "2.21",
             "price_info": {
-                "price": "42.8",
-                "price_min": "42.8",
-                "price_max": "42.8"
+                "price": "2.21",
+                "price_min": "2.21",
+                "price_max": "3.21"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "2"
+                "sale_quantity_90days": "25"
             },
             "goods_score": "",
             "shop_info": {
@@ -3125,127 +3546,24 @@ export const Jewelry = [
             "is_new_item": false,
             "is_hot_item": false
         }
-    ],[
+    ],
+    [
         {
-            "item_id": "773508840669",
-            "product_url": "https://detail.1688.com/offer/773508840669.html",
-            "title": "Tiktok same style shell cat ring cute ins niche couple ring handmade high-grade all-match autumn and winter bracelet",
-            "origin_title": "抖音同款贝壳猫咪戒指可爱ins小众情侣对戒手工高级百搭秋冬手饰",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01PzoHUq1MsvT9jNBxb_!!2214993241491-0-cib.jpg",
-            "price": "0.55",
+            "item_id": "762299654793",
+            "product_url": "https://detail.1688.com/offer/762299654793.html",
+            "title": "Retro obsession ring men's fashion personalized open ring fashion hip hop style single men's Thorn ring fashion",
+            "title_origin": "复古执念戒指男款潮流个性开口指环时尚嘻哈风单身男士荆棘戒指潮",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01CzIlqb1m7SPSvyvl8_!!2211697784907-0-cib.jpg",
+            "price": "0.7",
             "price_info": {
-                "price": "0.55",
-                "price_min": "0.55",
-                "price_max": "0.55"
+                "price": "0.7",
+                "price_min": "0.7",
+                "price_max": "0.7"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "8906"
-            },
-            "goods_score": "4.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
-        },
-        {
-            "item_id": "800815521134",
-            "product_url": "https://detail.1688.com/offer/800815521134.html",
-            "title": "Simple and advanced! Super Flash Row Diamond Knot Ring silver Flash Diamond Simple Design Sense Open Cool Women All-match",
-            "origin_title": "简单高级！超闪的排钻纽结戒指银色闪钻简约设计感开口酷女百搭",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01elBqwY1mdyZjCBWV1_!!2211075024978-0-cib.jpg",
-            "price": "4.48",
-            "price_info": {
-                "price": "4.48",
-                "price_min": "4.48",
-                "price_max": "4.48"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "1939"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "642598021381",
-            "product_url": "https://detail.1688.com/offer/642598021381.html",
-            "title": "s925 Silver Light Luxury Inlaid Simulation Diamond Zircon Ring Women's Opening European and American Instagram Style Fashionable Silver Jewelry Adjustable Chain Ring",
-            "origin_title": "s925银轻奢镶嵌仿真钻锆石戒指女开口欧美ins潮银饰品可调节链戒",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN019Hc3EG1EF3sXbLXH4_!!2210505080321-0-cib.jpg",
-            "price": "17.08",
-            "price_info": {
-                "price": "17.08",
-                "price_min": "17.08",
-                "price_max": "18.51"
-            },
-            "currency": "CNY",
-            "quantity_begin": "2",
-            "sale_info": {
-                "sale_quantity_90days": "606"
-            },
-            "goods_score": "4.8",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "743470264537",
-            "product_url": "https://detail.1688.com/offer/743470264537.html",
-            "title": "Live broadcast new artificial natural garnet pigeon egg ring light luxury temperament inlaid Emerald open adjustable female ring",
-            "origin_title": "直播新款仿真天然石榴石鸽子蛋戒指轻奢气质镶嵌祖绿开口调节女戒",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01ShH4yf1ZBUs38PF7n_!!2214735033156-0-cib.jpg",
-            "price": "6.3",
-            "price_info": {
-                "price": "6.3",
-                "price_min": "6.3",
-                "price_max": "6.3"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "10080"
-            },
-            "goods_score": "3.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
-        },
-        {
-            "item_id": "747750577563",
-            "product_url": "https://detail.1688.com/offer/747750577563.html",
-            "title": "European and American jewelry titanium steel multi-color stone ring retro trendy men's personality punk stainless steel square ring 2405",
-            "origin_title": "欧美饰品钛钢多色石头戒指复古潮男个性朋克不锈钢正方形指环2405",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01BBbnfz1QZT4F55cK5_!!2212236851990-0-cib.jpg",
-            "price": "11.0",
-            "price_info": {
-                "price": "11.0",
-                "price_min": "11.0",
-                "price_max": "12.0"
-            },
-            "currency": "CNY",
-            "quantity_begin": "2",
-            "sale_info": {
-                "sale_quantity_90days": "819"
+                "sale_quantity_90days": "10777"
             },
             "goods_score": "",
             "shop_info": {
@@ -3254,130 +3572,52 @@ export const Jewelry = [
             },
             "is_free_shipping": false,
             "is_new_item": false,
-            "is_hot_item": false
+            "is_hot_item": true
         },
         {
-            "item_id": "794943723230",
-            "product_url": "https://detail.1688.com/offer/794943723230.html",
-            "title": "Butterfly Love Couple Ring for Men and Women Ins Niche Sweet Butterfly Finger Ring Fashionable Simple Mobius Ring",
-            "origin_title": "蝶恋情侣戒指男女ins小众甜美蝴蝶食指戒时尚简约莫比乌斯对戒",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN019gzdl11Rn2TguOi91_!!2208561142155-0-cib.jpg",
-            "price": "1.8",
+            "item_id": "727358076839",
+            "product_url": "https://detail.1688.com/offer/727358076839.html",
+            "title": "Cross-border Simple ins Style Leaf Geometric Hollow Flower 18K Gold-plated Snake-shaped High-grade Multi-layer Titanium Steel Ring for Women",
+            "title_origin": "跨境简约ins风叶子几何镂空花朵18k镀金蛇形高级感多层钛钢戒指女",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN016SjdRf1GKg560Yf5s_!!2215394530604-0-cib.jpg",
+            "price": "4.2",
             "price_info": {
-                "price": "1.8",
-                "price_min": "1.8",
-                "price_max": "2.2"
+                "price": "4.2",
+                "price_min": "4.2",
+                "price_max": "4.2"
             },
             "currency": "CNY",
-            "quantity_begin": "1",
+            "quantity_begin": "2",
             "sale_info": {
-                "sale_quantity_90days": "3551"
+                "sale_quantity_90days": "3311"
             },
             "goods_score": "5.0",
             "shop_info": {
                 "is_gold_manufacturer": false,
-                "is_verified": false
+                "is_verified": true
             },
-            "is_free_shipping": false,
+            "is_free_shipping": true,
             "is_new_item": false,
             "is_hot_item": false
         },
         {
-            "item_id": "672885218963",
-            "product_url": "https://detail.1688.com/offer/672885218963.html",
-            "title": "Chiba Yihang New Viking Fox Celtic Ring European and American Fashion Retro Thai Silver Men's Ring",
-            "origin_title": "千叶 一航新款维京人狐狸凯尔特人戒指 欧美时尚复古泰银男士指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01xpK0gs28iToGFqdlh_!!2200744747966-0-cib.jpg",
-            "price": "4.0",
+            "item_id": "614141496364",
+            "product_url": "https://detail.1688.com/offer/614141496364.html",
+            "title": "8.7mm wide flat silicone ring Amazon Men's personalized silicone sports ring outdoor sports ring",
+            "title_origin": "8.7mm宽平款硅胶戒指亚马逊男士个性硅胶运动指环 户外运动 戒指",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01lwtF4j1ZJHkgKp7jF_!!1940043173-0-cib.jpg",
+            "price": "1.5",
             "price_info": {
-                "price": "4.0",
-                "price_min": "4.0",
-                "price_max": "4.0"
+                "price": "1.5",
+                "price_min": "1.5",
+                "price_max": "1.5"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "560"
-            },
-            "goods_score": "4.6",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "693521315402",
-            "product_url": "https://detail.1688.com/offer/693521315402.html",
-            "title": "Vietnam sand gold ring women's fashion cross-border e-commerce jewelry wholesale Vietnam sand gold ring women",
-            "origin_title": "越南沙金女戒指时尚跨境电商首饰批发越南沙金戒指女士",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01BW5fuj27pyiyshxAG_!!2210956627847-0-cib.jpg",
-            "price": "2.5",
-            "price_info": {
-                "price": "2.5",
-                "price_min": "2.5",
-                "price_max": "3.2"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "2838"
+                "sale_quantity_90days": "2196"
             },
             "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "806522838043",
-            "product_url": "https://detail.1688.com/offer/806522838043.html",
-            "title": "Amazon New Jewelry European and American Bohemian Vintage Sunflower Turquoise Women Flower Adjustable Ring",
-            "origin_title": "亚马逊新款饰品 欧美波西米亚复古向日葵松石女士花朵可调节戒指",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01ogh0Cc1QN6RUlSyBS_!!2208011271963-0-cib.jpg",
-            "price": "2.5",
-            "price_info": {
-                "price": "2.5",
-                "price_min": "2.5",
-                "price_max": "2.5"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "3640"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "679479796703",
-            "product_url": "https://detail.1688.com/offer/679479796703.html",
-            "title": "Authentic moissanite diamond ring D color micro inlay 1 karat men and women wedding proposal sterling silver ring to send girlfriend factory wholesale",
-            "origin_title": "正品莫桑石钻戒D色微镶1克拉结婚求婚纯银戒指送女友抖音厂家批发",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01BenmkT1NjasEuAA1w_!!2211758461606-0-cib.jpg",
-            "price": "25.0",
-            "price_info": {
-                "price": "25.0",
-                "price_min": "25.0",
-                "price_max": "105.0"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "569"
-            },
-            "goods_score": "4.8",
             "shop_info": {
                 "is_gold_manufacturer": false,
                 "is_verified": false
@@ -3390,7 +3630,7 @@ export const Jewelry = [
             "item_id": "621718504585",
             "product_url": "https://detail.1688.com/offer/621718504585.html",
             "title": "Double-layer ring for women ins fashion retro cool style European and American simple index finger ring couple online celebrity exaggerated",
-            "origin_title": "双层戒指女ins潮时尚复古个性冷淡风欧美简约食指戒情侣网红夸张",
+            "title_origin": "双层戒指女ins潮时尚复古个性冷淡风欧美简约食指戒情侣网红夸张",
             "img": "https://cbu01-overseas.1688.com/img/ibank/17666705889_490101773.jpg",
             "price": "12.0",
             "price_info": {
@@ -3401,7 +3641,7 @@ export const Jewelry = [
             "currency": "CNY",
             "quantity_begin": "2",
             "sale_info": {
-                "sale_quantity_90days": "1686"
+                "sale_quantity_90days": "1119"
             },
             "goods_score": "4.8",
             "shop_info": {
@@ -3413,23 +3653,127 @@ export const Jewelry = [
             "is_hot_item": false
         },
         {
-            "item_id": "691986548571",
-            "product_url": "https://detail.1688.com/offer/691986548571.html",
-            "title": "All over the Sky star ring wholesale Women's titanium steel ring full diamond ring couple pair ring zircon ring cold wind light luxury ring",
-            "origin_title": "满天星戒指批发女钛钢戒指满钻戒情侣对戒锆石戒指冷淡风轻奢指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01GyNNSW2EfAghl5HtM_!!2214733348771-0-cib.jpg",
-            "price": "2.39",
+            "item_id": "744038115871",
+            "product_url": "https://detail.1688.com/offer/744038115871.html",
+            "title": "Hot sale gear ring rotatable ring men and women couple rotating wheel starry ring trendy rose gold pair ring",
+            "title_origin": "热卖齿轮戒指可转动戒指男女情侣旋转轮满天星指环潮流玫瑰金对戒",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01CwBBWD1fzJkNBLJxS_!!2215094364077-0-cib.jpg",
+            "price": "25.0",
             "price_info": {
-                "price": "2.39",
-                "price_min": "2.39",
-                "price_max": "4.8"
+                "price": "25.0",
+                "price_min": "25.0",
+                "price_max": "26.0"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "13236"
+                "sale_quantity_90days": "495"
             },
-            "goods_score": "4.9",
+            "goods_score": "4.7",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "731778760338",
+            "product_url": "https://detail.1688.com/offer/731778760338.html",
+            "title": "Light luxury high-grade zircon ring female niche design fashion all-match index finger ring real gold electroplating open ring",
+            "title_origin": "轻奢高级感锆石戒指女小众设计时尚百搭食指戒真金电镀开口指环",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN019MPtVQ1uSXWB5Palz_!!2207953796036-0-cib.jpg",
+            "price": "4.62",
+            "price_info": {
+                "price": "4.62",
+                "price_min": "4.62",
+                "price_max": "12.85"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "1233"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "632417714556",
+            "product_url": "https://detail.1688.com/offer/632417714556.html",
+            "title": "Imitation ivory Blood Pearl green crystal blue crystal ring horn amethyst couple ring play crafts free shipping",
+            "title_origin": "仿象牙血珀绿晶蓝晶戒指牛角紫晶情侣指环把玩工艺品包邮",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/22935570561_941028235.jpg",
+            "price": "1.2",
+            "price_info": {
+                "price": "1.2",
+                "price_min": "1.2",
+                "price_max": "1.8"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "4107"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "763519861125",
+            "product_url": "https://detail.1688.com/offer/763519861125.html",
+            "title": "Harry Deathly Hallows ring men's and women's retro resurrection stone ring European and American film and television commemorative gift accessories",
+            "title_origin": "哈利死亡圣器戒指男女复古复活石指环欧美影视纪念礼品配饰",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01Q3cdgp1c4ZlOEORFr_!!2576413547-0-cib.jpg",
+            "price": "1.5",
+            "price_info": {
+                "price": "1.5",
+                "price_min": "1.5",
+                "price_max": "1.5"
+            },
+            "currency": "CNY",
+            "quantity_begin": "2",
+            "sale_info": {
+                "sale_quantity_90days": "1530"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "680073051892",
+            "product_url": "https://detail.1688.com/offer/680073051892.html",
+            "title": "Cross-border European and American S925 Sterling Silver Baroque Pearl Ring Feminine Style Light Luxury Design Square Open Ring Jewelry",
+            "title_origin": "跨境欧美S925纯银巴洛克珍珠戒指女气质轻奢设计方形开口指环饰品",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01CjLgsu1T7vyfWaEBT_!!2206770162336-0-cib.jpg",
+            "price": "48.8",
+            "price_info": {
+                "price": "48.8",
+                "price_min": "48.8",
+                "price_max": "48.8"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "5345"
+            },
+            "goods_score": "5.0",
             "shop_info": {
                 "is_gold_manufacturer": false,
                 "is_verified": false
@@ -3439,21 +3783,21 @@ export const Jewelry = [
             "is_hot_item": true
         },
         {
-            "item_id": "775140500593",
-            "product_url": "https://detail.1688.com/offer/775140500593.html",
-            "title": "ins cold style plain ring solid closed 999 sterling silver ring Women's Light luxury high-grade pure silver tail ring cross-border e-commerce",
-            "origin_title": "ins冷淡风素圈实心闭口999纯银戒指女轻奢高级感足银尾戒跨境电商",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01EnFmt51rrKAtCaGcS_!!2209704465684-0-cib.jpg",
-            "price": "17.46",
+            "item_id": "810383240414",
+            "product_url": "https://detail.1688.com/offer/810383240414.html",
+            "title": "European and American Cross-border Cyberpunk Cross Necklace Dark Exaggerated Micro-inlaid Imitation Pearl Multi-layered Stacked Jewelry",
+            "title_origin": "欧美跨境赛博朋克风十字架项链暗黑夸张微镶仿珍珠多层叠戴项饰品",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01M2sYWH1DbDfOfcZ26_!!3484130234-0-cib.jpg",
+            "price": "4.8",
             "price_info": {
-                "price": "17.46",
-                "price_min": "17.46",
-                "price_max": "38.34"
+                "price": "4.8",
+                "price_min": "4.8",
+                "price_max": "8.8"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "4704"
+                "sale_quantity_90days": "4261"
             },
             "goods_score": "5.0",
             "shop_info": {
@@ -3465,151 +3809,176 @@ export const Jewelry = [
             "is_hot_item": false
         },
         {
-            "item_id": "801171029224",
-            "product_url": "https://detail.1688.com/offer/801171029224.html",
-            "title": "Thai Buddha Amulet Dragon Woman Rice-suction Star Ring for Women Thai Silver Imitation Moissanite Scriptures Fashionable Stylish High-end Hand Jewelry",
-            "origin_title": "泰国佛牌龙婆吸米星戒指女泰银仿莫桑石经文时尚个性高级感手饰品",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01zmc8eu26eFBLVhr5b_!!2217849047686-0-cib.jpg",
-            "price": "6.0",
+            "item_id": "639376220995",
+            "product_url": "https://detail.1688.com/offer/639376220995.html",
+            "title": "European and American Cross-border Titanium Steel Ring Women's Non-fading Simple Glossy 18K Stainless Steel Ring Tail Ring Fashion Trendy Jewelry",
+            "title_origin": "欧美跨境钛钢戒指女不掉色简约光面18k不锈钢戒指尾戒时尚潮饰品",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01VOuNFR1TADr9LtAZJ_!!2206494612341-0-cib.jpg",
+            "price": "2.29",
             "price_info": {
-                "price": "6.0",
-                "price_min": "6.0",
-                "price_max": "6.0"
+                "price": "2.29",
+                "price_min": "2.29",
+                "price_max": "12.9"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "1077"
+                "sale_quantity_90days": "8016"
             },
             "goods_score": "5.0",
             "shop_info": {
                 "is_gold_manufacturer": false,
-                "is_verified": false
+                "is_verified": true
             },
-            "is_free_shipping": false,
+            "is_free_shipping": true,
             "is_new_item": false,
-            "is_hot_item": false
+            "is_hot_item": true
         },
         {
-            "item_id": "824018823952",
-            "product_url": "https://detail.1688.com/offer/824018823952.html",
-            "title": "New Silver Plated Save Me Ring Men's and Women's Couple Ring Opening Ring Niche Senior Personality Printing Ring Wholesale",
-            "origin_title": "新款镀银拯救我戒指男女情侣戒指开口戒小众高级个性印字指环批发",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01eA6UgT2FZVaTUMvRl_!!2213741418894-0-cib.jpg",
-            "price": "2.8",
+            "item_id": "734522595330",
+            "product_url": "https://detail.1688.com/offer/734522595330.html",
+            "title": "Bow ring female Korean style light luxury fashion personality Internet celebrity titanium steel ring non-fading jewelry wholesale",
+            "title_origin": "蝴蝶结戒指女 韩版轻奢时尚个性网红钛钢戒指不掉色手饰饰品 批发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01yhm3kc1wkyhIuQNnh_!!4260686347-0-cib.jpg",
+            "price": "2.5",
             "price_info": {
-                "price": "2.8",
-                "price_min": "2.8",
-                "price_max": "2.8"
+                "price": "2.5",
+                "price_min": "2.5",
+                "price_max": "2.5"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "1959"
+                "sale_quantity_90days": "10880"
             },
             "goods_score": "5.0",
             "shop_info": {
                 "is_gold_manufacturer": false,
-                "is_verified": false
+                "is_verified": true
             },
-            "is_free_shipping": false,
+            "is_free_shipping": true,
             "is_new_item": false,
-            "is_hot_item": false
+            "is_hot_item": true
         },
         {
-            "item_id": "707158426639",
-            "product_url": "https://detail.1688.com/offer/707158426639.html",
-            "title": "Mobius Couple Ring for Men and Women a Pair of Open Plain Ring Imitation S925 Sterling Silver Niche Ring Factory",
-            "origin_title": "莫比乌斯情侣戒指男女一对开口素圈仿S925纯银小众对戒rings工厂",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01vEBqoE1zblX2FCwKq_!!2211364556733-0-cib.jpg",
-            "price": "1.9",
-            "price_info": {
-                "price": "1.9",
-                "price_min": "1.9",
-                "price_max": "5.3"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "2962"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "787709381153",
-            "product_url": "https://detail.1688.com/offer/787709381153.html",
-            "title": "Cross-border Retro Exaggerated Ethnic Style Square Ruby Men's Punk Fashion Handset silver Ring Ring",
-            "origin_title": "跨境复古夸张民族风镶嵌方形红宝石男士朋克时尚手饰银色指环戒指",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01Pr5snI2JnwVNhoWv4_!!2216797909467-0-cib.jpg",
-            "price": "3.5",
-            "price_info": {
-                "price": "3.5",
-                "price_min": "3.5",
-                "price_max": "3.5"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "1238"
-            },
-            "goods_score": "",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "815811340565",
-            "product_url": "https://detail.1688.com/offer/815811340565.html",
-            "title": "Autumn and winter white ring red drop glaze love opening ring adjustable high sense niche ring 2024 new",
-            "origin_title": "秋冬显白戒指红色滴釉爱心开口戒指可调节高级感小众戒指2024新款",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01jnmiuq1Bs2yGx1THk_!!0-0-cib.jpg",
+            "item_id": "647294453954",
+            "product_url": "https://detail.1688.com/offer/647294453954.html",
+            "title": "Full Diamond Size Pearl Open Collar Women's Japanese and Korean Style Cyber Popular Short Necklace Distinctive choker Neck Strap Clavicle Chain for Women",
+            "title_origin": "满钻大小珍珠开口项圈女日韩网红短款项链个性choker颈带锁骨链女",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01ek7DHR1z2UtpGMIul_!!2211823736656-0-cib.jpg",
             "price": "0.9",
             "price_info": {
                 "price": "0.9",
                 "price_min": "0.9",
-                "price_max": "0.9"
+                "price_max": "4.3"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "2330"
+                "sale_quantity_90days": "17060"
             },
             "goods_score": "5.0",
             "shop_info": {
                 "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "660480632791",
+            "product_url": "https://detail.1688.com/offer/660480632791.html",
+            "title": "wish AliExpress hot sale magnet magnetic Health Care Ring rose gold creative jewelry European and American open ring",
+            "title_origin": "wish速卖通热卖 磁石戒指玫瑰金创意首饰欧美开口戒指",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01769asD27qtRQLnvTH_!!2200619667849-0-cib.jpg",
+            "price": "1.6",
+            "price_info": {
+                "price": "1.6",
+                "price_min": "1.6",
+                "price_max": "2.2"
+            },
+            "currency": "CNY",
+            "quantity_begin": "2",
+            "sale_info": {
+                "sale_quantity_90days": "35355"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": true,
                 "is_verified": false
             },
             "is_free_shipping": false,
             "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "640199311234",
+            "product_url": "https://detail.1688.com/offer/640199311234.html",
+            "title": "S925 silver moissanite half of the country Hao set ring silver plating 18K gold tide half arm ring TikTok live broadcast",
+            "title_origin": "时尚S925银半壁江山戒子女小众 TikTok直播热卖莫桑石戒指不掉色",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01r5GLCB2AkR0tiImfZ_!!1110428241-0-cib.jpg",
+            "price": "39.9",
+            "price_info": {
+                "price": "39.9",
+                "price_min": "39.9",
+                "price_max": "177.0"
+            },
+            "currency": "CNY",
+            "quantity_begin": "2",
+            "sale_info": {
+                "sale_quantity_90days": "1898"
+            },
+            "goods_score": "4.9",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
             "is_hot_item": false
         },
         {
-            "item_id": "861913502598",
-            "product_url": "https://detail.1688.com/offer/861913502598.html",
-            "title": "Dopamine Planet Necklace No Fading Women's Autumn and Winter Sweater Chain Women's High-Level Yiwu Accessories Tiger's Eye Clavicle Chain",
-            "origin_title": "多巴胺星球项链不掉色女秋冬毛衣链女高级感义乌配饰虎眼石锁骨链",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01p8wmKT2MkEBw37Ab6_!!3245669865-0-cib.jpg",
-            "price": "30.0",
+            "item_id": "857893459902",
+            "product_url": "https://detail.1688.com/offer/857893459902.html",
+            "title": "Fortune Natural Stone Green Ghost Bracelet for Women Ins Simple Light Luxury Niche Design Gentle Elegant All-match Bracelet for Women",
+            "title_origin": "财富天然石绿幽灵手串女ins简约轻奢小众设计温柔气质百搭手链女",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01mqbTqh2Bqg0RA5cyg_!!2215501718390-0-cib.jpg",
+            "price": "1.8",
             "price_info": {
-                "price": "30.0",
-                "price_min": "30.0",
-                "price_max": "30.0"
+                "price": "1.8",
+                "price_min": "1.8",
+                "price_max": "18.8"
+            },
+            "currency": "CNY",
+            "quantity_begin": "2",
+            "sale_info": {
+                "sale_quantity_90days": "3642"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },{
+            "item_id": "891682476048",
+            "product_url": "https://detail.1688.com/offer/891682476048.html",
+            "title": "2025 Gold Shop Full Circle Zircon Pigeon Egg Wire-drawing Ring Light Luxury Exquisite Middle Ancient Texture Finger Ring",
+            "title_origin": "2025金店同款满圈锆石鸽子蛋拉丝戒指轻奢精致中古纹理感食指戒",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01yQNklg2GjPoWV6dl5_!!2216402139051-0-cib.jpg",
+            "price": "8.99",
+            "price_info": {
+                "price": "8.99",
+                "price_min": "8.99",
+                "price_max": "8.99"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "17"
+                "sale_quantity_90days": "1"
             },
             "goods_score": "",
             "shop_info": {
@@ -3621,16 +3990,16 @@ export const Jewelry = [
             "is_hot_item": false
         },
         {
-            "item_id": "866355083647",
-            "product_url": "https://detail.1688.com/offer/866355083647.html",
-            "title": "European and American Cross-border Fashion Ladies Angel Wings Necklace Guardian Love-shaped Pendant Thanksgiving Mother's Day Necklace",
-            "origin_title": "欧美跨境时尚女士天使翅膀项链守护爱心形吊坠感恩母亲节项饰",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01nXlTr61WVhMEP2HTx_!!3379762794-0-cib.jpg",
-            "price": "2.81",
+            "item_id": "891325993965",
+            "product_url": "https://detail.1688.com/offer/891325993965.html",
+            "title": "Zhuo Zhifan Jewelry New S925 Sterling Silver 5*5mm Ace Pagoda Cut White Diamond Sugar Ring Nan Female ins",
+            "title_origin": "卓之凡珠宝新款S925纯银5*5mm阿斯切宝塔切白钻方糖戒指楠女ins款",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01jEoctC1N0FthvlFir_!!2215914071507-0-cib.jpg",
+            "price": "45.99",
             "price_info": {
-                "price": "2.81",
-                "price_min": "2.81",
-                "price_max": "2.81"
+                "price": "45.99",
+                "price_min": "45.99",
+                "price_max": "45.99"
             },
             "currency": "CNY",
             "quantity_begin": "1",
@@ -3645,26 +4014,704 @@ export const Jewelry = [
             "is_free_shipping": false,
             "is_new_item": true,
             "is_hot_item": false
-        }
-    ],[
+        },
         {
-            "item_id": "816304995973",
-            "product_url": "https://detail.1688.com/offer/816304995973.html",
-            "title": "South Korea Design Niche Tassel Fireworks Index Finger Ring Black Zircon Letters Sweet Cool Exaggerated Personality Ring Ring",
-            "origin_title": "韩国设计小众流苏烟花食指戒指黑色锆石字母甜酷夸张个性戒指指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01bLhlZb1vVZrqyZ9ME_!!2201401006178-0-cib.jpg",
-            "price": "9.9",
+            "item_id": "862350800414",
+            "product_url": "https://detail.1688.com/offer/862350800414.html",
+            "title": "Xinjiang Hetian jade ring jasper ring saddle ring green chalcedony jasper ring a generation of hair",
+            "title_origin": "新疆和田玉色戒指碧玉色指环鞍戒指绿玉髓碧玉戒指一件代发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/16248564849_1540754568.jpg",
+            "price": "8.0",
             "price_info": {
-                "price": "9.9",
-                "price_min": "9.9",
-                "price_max": "14.8"
+                "price": "8.0",
+                "price_min": "8.0",
+                "price_max": "8.0"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "893"
+                "sale_quantity_90days": "110"
             },
             "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "881417319006",
+            "product_url": "https://detail.1688.com/offer/881417319006.html",
+            "title": "Fashion personality geometric cold wind asymmetric design female 2024 titanium steel is not easy to fade new gold and silver jewelry",
+            "title_origin": "时尚个性几何冷淡风不对称设计感女2024钛钢不易掉色新款金银首饰",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01h2601Q1HTDBYoBCZX_!!2217851990758-0-cib.jpg",
+            "price": "2.21",
+            "price_info": {
+                "price": "2.21",
+                "price_min": "2.21",
+                "price_max": "3.21"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "25"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        }
+    ],
+    [
+        {
+            "item_id": "714941854242",
+            "product_url": "https://detail.1688.com/offer/714941854242.html",
+            "title": "Advanced Sense Niche Design Sense Simple Couple's Ring ins Cold Style Exquisite Stacked Distinctive Open Finger Ring",
+            "title_origin": "高级感小众设计感简约情侣戒指ins冷淡风精致叠戴个性开口食指戒",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01UcgyHe244rAD3eShN_!!2214077017338-0-cib.jpg",
+            "price": "4.3",
+            "price_info": {
+                "price": "4.3",
+                "price_min": "4.3",
+                "price_max": "4.3"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "2065"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "843927112453",
+            "product_url": "https://detail.1688.com/offer/843927112453.html",
+            "title": "AliExpress Explosive Simple Star Opening Titanium Steel Ring Women's Niche Light Luxury High-grade Stainless Steel Ring Wholesale",
+            "title_origin": "速卖通爆款简约星星开口钛钢戒指女小众轻奢高级感不锈钢戒指批发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01pbHV0U1Hk9s8Hr9K9_!!2218403830795-0-cib.jpg",
+            "price": "1.9",
+            "price_info": {
+                "price": "1.9",
+                "price_min": "1.9",
+                "price_max": "2.9"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "1878"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "782372720814",
+            "product_url": "https://detail.1688.com/offer/782372720814.html",
+            "title": "Cross-border new stainless steel magnet ring magnetic therapy opening stop snoring ring double magnetic health control fat jewelry accessories",
+            "title_origin": "跨境新款不锈钢磁石戒指磁性开口止鼾指环双磁性健康时尚饰品配饰",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01ox7Qkl2CXGmK1hKhu_!!2211185308483-0-cib.jpg",
+            "price": "2.9",
+            "price_info": {
+                "price": "2.9",
+                "price_min": "2.9",
+                "price_max": "5.2"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "12662"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "656419263985",
+            "product_url": "https://detail.1688.com/offer/656419263985.html",
+            "title": "Mahjong Ring Fortune Red Middle East, West, North and South Whiteboard Index Finger Middle Finger Average Size Ring Transferring New Year's New Year Jewelry",
+            "title_origin": "麻将戒指发财红中东西南北白板食指中指均码指环转运新年过年饰品",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01wqqy9w2IUs9ekwC17_!!2200706399290-0-cib.jpg",
+            "price": "1.48",
+            "price_info": {
+                "price": "1.48",
+                "price_min": "1.48",
+                "price_max": "1.48"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "2929"
+            },
+            "goods_score": "4.7",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "802082273315",
+            "product_url": "https://detail.1688.com/offer/802082273315.html",
+            "title": "Diablo Palm Ring Cool Hip-hop Street Ins Style Retro Distressed Fashion Skull Five-claw Ring",
+            "title_origin": "暗黑系手掌戒指酷嘻哈街头ins风复古做旧个性时尚骷髅头五爪指环",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01Mv0RoQ1dl06skqkYU_!!4235383775-0-cib.jpg",
+            "price": "1.05",
+            "price_info": {
+                "price": "1.05",
+                "price_min": "1.05",
+                "price_max": "5.97"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "636"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "861185774753",
+            "product_url": "https://detail.1688.com/offer/861185774753.html",
+            "title": "Retro money live ring ring fashion national rich copper coin couple ring factory direct wholesale",
+            "title_origin": "复古金钱活口戒指戒子时尚民族暴富铜钱钱币情侣对戒厂家直销批发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01GAFyea245m8oOQ2et_!!2215876467340-0-cib.jpg",
+            "price": "1.8",
+            "price_info": {
+                "price": "1.8",
+                "price_min": "1.8",
+                "price_max": "1.8"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "465"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "735432326832",
+            "product_url": "https://detail.1688.com/offer/735432326832.html",
+            "title": "Foreign trade new butterfly diamond ring mixed batch pearl ring female niche advanced joint ring suit 9-piece set",
+            "title_origin": "外贸新款蝴蝶镶钻戒指混批珍珠戒指女小众高级关节戒指套装9件套",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01lvVI151pwF8A61EEU_!!2215875425424-0-cib.jpg",
+            "price": "2.55",
+            "price_info": {
+                "price": "2.55",
+                "price_min": "2.55",
+                "price_max": "2.55"
+            },
+            "currency": "CNY",
+            "quantity_begin": "2",
+            "sale_info": {
+                "sale_quantity_90days": "5422"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "815290176810",
+            "product_url": "https://detail.1688.com/offer/815290176810.html",
+            "title": "Europe and the United States cross-border jewelry irregular double water drop plastic ring fashion geometric multi-color closed finger ring",
+            "title_origin": "欧美跨境饰品 不规则双水滴塑料戒指 时尚几何型多色闭口指环",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01VUezoR1E96xUOFibt_!!988240308-0-cib.jpg",
+            "price": "3.8",
+            "price_info": {
+                "price": "3.8",
+                "price_min": "3.8",
+                "price_max": "3.8"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "740"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": true,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "860868604674",
+            "product_url": "https://detail.1688.com/offer/860868604674.html",
+            "title": "2024 Autumn and Winter New Explosions New Chinese-style Sun Moon Couple Ring Women's High-end Open Ring Gift Ring",
+            "title_origin": "2024秋冬新款爆款新中式日月情侣戒指女高级感开口指环送礼物指环",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN019hj58028eMVnqNTTm_!!2217741467957-0-cib.jpg",
+            "price": "1.2",
+            "price_info": {
+                "price": "1.2",
+                "price_min": "1.2",
+                "price_max": "1.2"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "2583"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "531266485580",
+            "product_url": "https://detail.1688.com/offer/531266485580.html",
+            "title": "S925 sterling silver necklace melon seed chain fine ingot box melon seed naked chain single chain pendant 40+5 extended chain",
+            "title_origin": "S925纯银项链瓜子链细款元宝盒子瓜子裸链单链子40+5延长链批发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/14508931792_1970119278.jpg",
+            "price": "12.95",
+            "price_info": {
+                "price": "12.95",
+                "price_min": "12.95",
+                "price_max": "24.76"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "10052"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "835131293294",
+            "product_url": "https://detail.1688.com/offer/835131293294.html",
+            "title": "Little Red Book Explosions Bauhinia Ring Women 2024 New Purple Diamond Inlaid Light Luxury Finger Ring",
+            "title_origin": "小红书爆款紫荆花戒指女2024年新款紫色钻石镶嵌轻奢指环一件代发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01NfT5on25ca6C7UOLy_!!2218524677547-0-cib.jpg",
+            "price": "5.0",
+            "price_info": {
+                "price": "5.0",
+                "price_min": "5.0",
+                "price_max": "5.9"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "2798"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "619993562859",
+            "product_url": "https://detail.1688.com/offer/619993562859.html",
+            "title": "Full diamond jewelry s925 Silver small waist sterling silver necklace female niche design sense pendant temperament jewelry wholesale",
+            "title_origin": "满钻首饰s925银饰小蛮腰纯银项链女小众设计感吊坠气质饰品批发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/16486255445_370427427.jpg",
+            "price": "30.5",
+            "price_info": {
+                "price": "30.5",
+                "price_min": "30.5",
+                "price_max": "44.5"
+            },
+            "currency": "CNY",
+            "quantity_begin": "2",
+            "sale_info": {
+                "sale_quantity_90days": "303"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "613612047252",
+            "product_url": "https://detail.1688.com/offer/613612047252.html",
+            "title": "Panjia Basic Bracelet Simple Adjustable Bracelet European and American Fashion Bracelet Unisex Bracelet 1",
+            "title_origin": "基础手链简约 diy可调节手饰品欧美时尚手串手链男女通用手饰手镯",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01KXhNcr1XF2mk2O2z6_!!1803742893-0-cib.jpg",
+            "price": "0.4",
+            "price_info": {
+                "price": "0.4",
+                "price_min": "0.4",
+                "price_max": "3.41"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "30844"
+            },
+            "goods_score": "4.9",
+            "shop_info": {
+                "is_gold_manufacturer": true,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "864195663987",
+            "product_url": "https://detail.1688.com/offer/864195663987.html",
+            "title": "Europe and the United States cross-border Valentine's Day one arrow through the heart love dagger sword pendant double love necklace animation alloy jewelry",
+            "title_origin": "欧美跨境情人节一箭穿心爱心匕首剑吊坠双层爱心项链动漫合金饰品",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01y68GmI2DfnqE79Map_!!2208868938637-0-cib.jpg",
+            "price": "4.5",
+            "price_info": {
+                "price": "4.5",
+                "price_min": "4.5",
+                "price_max": "4.5"
+            },
+            "currency": "CNY",
+            "quantity_begin": "2",
+            "sale_info": {
+                "sale_quantity_90days": "5574"
+            },
+            "goods_score": "4.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "830332753791",
+            "product_url": "https://detail.1688.com/offer/830332753791.html",
+            "title": "New Chinese Style Chinese Style Fox Bracelet Ping An Lock Tassel Bracelet Female Niche Explosive Bracelet Antique Cool Bracelet",
+            "title_origin": "新中式中国风狐狸手镯平安锁流苏手链女小众爆款手串古风清冷手饰",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01VdsUTG1kGxSrGKZxz_!!2210335964657-0-cib.jpg",
+            "price": "1.1",
+            "price_info": {
+                "price": "1.1",
+                "price_min": "1.1",
+                "price_max": "10.0"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "90138"
+            },
+            "goods_score": "4.9",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "799402044540",
+            "product_url": "https://detail.1688.com/offer/799402044540.html",
+            "title": "Goddess Tears Nine-tailed Fox Horse Powder Crystal Original National Style Natural Agate Fox Bracelet high quality New Chinese Style Middle Bracelet",
+            "title_origin": "神女泪九尾狐马粉晶原创国风天然玛瑙狐狸手链高品质新中式中手串",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01RKh1O51PXo1k19kl2_!!2200790241851-0-cib.jpg",
+            "price": "16.5",
+            "price_info": {
+                "price": "16.5",
+                "price_min": "16.5",
+                "price_max": "57.7"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "471"
+            },
+            "goods_score": "4.8",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },{
+            "item_id": "891682476048",
+            "product_url": "https://detail.1688.com/offer/891682476048.html",
+            "title": "2025 Gold Shop Full Circle Zircon Pigeon Egg Wire-drawing Ring Light Luxury Exquisite Middle Ancient Texture Finger Ring",
+            "title_origin": "2025金店同款满圈锆石鸽子蛋拉丝戒指轻奢精致中古纹理感食指戒",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01yQNklg2GjPoWV6dl5_!!2216402139051-0-cib.jpg",
+            "price": "8.99",
+            "price_info": {
+                "price": "8.99",
+                "price_min": "8.99",
+                "price_max": "8.99"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "1"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": true,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "891325993965",
+            "product_url": "https://detail.1688.com/offer/891325993965.html",
+            "title": "Zhuo Zhifan Jewelry New S925 Sterling Silver 5*5mm Ace Pagoda Cut White Diamond Sugar Ring Nan Female ins",
+            "title_origin": "卓之凡珠宝新款S925纯银5*5mm阿斯切宝塔切白钻方糖戒指楠女ins款",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01jEoctC1N0FthvlFir_!!2215914071507-0-cib.jpg",
+            "price": "45.99",
+            "price_info": {
+                "price": "45.99",
+                "price_min": "45.99",
+                "price_max": "45.99"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "0"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": true,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "862350800414",
+            "product_url": "https://detail.1688.com/offer/862350800414.html",
+            "title": "Xinjiang Hetian jade ring jasper ring saddle ring green chalcedony jasper ring a generation of hair",
+            "title_origin": "新疆和田玉色戒指碧玉色指环鞍戒指绿玉髓碧玉戒指一件代发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/16248564849_1540754568.jpg",
+            "price": "8.0",
+            "price_info": {
+                "price": "8.0",
+                "price_min": "8.0",
+                "price_max": "8.0"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "110"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "881417319006",
+            "product_url": "https://detail.1688.com/offer/881417319006.html",
+            "title": "Fashion personality geometric cold wind asymmetric design female 2024 titanium steel is not easy to fade new gold and silver jewelry",
+            "title_origin": "时尚个性几何冷淡风不对称设计感女2024钛钢不易掉色新款金银首饰",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01h2601Q1HTDBYoBCZX_!!2217851990758-0-cib.jpg",
+            "price": "2.21",
+            "price_info": {
+                "price": "2.21",
+                "price_min": "2.21",
+                "price_max": "3.21"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "25"
+            },
+            "goods_score": "",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": false
+        }
+    ],
+    [
+        {
+            "item_id": "638091604752",
+            "product_url": "https://detail.1688.com/offer/638091604752.html",
+            "title": "European and American cross-border e-commerce hot mining domineering retro gold-plated sun god lion head stainless steel fashion ring",
+            "title_origin": "欧美跨境电商热采霸气复古镀金太阳神狮子头不锈钢时尚戒指",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01qtJtDh1KRKFyVUgmf_!!3502661160-0-cib.jpg",
+            "price": "12.7",
+            "price_info": {
+                "price": "12.7",
+                "price_min": "12.7",
+                "price_max": "16.88"
+            },
+            "currency": "CNY",
+            "quantity_begin": "2",
+            "sale_info": {
+                "sale_quantity_90days": "333"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "781078299666",
+            "product_url": "https://detail.1688.com/offer/781078299666.html",
+            "title": "Wish cross-border explosions creative design full of diamond zircon lady engagement ring European and American wind ring spot",
+            "title_origin": "wish跨境爆款 创意设计满钻锆石女士求婚订婚戒指 欧美风指环现货",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN010vGyRw1kZjf90VFS8_!!2216855504698-0-cib.jpg",
+            "price": "6.6",
+            "price_info": {
+                "price": "6.6",
+                "price_min": "6.6",
+                "price_max": "6.6"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "886"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "771702242032",
+            "product_url": "https://detail.1688.com/offer/771702242032.html",
+            "title": "JZ066 whale rain jewelry Bling diamond water drop shiny broken ice silicone adjustable ring titanium steel plated 18K gold",
+            "title_origin": "JZ066 鲸雨饰品 Bling钻水滴闪亮碎冰冰硅胶调节戒指 钛钢镀18K金",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01cGLRWq2MBsPmYxeI0_!!2201280999790-0-cib.jpg",
+            "price": "10.0",
+            "price_info": {
+                "price": "10.0",
+                "price_min": "10.0",
+                "price_max": "10.66"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "749"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "833644229717",
+            "product_url": "https://detail.1688.com/offer/833644229717.html",
+            "title": "Hundred Million Fashion Retro Court Style Men's and Women's Ring Light Luxury Elegant Style Accessories All-match Fashion Opening Adjustable",
+            "title_origin": "拾亿复古新中式玛瑙和田玉开口戒指女小众高级轻奢古风气质饰品",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01Pwu77325BYjIxRv12_!!2208125847488-0-cib.jpg",
+            "price": "5.6",
+            "price_info": {
+                "price": "5.6",
+                "price_min": "5.6",
+                "price_max": "11.23"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "630"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "624222220182",
+            "product_url": "https://detail.1688.com/offer/624222220182.html",
+            "title": "Japanese and Korean-style ultra-fine one-diamond ring rose gold micro-Diamond couple pair ring men's and women's titanium steel ring",
+            "title_origin": "日韩版极细款一粒单钻戒指玫瑰金微镶钻石情侣对戒男女款钛钢戒指",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01OT3BxO1i937hcHPec_!!2208779094369-0-cib.jpg",
+            "price": "2.2",
+            "price_info": {
+                "price": "2.2",
+                "price_min": "2.2",
+                "price_max": "2.5"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "1605"
+            },
+            "goods_score": "5.0",
             "shop_info": {
                 "is_gold_manufacturer": false,
                 "is_verified": false
@@ -3677,7 +4724,7 @@ export const Jewelry = [
             "item_id": "768481162574",
             "product_url": "https://detail.1688.com/offer/768481162574.html",
             "title": "Natural Cinnabar Transfer Bead Ring Women's Garnet Ring Pixiu Finger Ring Small Flower Finger Ring Simple Design Ring",
-            "origin_title": "正品朱砂珠戒指女石榴石戒指貔貅指环小花指环简单设计款戒圈",
+            "title_origin": "正品朱砂珠戒指女石榴石戒指貔貅指环小花指环简单设计款戒圈",
             "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01b9rqLU2BW45yaE77a_!!2217249398345-0-cib.jpg",
             "price": "2.0",
             "price_info": {
@@ -3688,9 +4735,9 @@ export const Jewelry = [
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "6259"
+                "sale_quantity_90days": "9200"
             },
-            "goods_score": "5.0",
+            "goods_score": "4.8",
             "shop_info": {
                 "is_gold_manufacturer": false,
                 "is_verified": false
@@ -3700,23 +4747,23 @@ export const Jewelry = [
             "is_hot_item": true
         },
         {
-            "item_id": "803135296057",
-            "product_url": "https://detail.1688.com/offer/803135296057.html",
-            "title": "Crushed Ice Ring Men's and Women's Ring 2024 New Explosive Light Luxury Niche Design Ring Food Finger Ring",
-            "origin_title": "碎碎冰戒指男女对戒2024新款爆款轻奢小众设计指环食指戒",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN012ChjU11wfU2RD1xoV_!!2180516335-0-cib.jpg",
-            "price": "2.5",
+            "item_id": "785774214193",
+            "product_url": "https://detail.1688.com/offer/785774214193.html",
+            "title": "Europe and the United States cross-border new personality ring fashion color separation Niu Niu ring small daisy two-color family ring women wholesale",
+            "title_origin": "欧美跨境新款个性戒指时尚分色牛牛戒指小雏菊双色亲情戒指女批发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01ZYM3rP2LaJxKBwAj5_!!2216029809708-0-cib.jpg",
+            "price": "8.0",
             "price_info": {
-                "price": "2.5",
-                "price_min": "2.5",
-                "price_max": "2.5"
+                "price": "8.0",
+                "price_min": "8.0",
+                "price_max": "8.0"
             },
             "currency": "CNY",
-            "quantity_begin": "1",
+            "quantity_begin": "2",
             "sale_info": {
-                "sale_quantity_90days": "768"
+                "sale_quantity_90days": "2197"
             },
-            "goods_score": "",
+            "goods_score": "4.8",
             "shop_info": {
                 "is_gold_manufacturer": false,
                 "is_verified": false
@@ -3726,21 +4773,73 @@ export const Jewelry = [
             "is_hot_item": false
         },
         {
-            "item_id": "683460097853",
-            "product_url": "https://detail.1688.com/offer/683460097853.html",
-            "title": "01949 Vintage Thai Silver Green Eye Winding Snake Ring Trendy Fashion Personalized ins Cold Style Simple Distressed Ring",
-            "origin_title": "01949复古泰银绿眼缠绕蛇戒指潮流时尚个性ins冷淡风简约做旧指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN013mNEiA23UDQP4NhmV_!!2861567258-0-cib.jpg",
-            "price": "4.7",
+            "item_id": "721883809139",
+            "product_url": "https://detail.1688.com/offer/721883809139.html",
+            "title": "Cross-border Niche Sense Pink Love Thorny Cat's Eye Zircon Ring Women's Sweet Cool Style Fashion Elegant All-match Ring",
+            "title_origin": "跨境小众感粉色爱心荆棘猫眼石锆石戒指女甜酷风时尚气质百搭指环",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01jCKqmw1TDQo7xEY8N_!!2207667062348-0-cib.jpg",
+            "price": "0.86",
             "price_info": {
-                "price": "4.7",
-                "price_min": "4.7",
-                "price_max": "4.7"
+                "price": "0.86",
+                "price_min": "0.86",
+                "price_max": "11.9"
             },
             "currency": "CNY",
-            "quantity_begin": "2",
+            "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "400"
+                "sale_quantity_90days": "25207"
+            },
+            "goods_score": "4.9",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": false
+            },
+            "is_free_shipping": false,
+            "is_new_item": false,
+            "is_hot_item": true
+        },
+        {
+            "item_id": "603001626996",
+            "product_url": "https://detail.1688.com/offer/603001626996.html",
+            "title": "S925 sterling silver ring empty holder female 18K gold diy beeswax Amber turquoise brave ring holder empty holder with shape ring holder",
+            "title_origin": "S925纯银戒指空托女18k金色diy蜜蜡琥珀松石貔貅戒托空托随形戒托",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01eooHRv1jAFnRLdr33_!!3823694507-0-cib.jpg",
+            "price": "23.5",
+            "price_info": {
+                "price": "23.5",
+                "price_min": "23.5",
+                "price_max": "35.5"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "863"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "618634257730",
+            "product_url": "https://detail.1688.com/offer/618634257730.html",
+            "title": "Elegant Beautiful Niche Pearl Beaded Ring Simple ins Style French Romantic Finger Ring Student Tail Ring 1518",
+            "title_origin": "气质唯美小众珍珠串珠戒指简约ins风法式浪漫食指戒学生尾戒1518",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/2020/288/931/15789139882_1525051712.jpg",
+            "price": "1.5",
+            "price_info": {
+                "price": "1.5",
+                "price_min": "1.5",
+                "price_max": "1.5"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "2255"
             },
             "goods_score": "5.0",
             "shop_info": {
@@ -3752,73 +4851,99 @@ export const Jewelry = [
             "is_hot_item": false
         },
         {
-            "item_id": "675949254459",
-            "product_url": "https://detail.1688.com/offer/675949254459.html",
-            "title": "Personalized Southeast, Northwest, Red, Rich, Elastic, Transferable, All-match Lucky Ring, Mahjong Ring, Female Niche Design",
-            "origin_title": "个性东南西北红中发财弹力转运百搭幸运指环麻将戒指女小众设计",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01A6a79n1nLwOe9UAIY_!!2213030165074-0-cib.jpg",
+            "item_id": "582814280127",
+            "product_url": "https://detail.1688.com/offer/582814280127.html",
+            "title": "4mm classic Bevel smooth ring stainless steel simple three-color men's and women's ring ring ring manufacturers spot",
+            "title_origin": "4MM经典款斜边光面戒指 不锈钢简约三色男女对戒指环戒指厂家现货",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/2018/783/119/9841911387_1088502907.jpg",
+            "price": "1.0",
+            "price_info": {
+                "price": "1.0",
+                "price_min": "1.0",
+                "price_max": "1.3"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "1238"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "706287034952",
+            "product_url": "https://detail.1688.com/offer/706287034952.html",
+            "title": "European and American movie Nasir sword necklace Aragon damaged Broken Sword model pendant pendant jewelry",
+            "title_origin": "欧美电影纳西尔圣剑项链 阿拉贡破损的断剑模型吊坠挂件首饰",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN010Mc4vM1qr2BshdcCn_!!2206574885548-0-cib.jpg",
             "price": "1.6",
             "price_info": {
                 "price": "1.6",
                 "price_min": "1.6",
-                "price_max": "1.6"
-            },
-            "currency": "CNY",
-            "quantity_begin": "2",
-            "sale_info": {
-                "sale_quantity_90days": "1264"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "712746175873",
-            "product_url": "https://detail.1688.com/offer/712746175873.html",
-            "title": "925 Sterling Silver Plain Ring Niche Design Finger Ring Simple Cold Wind Ring Versatile Jewelry ins Internet Celebrity",
-            "origin_title": "925纯银素圈戒指小众设计食指戒简约冷淡风指环百搭饰品ins网红",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01FLZWH81OUJJASgGYk_!!995561708-0-cib.jpg",
-            "price": "4.5",
-            "price_info": {
-                "price": "4.5",
-                "price_min": "4.5",
-                "price_max": "4.5"
+                "price_max": "2.3"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "2008"
+                "sale_quantity_90days": "1004"
             },
             "goods_score": "5.0",
             "shop_info": {
                 "is_gold_manufacturer": false,
-                "is_verified": false
+                "is_verified": true
             },
-            "is_free_shipping": false,
+            "is_free_shipping": true,
             "is_new_item": false,
             "is_hot_item": false
         },
         {
-            "item_id": "736326239107",
-            "product_url": "https://detail.1688.com/offer/736326239107.html",
-            "title": "Light luxury hot girl ring female niche high-grade personality trendy zircon Diamond-embedded index finger ring simple open bracelet wholesale",
-            "origin_title": "轻奢辣妹戒指女小众高级感个性潮锆石镶钻食指戒简约开口手饰批发",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01QodwBw1KWMf9YHz4P_!!2200615971171-0-cib.jpg",
-            "price": "1.4",
+            "item_id": "722565513896",
+            "product_url": "https://detail.1688.com/offer/722565513896.html",
+            "title": "Live natural pink crystal bracelet bracelet Madagascar pink crystal bracelet jelly powder horse bracelet wholesale",
+            "title_origin": "直播天然粉水晶手链手串马达加斯加粉晶手串果冻粉马手镯批发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01TCKOLg1nnskqytSS8_!!1105525135-0-cib.jpg",
+            "price": "18.88",
             "price_info": {
-                "price": "1.4",
-                "price_min": "1.4",
-                "price_max": "7.2"
+                "price": "18.88",
+                "price_min": "18.88",
+                "price_max": "65.0"
+            },
+            "currency": "CNY",
+            "quantity_begin": "3",
+            "sale_info": {
+                "sale_quantity_90days": "1545"
+            },
+            "goods_score": "5.0",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "671670962230",
+            "product_url": "https://detail.1688.com/offer/671670962230.html",
+            "title": "[Certificate available] natural black gold obsidian bracelet for men and women hand string gift",
+            "title_origin": "【可出证书】天然乌金黑曜石手链男女款手串礼物",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01qJicJc22jVAFafZll_!!2209392237156-0-cib.jpg",
+            "price": "5.5",
+            "price_info": {
+                "price": "5.5",
+                "price_min": "5.5",
+                "price_max": "230.0"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "3984"
+                "sale_quantity_90days": "1744"
             },
             "goods_score": "4.7",
             "shop_info": {
@@ -3830,255 +4955,72 @@ export const Jewelry = [
             "is_hot_item": false
         },
         {
-            "item_id": "823346397948",
-            "product_url": "https://detail.1688.com/offer/823346397948.html",
-            "title": "Vietnam genuine goods plating gold new Chinese fashion open three-dimensional butterfly ring female e-commerce live factory wholesale",
-            "origin_title": "越南正品电镀沙金新中式时尚开口立体蝴蝶戒指女电商直播工厂批发",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01etYqWx22j2pWfkFeN_!!2215487907155-0-cib.jpg",
-            "price": "1.8",
+            "item_id": "669671253600",
+            "product_url": "https://detail.1688.com/offer/669671253600.html",
+            "title": "S925 sterling silver necklace box chain O chain water wave chain baby's breath Star Cross women's chain clavicle chain wholesale",
+            "title_origin": "S925纯银项链盒子链o字链水波链满天星十字女链锁骨链配链批发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01Lo3aoY1vBsbQr4Mfm_!!4000446135-0-cib.jpg",
+            "price": "13.3",
             "price_info": {
-                "price": "1.8",
-                "price_min": "1.8",
-                "price_max": "1.8"
+                "price": "13.3",
+                "price_min": "13.3",
+                "price_max": "20.8"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "314"
-            },
-            "goods_score": "",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "739540519378",
-            "product_url": "https://detail.1688.com/offer/739540519378.html",
-            "title": "European and American cross-border jewelry niche fashion design geometric Arc ring joint ring exaggerated open suit ring",
-            "origin_title": "欧美跨境饰品小众潮流设计感几何弧面指环关节戒夸张开口套装戒指",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01UxzE9p1DbDYbqEj6V_!!3484130234-0-cib.jpg",
-            "price": "2.5",
-            "price_info": {
-                "price": "2.5",
-                "price_min": "2.5",
-                "price_max": "6.8"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "19046"
+                "sale_quantity_90days": "4589"
             },
             "goods_score": "5.0",
             "shop_info": {
                 "is_gold_manufacturer": false,
-                "is_verified": false
+                "is_verified": true
             },
-            "is_free_shipping": false,
+            "is_free_shipping": true,
+            "is_new_item": false,
+            "is_hot_item": false
+        },
+        {
+            "item_id": "772772597995",
+            "product_url": "https://detail.1688.com/offer/772772597995.html",
+            "title": "Ice white chalcedony natural Brazil agate ring ring hand-held running ring jade chalcedony ring pair ring jade wholesale",
+            "title_origin": "冰种白玉髓天然巴西玛瑙戒指戒圈手持跑环玉石玉髓指环对戒玉器批",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01xlLsRk2LuTMjRjbHD_!!2217555699752-0-cib.jpg",
+            "price": "2.2",
+            "price_info": {
+                "price": "2.2",
+                "price_min": "2.2",
+                "price_max": "12.0"
+            },
+            "currency": "CNY",
+            "quantity_begin": "1",
+            "sale_info": {
+                "sale_quantity_90days": "6087"
+            },
+            "goods_score": "4.7",
+            "shop_info": {
+                "is_gold_manufacturer": false,
+                "is_verified": true
+            },
+            "is_free_shipping": true,
             "is_new_item": false,
             "is_hot_item": true
-        },
-        {
-            "item_id": "847230501168",
-            "product_url": "https://detail.1688.com/offer/847230501168.html",
-            "title": "New puppy kitten ring female micro inlaid love zircon cat claw sweet opening all-match finger ring for girlfriends",
-            "origin_title": "新款小狗小猫戒指女微镶爱心锆石猫爪甜美开口百搭食指戒送闺蜜",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01uM52sa1mGA1TqrFRa_!!2215649434926-0-cib.jpg",
-            "price": "6.0",
+        },{
+            "item_id": "891682476048",
+            "product_url": "https://detail.1688.com/offer/891682476048.html",
+            "title": "2025 Gold Shop Full Circle Zircon Pigeon Egg Wire-drawing Ring Light Luxury Exquisite Middle Ancient Texture Finger Ring",
+            "title_origin": "2025金店同款满圈锆石鸽子蛋拉丝戒指轻奢精致中古纹理感食指戒",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01yQNklg2GjPoWV6dl5_!!2216402139051-0-cib.jpg",
+            "price": "8.99",
             "price_info": {
-                "price": "6.0",
-                "price_min": "6.0",
-                "price_max": "6.0"
+                "price": "8.99",
+                "price_min": "8.99",
+                "price_max": "8.99"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "3292"
-            },
-            "goods_score": "",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "746944029254",
-            "product_url": "https://detail.1688.com/offer/746944029254.html",
-            "title": "Little Prince and rose couple ring pair designated love token birthday gift for girlfriend 2023 New",
-            "origin_title": "小王子钻石玫瑰花情侣对戒一对指定信物生日礼物女友2023年新款",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01oRaaqk1pKgg62l6IK_!!2216595685342-0-cib.jpg",
-            "price": "1.7",
-            "price_info": {
-                "price": "1.7",
-                "price_min": "1.7",
-                "price_max": "1.8"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "3610"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "653715489522",
-            "product_url": "https://detail.1688.com/offer/653715489522.html",
-            "title": "European and American Cross-border Retro Archangel Saint Michael Titanium Steel Men's Ring Stainless Steel Ring Wholesale",
-            "origin_title": "欧美跨境复古大天使圣迈克尔钛钢材质男士戒指不锈钢戒指批发",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01zuiDiI1KRKFFNbWUU_!!3502661160-0-cib.jpg",
-            "price": "11.5",
-            "price_info": {
-                "price": "11.5",
-                "price_min": "11.5",
-                "price_max": "16.5"
-            },
-            "currency": "CNY",
-            "quantity_begin": "2",
-            "sale_info": {
-                "sale_quantity_90days": "674"
-            },
-            "goods_score": "",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "833526219854",
-            "product_url": "https://detail.1688.com/offer/833526219854.html",
-            "title": "Purple Zircon Four Mans Star Chain Ring Women's Fashion High-end Sense Niche Design Sense Ring",
-            "origin_title": "紫色锆石四芒星链条戒指女时尚个性高级感小众设计感指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN014iSNyr1CbqazUIzVU_!!2215906740100-0-cib.jpg",
-            "price": "1.2",
-            "price_info": {
-                "price": "1.2",
-                "price_min": "1.2",
-                "price_max": "1.2"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "4150"
-            },
-            "goods_score": "4.8",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "806000659831",
-            "product_url": "https://detail.1688.com/offer/806000659831.html",
-            "title": "Cross-border New Ring Women's Niche High-grade Light Luxury Not Faded Full Diamond Zircon Ring Fashion All-match Sterling Silver Ring",
-            "origin_title": "跨境施家戒指女小众高级轻奢不掉色满钻锆石戒指时尚百搭戒指手饰",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01oJGMzT2Jy1EQjdbmC_!!2212419409489-0-cib.jpg",
-            "price": "11.5",
-            "price_info": {
-                "price": "11.5",
-                "price_min": "11.5",
-                "price_max": "11.5"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "3866"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "705988668443",
-            "product_url": "https://detail.1688.com/offer/705988668443.html",
-            "title": "Cold wind men's and women's couples ring silver-plated jewelry open ring live wedding ring trembles live supply wholesale",
-            "origin_title": "冷淡风男女情侣戒指镀银首饰开口戒活口结婚对戒抖音直播货源批发",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01WKnthP25Oq2sm9plb_!!2215506297517-0-cib.jpg",
-            "price": "1.6",
-            "price_info": {
-                "price": "1.6",
-                "price_min": "1.6",
-                "price_max": "11.0"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "2898"
-            },
-            "goods_score": "3.7",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "653000848259",
-            "product_url": "https://detail.1688.com/offer/653000848259.html",
-            "title": "Cross-border new simple titanium steel 18K gold ring personality stainless steel non-fading men's food Ring Jewelry",
-            "origin_title": "跨境新品 简约钛钢18k金色指环 个性不锈钢不掉色男食戒指手饰品",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01DxnHSq1w30cnFOn93_!!2904956251-0-cib.jpg",
-            "price": "6.08",
-            "price_info": {
-                "price": "6.08",
-                "price_min": "6.08",
-                "price_max": "6.08"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "1916"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "861735146516",
-            "product_url": "https://detail.1688.com/offer/861735146516.html",
-            "title": "Horseshoe buckle double-ring necklace copper micro-inlaid bamboo necklace U-shaped cross-buckle electroplated 18K palladium platinum horseshoe buckle",
-            "origin_title": "马蹄扣双环项链铜微镶嵌竹节项链U型互扣式电镀18K钯白金马蹄扣",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN014lOuzZ1LkOUNFGAXu_!!2217731041337-0-cib.jpg",
-            "price": "12.58",
-            "price_info": {
-                "price": "12.58",
-                "price_min": "12.58",
-                "price_max": "12.58"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "4"
+                "sale_quantity_90days": "1"
             },
             "goods_score": "",
             "shop_info": {
@@ -4090,21 +5032,21 @@ export const Jewelry = [
             "is_hot_item": false
         },
         {
-            "item_id": "862366374855",
-            "product_url": "https://detail.1688.com/offer/862366374855.html",
-            "title": "Amazon New Explosions European and American Personality Ring Magnetic Health Ring Magnetic Ring Creative Jewelry Open Ring",
-            "origin_title": "亚马逊新爆款 欧美个性指环磁石保健戒指磁吸戒指创意首饰开口戒",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN018yqSJb1DNw9e5CkLu_!!2644000205-0-cib.jpg",
-            "price": "1.97",
+            "item_id": "891325993965",
+            "product_url": "https://detail.1688.com/offer/891325993965.html",
+            "title": "Zhuo Zhifan Jewelry New S925 Sterling Silver 5*5mm Ace Pagoda Cut White Diamond Sugar Ring Nan Female ins",
+            "title_origin": "卓之凡珠宝新款S925纯银5*5mm阿斯切宝塔切白钻方糖戒指楠女ins款",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01jEoctC1N0FthvlFir_!!2215914071507-0-cib.jpg",
+            "price": "45.99",
             "price_info": {
-                "price": "1.97",
-                "price_min": "1.97",
-                "price_max": "3.09"
+                "price": "45.99",
+                "price_min": "45.99",
+                "price_max": "45.99"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "2"
+                "sale_quantity_90days": "0"
             },
             "goods_score": "",
             "shop_info": {
@@ -4116,230 +5058,21 @@ export const Jewelry = [
             "is_hot_item": false
         },
         {
-            "item_id": "613612047252",
-            "product_url": "https://detail.1688.com/offer/613612047252.html",
-            "title": "Panjia Basic Bracelet Simple Adjustable Bracelet European and American Fashion Bracelet Unisex Bracelet 1",
-            "origin_title": "潘家基础手链简约 可调节手饰品欧美时尚手串手链男女通用手饰1条",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01KXhNcr1XF2mk2O2z6_!!1803742893-0-cib.jpg",
-            "price": "0.4",
+            "item_id": "862350800414",
+            "product_url": "https://detail.1688.com/offer/862350800414.html",
+            "title": "Xinjiang Hetian jade ring jasper ring saddle ring green chalcedony jasper ring a generation of hair",
+            "title_origin": "新疆和田玉色戒指碧玉色指环鞍戒指绿玉髓碧玉戒指一件代发",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/16248564849_1540754568.jpg",
+            "price": "8.0",
             "price_info": {
-                "price": "0.4",
-                "price_min": "0.4",
-                "price_max": "3.6"
+                "price": "8.0",
+                "price_min": "8.0",
+                "price_max": "8.0"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "60269"
-            },
-            "goods_score": "4.9",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
-        },
-        {
-            "item_id": "626019030724",
-            "product_url": "https://detail.1688.com/offer/626019030724.html",
-            "title": "Cross-border Explosive Retro Simple Necklace Ocean Wonder Moana Princess Geometric Hollow Knot Necklace",
-            "origin_title": "跨境爆款复古简约项链海洋奇缘莫阿娜公主几何型镂空打结项饰",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/20251603448_303127363.jpg",
-            "price": "2.98",
-            "price_info": {
-                "price": "2.98",
-                "price_min": "2.98",
-                "price_max": "3.2"
-            },
-            "currency": "CNY",
-            "quantity_begin": "10",
-            "sale_info": {
-                "sale_quantity_90days": "181232"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": true
-        }
-    ],[
-        {
-            "item_id": "812499698225",
-            "product_url": "https://detail.1688.com/offer/812499698225.html",
-            "title": "Hongzhong Fortune Mahjong Ring Women's Light Luxury Fashion Opening Adjustable Dieting Finger Ring Niche Design Sense Cyber Celebrity Ring",
-            "origin_title": "红中发财麻将戒指女轻奢时尚开口可调节食指戒小众设计感网红指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01xaXd3X1SEWFm90pEK_!!2215817392215-0-cib.jpg",
-            "price": "1.8",
-            "price_info": {
-                "price": "1.8",
-                "price_min": "1.8",
-                "price_max": "1.8"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "741"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "749382937415",
-            "product_url": "https://detail.1688.com/offer/749382937415.html",
-            "title": "Ugly cute funny personality cute all-match oil dripping smiley face ring female ins trendy niche design sense open ring",
-            "origin_title": "丑萌搞怪个性可爱百搭滴油笑脸戒指女ins潮小众设计感开口指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01Z9tZ2z1mdyVx2wwcF_!!2211075024978-0-cib.jpg",
-            "price": "0.8",
-            "price_info": {
-                "price": "0.8",
-                "price_min": "0.8",
-                "price_max": "3.45"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "3309"
-            },
-            "goods_score": "4.8",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "758669731502",
-            "product_url": "https://detail.1688.com/offer/758669731502.html",
-            "title": "Fu Lilian ring mirror lotus ring Fu Lilian open ring mirror Lotus cos jewelry wholesale",
-            "origin_title": "葬送的芙莉莲戒指 镜莲华戒指 芙莉莲开口戒指 镜莲华cos首饰批发",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01WbHpFj27roQJzDwXD_!!2212028287851-0-cib.jpg",
-            "price": "2.4",
-            "price_info": {
-                "price": "2.4",
-                "price_min": "2.4",
-                "price_max": "8.6"
-            },
-            "currency": "CNY",
-            "quantity_begin": "2",
-            "sale_info": {
-                "sale_quantity_90days": "1434"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "667105315070",
-            "product_url": "https://detail.1688.com/offer/667105315070.html",
-            "title": "3mm European and American zircon inlaid luxury women's ring plain ring ring full diamond cross-border AliExpress e-commerce supply 4620",
-            "origin_title": "3mm欧美锆石镶嵌奢华女戒指素圈指环满钻跨境速卖通电商货源4620",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01JT1Gct2Ne6WdBynx2_!!2213072299987-0-cib.jpg",
-            "price": "9.0",
-            "price_info": {
-                "price": "9.0",
-                "price_min": "9.0",
-                "price_max": "9.0"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "483"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "682228124204",
-            "product_url": "https://detail.1688.com/offer/682228124204.html",
-            "title": "New Design Light Luxury Pearl Zircon Ring Women's Niche ins Style Shell Flower Ring Open Index Finger Ring",
-            "origin_title": "新款设计轻奢珍珠锆石戒指女小众ins风贝壳花朵指环开口食指戒指",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01Gj56RT1W1TF1tHO5F_!!933462728-0-cib.jpg",
-            "price": "5.5",
-            "price_info": {
-                "price": "5.5",
-                "price_min": "5.5",
-                "price_max": "7.5"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "891"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "544516845647",
-            "product_url": "https://detail.1688.com/offer/544516845647.html",
-            "title": "Movie Products Horcrux Resurrection Stone Ring Death Hint Ring Factory Outlet",
-            "origin_title": "电影产品 魂器复活石戒指 死亡圣器戒指 厂家直销",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/2017/609/440/3806044906_1387365254.jpg",
-            "price": "1.7",
-            "price_info": {
-                "price": "1.7",
-                "price_min": "1.7",
-                "price_max": "1.7"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "1567"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "660038247054",
-            "product_url": "https://detail.1688.com/offer/660038247054.html",
-            "title": "European and American jewelry titanium steel flat chain ring retro trendy men's personality punk stainless steel hollow chain ring 24065",
-            "origin_title": "欧美饰品钛钢扁形链戒指复古潮男个性朋克不锈钢镂空链指环24065",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN019sxJtk1QZSt3RIYur_!!2212236851990-0-cib.jpg",
-            "price": "9.0",
-            "price_info": {
-                "price": "9.0",
-                "price_min": "9.0",
-                "price_max": "10.0"
-            },
-            "currency": "CNY",
-            "quantity_begin": "2",
-            "sale_info": {
-                "sale_quantity_90days": "567"
+                "sale_quantity_90days": "110"
             },
             "goods_score": "",
             "shop_info": {
@@ -4351,335 +5084,23 @@ export const Jewelry = [
             "is_hot_item": false
         },
         {
-            "item_id": "693034047300",
-            "product_url": "https://detail.1688.com/offer/693034047300.html",
-            "title": "Xiaoxiang style diamond Plaid ring diamond 18K gold titanium steel ring cross-border e-commerce primary source factory straight hair",
-            "origin_title": "小香风菱格纹戒指镶钻18K金钛钢对戒跨境电商一手货源工厂直发",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01R4QFnT1iynxXT64Yt_!!2214990744482-0-cib.jpg",
-            "price": "9.8",
+            "item_id": "881417319006",
+            "product_url": "https://detail.1688.com/offer/881417319006.html",
+            "title": "Fashion personality geometric cold wind asymmetric design female 2024 titanium steel is not easy to fade new gold and silver jewelry",
+            "title_origin": "时尚个性几何冷淡风不对称设计感女2024钛钢不易掉色新款金银首饰",
+            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01h2601Q1HTDBYoBCZX_!!2217851990758-0-cib.jpg",
+            "price": "2.21",
             "price_info": {
-                "price": "9.8",
-                "price_min": "9.8",
-                "price_max": "19.8"
+                "price": "2.21",
+                "price_min": "2.21",
+                "price_max": "3.21"
             },
             "currency": "CNY",
             "quantity_begin": "1",
             "sale_info": {
-                "sale_quantity_90days": "1391"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "857698301330",
-            "product_url": "https://detail.1688.com/offer/857698301330.html",
-            "title": "Shake Tone Seiko Natural White Fritillaria Diamond Double T Ring Women's Full Diamond Double T Ring White Fritillaria Double T Ring",
-            "origin_title": "抖音精工天然白贝母拼钻双T戒指女 满钻双T戒指 白贝母双T戒指",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN019k7g171i6J2yzJIN5_!!2218005514363-0-cib.jpg",
-            "price": "5.3",
-            "price_info": {
-                "price": "5.3",
-                "price_min": "5.3",
-                "price_max": "5.8"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "3285"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "798288158128",
-            "product_url": "https://detail.1688.com/offer/798288158128.html",
-            "title": "Cross-border explosions wish cat ring Korean fashion niche high-end retro non-fading open ring wholesale",
-            "origin_title": "跨境爆款wish猫咪戒指韩版时尚小众高级感复古不掉色开口指环批发",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01awb4uo1hR5F8fBzyt_!!2208074034273-0-cib.jpg",
-            "price": "3.5",
-            "price_info": {
-                "price": "3.5",
-                "price_min": "3.5",
-                "price_max": "3.5"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "566"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "608612277980",
-            "product_url": "https://detail.1688.com/offer/608612277980.html",
-            "title": "Cross-border wish hot selling jewelry skull ring male rock gothic punk jewelry ring male gift",
-            "origin_title": "跨境wish热卖饰品骷髅头戒指男摇滚哥特式朋克首饰戒指男性礼物",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01pMAAyn1WUmlBt52eF_!!2206675562792-0-cib.jpg",
-            "price": "2.8",
-            "price_info": {
-                "price": "2.8",
-                "price_min": "2.8",
-                "price_max": "2.8"
-            },
-            "currency": "CNY",
-            "quantity_begin": "2",
-            "sale_info": {
-                "sale_quantity_90days": "1184"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "743873904576",
-            "product_url": "https://detail.1688.com/offer/743873904576.html",
-            "title": "Xuri 18K gold exquisite opening adjustable ring outlets female accessories Mobius index finger opening student",
-            "origin_title": "旭日18K金精致开口可调节指环outlets女配饰莫比乌斯食指开口学生",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01GRwxS21F81YNUfiYX_!!2212398370441-0-cib.jpg",
-            "price": "2.5",
-            "price_info": {
-                "price": "2.5",
-                "price_min": "2.5",
-                "price_max": "2.5"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "688"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "837009418680",
-            "product_url": "https://detail.1688.com/offer/837009418680.html",
-            "title": "S925 sterling silver sparkling ring ring shiny closed finger ring all over the sky star broken silver plain ring stacked tail ring bracelet",
-            "origin_title": "S925纯银波光粼粼戒指闪亮闭口指环满天星碎银子素圈叠戴尾戒手饰",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN016APOEz1vBsr8JtZlV_!!4000446135-0-cib.jpg",
-            "price": "7.8",
-            "price_info": {
-                "price": "7.8",
-                "price_min": "7.8",
-                "price_max": "8.9"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "589"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "809722512792",
-            "product_url": "https://detail.1688.com/offer/809722512792.html",
-            "title": "Cross-border hot-selling smart ring heart rate blood oxygen sleep monitoring exercise pedometer health management Bluetooth smart ring",
-            "origin_title": "跨境热销智能戒指心率血氧睡眠监测运动计步健康管理蓝牙智能指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01G6pNgy2NjbGIJ8xan_!!2126459999-0-cib.jpg",
-            "price": "50.0",
-            "price_info": {
-                "price": "50.0",
-                "price_min": "50.0",
-                "price_max": "50.0"
-            },
-            "currency": "CNY",
-            "quantity_begin": "3",
-            "sale_info": {
-                "sale_quantity_90days": "3260"
-            },
-            "goods_score": "4.3",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "707912422060",
-            "product_url": "https://detail.1688.com/offer/707912422060.html",
-            "title": "R0573 Korean style fashionable simple glossy cold style high-grade gender-free ring micro-inlaid white zirconium all-Match ring",
-            "origin_title": "R0573 韩版时尚简约光面冷淡风高级感无性别戒指微镶白锆百搭指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01Kgxlo71uUpSFIQIak_!!2209422516041-0-cib.jpg",
-            "price": "7.64",
-            "price_info": {
-                "price": "7.64",
-                "price_min": "7.64",
-                "price_max": "7.64"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "686"
+                "sale_quantity_90days": "25"
             },
             "goods_score": "",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "751820506395",
-            "product_url": "https://detail.1688.com/offer/751820506395.html",
-            "title": "Qiyu cool style personalized Moon star flower colorful zircon crystal women's fashion bracelet silver gold ring",
-            "origin_title": "霏语冷淡风个性月亮星星花朵彩色锆石水晶女士时尚手饰银金戒指",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01AVDVB91tf4mP5QKlO_!!2216729335928-0-cib.jpg",
-            "price": "2.4",
-            "price_info": {
-                "price": "2.4",
-                "price_min": "2.4",
-                "price_max": "2.4"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "953"
-            },
-            "goods_score": "",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "799510579975",
-            "product_url": "https://detail.1688.com/offer/799510579975.html",
-            "title": "Xiaoxiang coco rhombus ring CNC high version for men and women couples pair ring thick diamond plated high-grade light luxury ring",
-            "origin_title": "小香coco菱格戒指CNC高版本男女情侣对戒厚镀菱形高级感轻奢指环",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01cDtId12KP2ayvcoqx_!!2217900379548-0-cib.jpg",
-            "price": "35.0",
-            "price_info": {
-                "price": "35.0",
-                "price_min": "35.0",
-                "price_max": "40.0"
-            },
-            "currency": "CNY",
-            "quantity_begin": "1",
-            "sale_info": {
-                "sale_quantity_90days": "1582"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "738781312170",
-            "product_url": "https://detail.1688.com/offer/738781312170.html",
-            "title": "Cross-border popular European and American popular simple shiny Sun Moon Blue Diamond-embedded stacked celestial couple ring set ring",
-            "origin_title": "跨境爆款欧美热卖简约闪亮太阳月亮蓝色镶钻叠戴天体情侣戒指套戒",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01tKp4nZ1O4fBAvA0Ei_!!2592471652-0-cib.jpg",
-            "price": "4.8",
-            "price_info": {
-                "price": "4.8",
-                "price_min": "4.8",
-                "price_max": "4.8"
-            },
-            "currency": "CNY",
-            "quantity_begin": "2",
-            "sale_info": {
-                "sale_quantity_90days": "2314"
-            },
-            "goods_score": "5.0",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "626299660085",
-            "product_url": "https://detail.1688.com/offer/626299660085.html",
-            "title": "Fine and tiny mini diamond ring",
-            "origin_title": "细 很细 小迷你钻戒指",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/20914181011_490101773.jpg",
-            "price": "6.5",
-            "price_info": {
-                "price": "6.5",
-                "price_min": "6.5",
-                "price_max": "7.0"
-            },
-            "currency": "CNY",
-            "quantity_begin": "2",
-            "sale_info": {
-                "sale_quantity_90days": "1832"
-            },
-            "goods_score": "4.9",
-            "shop_info": {
-                "is_gold_manufacturer": false,
-                "is_verified": false
-            },
-            "is_free_shipping": false,
-            "is_new_item": false,
-            "is_hot_item": false
-        },
-        {
-            "item_id": "763519861125",
-            "product_url": "https://detail.1688.com/offer/763519861125.html",
-            "title": "Harry Deathly Hallows ring men's and women's retro resurrection stone ring European and American film and television commemorative gift accessories",
-            "origin_title": "哈利死亡圣器戒指男女复古复活石指环欧美影视纪念礼品配饰",
-            "img": "https://cbu01-overseas.1688.com/img/ibank/O1CN01Q3cdgp1c4ZlOEORFr_!!2576413547-0-cib.jpg",
-            "price": "1.5",
-            "price_info": {
-                "price": "1.5",
-                "price_min": "1.5",
-                "price_max": "1.5"
-            },
-            "currency": "CNY",
-            "quantity_begin": "2",
-            "sale_info": {
-                "sale_quantity_90days": "2278"
-            },
-            "goods_score": "5.0",
             "shop_info": {
                 "is_gold_manufacturer": false,
                 "is_verified": false
