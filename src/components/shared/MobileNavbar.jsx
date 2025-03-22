@@ -51,6 +51,8 @@ const MobileNavbar = () => {
     }
   };
 
+
+  console.log("hello data")
   return (
     <div className="relative ">
       {/* Bottom Fixed Navbar */}
@@ -77,15 +79,15 @@ const MobileNavbar = () => {
         {/* Center Logo */}
         <div
           onClick={RefreshPage}
-          className="absolute p-2 transform -translate-x-1/2 bg-white rounded-full shadow-lg left-1/2 -top-6"
+          className="absolute  transform -translate-x-1/2 bg-white rounded-full shadow-lg left-1/2 -top-6 p-2"
         >
           <Image
             unoptimized
             src={logo}
-            height={50}
-            width={50}
+            height={70}
+            width={70}
             alt="Logo"
-            className="rounded-full"
+            className=" xsm:size-[70px] size-[50px]"
           />
         </div>
 

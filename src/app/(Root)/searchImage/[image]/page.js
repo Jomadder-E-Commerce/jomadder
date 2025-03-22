@@ -9,10 +9,10 @@ const searchImage = ({ params }) => {
   console.log("params",decodeURIComponent(params?.image))
   return (
     <div>
-      <TopBar />
-      <MiddleBar />
+      {/* <TopBar />
+      <MiddleBar /> */}
       <SearchImageProduct image={image} />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

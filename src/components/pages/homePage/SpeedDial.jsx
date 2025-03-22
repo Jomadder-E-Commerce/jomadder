@@ -19,10 +19,18 @@ import { RxCross2 } from "react-icons/rx";
 
 const SpeedDial = () => {
 
+  const [isOpen, setIsOpen] = useState(false);
   const [selectedQR, setSelectedQR] = useState("");
   const [copied, setCopied] = useState(false);
-  // const [showTooltip, setShowTooltip] = useState(false);
-  // const [showText,setShowText ] = useState()
+  const speedDialRef = useRef(null);
+  const qrPreviewRef = useRef(null);
+
+  const toggleOpen = () => {
+    const newIsOpen = !isOpen;
+    setIsOpen(newIsOpen);
+    if (!newIsOpen) setSelectedQR("");
+  };
+
   const handleCopy = () => {
     const idToCopy = "disalamin94"; // Replace with dynamic value if needed
     navigator.clipboard.writeText(idToCopy).then(() => {
@@ -30,22 +38,23 @@ const SpeedDial = () => {
       setTimeout(() => setCopied(false), 2000); // Reset copied status after 2 seconds
     });
   };
-  const qrPreviewRef = useRef(null);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (
-        qrPreviewRef.current &&
-        !qrPreviewRef.current.contains(event.target)
-      ) {
+      // Close QR if clicking outside QR preview
+      if (qrPreviewRef.current && !qrPreviewRef.current.contains(event.target)) {
+        setSelectedQR("");
+      }
+      // Close entire speed dial if clicking outside component
+      if (speedDialRef.current && !speedDialRef.current.contains(event.target)) {
+        setIsOpen(false);
         setSelectedQR("");
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
   
   useEffect(() => {
     console.log("Selected QR Updated:", selectedQR);
@@ -76,34 +85,48 @@ const SpeedDial = () => {
   ];
 
   return (
-    <div className="h-[300px] relative rotate-180">
+    <div ref={speedDialRef} className="h-[300px] relative rotate-180">
+      <div className="flex flex-col items-center justify-center w-max mx-auto absolute md:top-0 -top-10 left-[50%] -translate-x-1/2">
+        <span className="text-[11px] text-primary font-medium md:hidden rotate-180">Chat</span>
 
-      <div className="group flex flex-col items-center justify-center w-max mx-auto absolute md:top-0 -top-10 left-[50%] -translate-x-1/2">
-        {/* + icon */}
-        {/* this text will not appear if the website is /profile href*/}
- <span className="text-[11px] text-primary font-medium md:hidden rotate-180">Chat</span>
-
-        <div className={cn("flex justify-center  bg-[#0095FF] rounded-full items-center  hover:bg-[#0095FF]/80 duration-500", { 'rotate-180': selectedQR })}>
-          <IoMdChatboxes className="sm:p-2 p-1 text-white  md:size-10 sm:size-8 size-6 transition-all group-hover:opacity-0 opacity-100 block group-hover:hidden" />
-                   <RxCross2 className="sm:p-2 p-1 text-white  md:size-10 sm:size-8 size-6 transition-all group-hover:opacity-100 opacity-0 hidden group-hover:block" />
-
+        {/* Main button */}
+        <div
+          className={cn(
+            "flex justify-center bg-[#0095FF] rounded-full items-center",
+            "hover:bg-[#0095FF]/80 duration-500 cursor-pointer",
+            { "rotate-180": isOpen }
+          )}
+          onClick={toggleOpen}
+        >
+          <IoMdChatboxes className={cn(
+            "sm:p-2 p-1 text-white md:size-10 sm:size-8 size-6",
+            { "hidden": isOpen }
+          )} />
+          <RxCross2 className={cn(
+            "sm:p-2 p-1 text-white md:size-10 sm:size-8 size-6",
+            { "hidden": !isOpen }
+          )} />
         </div>
 
-        {/* Icon container */}
-        <div className={cn("h-0 space-y-4 duration-500 group-hover:my-4 group-hover:h-full", { 'my-4': selectedQR })}>
-          {/* Icon Map */}
+        {/* Speed dial items */}
+        <div className={cn(
+          "h-0 space-y-4 duration-500 overflow-hidden",
+          { "my-4 h-full": isOpen }
+        )}>
           {svgs.map((svg, idx) => (
             <div
-              key={idx}
-              className={` cursor-pointer rotate-180 rounded-full scale-0 group-hover:scale-100 duration-300 shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)] opacity-0 group-hover:opacity-100 ${idx === 0
-                ? "delay-[200ms] group-hover:delay-[100ms]"
-                : idx === 1
-                  ? "delay-[300ms] group-hover:delay-[200ms]"
-                  : idx === svgs.length - 1
-                    ? "delay-[400ms] group-hover:delay-[300ms]" // Last icon has the longest delay
-                    : "delay-[350ms] group-hover:delay-[250ms]"
-                } ${selectedQR && "scale-100 opacity-100"}`}
-            >
+            key={idx}
+            className={cn(
+              "cursor-pointer rotate-180 rounded-full",
+              "scale-0 opacity-0 duration-300 shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)]",
+              {
+                "scale-100 opacity-100": isOpen || selectedQR,
+                "delay-100": idx === 0 && isOpen,
+                "delay-200": idx === 1 && isOpen,
+                "delay-300": idx === 2 && isOpen,
+              }
+            )}
+          >
            {
             svg.qrCode == 'wechat' ?   <div
             onClick={() => setSelectedQR(svg.qrCode)}

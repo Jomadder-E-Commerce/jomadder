@@ -22,14 +22,17 @@ const CartQuantity = () => {
     const totalPrice =  calculateTotal() 
      const SendCheckoutPage = async() => {
         const token = getLocalStorage("token");
+        console.log("redirect", window.location.pathname)
         saveDataIntoLocalStorage("redirect", window.location.pathname);
         if (!token) {
           toast.info("Please login to order");
           window.location.href = "/login";
-          return;
+       return
         }
-        
-        window.location.href = `/checkout`;
+        else{
+            window.location.href = `/checkout`;
+        }
+       
      }
     return (
         <div className='w-full  h-full  '>

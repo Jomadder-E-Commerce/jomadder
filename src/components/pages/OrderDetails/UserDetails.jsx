@@ -60,7 +60,7 @@ const UserDetails = ({ orderDetails }) => {
                 <span>Shipping Address</span>
               </h3>
               <DetailItem icon={<MapPin />} label="District" value={`${division || ","} ${district}`} />
-              <DetailItem icon={<MapPin />} label="City" value={city} />
+              <DetailItem icon={<MapPin />} label="Thana" value={city} />
               <DetailItem icon={<MapPin />} label="Address" value={shippingAddress} />
               <DetailItem icon={<MapPin />} label="Post Code" value={postCode} />
             </div>

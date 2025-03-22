@@ -126,9 +126,11 @@ const LoginForm = () => {
       setLocalStorage("user", data);
       setCookie(data.refreshToken);
       setLocalStorage("token", data.accessToken);
-      const redirectPath = getLocalStorage("redirectPath") || "/";
-      removeLocalStorage("redirectPath");
+      let redirectPath = getLocalStorage("redirect") || "/";
+      redirectPath = redirectPath.replace(/^"(.*)"$/, '$1');
+      removeLocalStorage("redirect");
       toast.success("Login successful");
+      console.log(redirectPath)
       router.push(redirectPath);
     } catch (error) {
       console.error(error);
@@ -152,8 +154,9 @@ const LoginForm = () => {
       setLocalStorage("user", data);
       setCookie(data.refreshToken);
       setLocalStorage("token", data.accessToken);
-      const redirectPath = getLocalStorage("redirectPath") || "/";
-      removeLocalStorage("redirectPath");
+      let redirectPath = getLocalStorage("redirect") || "/";
+      redirectPath = redirectPath.replace(/^"(.*)"$/, '$1');
+      removeLocalStorage("redirect");
       toast.success("Login successful");
       router.push(redirectPath);
     } catch (error) {

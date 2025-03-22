@@ -55,9 +55,13 @@ const CartModal = () => {
       <div className="md:hidden flex flex-col items-center w-[80px] relative -right-5">
         <div onClick={GoOpenModal} className="relative">
           <BsCart2 className="md:text-2xl text-lg" />
-          <span className="absolute -top-2 left-[26%] sm:left-[28%] md:left-[65%] text-white text-center h-4 font-medium bg-red-500 rounded-full px-1 text-xs">
-            {cart?.length}
-          </span>
+          {
+              
+                cart?.length  ?<span className="absolute -top-1 -right-3 text-white text-center h-4 font-medium bg-red-500 rounded-full px-1 text-xs">
+          {cart?.length >= 10 ? "9+": cart?.length}
+          </span> : ""
+          }
+          
         </div>
         <h3 className="text-[11px] font-medium">Cart</h3>
       </div>

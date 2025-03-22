@@ -22,6 +22,7 @@ import "react-modern-drawer/dist/index.css";
 import logo from "/src/assets/logo/logo.png";
 import { UserDropdown } from "./middlebar/UserDropdown";
 import { ClipboardList } from "lucide-react";
+import { toast } from "react-toastify";
 
 const TopBar = () => {
   const { userRole = "", user = {} } = useUser();
@@ -41,6 +42,8 @@ const TopBar = () => {
     setTimeout(() => {
       dispatch(logout());
     setLoading(false)
+    toast.success("Log out successfully");
+    setDropdownOpen(false)
     }, 2000);
   };
 
@@ -70,7 +73,7 @@ const TopBar = () => {
   return (
     <>
     {loading && (
-        <div className="fixed inset-0 z-[40] flex items-center justify-center bg-black bg-opacity-70">
+        <div className="fixed inset-0 z-[50] flex items-center justify-center bg-black bg-opacity-70">
           {/* A simple spinner using Tailwind CSS */}
           <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-white"></div>
         </div>

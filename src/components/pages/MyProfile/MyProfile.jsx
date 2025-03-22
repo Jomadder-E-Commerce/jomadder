@@ -14,7 +14,7 @@ import { bangladeshData } from "@/lib/CountryData";
 import ShopAddress from "./ShopAddress";
 import SidebarText from "@/components/shared/Siderbar/SidebarText";
 import useDivisions from "@/hooks/useDivisions";
-import useLocationData from "@/hooks/useDivisions";
+// import useLocationData from "@/hooks/useDivisions";
 const MyProfile= ({ type })=> {
   const [updateUser] = useUpdateUserMutation();
   const { data, isLoading, isError: getUserError, refetch } = useGetUserQuery();
@@ -50,7 +50,7 @@ const MyProfile= ({ type })=> {
   });
 
 
-  const { data: divisions, loading, error } = useLocationData("divisions");
+  // const { data: divisions, loading, error } = useLocationData("divisions");
 
   // Whenever userData is received from the query, update both formData and our optimistic state.
   useEffect(() => {
@@ -285,7 +285,7 @@ const MyProfile= ({ type })=> {
         handleChange={handleChange}
         handleSubmit={handleSubmit}
         loading={isLoading}
-        divisionsData={divisions}
+        // divisionsData={divisions}
         onDivisionChange={handleDivisionChange}
         onDistrictChange={handleDistrictChange}
         onThanaChange={handleThanaChange}
@@ -300,7 +300,7 @@ const MyProfile= ({ type })=> {
         handleChange={handleChange}
         handleSubmit={handleSubmit}
         loading={isLoading}
-        divisionsData={divisions}
+        // divisionsData={divisions}
         onShopDivisionChange={handleShopDivisionChange}
         onShopDistrictChange={handleShopDistrictChange}
         onShopThanaChange={handleShopThanaChange}

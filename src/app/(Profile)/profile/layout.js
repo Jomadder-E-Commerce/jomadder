@@ -9,6 +9,7 @@ import TopBar from "@/components/shared/TopBar";
 import React from "react";
 import AuthUserPageWrapper from "@/hooks/AuthUserPageWrapper";
 import ProtectedPageWrapper from "@/hooks/ProtectedPageWrapper";
+
 export default function layout({ children }) {
   return (
  
@@ -31,7 +32,7 @@ export default function layout({ children }) {
         </div>
     </div>
 
-    <div className="fixed z-50 md:bottom-4 bottom-12 md:right-12 right-9">
+    <div className="fixed md:bottom-4 hidden md:block bottom-12 md:right-12 right-9 z-[40]">
                 <SpeedDial className=''/>
               {/* <SpeedDialPortal/> */}
             </div>

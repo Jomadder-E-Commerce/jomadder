@@ -39,10 +39,12 @@ const ConfirmSignUp = ({baseApi,form}) => {
                 setLocalStorage("user", data.data);
                 setCookie(data.data.refreshToken);
                 setLocalStorage("token", data.data.accessToken);
-                removeLocalStorage("redirectPath");
+  
                 
                 toast.success("Registration successful");
-                const redirectPath = getLocalStorage("redirectPath") || "/";
+                let redirectPath = getLocalStorage("redirect") || "/";
+                redirectPath = redirectPath.replace(/^"(.*)"$/, '$1');
+                removeLocalStorage("redirect");
                 router.push(redirectPath); // Redirect to home/dashboard
             }
         } catch (error) {
