@@ -14,12 +14,12 @@ const textList = [
   "Search by image",
 ];
 
-const Search = () => {
+const Search = ({loading, setLoading}) => {
   const path = usePathname();
   const [image, setImage] = useState(null);
   const [convertImage] = useConvertImageMutation();
   const [placeholder, setPlaceholder] = useState(0);
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
   const [text, setText] = useState("");
 
   const click = () => {
@@ -40,9 +40,9 @@ const Search = () => {
 
         if (convertedImage) {
           setImage(convertedImage);
-          setLoading(false);
           const encodeUri = encodeURIComponent(convertedImage);
           window.location.href = `/searchImage/${encodeUri}`;
+          setLoading(false);
         }
       }
     } catch (err) {
@@ -95,6 +95,13 @@ const Search = () => {
   }, [text, loading]);
 
   return (
+    <>
+     {loading && (
+        <div className="fixed inset-0 z-[300] h-[100vh] flex items-center justify-center bg-black bg-opacity-70">
+          {/* A simple spinner using Tailwind CSS */}
+          <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-white"></div>
+        </div>
+      )}
     <div className="flex flex-row items-center w-full">
       <div className="w-full relative transition-all duration-300 flex items-center group border-[2px] hover:border-primary focus-within:border-primary bg-white rounded-md rounded-r-none px-3 gap-2 border-r-0">
         <div
@@ -151,6 +158,9 @@ const Search = () => {
         )}
       </div>
     </div>
+    
+    </>
+    
   );
 };
 

@@ -172,9 +172,9 @@ const PaymentPage = () => {
                   <div className='mb-4 bg-white w-full px-6 pb-4 border rounded-md shadow-md  ' key={product._id}>
                     <div className="pt-4 border-b">
                       <div className="flex items-center justify-between">
-                        <div className="flex items-center flex-col sm:flex-row gap-4">
-                          <div className='flex gap-4'>
-                            <div className='sm:w-12 sm:h-12   mb-1'>
+                        <div className="flex  flex-row items-start gap-4">
+                          <div className='flex gap-4 '>
+                            <div className='w-16 h-16   mb-1'>
                               <Image unoptimized src={product.productImage} alt="Product" width={100} height={40} className="object-cover w-full h-full" />
                             </div>
                           </div>
@@ -190,14 +190,18 @@ const PaymentPage = () => {
                                     <div className="" key={sku._id}>
                                       <div className="flex border-b flex-col sm:flex-row py-2 sm:items-center  justify-between gap-5">
                                         <div className="items-center gap-3 flex">
-                                          <Image
-                                            unoptimized
-                                            src={sku.image}
-                                            alt="SKU"
-                                            width={40}
-                                            height={40}
-                                            className="object-cover sm:w-10"
-                                          />
+                                        {
+                        sku?.image ? <Image
+                        unoptimized
+                        src={sku.image}
+                        alt="SKU"
+                        width={40}
+                        height={40}
+                        className="object-cover sm:w-10 bg-gray-400"
+                      />: <div className="sm:w-10 bg-gray-400 p-4">
+
+                      </div>
+                      }
                                           <p className="text-sm">Sort by color: {sku.sku}</p>
                                         </div>
                                         <div className="flex justify-between items-end">
@@ -241,7 +245,7 @@ const PaymentPage = () => {
           {/* Payment Details */}
           <div className="flex-1 border  sticky top-0 mb-6 w-full bg-white p-4 rounded shadow-md">
             {
-              paymentLoading ? <UserPaymentSkeleton /> : <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
+              paymentLoading ? <UserPaymentSkeleton /> : <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1  gap-4">
                 {paymentData?.data?.map((method) => (
                   <label key={method._id} className="flex h-20 gap-2 border items-center justify-center space-y-2 p-2 rounded-lg cursor-pointer">
                     <input
@@ -280,35 +284,7 @@ const PaymentPage = () => {
                   {paymentData?.data?.map((method) => {
                     if (method._id === selectedMethod) {
                       return (
-                        <div key={method.id}>
-                          {
-                            method?.name == 'Bkash' ?<>
-                             <div className="font-bold">Payment Method: {method.name}</div>
-                            {method.accountType === "bank" ? (
-                              <>
-                                <div>Account Name: {method.accountName}</div>
-                                <div>Account Number: {method.accountNo}</div>
-                                <div>Branch: {method.branch}</div>
-                              </>
-                            ) : (
-                              <>
-                                <div>Personal Number: {method.personalNumber}</div>
-                                <div>Agent Number: {method.agentNumber}</div>
-                              </>
-                            )}
-                            <iframe 
-    width="560" 
-    height="315" 
-    src="https://www.youtube.com/embed/3Mm8QOiZn-w" 
-    title="YouTube video player" 
-    frameborder="0" 
-    className="w-full mt-6"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    allowfullscreen 
-    >
-  </iframe>
-                            </>  :      <>
-                            
+                        <div key={method.id} className="sm:text-base xsm:text-sm text-[13px]">
                             <div className="font-bold">Payment Method: {method.name}</div>
                             {method.accountType === "bank" ? (
                               <>
@@ -322,8 +298,8 @@ const PaymentPage = () => {
                                 <div>Agent Number: {method.agentNumber}</div>
                               </>
                             )}
-                            </>                  
-                          }
+                                         
+                          
   
                         </div>
                       );

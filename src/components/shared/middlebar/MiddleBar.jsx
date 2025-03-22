@@ -22,6 +22,7 @@ import { getLocalStorage } from "../LocalStorage/LocalStorage";
 import { getDataFromLocalStorage } from "@/utils/localstorage";
 import CartModal from "../modal/CartModal";
 import WishlistModal from "../modal/WishlistModal";
+import { toast } from "react-toastify";
 
 const MiddleBar = () => {
   const { userRole, user } = useUser();
@@ -42,6 +43,8 @@ const MiddleBar = () => {
     setTimeout(() => {
       dispatch(logout());
     setLoading(false)
+    toast.success("Log out successfully");
+    setDropdownOpen(false)
     }, 2000);
   };
 
@@ -84,13 +87,13 @@ const MiddleBar = () => {
     <>
 
 {loading && (
-        <div className="fixed inset-0 z-[50] flex items-center justify-center bg-black bg-opacity-70">
+        <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black bg-opacity-70">
           {/* A simple spinner using Tailwind CSS */}
           <div className="w-16 h-16 border-t-4 border-b-4 border-white rounded-full animate-spin"></div>
         </div>
       )}
-    <div className="bg-gray-100 sticky md:top-0 top-[44px]  z-[50] w-full ">
-     <div className="container sticky top-0 z-50 flex-col hidden mb-3 border-b md:flex no-padding border-secondary">
+    <div className="bg-gray-100 sticky md:top-0 top-[44px]  z-[40] w-full ">
+     <div className="container sticky top-0 z-[40] flex-col hidden mb-3 border-b md:flex no-padding border-secondary">
       <div className="container flex items-center justify-between w-full py-0">
         {/* Logo and Category */}
         <div className="flex gap-16 items-center lg:w-[30%]">
@@ -109,7 +112,7 @@ const MiddleBar = () => {
 
         {/* Search Bar */}
         <div className="hidden w-2/5 gap-5 p-2 md:flex">
-          <Search />
+          <Search loading={loading} setLoading={setLoading} />
         </div>
      
         {/* Navigation Icons */}
@@ -172,7 +175,7 @@ const MiddleBar = () => {
     </div>
 
     <div className=" w-full gap-5 py-1 md:hidden container sticky top-[46px] z-[40] bg-white">
-          <Search />
+          <Search loading={loading} setLoading={setLoading}/>
         </div>
     </>
     

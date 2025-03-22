@@ -13,7 +13,7 @@ import { Label } from "@/components/ui/label";
 import { DynamicSelect } from "@/components/ui/DynamicSelect";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import useDivisions from "@/hooks/useDivisions";
-import useLocationData from "@/hooks/useDivisions";
+// import useLocationData from "@/hooks/useDivisions";
 import useGetDivision from "@/hooks/useGetDivision";
 import useGetDistrict from "@/hooks/useGetDistrict";
 

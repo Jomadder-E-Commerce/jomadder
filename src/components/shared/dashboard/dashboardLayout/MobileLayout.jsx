@@ -46,8 +46,10 @@ const MobileLayout = () => {
 
   useEffect(() => {
     const matchedItem = menuData.find((menuItem) =>
-      pathname.startsWith(menuItem?.route)
+      pathname.includes(menuItem?.route)
     );
+ console.log(pathname, matchedItem)
+ 
     setSelectedText(matchedItem?.text || "");
   }, [pathname, menuData]);
 
@@ -109,7 +111,7 @@ const MobileLayout = () => {
               <div className="mb-5 flex flex-col gap-2">
                 <div className="flex flex-col gap-3 text-[14px] text-[#637381]">
                   {menuData?.map((item, _id) => {
-                    const isActive = pathname.startsWith(item?.route);
+                    const isActive = pathname.includes(item?.route);
                     return item?.underRoutes ? (
                       <LayoutBar 
                         item={item} 

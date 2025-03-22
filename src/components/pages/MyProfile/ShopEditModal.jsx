@@ -12,8 +12,6 @@ import { Label } from "@/components/ui/label";
 import { DynamicSelect } from "@/components/ui/DynamicSelect";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
-import { Country, State, City } from "country-state-city";
-import useLocationData from "@/hooks/useDivisions";
 import useGetDistrict from "@/hooks/useGetDistrict";
 
 const ShopEditModal = ({

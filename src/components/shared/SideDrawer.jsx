@@ -69,9 +69,9 @@ const SideDrawer = () => {
         </div>
 
         {/* Drawer Search Bar (Mobile Only) */}
-        <div className="px-4 py-2 md:hidden">
+        {/* <div className="px-4 py-2 md:hidden">
           <Search />
-        </div>
+        </div> */}
 
         {/* Tabs for Menu and Categories */}
         <Tabs defaultValue="categories">

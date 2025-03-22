@@ -16,14 +16,14 @@ const PayCard = ({ product}) => {
           <div className="w-full">
           {checkoutData?.map((product) => (
             <div
-              className="mb-4 bg-white w-full px-6 pb-4 border rounded-md shadow-md  "
+              className="mb-4 bg-white w-full md:px-6 px-4 pb-4 border rounded-md shadow-md  "
               key={product?._id}
             >
               <div className="pt-4 border-b">
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center flex-col sm:flex-row gap-4">
+                  <div className="flex items-center flex-row gap-4">
                     <div className="flex gap-4">
-                      <div className="sm:w-12 sm:h-12 w-full h-full  mb-1">
+                      <div className="w-12 h-12  mb-1">
                         <Image
                           unoptimized
                           src={product?.productImage}
@@ -48,14 +48,20 @@ const PayCard = ({ product}) => {
                 <div className="" key={sku._id}>
                   <div className="flex border-b flex-col sm:flex-row py-2 sm:items-center  justify-between gap-5">
                     <div className="items-center gap-3 flex">
-                      <Image
+                      
+                      {
+                        sku?.image ? <Image
                         unoptimized
                         src={sku.image}
                         alt="SKU"
                         width={40}
                         height={40}
-                        className="object-cover sm:w-10"
-                      />
+                        className="object-cover sm:w-10 bg-gray-400"
+                      />: <div className="sm:w-10 bg-gray-400 p-4">
+
+                      </div>
+                      }
+                        
                       <p className="text-sm">Sort by color: {sku.sku}</p>
                     </div>
                     <div className="flex justify-between items-end">

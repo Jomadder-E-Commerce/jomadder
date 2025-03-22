@@ -57,9 +57,12 @@ const WishlistModal = () => {
                 <div className="md:hidden flex flex-col items-center relative ">
                     <div onClick={GoOpenModal}>
                         <FaRegHeart className="md:text-2xl text-lg" />
-                        <span className="absolute -top-1 -right-0 text-white text-center h-4 font-medium bg-red-500 rounded-full px-1 text-xs">
-                            {wishlist?.length}
-                        </span>
+                        {
+                            wishlist?.length  ? <span className="absolute -top-1 right-0 text-white text-center h-4 font-medium bg-red-500 rounded-full  px-1 text-xs">
+                        {wishlist?.length >= 10 ? "9+": wishlist?.length}
+                        </span>:""
+                        }
+                       
                     </div>
                     <h3 className="text-[11px] font-medium">Wishlist</h3>
                 </div>

@@ -38,8 +38,9 @@ const RegisterForm = () => {
         setLocalStorage("user", response.data?.data);
         setCookie(response.data?.data?.refreshToken);
         setLocalStorage("token", response.data?.data?.accessToken);
-        const redirectPath = getLocalStorage("redirectPath") || "/";
-        removeLocalStorage("redirectPath");
+        let redirectPath = getLocalStorage("redirect") || "/";
+        redirectPath = redirectPath.replace(/^"(.*)"$/, '$1');
+        removeLocalStorage("redirect");
         console.log(redirectPath)
         router.push(redirectPath);
       }

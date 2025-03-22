@@ -112,7 +112,6 @@ const ProductTableRow = ({ currentSku, item, productSku, addToCart, adding, setA
       {size && <TableCell className="text-center sm:p-4 p-2">{size}</TableCell>}
       <TableCell className="text-center sm:p-4 p-2 text-nowrap">৳ {price}</TableCell>
       <TableCell className="flex justify-center sm:p-4 p-2 w-[130px] mx-auto">
-        {showQuantity ? (
           <div className="flex items-center">
             <button 
               onClick={() => handleButtonChange(-1)}
@@ -133,14 +132,14 @@ const ProductTableRow = ({ currentSku, item, productSku, addToCart, adding, setA
               +
             </button>
           </div>
-        ) : (
+        {/* ) : (
           <button
             onClick={handleAddClick}
             className="px-8 rounded-lg py-[9px] bg-blue-500 text-white hover:bg-blue-600 transition-colors"
           >
             Add
           </button>
-        )}
+        )} */}
       </TableCell>
     </TableRow>
   );

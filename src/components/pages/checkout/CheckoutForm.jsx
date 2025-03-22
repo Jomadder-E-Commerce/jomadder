@@ -197,7 +197,7 @@ const CheckoutForm = () => {
         {/* Address Details */}
         <div className="grid grid-cols-1 gap-4 mb-4 md:grid-cols-2">
           <div>
-            <Label>City/Thana *</Label>
+            <Label>Thana *</Label>
             <Input
               name="city"
               value={formData.city}
