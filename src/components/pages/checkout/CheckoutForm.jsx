@@ -34,7 +34,7 @@ const CheckoutForm = () => {
     if (userData) {
       const address = userData?.address || {};
       const userDivision = allDivisions.find(d => d.name == address.division);
-      
+
       // Only update if division exists in current divisions
       if (userDivision) {
         getDistrictsByDivision(userDivision.id);
@@ -56,9 +56,9 @@ const CheckoutForm = () => {
   }, [userData]); // Removed getDistrictsByDivision from dependencies
 
   const handleSelectChange = useCallback((name, value) => {
-    setFormDataFull(prev => {
+    name && value && setFormDataFull(prev => {
       const newData = { ...prev, [name]: value };
-      
+
       if (name === "division") {
         newData.district = "";
         newData.city = "";
@@ -70,7 +70,7 @@ const CheckoutForm = () => {
       if (name === "district") {
         newData.city = "";
       }
-      
+
       return newData;
     });
     setErrors(prev => ({ ...prev, [name]: "" }));
@@ -90,7 +90,7 @@ const CheckoutForm = () => {
   const validateForm = useCallback(() => {
     const newErrors = {};
     const requiredFields = [
-      'orderName', 'orderEmail', 'OrderPhone', 
+      'orderName', 'orderEmail', 'OrderPhone',
       'division', 'district', 'city', 'shippingAddress'
     ];
 

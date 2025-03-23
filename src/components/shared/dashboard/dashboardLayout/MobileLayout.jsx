@@ -14,7 +14,7 @@ import ProfileData from "@/lib/ProfileNavData";
 import { logout } from "@/components/Redux/features/AllSlice/authSlice";
 import { useDispatch } from "react-redux";
 import Image from "next/image";
-import logo from "@/assets/logo/logo.png";
+import logo from "@/assets/logo/logo2.png";
 
 const MobileLayout = () => {
   const { userRole, user } = useUser();

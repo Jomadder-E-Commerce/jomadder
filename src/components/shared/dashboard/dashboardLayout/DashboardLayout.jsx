@@ -1,5 +1,5 @@
 "use client";
-import logo from "@/assets/logo/logo.png";
+import logo from "@/assets/logo/logo2.png";
 import LayoutBar from "./LayoutBar";
 import ProfileData from "@/lib/ProfileNavData";
 import Link from "next/link";

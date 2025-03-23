@@ -8,7 +8,7 @@ import { useState } from "react";
 import { CiLogout } from "react-icons/ci";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../Redux/features/AllSlice/authSlice";
-import logo from "/src/assets/logo/logo.png";
+import logo from "/src/assets/logo/logo2.png";
 import Image from "next/image";
 import { useGetCartListQuery } from "../Redux/services/cartApi";
 import { useGetwhishListQuery } from "../Redux/services/wishlistApi/wishlistApi";
@@ -79,7 +79,7 @@ const MobileNavbar = () => {
         {/* Center Logo */}
         <div
           onClick={RefreshPage}
-          className="absolute  transform -translate-x-1/2 bg-white rounded-full shadow-lg left-1/2 -top-6 p-2"
+          className="absolute  transform -translate-x-1/2 bg-white rounded-full shadow-lg left-1/2 -top-6 p-1"
         >
           <Image
             unoptimized

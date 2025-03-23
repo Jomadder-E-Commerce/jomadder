@@ -11,7 +11,7 @@ import { toast } from "react-toastify";
 // Assets
 import GoogleLogo from "@/assets/logo/google.png";
 import FacebookLogo from "@/assets/logo/facebook.png";
-import Logo from "/src/assets/logo/logo.png";
+import Logo from "/src/assets/logo/logo2.png";
 
 // UI Components
 import { Input } from "@/components/ui/input";

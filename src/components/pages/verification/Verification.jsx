@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import logo from "/src/assets/logo/logo.png";
+import logo from "/src/assets/logo/logo2.png";
 import Image from "next/image";
 import Link from "next/link";
 
