@@ -9,7 +9,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import Google from '@/assets/logo/google.png';
 import Facebook from '@/assets/logo/facebook.png';
-import logo from "/src/assets/logo/logo.png";
+import logo from "/src/assets/logo/logo2.png";
 import Image from "next/image";
 import { isEmail, isPhoneNumber } from "@/utils/emailPhoneChecker";
 import { toast } from "react-toastify";

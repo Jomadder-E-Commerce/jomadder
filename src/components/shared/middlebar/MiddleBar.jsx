@@ -1,5 +1,5 @@
 "use client";
-import logo from "/src/assets/logo/logo.png";
+import logo from "/src/assets/logo/logo2.png";
 import { FaRegHeart, FaUserCircle } from "react-icons/fa";
 
 import Link from "next/link";
@@ -102,7 +102,7 @@ const MiddleBar = () => {
               unoptimized
               width={80}
               height={80}
-              className="2xl:w-[60px] md:w-[50px] sm:w-[40px] w-[40px]"
+              className=" md:size-[50px] sm:w-[40px] w-[40px]"
               src={logo}
               alt="Logo"
             />

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import logo from "/src/assets/logo/logo.png";
+import logo from "/src/assets/logo/logo2.png";
 import checked from "/src/assets/logo/checklist.png";
 import Image from "next/image";
 import Link from "next/link";

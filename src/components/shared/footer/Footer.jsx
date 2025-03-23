@@ -5,7 +5,7 @@ import { useRef, useState, useEffect } from "react";
 import QR from "@/assets/footer/qrCode.png";
 import GooglePlay from "@/assets/footer/googlePlay.png";
 import AppStore from "@/assets/footer/appstore-Copy.png";
-import logo from "@/assets/logo/logo.png";
+import logo from "@/assets/logo/logo2.png";
 import { ChevronDown, Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter, X, Youtube } from "lucide-react";
 import Link from "next/link";
 import bkash from "@/assets/footer/bkash.png";
