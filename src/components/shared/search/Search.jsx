@@ -44,6 +44,14 @@ const Search = ({loading, setLoading}) => {
           window.location.href = `/searchImage/${encodeUri}`;
           setLoading(false);
         }
+        else{
+          setLoading(false);
+          alert(`${JSON.stringify(conversation)} ${JSON.stringify({ uri: photo })}`);
+        }
+      }
+      else{
+        setLoading(false);
+        toast.error("User didn't select any image");
       }
     } catch (err) {
       console.log(err);
@@ -95,13 +103,6 @@ const Search = ({loading, setLoading}) => {
   }, [text, loading]);
 
   return (
-    <>
-     {loading && (
-        <div className="fixed inset-0 z-[300] h-[100vh] flex items-center justify-center bg-black bg-opacity-70">
-          {/* A simple spinner using Tailwind CSS */}
-          <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-white"></div>
-        </div>
-      )}
     <div className="flex flex-row items-center w-full">
       <div className="w-full relative transition-all duration-300 flex items-center group border-[2px] hover:border-primary focus-within:border-primary bg-white rounded-md rounded-r-none px-3 gap-2 border-r-0">
         <div
@@ -159,7 +160,6 @@ const Search = ({loading, setLoading}) => {
       </div>
     </div>
     
-    </>
     
   );
 };
