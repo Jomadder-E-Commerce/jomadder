@@ -12,9 +12,8 @@ const MyOrders = () => {
     { label: "Amount", key: "price" },
     // { label: "Charge", key: "charge" },
     // { label: "District", key: "district" },
-
-    { label: "Details", key: "details", type: "button" },
     { label: "TransactionId", key: "TransactionId" },
+    { label: "Details", key: "details", type: "button" },
     { label: "Status", key: "Status" },
     { label: "Support", key: "support", type: "button" },
   ];
@@ -24,7 +23,21 @@ const MyOrders = () => {
         title={"My Orders"}
         data={data?.data || []}
         ordersColumns={orderColumns}
-        filterOptions={["payment reviewing", "cancelled", "completed", "delivered"]}
+        filterOptions={[  "all orders",
+          "pending payment",
+          "payment reviewing",
+          "pending",
+          "processing",
+          "approved",
+          "imported",
+          "out-for-delivery",
+          "delivered",
+          "cancelled",
+          "failed",
+          "on-hold",
+          "completed",
+
+        ]}
         searchPlaceholder={"Filter By Status"}
       />
     </div>

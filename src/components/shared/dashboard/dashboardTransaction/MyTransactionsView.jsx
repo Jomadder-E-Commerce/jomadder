@@ -11,7 +11,7 @@ const MyTransactionsView = ({
   myTransactionColumns,
   loading,
 }) => {
-  const [filterStatus, setFilterStatus] = useState("");
+  const [filterStatus, setFilterStatus] = useState("All Transaction");
   const [searchId, setSearchId] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -23,13 +23,17 @@ const MyTransactionsView = ({
     const filterStatusLower = filterStatus ? filterStatus.toLowerCase() : "";
 
     const matchesStatus =
-      filterStatusLower === "" || itemStatus === filterStatusLower;
-      const matchesId =
-  searchId === "" || 
-  (item._id.toString().includes(searchId.trim()) || item.orderId?._id.toString().includes(searchId.trim()));
+      filterStatusLower === "all transaction" || // New condition
+      filterStatusLower === "" ||
+      itemStatus === filterStatusLower;
+
+    const matchesId =
+      searchId === "" || 
+      (item._id.toString().includes(searchId.trim()) || item.orderId?._id.toString().includes(searchId.trim()));
 
     return matchesStatus && matchesId;
   });
+
 
   // Pagination logic
   const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE);

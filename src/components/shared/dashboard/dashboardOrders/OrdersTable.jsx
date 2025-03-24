@@ -17,18 +17,38 @@ import Swal from "sweetalert2";
 const OrdersTable = ({ data, user, loading, columns }) => {
   const [updateStatus] = useUpdateStatusMutation();
 
-  const getButtonClass = (status) => {
-    const cleanedStatus = status ? status.trim() : "";
-    if (cleanedStatus === "pending") {
-      return "bg-green-600 text-white";
-    } else if (cleanedStatus === "cancelled") {
-      return "bg-red-600 text-white";
-    } else if (cleanedStatus === "pending payment") {
-      return "bg-blue-600 text-white";
-    } else {
-      return "bg-gray-600 text-black";
+  function getStatusClass(status) {
+    const cleanedStatus = status ? status.trim().toLowerCase() : "";
+  
+    switch (cleanedStatus) {
+      case "payment reviewing":
+        return "bg-blue-400 text-white";
+      case "pending":
+        return "bg-yellow-400 text-white";
+      case "processing":
+        return "bg-purple-400 text-white";
+      case "approved":
+        return "bg-green-500 text-white";
+      case "imported":
+        return "bg-teal-400 text-white";
+      case "out-for-delivery":
+        return "bg-orange-400 text-white";
+      case "delivered":
+        return "bg-green-600 text-white";
+      case "cancelled":
+        return "bg-red-400 text-white";
+      case "failed":
+        return "bg-red-600 text-white";
+      case "on-hold":
+        return "bg-indigo-400 text-white";
+      case "completed":
+        return "bg-green-700 text-white";
+      case "pending payment":
+        return "bg-yellow-600 text-white";
+      default:
+        return "bg-gray-300 text-black";
     }
-  };
+  }
 
   const handleStatusChange = async (newStatus, itemId) => {
     Swal.fire({
@@ -69,29 +89,21 @@ const OrdersTable = ({ data, user, loading, columns }) => {
                 <TableHead key={idx} className="text-black">
                   {column.label}
                 </TableHead>
-
               ))}
-              
             </TableRow>
           </TableHeader>
-          <TableBody className="text-gray-500">
+          <TableBody className="text-gray-700 font-medium">
             {data.map((item, index) => (
               <TableRow key={index}>
-<TableCell>{item?._id}</TableCell>
+<TableCell className="text-gray-800">{item?.orderId  ?? item?._id}</TableCell>
                 <TableCell>{Number(item.price) + Number(item?.charge)}</TableCell>
                 {/* <TableCell>{item.charge}</TableCell> */}
                 
-                <TableCell>
-                  <Link href={`/profile/order-details/${item._id}`}>
-                    <button className="px-2 py-1 text-gray-500 transition border rounded-md">
-                      View Details
-                    </button>
-                  </Link>
-                </TableCell>
+                
                 <TableCell>
                   {item.status === "pending payment" ? (
                     <Link
-                      href={`/payment?orderId=${item?._id}`}
+                      href={`/payment?orderId=${item?.orderId}`}
                       className="px-2 py-1 text-white transition bg-red-600 rounded-md hover:bg-red-700"
                     >
                       Pay due {Number(item.price) + Number(item?.charge)}
@@ -103,8 +115,15 @@ const OrdersTable = ({ data, user, loading, columns }) => {
                   )}
                 </TableCell>
                 <TableCell>
+                  <Link href={`/profile/order-details/${item?.orderId}`}>
+                    <button className="px-2 py-1 text-gray-500 transition border rounded-md">
+                      View Details
+                    </button>
+                  </Link>
+                </TableCell>
+                <TableCell>
                   <button
-                    className={`py-1 px-3 rounded ${getButtonClass(
+                    className={`py-1 px-3 rounded ${getStatusClass(
                       item.status
                     )}`}
                   >
@@ -113,7 +132,7 @@ const OrdersTable = ({ data, user, loading, columns }) => {
                   {
                     item.status === "pending payment" && (
                     <button
-                      onClick={() => handleStatusChange("cancelled", item._id)}
+                      onClick={() => handleStatusChange("cancelled", item?.orderId)}
                       className="ml-2 px-2 py-1 text-red-500 transition border border-red-500 rounded-md"
                     >
                       Cancel
@@ -121,7 +140,7 @@ const OrdersTable = ({ data, user, loading, columns }) => {
                   )}
                 </TableCell>
                 <TableCell>
-                  <SupportDialog orderId={`${item._id}`} />
+                  <SupportDialog orderId={`${item?.orderId}`} />
                 </TableCell>
               </TableRow>
             ))}
