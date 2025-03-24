@@ -81,7 +81,27 @@ const OrdersTable = ({ data, user, loading, columns }) => {
                 <TableCell>{Number(item.price) + Number(item?.charge)}</TableCell>
                 {/* <TableCell>{item.charge}</TableCell> */}
                 
-               
+                <TableCell>
+                  <Link href={`/profile/order-details/${item._id}`}>
+                    <button className="px-2 py-1 text-gray-500 transition border rounded-md">
+                      View Details
+                    </button>
+                  </Link>
+                </TableCell>
+                <TableCell>
+                  {item.status === "pending payment" ? (
+                    <Link
+                      href={`/payment?orderId=${item?._id}`}
+                      className="px-2 py-1 text-white transition bg-red-600 rounded-md hover:bg-red-700"
+                    >
+                      Pay due {Number(item.price) + Number(item?.charge)}
+                    </Link>
+                  ) : item.transactionId ? (
+                    item.transactionId
+                  ) : (
+                    "N/A"
+                  )}
+                </TableCell>
                 <TableCell>
                   <button
                     className={`py-1 px-3 rounded ${getButtonClass(
@@ -98,27 +118,6 @@ const OrdersTable = ({ data, user, loading, columns }) => {
                     >
                       Cancel
                     </button>
-                  )}
-                </TableCell>
-                <TableCell>
-                  <Link href={`/profile/order-details/${item._id}`}>
-                    <button className="px-2 py-1 text-gray-500 transition border rounded-md">
-                      View Details
-                    </button>
-                  </Link>
-                </TableCell>
-                <TableCell>
-                  {item.status === "pending payment" ? (
-                    <Link
-                      href={`/payment?orderId=${item?._id}`}
-                      className="px-2 py-1 text-white transition bg-green-600 rounded-md hover:bg-green-700"
-                    >
-                      Complete Payment
-                    </Link>
-                  ) : item.transactionId ? (
-                    item.transactionId
-                  ) : (
-                    "N/A"
                   )}
                 </TableCell>
                 <TableCell>
