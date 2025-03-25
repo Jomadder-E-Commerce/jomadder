@@ -11,7 +11,7 @@ const OrdersView = ({
   ordersColumns,
   loading,
 }) => {
-  const [filterStatus, setFilterStatus] = useState("");
+  const [filterStatus, setFilterStatus] = useState("all orders");
   const [searchId, setSearchId] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -23,8 +23,10 @@ const OrdersView = ({
     const filterStatusLower = filterStatus ? filterStatus.toLowerCase() : "";
 
     const matchesStatus =
-      filterStatusLower === "" || itemStatus === filterStatusLower;
-    const matchesId = searchId ? (item._id || "").includes(searchId) || (item.transactionId?._id || "").includes(searchId)  : true;
+      filterStatusLower === "all orders" || // New condition
+      filterStatusLower === "" ||
+      itemStatus === filterStatusLower;
+    const matchesId = searchId ? ((item._id || "").includes(searchId) || (item.transactionId?._id || "").includes(searchId) || (item?.orderId || "").includes(searchId))  : true;
 
     return matchesStatus && matchesId;
   });
