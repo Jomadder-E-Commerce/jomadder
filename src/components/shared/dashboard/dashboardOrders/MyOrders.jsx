@@ -12,6 +12,8 @@ const MyOrders = () => {
     { label: "Amount", key: "price" },
     // { label: "Charge", key: "charge" },
     // { label: "District", key: "district" },
+
+
     { label: "TransactionId", key: "TransactionId" },
     { label: "Details", key: "details", type: "button" },
     { label: "Status", key: "Status" },

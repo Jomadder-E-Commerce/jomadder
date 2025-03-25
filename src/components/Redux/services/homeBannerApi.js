@@ -1,6 +1,6 @@
-import { frontendApi } from "@/components/Redux/api/baseApi";
+import { backendApi } from "@/components/Redux/api/baseApi";
 
-const HomeBannerApi = frontendApi.injectEndpoints({
+const HomeBannerApi = backendApi.injectEndpoints({
   endpoints: (build) => ({
     getToAllBanner: build.query({
       query: () => ({
