@@ -1,6 +1,6 @@
-import { frontendApi } from "@/components/Redux/api/baseApi";
+import { backendApi } from "@/components/Redux/api/baseApi";
 
-const contactApi = frontendApi.injectEndpoints({
+const contactApi = backendApi.injectEndpoints({
   endpoints: (build) => ({
     postcontact: build.mutation({
       query: (body) => ({

@@ -1,6 +1,6 @@
-import { frontendApi } from "@/components/Redux/api/baseApi";
+import { backendApi } from "@/components/Redux/api/baseApi";
 
-const productApi = frontendApi.injectEndpoints({
+const productApi = backendApi.injectEndpoints({
   endpoints: (build) => ({
     getProducts: build.query({
       query: ({ category, page, size, price_start, price_end , sort }) => ({

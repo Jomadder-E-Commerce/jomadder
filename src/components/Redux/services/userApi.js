@@ -1,6 +1,6 @@
-import { frontendApi } from "@/components/Redux/api/baseApi";
+import { backendApi } from "@/components/Redux/api/baseApi";
 
-const userApi = frontendApi.injectEndpoints({
+const userApi = backendApi.injectEndpoints({
   endpoints: (build) => ({
     getUserList: build.query({
       query: () => ({

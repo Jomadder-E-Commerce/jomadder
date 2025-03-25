@@ -5,21 +5,10 @@ import { preset_api_v1 } from '@/app/control_version_api';
 
 
 // api 
-const BASE_URL_FRONTEND = process.env.NEXT_PUBLIC_MEDIA_API + preset_api_v1;
 const BASE_URL_BACKEND = process.env.NEXT_PUBLIC_BASE_API + preset_api_v1;
 
 
 // baseQuery instance
-const frontendBaseQuery = fetchBaseQuery({
-  baseUrl: BASE_URL_FRONTEND,
-  prepareHeaders: (headers, { getState }) => {
-    const token = getState().auth.token;
-    if (token) {
-      headers.set('Authorization', `Bearer ${token}`);
-    }
-    return headers;
-  },
-});
 
 const backendBaseQuery = fetchBaseQuery({
   baseUrl: BASE_URL_BACKEND,
@@ -32,10 +21,6 @@ const backendBaseQuery = fetchBaseQuery({
   },
 });
 
-
-const baseQueryWithReauthFrontend = async (args, api, extraOptions) => {
-  return baseQueryWithReauthHelper(args, api, extraOptions, frontendBaseQuery);
-};
 
 const baseQueryWithReauthBackend = async (args, api, extraOptions) => {
   return baseQueryWithReauthHelper(args, api, extraOptions, backendBaseQuery);
@@ -148,12 +133,12 @@ const baseQueryWithReauthHelper = async (args, api, extraOptions, baseQuery) => 
 // });
 
 
-export const frontendApi = createApi({
-  reducerPath: 'frontendApi',
-  baseQuery: baseQueryWithReauthFrontend,
-  tagTypes: ["Wishlist", "Banner", 'ProductList', 'Cart', 'Category', 'Coupon', 'Transaction', 'translation', 'Checkout', 'Point', 'Shipment', 'Support', 'User', 'Pricing','deposit'],
-  endpoints: () => ({}),
-});
+// export const frontendApi = createApi({
+//   reducerPath: 'frontendApi',
+//   baseQuery: baseQueryWithReauthFrontend,
+//   tagTypes: ["Wishlist", "Banner", 'ProductList', 'Cart', 'Category', 'Coupon', 'Transaction', 'translation', 'Checkout', 'Point', 'Shipment', 'Support', 'User', 'Pricing','deposit'],
+//   endpoints: () => ({}),
+// });
 
 // backend api
 
