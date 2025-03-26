@@ -144,7 +144,7 @@ const SearchImageProduct = () => {
     handleSearchQuery("page", newPage);
   };
 
-  // handle sorting change
+  // handle sorting changes
   const handleSortChange = (value) => {
     let sort = "default";
     if (value === "low-to-high") sort = "price_up";
