@@ -151,7 +151,7 @@ const baseQueryWithReauthHelper = async (args, api, extraOptions, baseQuery) => 
 export const frontendApi = createApi({
   reducerPath: 'frontendApi',
   baseQuery: baseQueryWithReauthFrontend,
-  tagTypes: ["Wishlist", "Banner", 'ProductList', 'Cart', 'Category', 'Coupon', 'Transaction', 'translation', 'Checkout', 'Point', 'Shipment', 'Support', 'User', 'Pricing','deposit'],
+  tagTypes: ["Wishlist", "Banner", 'ProductList', 'Cart', 'Category', 'Coupon', 'Transaction', 'translation', 'Checkout', 'Point', 'Shipment', 'Support', 'User', 'Pricing', 'deposit'],
   endpoints: () => ({}),
 });
 
@@ -160,6 +160,6 @@ export const frontendApi = createApi({
 export const backendApi = createApi({
   reducerPath: 'backendApi',
   baseQuery: baseQueryWithReauthBackend,
-  tagTypes: ["Wishlist", "Banner", 'ProductList', 'Cart', 'Category', 'Coupon', 'Transaction', 'translation', 'Checkout', 'Point', 'Shipment', 'Support', 'User', 'Pricing','deposit'],
+  tagTypes: ["Wishlist", "Banner", 'ProductList', 'Cart', 'Category', 'Coupon', 'Transaction', 'translation', 'Checkout', 'Point', 'Shipment', 'Support', 'User', 'Pricing', 'deposit'],
   endpoints: () => ({}),
 });

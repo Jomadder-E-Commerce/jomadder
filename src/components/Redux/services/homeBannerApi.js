@@ -7,35 +7,35 @@ const HomeBannerApi = frontendApi.injectEndpoints({
         url: `/banner/all`,
         method: 'GET',
       }),
-      providesTags:['Banner']
+      providesTags: ['Banner'],
     }),
     getToBanner: build.query({
       query: () => ({
         url: `/banner/big/all`,
         method: 'GET',
       }),
-      providesTags:['Banner']
+      providesTags: ['Banner']
     }),
     getToBannerAdmin: build.query({
       query: () => ({
         url: `/banner/big/admin`,
         method: 'GET',
       }),
-      providesTags:['Banner']
+      providesTags: ['Banner']
     }),
     getTosideBanner: build.query({
       query: () => ({
         url: `/banner/small/all`,
         method: 'GET',
       }),
-      providesTags:['Banner']
+      providesTags: ['Banner']
     }),
     getTosideBannerAdmin: build.query({
       query: () => ({
         url: `/banner/small/admin`,
         method: 'GET',
       }),
-      providesTags:['Banner']
+      providesTags: ['Banner']
     }),
     addToBanner: build.mutation({
       query: (body) => ({

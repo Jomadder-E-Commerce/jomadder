@@ -20,19 +20,19 @@ import useUser from "@/hooks/useUser";
 import useCart from "@/hooks/useCart";
 
 const ProductPage = ({ params }) => {
-  const {cart, AddIntocart, RemoveFromcart, removeAllcart,UpdateCartQuantity} = useCart()
+  const { cart, AddIntocart, RemoveFromcart, removeAllcart, UpdateCartQuantity } = useCart()
   const router = useRouter();
   const id = params?.id;
   // const userData = typeof window !== 'undefined' && window.localStorage.getItem('user');
   // const user = JSON.parse(userData);
-  const {user, loading} = useUser()
-  
+  const { user, loading } = useUser()
+
   const { data, isLoading, isError } = useGetSingleProductQuery(id);
   // const [postCart] = usePostCartMutation();
-  const [type,setType] = useState("image");
+  const [type, setType] = useState("image");
   const [selectedImage, setSelectedImage] = useState("");
   const [productSku, setProductSku] = useState([]);
-  const [selectedColorProduct, setSelectedColorProduct] = useState({image: "", name: ""});
+  const [selectedColorProduct, setSelectedColorProduct] = useState({ image: "", name: "" });
   const [totalPrice, setTotalPrice] = useState(0);
   const [totalquantity, setTotalQuantity] = useState(0);
 
@@ -49,7 +49,7 @@ const ProductPage = ({ params }) => {
   };
 
   const handleChooseProductJustText = (prop) => {
-    setSelectedColorProduct({ name: prop, image: ""});
+    setSelectedColorProduct({ name: prop, image: "" });
   };
 
   useEffect(() => {
@@ -67,12 +67,12 @@ const ProductPage = ({ params }) => {
 
   const CompleteTheAddtoCart = async () => {
     // const token = getLocalStorage("token");
-    
+
     // if (!token) {
     //   toast.info("Please login to add product");
     //   return;
     // }
-    
+
     if (productSku.length === 0) {
       toast.info("Please select product!");
       return;
@@ -84,19 +84,19 @@ const ProductPage = ({ params }) => {
         productTitle: data?.data?.title,
         productImage: data?.data?.main_imgs[0],
         skus: [...productSku],
-        checked:true
+        checked: true
       };
-      const find = findDataFromLocalStorage("cart",cartData?.id);
-       if(find){
+      const find = findDataFromLocalStorage("cart", cartData?.id);
+      if (find) {
         toast.error("Already added to cart")
         return;
-       };
-        //  addNewDataIntoLocalStorage("cart", cartData);
-        AddIntocart(cartData);
-           
+      };
+      //  addNewDataIntoLocalStorage("cart", cartData);
+      AddIntocart(cartData);
 
-        toast.success("Added to cart");
-        setProductSku([]);
+
+      toast.success("Added to cart");
+      setProductSku([]);
 
     } catch (err) {
       console.error(err);
@@ -105,9 +105,9 @@ const ProductPage = ({ params }) => {
   };
 
   const handleBuyNow = () => {
-    if(!user){
+    if (!user) {
       saveDataIntoLocalStorage("redirect", window.location.pathname);
-       window.location.href = "/login"
+      window.location.href = "/login"
     }
     if (productSku.length === 0) {
       toast.info("Please select product!");
@@ -126,57 +126,78 @@ const ProductPage = ({ params }) => {
     router.push('/buyNow');
   };
   return (
-      <div className="container pt-2 pb-4 ">
-        {/* Breadcrumb */}
-        <nav className="container relative flex items-center gap-1 mb-5 text-sm left-1 no-padding">
-          <Link className="text-gray-600 hover:text-primary" href="/"><span className="font-bold ">Home</span></Link>
-          <span className="font-bold text-gray-400">{">"}</span>
-         <Link className="text-gray-600 hover:text-primary" href={`/product-details/${id}`}><span className="font-bold ">Product Details</span></Link> 
-        </nav>
+    <div className="container pt-2 pb-4 ">
+      {/* Breadcrumb */}
+      <nav className="container relative flex items-center gap-1 mb-5 text-sm left-1 no-padding">
+        <Link className="text-gray-600 hover:text-primary" href="/"><span className="font-bold ">Home</span></Link>
+        <span className="font-bold text-gray-400">{">"}</span>
+        <Link className="text-gray-600 hover:text-primary" href={`/product-details/${id}`}><span className="font-bold ">Product Details</span></Link>
+      </nav>
 
-        {/* Main Content */}
-        {
-          !isLoading && !data?.data ? <ProductNotFound/> 
+      {/* Main Content */}
+      {
+        !isLoading && !data?.data ? <ProductNotFound />
           :
           <div className="container flex flex-col xl:flex-row xl:gap-6 no-padding">
-          {/* Product Info Container */}
-          <div className="flex-1 ">
-            {/* Product Gallery and Details Container */}
-            <div className="overflow-hidden rounded-lg ">
-              <div className="flex flex-col md:flex-row">
-                {/* Product Gallery */}
-                <div className="md:w-[40%] ">
-                  <ProductSlider
-                    productData={data?.data}
-                    isError={isError}
-                    isLoading={isLoading}
-                    handleChooseImage={handleChooseImage}
-                    selectedImage={selectedImage}
-                    type={type}
-                    setType={setType}
+            {/* Product Info Container */}
+            <div className="flex-1 ">
+              {/* Product Gallery and Details Container */}
+              <div className="overflow-hidden rounded-lg ">
+                <div className="flex flex-col md:flex-row">
+                  {/* Product Gallery */}
+                  <div className="md:w-[40%] ">
+                    <ProductSlider
+                      productData={data?.data}
+                      isError={isError}
+                      isLoading={isLoading}
+                      handleChooseImage={handleChooseImage}
+                      selectedImage={selectedImage}
+                      type={type}
+                      setType={setType}
 
-                  />
+                    />
+                  </div>
+
+                  {/* Product Details */}
+                  <div className="md:w-[60%]  sm:px-4 px-0">
+                    <ProductDetails
+                      productData={data?.data}
+                      selectedImage={selectedImage}
+                      setSelectedImage={setSelectedImage}
+                      isError={isError}
+                      isLoading={isLoading}
+                      selectedColorProduct={selectedColorProduct}
+                      handleChooseProductJustText={handleChooseProductJustText}
+                      handleChooseSelectedProduct={handleChooseSelectedProduct}
+                      productSku={productSku}
+                      setProductSku={setProductSku}
+                    />
+                  </div>
                 </div>
 
-                {/* Product Details */}
-                <div className="md:w-[60%]  sm:px-4 px-0">
-                  <ProductDetails
-                    productData={data?.data}
-                    selectedImage={selectedImage}
-                    setSelectedImage={setSelectedImage}
-                    isError={isError}
-                    isLoading={isLoading}
-                    selectedColorProduct={selectedColorProduct}
-                    handleChooseProductJustText={handleChooseProductJustText}
-                    handleChooseSelectedProduct={handleChooseSelectedProduct}
+                {/* Mobile Shipping Details */}
+                <div className="mt-10 border-t border-gray-100 xl:hidden">
+                  <ShippingDetails
+                    CompleteTheAddtoCart={CompleteTheAddtoCart}
+                    handleBuyNow={handleBuyNow}
+                    data={data?.data}
+                    quantity={totalquantity}
+                    price={totalPrice}
                     productSku={productSku}
                     setProductSku={setProductSku}
                   />
                 </div>
               </div>
 
-              {/* Mobile Shipping Details */}
-              <div className="mt-10 border-t border-gray-100 xl:hidden">
+              {/* Product Description Tabs */}
+              <div className="mt-6 bg-white rounded-lg shadow-sm">
+                <DetailsTab isLoading={isLoading} productData={data?.data} isError={isError} />
+              </div>
+            </div>
+
+            {/* Right Sidebar - Shipping Details */}
+            <div className="flex-shrink-0 hidden xl:block ">
+              <div className="sticky rounded-lg shadow-sm top-20">
                 <ShippingDetails
                   CompleteTheAddtoCart={CompleteTheAddtoCart}
                   handleBuyNow={handleBuyNow}
@@ -188,31 +209,10 @@ const ProductPage = ({ params }) => {
                 />
               </div>
             </div>
-
-            {/* Product Description Tabs */}
-            <div className="mt-6 bg-white rounded-lg shadow-sm">
-              <DetailsTab isLoading={isLoading} productData={data?.data} isError={isError} />
-            </div>
           </div>
+      }
 
-          {/* Right Sidebar - Shipping Details */}
-          <div className="flex-shrink-0 hidden xl:block ">
-            <div className="sticky rounded-lg shadow-sm top-20">
-              <ShippingDetails
-                CompleteTheAddtoCart={CompleteTheAddtoCart}
-                handleBuyNow={handleBuyNow}
-                data={data?.data}
-                quantity={totalquantity}
-                price={totalPrice}
-                productSku={productSku}
-                setProductSku={setProductSku}
-              />
-            </div>
-          </div>
-        </div> 
-        }
-       
-      </div>
+    </div>
   );
 };
 

@@ -26,18 +26,16 @@ const Categories = () => {
 
     try {
       const imageData = await ImageHosting(image);
-      console.log(imageData);
+
       const categoryData = {
         title,
         icon: imageData.url,
       };
-      console.log("data", categoryData);
       const convertData = convertValuesToLowerCase(categoryData);
       await postCategories(convertData).unwrap();
       toast.success("Category created successfully!");
       e.target.reset();
     } catch (error) {
-      console.error("Error uploading category:", error);
       toast.error("Error creating category.");
     }
   };

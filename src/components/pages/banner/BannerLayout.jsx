@@ -3,9 +3,9 @@ import { useGetToAllBannerQuery } from "@/components/Redux/services/homeBannerAp
 import LeftBanner from "./LeftBanner";
 import RightBanner from "./RightBanner";
 
+
 export default function BannerLayout() {
-    const { data, isLoading } = useGetToAllBannerQuery();
-    console.log(data)
+  const { data, isLoading } = useGetToAllBannerQuery();
   return (
 
     <div className="flex flex-col gap-4   md:flex-row container md:px-[27.2px] px-0 no-padding">

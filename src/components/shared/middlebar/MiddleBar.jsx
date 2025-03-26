@@ -30,10 +30,9 @@ const MiddleBar = () => {
   const dispatch = useDispatch();
   const token = getLocalStorage("token");
   const [loading, setLoading] = useState(false);
-   // Create a ref for the dropdown container
-  const [cart,setCartData] = useState(getDataFromLocalStorage("cart") || []);
-  const [wishlist,setWishlistData]=useState(getDataFromLocalStorage("wishlist") || []);
-   console.log(cart,wishlist)
+  // Create a ref for the dropdown container
+  const [cart, setCartData] = useState(getDataFromLocalStorage("cart") || []);
+  const [wishlist, setWishlistData] = useState(getDataFromLocalStorage("wishlist") || []);
   const path = usePathname();
   const dropdownRef = useRef(null);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -42,9 +41,9 @@ const MiddleBar = () => {
     setLoading(true);
     setTimeout(() => {
       dispatch(logout());
-    setLoading(false)
-    toast.success("Log out successfully");
-    setDropdownOpen(false)
+      setLoading(false)
+      toast.success("Log out successfully");
+      setDropdownOpen(false)
     }, 2000);
   };
 
@@ -75,52 +74,52 @@ const MiddleBar = () => {
     };
   }, [dropdownOpen]);
 
-    const RefreshPage = () => {
-      if(window.location.href == "/"){
-        window.location.reload()
-      }
-      else{
-        window.location.href = "/";
-      }
+  const RefreshPage = () => {
+    if (window.location.href == "/") {
+      window.location.reload()
     }
+    else {
+      window.location.href = "/";
+    }
+  }
   return (
     <>
 
-{loading && (
+      {loading && (
         <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black bg-opacity-70">
           {/* A simple spinner using Tailwind CSS */}
           <div className="w-16 h-16 border-t-4 border-b-4 border-white rounded-full animate-spin"></div>
         </div>
       )}
-    <div className="bg-gray-100 sticky md:top-0 top-[44px]  z-[40] w-full ">
-     <div className="container sticky top-0 z-[40] flex-col hidden mb-3 border-b md:flex no-padding border-secondary">
-      <div className="container flex items-center justify-between w-full py-0">
-        {/* Logo and Category */}
-        <div className="flex gap-16 items-center lg:w-[30%]">
-          <div onClick={RefreshPage} className="flex items-center cursor-pointer">
-            <Image
-              unoptimized
-              width={80}
-              height={80}
-              className=" md:size-[50px] sm:w-[40px] w-[40px]"
-              src={logo}
-              alt="Logo"
-            />
-          </div>
-          {showCategory && <Category />}
-        </div>
+      <div className="bg-gray-100 sticky md:top-0 top-[44px]  z-[40] w-full ">
+        <div className="container sticky top-0 z-[40] flex-col hidden mb-3 border-b md:flex no-padding border-secondary">
+          <div className="container flex items-center justify-between w-full py-0">
+            {/* Logo and Category */}
+            <div className="flex gap-16 items-center lg:w-[30%]">
+              <div onClick={RefreshPage} className="flex items-center cursor-pointer">
+                <Image
+                  priority
+                  width={80}
+                  height={80}
+                  className=" md:size-[50px] sm:w-[40px] w-[40px]"
+                  src={logo}
+                  alt="Logo"
+                />
+              </div>
+              {showCategory && <Category />}
+            </div>
 
-        {/* Search Bar */}
-        <div className="hidden w-2/5 gap-5 p-2 md:flex">
-          <Search loading={loading} setLoading={setLoading} />
-        </div>
-     
-        {/* Navigation Icons */}
-        <nav className="flex items-center gap-3 lg:w-[30%] justify-end">
-          {/* Wishlist */}
-         <Link target="_blank" className="flex items-center gap-1 ml-3 text-lg font-semibold text-black" href="/shipping-rate"><IoIosCalculator />Shipping Rate</Link>
+            {/* Search Bar */}
+            <div className="hidden w-2/5 gap-5 p-2 md:flex">
+              <Search loading={loading} setLoading={setLoading} />
+            </div>
 
-          {/* <div className="relative">
+            {/* Navigation Icons */}
+            <nav className="flex items-center gap-3 lg:w-[30%] justify-end">
+              {/* Wishlist */}
+              <Link target="_blank" className="flex items-center gap-1 ml-3 text-lg font-semibold text-black" href="/shipping-rate"><IoIosCalculator />Shipping Rate</Link>
+
+              {/* <div className="relative">
             <Link href="/wishlist" className="text-2xl">
               <FaRegHeart className="font-semibold text-primary" />
             </Link>
@@ -129,10 +128,10 @@ const MiddleBar = () => {
               show={wishlist?.length > 0}
             />
           </div> */}
-          <WishlistModal/>
-            
-          {/* Cart */}
-          {/* <div className="relative">
+              <WishlistModal />
+
+              {/* Cart */}
+              {/* <div className="relative">
             <Link href="/cart" className="text-3xl">
               <BsCart2 className="font-semibold text-primary" />
             </Link>
@@ -142,43 +141,43 @@ const MiddleBar = () => {
             />
           </div> */}
 
-          <CartModal/>
+              <CartModal />
 
-          {/* User Dropdown */}
-          <div
-            // onMouseEnter={() => toggleDropdown(true)}
-            // onMouseLeave={() => toggleDropdown(false)}
-            ref={dropdownRef}
-            // onMouseLeave={() => toggleDropdown(false)}
-            className="relative mt-2"
-          >
-            <button className="p-4 -m-4" onClick={() => toggleDropdown(!dropdownOpen)}>
-              {user?.photoURL ? (
-                <Image
-                  src={user?.photoURL}
-                  alt="User"
-                  height={20}
-                  width={20}
-                  className="rounded-full text-primary size-6"
-                  priority
-                />
-              ) : (
-                <FaUserCircle className="text-primary size-6" />
-              )}
-            </button>
-            <UserDropdown dropdownOpen={dropdownOpen} handleLogout={handleLogout}  />
+              {/* User Dropdown */}
+              <div
+                // onMouseEnter={() => toggleDropdown(true)}
+                // onMouseLeave={() => toggleDropdown(false)}
+                ref={dropdownRef}
+                // onMouseLeave={() => toggleDropdown(false)}
+                className="relative mt-2"
+              >
+                <button className="p-4 -m-4" onClick={() => toggleDropdown(!dropdownOpen)}>
+                  {user?.photoURL ? (
+                    <Image
+                      src={user?.photoURL}
+                      alt="User"
+                      height={20}
+                      width={20}
+                      className="rounded-full text-primary size-6"
+                      priority
+                    />
+                  ) : (
+                    <FaUserCircle className="text-primary size-6" />
+                  )}
+                </button>
+                <UserDropdown dropdownOpen={dropdownOpen} handleLogout={handleLogout} />
+              </div>
+            </nav>
           </div>
-        </nav>
+
+        </div>
       </div>
 
-     </div>
-    </div>
-
-    <div className=" w-full gap-5 py-1 md:hidden container sticky top-[46px] z-[40] bg-white">
-          <Search loading={loading} setLoading={setLoading}/>
-        </div>
+      <div className=" w-full gap-5 py-1 md:hidden container sticky top-[46px] z-[40] bg-white">
+        <Search loading={loading} setLoading={setLoading} />
+      </div>
     </>
-    
+
   );
 };
 
