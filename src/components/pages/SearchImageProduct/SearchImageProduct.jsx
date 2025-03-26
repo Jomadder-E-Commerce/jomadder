@@ -156,6 +156,7 @@ const SearchImageProduct = () => {
 
   if (productsBySearch?.length === 0 && !isLoading) {
     router.push("/");
+
   }
 
   return (
