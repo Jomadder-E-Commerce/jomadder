@@ -11,7 +11,8 @@ const Products = () => {
     return (
         <div className="flex flex-col gap-4 container">
 
-            <CategoryProducts title='Watch' items={Watch[Math.floor(Math.random() * 10)].slice(0, 18)} />
+            <CategoryProducts title='Watch' items={Watch[1].slice(0, 18)} />
+            {/* <CategoryProducts title='Watch' items={Watch[Math.floor(Math.random() * 10)].slice(0, 18)} /> */}
             <CategoryProducts title='Jewelry' items={Jewelry[Math.floor(Math.random() * 10)].slice(0, 18)} />
             <CategoryProducts title='Home Decor' items={HomeDecor[Math.floor(Math.random() * 10)].slice(0, 18)} />
             <CategoryProducts title='Activewear' items={ActiveWear[Math.floor(Math.random() * 10)].slice(0, 18)} />

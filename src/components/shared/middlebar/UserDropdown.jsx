@@ -12,7 +12,7 @@ export const UserDropdown = ({
   // userRole,
   handleLogout,
 }) => {
-  const [user,setUser] = useState(null);
+  const [user, setUser] = useState(null);
 
   const [isMounted, setIsMounted] = useState(false);
 
@@ -21,21 +21,21 @@ export const UserDropdown = ({
     setIsMounted(true);
   }, []);
 
-  useEffect(()=>{
+  useEffect(() => {
     const user = getLocalStorage('user')
-    if(user){
+    if (user) {
       const parsedUser = JSON.parse(user)
       setUser(parsedUser)
     }
-    else{
+    else {
       setUser(null)
     }
-  },[dropdownOpen])
+  }, [dropdownOpen])
 
   if (!isMounted) {
     return null; // Prevent rendering on the server
   }
-  console.log("user",user)
+
   return (
     <div
       className={`absolute top-8 right-0 z-50 px-3 pb-3 pt-3 space-y-1 w-fit min-w-[170px] shadow-md bg-white text-primary border rounded-sm
@@ -52,7 +52,7 @@ export const UserDropdown = ({
       }
 
 
-      
+
       <Link
         href={user ?
           "/profile"

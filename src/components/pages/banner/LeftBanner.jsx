@@ -31,7 +31,7 @@ export default function LeftBanner({ isLoading, data }) {
         {data?.map((image, index) => (
           <SwiperSlide key={index}>
             <Image
-              unoptimized
+              priority
               height={500}
               width={1500}
               src={image?.bannerImage}

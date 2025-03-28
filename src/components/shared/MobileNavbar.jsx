@@ -52,7 +52,6 @@ const MobileNavbar = () => {
   };
 
 
-  console.log("hello data")
   return (
     <div className="relative ">
       {/* Bottom Fixed Navbar */}

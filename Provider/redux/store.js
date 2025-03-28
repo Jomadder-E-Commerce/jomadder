@@ -5,6 +5,7 @@ import { setupListeners } from "@reduxjs/toolkit/query";
 import counterSlice from "@/components/Redux/features/AllSlice/counterSlice"
 import authSlice from "@/components/Redux/features/AllSlice/authSlice"
 import checkoutSlice from "@/components/Redux/features/AllSlice/checkoutSlice"
+import searchByImageProductsSlice from "@/components/Redux/features/AllSlice/searchByImageSlice";
 
 export const store = configureStore({
   reducer: {
@@ -12,6 +13,7 @@ export const store = configureStore({
     counter: counterSlice,
     auth: authSlice,
     checkout: checkoutSlice,
+    searchByImageProducts: searchByImageProductsSlice,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(backendApi.middleware), 

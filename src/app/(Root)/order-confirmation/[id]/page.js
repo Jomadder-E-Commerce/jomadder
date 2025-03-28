@@ -45,14 +45,12 @@ const SkeletonOrderConfirmation = () => {
 };
 
 const Page = ({ params }) => {
-  console.log(params.id);
   const {
     data: OrderDetailsData,
     isLoading,
     isSuccess: orderIsSuccess,
     isFetching
   } = useGetProductDetailsQuery(params?.id);
-  console.log(OrderDetailsData, "OrderDetailsData");
 
   // Show skeleton while loading or fetching data
   if (isLoading) {
@@ -82,21 +80,21 @@ const Page = ({ params }) => {
             {/* {OrderDetailsData?.data?.status === "pending payment"
               ? "Your Payment is pending"
               : OrderDetailsData?.data?.status === "pending" && "Order Placed Successfully"} */}
-              Order Placed Successfully
+            Order Placed Successfully
           </h2>
           <p className="text-gray-500">Thanks for being with Jomadder</p>
 
 
           <div className="text-center my-5 flex justify-center">
-          <Link href="/">
-            <Button className="flex items-center">
-              Continue Shopping <ArrowRight className="ml-2" />
-            </Button>
-          </Link>
-        </div>
+            <Link href="/">
+              <Button className="flex items-center">
+                Continue Shopping <ArrowRight className="ml-2" />
+              </Button>
+            </Link>
+          </div>
         </div>
         {/* Continue Shopping Button */}
-      
+
       </div>
     </div>
   );

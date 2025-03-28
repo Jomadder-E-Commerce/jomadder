@@ -35,42 +35,42 @@ const AllProductPage = ({
           SHOWING RESULTS FOR {decodedString.toUpperCase()}
         </p>
         <div className="flex lg:flex-nowrap flex-wrap items-center justify-between gap-2 sm:justify-end">
-  <div className="flex flex-col w-full sm:w-auto">
-    <Select value={sort} onValueChange={handleSortChange}>
-      <SelectTrigger className="w-full sm:w-32">
-        <SelectValue placeholder="Sort Price" />
-      </SelectTrigger>
-      <SelectContent>
-        <SelectItem value="low-to-high">Low to High</SelectItem>
-        <SelectItem value="high-to-low">High to Low</SelectItem>
-        <SelectItem value="popular">Popular</SelectItem>
-      </SelectContent>
-    </Select>
-  </div>
-<div className="flex gap-3">
-<div className="flex items-center gap-2 w-full sm:w-auto">
-    <Input
-      placeholder="Min Price"
-      type="text"
-      ref={minPriceRef}
-      className="w-full py-2 sm:px-2 sm:w-24 px-2"
-    />
-    <span className="text-sm text-muted-foreground">-</span>
-    <Input
-      placeholder="Max Price"
-      type="text"
-      ref={maxPriceRef}
-      className="w-full py-2 sm:px-2 sm:w-24 px-2"
-    />
-  </div>
+          <div className="flex flex-col w-full sm:w-auto">
+            <Select value={sort} onValueChange={handleSortChange}>
+              <SelectTrigger className="w-full sm:w-32">
+                <SelectValue placeholder="Sort Price" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="low-to-high">Low to High</SelectItem>
+                <SelectItem value="high-to-low">High to Low</SelectItem>
+                <SelectItem value="popular">Popular</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
+          <div className="flex gap-3">
+            <div className="flex items-center gap-2 w-full sm:w-auto">
+              <Input
+                placeholder="Min Price"
+                type="text"
+                ref={minPriceRef}
+                className="w-full py-2 sm:px-2 sm:w-24 px-2"
+              />
+              <span className="text-sm text-muted-foreground">-</span>
+              <Input
+                placeholder="Max Price"
+                type="text"
+                ref={maxPriceRef}
+                className="w-full py-2 sm:px-2 sm:w-24 px-2"
+              />
+            </div>
 
-  <Button type="submit" className="md:w-full sm:w-auto h-9 sm:text-base text-sm px-2 w-min">
-    Filter
-  </Button>
+            <Button type="submit" className="md:w-full sm:w-auto h-9 sm:text-base text-sm px-2 w-min">
+              Filter
+            </Button>
 
-</div>
+          </div>
 
-</div>
+        </div>
 
       </form>
 
@@ -100,9 +100,8 @@ const AllProductPage = ({
         <button
           onClick={() => handlePageChange(Math.max(currentPage - 1, 1))}
           disabled={currentPage === 1}
-          className={`px-4 py-2 border rounded-md ${
-            currentPage === 1 ? "bg-gray-200" : "bg-white"
-          }`}
+          className={`px-4 py-2 border rounded-md ${currentPage === 1 ? "bg-gray-200" : "bg-white"
+            }`}
         >
           Previous
         </button>

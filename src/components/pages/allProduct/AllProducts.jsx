@@ -21,17 +21,16 @@ const AllProducts = ({ categories }) => {
   const maxPriceRef = useRef(null);
 
   // Fetch data based on filters and sorting
-  const { data, isLoading ,isFetching } = useGetProductsQuery({
+  const { data, isLoading, isFetching } = useGetProductsQuery({
     category: categories,
     page: currentPage,
     size: perPage,
     price_start: price_start !== null ? price_start / 17 : undefined,
     price_end: price_end !== null ? price_end / 17 : undefined,
-    sort: sort || 'default', 
+    sort: sort || 'default',
   });
   const products = data?.data?.data?.items;
   // console.log(products)
-  console.log(isLoading)
   // Update items per page dynamically based on screen width
   useEffect(() => {
     const updateItemsPerPage = () =>
@@ -44,12 +43,12 @@ const AllProducts = ({ categories }) => {
   // Update URL parameters dynamically
   const updateURLParams = (params) => {
     const newParams = new URLSearchParams();
-    newParams.set("q",categories)
+    newParams.set("q", categories)
     if (params.page) newParams.set("page", params.page);
     if (params.minPrice) newParams.set("minPrice", params.minPrice);
     if (params.maxPrice) newParams.set("maxPrice", params.maxPrice);
     if (params.sort) newParams.set("sort", params.sort);
-    
+
     router.replace(`${window.location.pathname}?${newParams.toString()}`);
     // window.scrollTo({ top: 0, behavior: "smooth" }); // Smooth scroll to top
   };
@@ -67,7 +66,6 @@ const AllProducts = ({ categories }) => {
 
   // Handle sorting change
   const handleSortChange = (value) => {
-    console.log(value)
     setSort(value);
     updateURLParams({
       page: 1,
@@ -99,37 +97,36 @@ const AllProducts = ({ categories }) => {
 
   // Handle page change
   const handlePageChange = (newPage) => {
-    console.log(Math.round(Number(price_start)));
-  
+
     // Update the current page state
     setCurrentPage(newPage);
-  
+
     // Log the computed parameters
-    console.log({
-      page: newPage,
-      minPrice: price_start ? Number(price_start) : 0,
-      maxPrice: price_end ? Number(price_end) : 0,
-      sort,
-    });
-  
+    // console.log({
+    //   page: newPage,
+    //   minPrice: price_start ? Number(price_start) : 0,
+    //   maxPrice: price_end ? Number(price_end) : 0,
+    //   sort,
+    // });
+
     // Construct the new parameters object
     const newObj = { page: newPage };
-  
+
     if (price_end != null) {
-      newObj.maxPrice = Number(price_end) ;
+      newObj.maxPrice = Number(price_end);
     }
-  
+
     if (price_start != null) {
-      newObj.minPrice = Number(price_start) ;
+      newObj.minPrice = Number(price_start);
     }
-  
+
     // Update the URL parameters
     updateURLParams({
       ...newObj,
       sort,
     });
   };
-  
+
 
   return (
     <div className="container relative w-full gap-3 mx-auto mt-5 lg:flex">

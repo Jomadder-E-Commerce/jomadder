@@ -55,12 +55,11 @@ const SpeedDial = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  
+
   useEffect(() => {
-    console.log("Selected QR Updated:", selectedQR);
   }, [selectedQR]);
 
- 
+
   const svgs = [
     {
       svg: <Image src={weChatImg} alt="Wechat" className="rounded-full bg-none" width={32} height={32} />,
@@ -69,14 +68,14 @@ const SpeedDial = () => {
     {
       svg: <Image src={whatsAppImg} alt="Whatsapp" className="rounded-full bg-none" width={32} height={32} />,
       qrCode: "whatsapp",
-      link:"https://wa.me/8801879314050"
+      link: "https://wa.me/8801879314050"
 
     },
 
     {
       svg: <Image src={messengerImg} alt="Messenger" className="rounded-full bg-none" width={32} height={32} />,
       qrCode: "messenger",
-      link:"https://m.me/parceltradeinternational"
+      link: "https://m.me/parceltradeinternational"
     }
     // {
     //   svg: <Image src={Telegram.src} alt="Telegram" width={24} height={24} />,
@@ -115,33 +114,33 @@ const SpeedDial = () => {
         )}>
           {svgs.map((svg, idx) => (
             <div
-            key={idx}
-            className={cn(
-              "cursor-pointer rotate-180 rounded-full",
-              "scale-0 opacity-0 duration-300 shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)]",
+              key={idx}
+              className={cn(
+                "cursor-pointer rotate-180 rounded-full",
+                "scale-0 opacity-0 duration-300 shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)]",
+                {
+                  "scale-100 opacity-100": isOpen || selectedQR,
+                  "delay-100": idx === 0 && isOpen,
+                  "delay-200": idx === 1 && isOpen,
+                  "delay-300": idx === 2 && isOpen,
+                }
+              )}
+            >
               {
-                "scale-100 opacity-100": isOpen || selectedQR,
-                "delay-100": idx === 0 && isOpen,
-                "delay-200": idx === 1 && isOpen,
-                "delay-300": idx === 2 && isOpen,
+                svg.qrCode == 'wechat' ? <div
+                  onClick={() => setSelectedQR(svg.qrCode)}
+                  className="flex items-center justify-center w-full h-full duration-300 rounded-full"
+                >
+                  {svg.svg}
+                </div> : <Link
+                  href={svg.link}
+                  target="_blank"
+                  className="flex items-center justify-center w-full h-full duration-300 rounded-full "
+                >
+                  {svg.svg}
+                </Link>
               }
-            )}
-          >
-           {
-            svg.qrCode == 'wechat' ?   <div
-            onClick={() => setSelectedQR(svg.qrCode)}
-            className="flex items-center justify-center w-full h-full duration-300 rounded-full"
-          >
-            {svg.svg}
-          </div>:   <Link
-                href={svg.link}
-                target="_blank"
-                    className="flex items-center justify-center w-full h-full duration-300 rounded-full "
-              >
-                {svg.svg}
-              </Link>
-           }
-            
+
             </div>
           ))}
         </div>
@@ -150,44 +149,44 @@ const SpeedDial = () => {
       {/* Preview QR */}
       {selectedQR === 'wechat' && (
         <div
-        ref={qrPreviewRef}
-        className="absolute rotate-180 top-20 bg-white left-5 md:left-8 text-nowrap md:h-[220px] h-[210px] md:w-[220px] w-[210px] drop-shadow-sm shadow-lg rounded-lg"
-      >
-        <h2 className="text-[15px] px-3 pt-1 relative top-1 flex items-center">
-          ID: disalamin94
-          <FaCopy
-            onClick={handleCopy}
+          ref={qrPreviewRef}
+          className="absolute rotate-180 top-20 bg-white left-5 md:left-8 text-nowrap md:h-[220px] h-[210px] md:w-[220px] w-[210px] drop-shadow-sm shadow-lg rounded-lg"
+        >
+          <h2 className="text-[15px] px-3 pt-1 relative top-1 flex items-center">
+            ID: disalamin94
+            <FaCopy
+              onClick={handleCopy}
               className="ml-2 text-gray-500 cursor-pointer hover:text-gray-700"
-            title="Copy ID"
-          /> {copied && (
-            <span className="text-green-500 text-[12px] pl-2">
-              Copied!
-            </span>
-          )}
-        </h2>
-        
-        {/* <Image src={QR} alt="" height={500} width={500} className=""/> */}
-        <Image
-          src={WechatQR}
-          height={400}
-          width={400}
-          alt="Whatsapp QR"
-          className="rounded-lg"
-        />
-      </div>
+              title="Copy ID"
+            /> {copied && (
+              <span className="text-green-500 text-[12px] pl-2">
+                Copied!
+              </span>
+            )}
+          </h2>
+
+          {/* <Image src={QR} alt="" height={500} width={500} className=""/> */}
+          <Image
+            src={WechatQR}
+            height={400}
+            width={400}
+            alt="Whatsapp QR"
+            className="rounded-lg"
+          />
+        </div>
       )}
       {selectedQR === 'whatsapp' && (
         <div
           ref={qrPreviewRef}
           className="absolute rotate-180 top-[65px] left-5 md:left-8 text-nowrap h-[300px] w-[300px] drop-shadow-sm shadow-lg rounded-lg border"
         >
-          
+
           {/* <Image src={QR} alt="" height={500} width={500} className=""/> */}
           <Image src={WhatsappQR} height={400} width={400} alt="Whatsapp QR" className="rounded-lg" />
-          
+
         </div>
       )}
-      
+
     </div>
   );
 };

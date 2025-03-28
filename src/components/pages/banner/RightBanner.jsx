@@ -14,10 +14,9 @@ import "./BannerSlider.css";
 import { Pagination, Autoplay } from "swiper/modules";
 import Image from "next/image";
 
-export default function RightBanner({isLoading,data}) {
+export default function RightBanner({ isLoading, data }) {
   // const {data} = useGetTosideBannerQuery();
   // const rightImage1 = data?.data[0]?.bannerImage;
-console.log(data?.data)
   return (
     <>
       <Swiper
@@ -31,7 +30,7 @@ console.log(data?.data)
         }}
         modules={[Pagination, Autoplay]}
         className="w-full h-full mySwiper"
-        // style={{ position: 'relative' }} // Lower z-index than the navigation
+      // style={{ position: 'relative' }} // Lower z-index than the navigation
       >
         {data?.map((image, index) => (
           <SwiperSlide key={index}>

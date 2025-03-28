@@ -145,6 +145,6 @@ const baseQueryWithReauthHelper = async (args, api, extraOptions, baseQuery) => 
 export const backendApi = createApi({
   reducerPath: 'backendApi',
   baseQuery: baseQueryWithReauthBackend,
-  tagTypes: ["Wishlist", "Banner", 'ProductList', 'Cart', 'Category', 'Coupon', 'Transaction', 'translation', 'Checkout', 'Point', 'Shipment', 'Support', 'User', 'Pricing','deposit'],
+  tagTypes: ["Wishlist", "Banner", 'ProductList', 'Cart', 'Category', 'Coupon', 'Transaction', 'translation', 'Checkout', 'Point', 'Shipment', 'Support', 'User', 'Pricing', 'deposit'],
   endpoints: () => ({}),
 });
