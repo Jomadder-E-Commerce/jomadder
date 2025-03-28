@@ -1,6 +1,6 @@
-import { frontendApi } from "@/components/Redux/api/baseApi";
+import { backendApi } from "@/components/Redux/api/baseApi";
 
-const wishlistApi = frontendApi.injectEndpoints({
+const wishlistApi = backendApi.injectEndpoints({
     endpoints:(build)=>({
         postWishlist: build.mutation({
             query: (body) => ({

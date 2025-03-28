@@ -1,6 +1,6 @@
-import {  frontendApi } from "@/components/Redux/api/baseApi";
+import { backendApi } from "@/components/Redux/api/baseApi";
 
-const cartApi = frontendApi.injectEndpoints({
+const cartApi = backendApi.injectEndpoints({
   endpoints: (build) => ({
     postCart: build.mutation({
       query: (body) => ({

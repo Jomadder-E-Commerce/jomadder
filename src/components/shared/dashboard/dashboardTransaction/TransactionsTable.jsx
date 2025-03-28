@@ -25,7 +25,7 @@ const TransactionsTable = ({ data, loading, columns }) => {
     } else if (cleanedStatus === "payment reviewing") {
       return "bg-blue-400 text-white"; 
     } else {
-      return "bg-gray-300 text-black";
+      return "bg-gray-300 text-gray";
     }
   };
 
@@ -64,6 +64,19 @@ const TransactionsTable = ({ data, loading, columns }) => {
                 <TableCell>{item?.paidBy ?? "payment"}</TableCell>
                 <TableCell>{item?.charge ? item?.amount + item?.charge : item?.amount}</TableCell>
                 {/* <TableCell>{item?.charge || 0}</TableCell> */}
+                <TableCell className="cursor-pointer">
+                <Link href={`/profile/order-details/${item.orderId}`}>
+                 {item?.orderId}
+                  </Link>
+                
+                </TableCell>               
+                {/* <TableCell>
+                  <Link href={`/profile/order-details/${item.orderId}`}>
+                    <button className="px-2 text-nowrap py-1 text-gray-500 transition border rounded-md">
+                      See Details
+                    </button>
+                  </Link>
+                </TableCell> */}
                 <TableCell>
                   <button
                     className={`py-1 px-3 rounded ${getButtonClass(
@@ -73,19 +86,13 @@ const TransactionsTable = ({ data, loading, columns }) => {
                     {item.status}
                   </button>
                 </TableCell>
-                <TableCell>
-                  <Link href={`/profile/order-details/${item.orderId}`}>
-                    <button className="px-2 text-nowrap py-1 text-gray-500 transition border rounded-md">
-                      Order Details
-                    </button>
-                  </Link>
-                </TableCell>
+
                 <TableCell>
                   <button
                     onClick={() => handleViewDetails(item.slip)}
                     className="px-2 py-1 text-nowrap text-gray-500 transition border rounded-md"
                   >
-                    View Details
+                    View Slip
                   </button>
                 </TableCell>
               </TableRow>
@@ -107,13 +114,50 @@ const TransactionsTable = ({ data, loading, columns }) => {
             ) : (
               <p className="text-center text-gray-500">No Slip Image</p>
             )}</div>
-            
+            <div className="flex justify-between items-center ">
+
             <button
+        onClick={async () => {
+          if (!slipImage) return;
+          
+          try {
+            // Fetch the image as a blob
+            const response = await fetch(slipImage);
+            const blob = await response.blob();
+            
+            // Create a blob URL and trigger download
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'slip.jpg'; // Set the filename
+            document.body.appendChild(a);
+            a.click();
+            
+            // Clean up
+            window.URL.revokeObjectURL(url);
+            document.body.removeChild(a);
+          } catch (error) {
+            console.error('Download failed:', error);
+            alert('Failed to download slip. Please try again.');
+          }
+        }}
+        disabled={!slipImage}
+        className={`px-4 py-2 text-white rounded-md ${
+          slipImage ? 'bg-green-500 hover:bg-green-600' : 'bg-gray-400 cursor-not-allowed'
+        }`}
+      >
+        Download Slip
+      </button>
+<button
               onClick={closeModal}
               className="mt-6 px-4 py-2 bg-red-500 text-white rounded-md"
             >
-              Cancel
+              Close
             </button>
+
+            </div>
+            
+
           </div>
         </div>
       )}

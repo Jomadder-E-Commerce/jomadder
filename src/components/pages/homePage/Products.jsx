@@ -7,6 +7,7 @@ import { HomeDecor } from '@/data/HomeDecor';
 import { ActiveWear } from '@/data/ActiveWear';
 
 const Products = () => {
+    // console.log("Watch",Watch, "Jewelry",Jewelry, "HomeDecor",HomeDecor, "ActiveWear",ActiveWear)
     return (
         <div className="flex flex-col gap-4 container">
 
