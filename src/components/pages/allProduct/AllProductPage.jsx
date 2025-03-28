@@ -77,7 +77,7 @@ const AllProductPage = ({
       {/* Product List */}
       {isLoading ? (
         <AllproductSkeleton />
-      ) : products?.length === 0 ? (
+      ) : (!isLoading && products?.length === 0) ? (
         <div className="text-red-500 flex justify-center items-center h-[320px]">
           No products found. Please try again.
         </div>

@@ -11,6 +11,8 @@ import { compressImage } from "@/utils/compressImageFile";
 import { useDispatch } from "react-redux";
 import { setSearchByImageProducts } from "@/components/Redux/features/AllSlice/searchByImageSlice";
 import { setLocalStorage } from "../LocalStorage/LocalStorage";
+import SearchLoader from "../loader/SearchLoader";
+import { Sparkles } from "lucide-react";
 
 const textList = [
   "Search by link",
@@ -19,10 +21,7 @@ const textList = [
 ];
 
 const Search = ({ loading, setLoading }) => {
-  const path = usePathname();
-
   const [placeholder, setPlaceholder] = useState(0);
-  // const [loading, setLoading] = useState(false);
   const [text, setText] = useState("");
   const [findProductByImage] = useFindProductByImageMutation();
 
@@ -46,6 +45,7 @@ const Search = ({ loading, setLoading }) => {
         const formData = new FormData();
         formData.append("file", compressedFile);
 
+
         const data = await findProductByImage(formData).unwrap();
 
         const imageUri = data?.data?.imageUri?.data?.image_url;
@@ -56,11 +56,11 @@ const Search = ({ loading, setLoading }) => {
 
         dispatch(setSearchByImageProducts(data?.data?.data?.data?.items || []));
 
+        router.push(`/searchByImage`);
 
         // const encodeUri = encodeURIComponent(convertedImage);
 
         // router.push(`/searchImage/${encodeUri}`);
-        router.push(`/searchByImage`);
         setLoading(false);
       }
     } catch (err) {
@@ -116,12 +116,13 @@ const Search = ({ loading, setLoading }) => {
 
   return (
     <>
-      {loading && (
-        <div className="fixed inset-0 z-[300] h-[100vh] flex items-center justify-center bg-black bg-opacity-70">
-          {/* A simple spinner using Tailwind CSS */}
-          <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-white"></div>
+      {/* {loading && (
+        <div className="fixed inset-0 z-[40] flex items-center justify-center bg-gray-100">
+
+          <SearchLoader />
+
         </div>
-      )}
+      )} */}
       <div className="flex flex-row items-center w-full">
         <div className="w-full relative transition-all duration-300 flex items-center group border-[2px] hover:border-primary focus-within:border-primary bg-white rounded-md rounded-r-none px-3 gap-2 border-r-0">
           <div
@@ -165,17 +166,19 @@ const Search = ({ loading, setLoading }) => {
           </div>
         </div>
 
-        <div
+        <button
           onClick={CheckingDataType}
-          className={`cursor-pointer bg-primary rounded-md rounded-l-none border-2 text-white ${loading ? "px-2 py-2" : "px-3 py-3"
-            } flex items-center border-primary`}
+          className={`cursor-pointer bg-primary rounded-md rounded-l-none border-2 text-white  flex items-center border-primary ${loading ? "px-2 py-2" : "px-3 py-3"} hover:bg-sky-500 hover:border-sky-500 duration-200`}
         >
           {loading ? (
             <div className="w-6 h-6 animate-[spin_2s_linear_infinite] rounded-full border-4 border-dashed border-white"></div>
           ) : (
-            <FaSearch />
+            <span className="flex items-center justify-center gap-1">
+              <FaSearch />
+              <Sparkles size={16} />
+            </span>
           )}
-        </div>
+        </button>
       </div>
 
     </>

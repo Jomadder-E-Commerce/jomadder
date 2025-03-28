@@ -1,5 +1,7 @@
 "use client";
 import logo from "/src/assets/logo/logo2.png";
+import sideLogo from "@/assets/logo/side-logo.png";
+import jomadderLogo from "../../../assets/logo/jomadder-logo.jpeg";
 import { FaRegHeart, FaUserCircle } from "react-icons/fa";
 
 import Link from "next/link";
@@ -23,6 +25,7 @@ import { getDataFromLocalStorage } from "@/utils/localstorage";
 import CartModal from "../modal/CartModal";
 import WishlistModal from "../modal/WishlistModal";
 import { toast } from "react-toastify";
+import SearchLoader from "../loader/SearchLoader";
 
 const MiddleBar = () => {
   const { userRole, user } = useUser();
@@ -86,24 +89,46 @@ const MiddleBar = () => {
     <>
 
       {loading && (
-        <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black bg-opacity-70">
-          {/* A simple spinner using Tailwind CSS */}
-          <div className="w-16 h-16 border-t-4 border-b-4 border-white rounded-full animate-spin"></div>
+        <div className="fixed inset-0 z-[40] flex items-center justify-center bg-white bg-opacity-80">
+          {/* <div className="fixed inset-0 z-[40] flex items-center justify-center bg-black bg-opacity-70"> */}
+
+          <SearchLoader />
+
+          {/* <div className="mt-6 flex items-center space-x-2">
+            <div className="w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+            <span className="text-blue-500 font-medium">Searching...</span>
+          </div> */}
+
+          {/* <div class="text-center">
+            <div
+              class="w-16 h-16 border-4 border-dashed rounded-full animate-spin border-yellow-500 mx-auto"
+            ></div>
+          </div> */}
+
+          {/* <div className="w-16 h-16 border-t-4 border-b-4 border-white rounded-full animate-spin"></div> */}
         </div>
       )}
       <div className="bg-gray-100 sticky md:top-0 top-[44px]  z-[40] w-full ">
         <div className="container sticky top-0 z-[40] flex-col hidden mb-3 border-b md:flex no-padding border-secondary">
           <div className="container flex items-center justify-between w-full py-0">
             {/* Logo and Category */}
-            <div className="flex gap-16 items-center lg:w-[30%]">
-              <div onClick={RefreshPage} className="flex items-center cursor-pointer">
+            <div className="flex gap-16 items-center lg:w-[40%]">
+              <div onClick={RefreshPage} className="flex items-center gap-1 cursor-pointer">
                 <Image
                   priority
-                  width={80}
-                  height={80}
-                  className=" md:size-[50px] sm:w-[40px] w-[40px]"
+                  width={60}
+                  height={60}
+                  className="md:size-[40px] sm:w-[40px] w-[40px]"
                   src={logo}
                   alt="Logo"
+                />
+                <Image
+                  priority
+                  width={180}
+                  height={120}
+                  className=" "
+                  src={jomadderLogo}
+                  alt="Side Logo"
                 />
               </div>
               {showCategory && <Category />}
