@@ -154,9 +154,8 @@ const SearchImageProduct = () => {
     handleSearchQuery("sort", sort);
   }
 
-  if (productsBySearch?.length === 0 && !isLoading) {
+  if (productsBySearch?.length === 0 && !isLoading && !isLoadingForImageUri && (!imageUri || searchParams?.size === 0)) {
     router.push("/");
-
   }
 
   return (

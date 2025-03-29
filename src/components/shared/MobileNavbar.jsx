@@ -78,15 +78,15 @@ const MobileNavbar = () => {
         {/* Center Logo */}
         <div
           onClick={RefreshPage}
-          className="absolute  transform -translate-x-1/2 bg-white rounded-full shadow-lg left-1/2 -top-6 p-1"
+          className="absolute transform -translate-x-1/2 bg-white rounded-full shadow-lg left-1/2 p-1"
         >
           <Image
             unoptimized
             src={logo}
-            height={70}
-            width={70}
+            height={50}
+            width={50}
             alt="Logo"
-            className=" xsm:size-[70px] size-[50px]"
+            className="size-[50px]"
           />
         </div>
 
