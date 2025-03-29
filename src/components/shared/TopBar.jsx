@@ -20,6 +20,7 @@ import { MdOutlineSpaceDashboard } from "react-icons/md";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import logo from "/src/assets/logo/logo2.png";
+import sideLogo from "../../assets/logo/side-logo.png";
 import { UserDropdown } from "./middlebar/UserDropdown";
 import { ClipboardList } from "lucide-react";
 import { toast } from "react-toastify";
@@ -130,14 +131,24 @@ const TopBar = () => {
             </div>
           </div>
           <div className="flex items-center justify-between container w-full md:hidden">
-            <div onClick={RefreshPage} > <Image
-              unoptimized
-              width={50}
-              height={50}
-              className="size-[35px] sm:size-[50px] flex items-center ju"
-              src={logo}
-              alt="Logo"
-            /></div>
+            <div onClick={RefreshPage} className="flex items-center justify-center gap-1" >
+              <Image
+                priority
+                width={50}
+                height={50}
+                className="size-[35px] sm:size-[50px] flex items-center ju"
+                src={logo}
+                alt="Logo"
+              />
+              <Image
+                priority
+                width={200}
+                height={100}
+                className="w-[130px] flex items-center ju"
+                src={sideLogo}
+                alt="Logo"
+              />
+            </div>
 
             <div className="flex gap-4 items-center ">
               <Link className="text-white" href="/profile/order" >
