@@ -1,28 +1,39 @@
 "use client"
 
+import { isObject } from "lodash";
+
 export const setLocalStorage = (key, value) => {
-  if (typeof window !== 'undefined') { 
-    if (typeof value === 'object') {
-      localStorage.setItem(key, JSON.stringify(value));
+  const val = !value ? null : value;
+  if (typeof window !== 'undefined') {
+    if (typeof val === 'object') {
+      localStorage.setItem(key, JSON.stringify(val));
     } else {
-      localStorage.setItem(key, value);
+      localStorage.setItem(key, val);
     }
   }
 };
 
 export const getLocalStorage = (key) => {
-  if (typeof window !== 'undefined') { 
+  if (typeof window !== 'undefined') {
     const value = localStorage.getItem(key);
-    return value ? value : null;
+    // const val = !value _. ? null : value;
+    // _.isObject(null)
+    // console.log(isObject(value));
+    if (value && value !== "undefined" && value !== 'null') {
+      return value;
+    } else {
+      return null;
+    }
   }
-  return null; 
+  return null;
 };
 
 
 export const getuserStorage = (key) => {
-  if (typeof window !== 'undefined') { 
+  if (typeof window !== 'undefined') {
     const value = localStorage.getItem(key);
-    return value ? JSON.parse(value) : null;
+    const val = !value ? null : value;
+    return val ? JSON.parse(value) : null;
   }
   return null;
 };

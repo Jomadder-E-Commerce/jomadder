@@ -55,7 +55,7 @@ const SearchImageProduct = () => {
 
 
 
-  const { data: imageUriData, isLoading: isLoadingForImageUri, isFetching } = useGetProductsByImageUriQuery(
+  const { data: imageUriData, isLoading: isLoadingForImageUri, isFetching, isError } = useGetProductsByImageUriQuery(
     {
       image_uri: encodeURIComponent(imageUri),
       query: Object.fromEntries(searchParams?.entries() || [])

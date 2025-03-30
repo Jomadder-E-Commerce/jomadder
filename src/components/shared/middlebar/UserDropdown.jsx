@@ -5,6 +5,7 @@ import { GoPerson } from "react-icons/go";
 import { MdOutlineSpaceDashboard } from "react-icons/md";
 import useUser from "@/hooks/useUser";
 import { getLocalStorage } from "../LocalStorage/LocalStorage";
+import { isObject } from "lodash";
 
 export const UserDropdown = ({
   dropdownOpen,
