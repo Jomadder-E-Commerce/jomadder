@@ -79,8 +79,8 @@ const TopBar = () => {
           <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-white"></div>
         </div>
       )}
-      <div className="bg-primary md:relative sticky top-0 z-50 sm:h-[40px] h-[45px] flex items-center">
-        <div className="z-50 w-full md:py-3  md:bg-primary  text-primary border-b-2 md:border-none border-primary container no-padding ">
+      <div className="bg-primary md:relative sticky top-0 z-40 sm:h-[40px] h-[45px] flex items-center">
+        <div className="w-full md:py-3 text-primary border-b-2 md:border-none border-primary container no-padding ">
           <div className="md:flex hidden items-center  justify-between gap-4 container no-padding">
             <p className="block text-sm text-white">
               Welcome to Jomadder, Explore your best experience

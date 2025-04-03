@@ -89,7 +89,7 @@ const MiddleBar = () => {
     <>
 
       {loading && (
-        <div className="fixed inset-0 z-[40] flex items-center justify-center bg-white bg-opacity-80">
+        <div className="fixed inset-0 z-30 flex items-center justify-center bg-white bg-opacity-80">
           {/* <div className="fixed inset-0 z-[40] flex items-center justify-center bg-black bg-opacity-70"> */}
 
           <SearchLoader />

@@ -27,10 +27,10 @@ const WishlistModal = () => {
 
         // Set initial size
         handleResize();
-        
+
         // Add event listener
         window.addEventListener('resize', handleResize);
-        
+
         // Cleanup
         return () => window.removeEventListener('resize', handleResize);
     }, []);
@@ -42,7 +42,7 @@ const WishlistModal = () => {
     };
 
     return (
-        <>
+        <div className='z-[100]'>
             <div>
                 {/* Wishlist Button */}
                 <div className="md:block hidden relative ">
@@ -58,11 +58,11 @@ const WishlistModal = () => {
                     <div onClick={GoOpenModal}>
                         <FaRegHeart className="md:text-2xl text-lg" />
                         {
-                            wishlist?.length  ? <span className="absolute -top-1 right-0 text-white text-center h-4 font-medium bg-red-500 rounded-full  px-1 text-xs">
-                        {wishlist?.length >= 10 ? "9+": wishlist?.length}
-                        </span>:""
+                            wishlist?.length ? <span className="absolute -top-1 right-0 text-white text-center h-4 font-medium bg-red-500 rounded-full  px-1 text-xs">
+                                {wishlist?.length >= 10 ? "9+" : wishlist?.length}
+                            </span> : ""
                         }
-                       
+
                     </div>
                     <h3 className="text-[11px] font-medium">Wishlist</h3>
                 </div>
@@ -75,14 +75,14 @@ const WishlistModal = () => {
                 size={drawerSize}
                 style={{ zIndex: 9999 }} // Ensure drawer is on top
             >
-                <div className="flex h-full w-full flex-col justify-between bg-white pb-10 drop-shadow-sm overflow-y-auto ">
-                    <X onClick={() => { setOpenModal(false) }} className='absolute top-5 right-3 cursor-pointer text-black'/>
+                <div className="flex h-full w-full flex-col justify-between bg-white pb-10 drop-shadow-sm overflow-y-auto z-[100]">
+                    <X onClick={() => { setOpenModal(false) }} className='absolute top-5 right-3 cursor-pointer text-black' />
                     <div className="mt-8">
-                        <Wishlist setOpenModal={setOpenModal} />    
+                        <Wishlist setOpenModal={setOpenModal} />
                     </div>
                 </div>
             </Drawer>
-        </>
+        </div>
     );
 };
 
