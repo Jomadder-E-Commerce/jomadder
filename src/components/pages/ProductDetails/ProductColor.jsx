@@ -16,7 +16,7 @@ const ProductColor = ({
   adding,
   setAdding,
 }) => {
-const [copy,setCopy] = useState(false)
+  const [copy, setCopy] = useState(false)
 
   const handleShare = async () => {
     if (navigator.share) {
@@ -48,19 +48,19 @@ const [copy,setCopy] = useState(false)
       {data ? (
         <div>
 
-         <h1 className="2xl:text-lg md:text-sm text-sm">
-          Product by : {" "}
-          {/* <TranslateText text={translatedData}>
+          <h1 className="2xl:text-lg md:text-sm text-sm">
+            Color : {" "}
+            {/* <TranslateText text={translatedData}>
             {(translated) => <>  {translated}</>}
           </TranslateText>
           :
           <TranslateText text={translatedName}>
             {(translated) => <>  {translated}</>}
           </TranslateText>{" "} */}
-           {selected?.name} 
-        </h1>  
+            {selected?.name}
+          </h1>
         </div>
-       
+
       ) : (
         ""
       )}
