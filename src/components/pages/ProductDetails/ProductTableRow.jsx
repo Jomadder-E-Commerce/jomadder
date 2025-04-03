@@ -125,7 +125,7 @@ const ProductTableRow = ({ currentSku, item, productSku, addToCart, adding, setA
             type="text"
             value={inputValue}
             onChange={handleInputChange}
-            className="sm:px-2 px-1 py-2 border text-center focus:outline-none w-[50px]"
+            className="sm:px-2 px-1 py-2 border-y text-center focus:outline-none w-[50px]"
           />
           <button
             onClick={() => handleButtonChange(1)}

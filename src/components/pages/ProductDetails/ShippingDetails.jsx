@@ -78,7 +78,7 @@ const ShippingDetails = ({
             />
           </TableBody>
         </Table>
-        <h2 className="text-sm px-4 text-red-500 w-full flex items-center gap-1 relative group">
+        <h2 className="text-sm px-4 text-red-500 max-w-max mx-auto flex items-center gap-1 relative group">
           Shipping cost will be added later
           <FaEye className="cursor-pointer" />
           <div className="absolute bottom-full right-0 transform -translate-x-1/2 mb-2 p-2 text-xs bg-white text-black rounded shadow-md hidden group-hover:block">
