@@ -33,21 +33,24 @@ export default function ProductDetailsTable({
   return (
     <div className="overflow-y-auto sm:max-h-[340px] max-h-[270px] 2xl:max-w-[500px] md:max-w-[400px] mt-4 border border-gray-200">
       <Table className="  w-full rounded-lg  ">
-      <TableHeader className="border w-full sticky top-0 bg-white z-10">
-  <TableRow className="bg-white rounded-t-xl sticky top-0">
-    {size && (
-      <TableCell className="font-semibold text-black text-center text-sm sticky top-0 bg-white z-10">
-        {size}
-      </TableCell>
-    )}
-    <TableCell className="font-semibold text-black text-center sticky top-0 bg-white z-10">
-      Price
-    </TableCell>
-    <TableCell className="font-semibold text-black text-center sticky top-0 bg-white z-10">
-      Quantity
-    </TableCell>
-  </TableRow>
-</TableHeader>
+        <TableHeader className="border w-full sticky top-0 bg-white z-10">
+          <TableRow className="bg-white rounded-t-xl sticky top-0">
+            {size && (
+              <TableCell className="font-semibold text-black text-center text-sm sticky top-0 bg-white z-10">
+                {size}
+              </TableCell>
+            )}
+            <TableCell className="font-semibold text-black text-center sticky top-0 bg-white z-10">
+              Price
+            </TableCell>
+            <TableCell className="font-semibold text-black text-center sticky top-0 bg-white z-10">
+              Stock
+            </TableCell>
+            <TableCell className="font-semibold text-black text-center sticky top-0 bg-white z-10">
+              Quantity
+            </TableCell>
+          </TableRow>
+        </TableHeader>
 
         <TableBody className="">
           {pricingSku.map((item, index) => (

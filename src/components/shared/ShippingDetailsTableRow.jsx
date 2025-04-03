@@ -16,18 +16,20 @@ const ShippingDetailsTableRow = ({
   return (
     <TableRow className={cn("", className)}>
       {
-        title == "Total" ?  <>
-        <TableCell className="font-bold w-[60%] py-3">{title}</TableCell>
-        <TableCell className="text-right font-bold py-3">
-          <div>৳ {value} </div>
-        </TableCell>
-        </>  : <>
-        <TableCell className="font-medium w-[60%] py-3">{title}</TableCell>
-        <TableCell className="text-right py-3">
-          <div>৳ {value} </div>
-        </TableCell></>
+        title == "Total" ? <>
+          <TableCell className="font-bold w-[60%] py-3">
+            {title}
+          </TableCell>
+          <TableCell className="text-right font-bold py-3">
+            <div>৳ {value} </div>
+          </TableCell>
+        </> : <>
+          <TableCell className="font-medium w-[60%] py-3">{title}</TableCell>
+          <TableCell className="text-right py-3">
+            <div>৳ {value} </div>
+          </TableCell></>
       }
-    
+
     </TableRow>
   );
 };
