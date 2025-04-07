@@ -19,7 +19,7 @@ const OrdersTable = ({ data, user, loading, columns }) => {
 
   function getStatusClass(status) {
     const cleanedStatus = status ? status.trim().toLowerCase() : "";
-  
+
     switch (cleanedStatus) {
       case "payment reviewing":
         return "bg-blue-400 text-white";
@@ -73,7 +73,6 @@ const OrdersTable = ({ data, user, loading, columns }) => {
       }
     });
   };
-  
 
   if (loading) {
     return <TableSkeleton />;
@@ -95,19 +94,27 @@ const OrdersTable = ({ data, user, loading, columns }) => {
           <TableBody className="text-gray-700 font-medium">
             {data.map((item, index) => (
               <TableRow key={index}>
-<TableCell className="text-gray-800">{item?.orderId  ?? item?._id}</TableCell>
-                <TableCell>{Number(item.price) + Number(item?.charge)}</TableCell>
+                <TableCell className="text-gray-800">
+                  {item?.orderId ?? item?._id}
+                </TableCell>
+                <TableCell>
+                  {Number(item.price) + Number(item?.charge)}
+                </TableCell>
                 {/* <TableCell>{item.charge}</TableCell> */}
-                
-                
+
                 <TableCell>
                   {item.status === "pending payment" ? (
-                    <Link
-                      href={`/payment?orderId=${item?.orderId}`}
-                      className="px-2 py-1 text-white transition bg-red-600 rounded-md hover:bg-red-700"
-                    >
-                      Pay due {Number(item.price) + Number(item?.charge)}
-                    </Link>
+                    <span className=" space-x-2">
+                      <span className="px-2 py-1 text-white transition bg-red-600 rounded-md hover:bg-red-700 animate-pulse">
+                        Pay due {Number(item.price) + Number(item?.charge)} taka
+                      </span>
+                      <Link
+                        href={`/payment?orderId=${item?.orderId}`}
+                        className="px-2 py-1 text-white transition bg-primary rounded-md hover:bg-primary/90"
+                      >
+                        Pay Now
+                      </Link>
+                    </span>
                   ) : item.transactionId ? (
                     item.transactionId
                   ) : (
@@ -129,10 +136,11 @@ const OrdersTable = ({ data, user, loading, columns }) => {
                   >
                     {item.status}
                   </button>
-                  {
-                    item.status === "pending payment" && (
+                  {item.status === "pending payment" && (
                     <button
-                      onClick={() => handleStatusChange("cancelled", item?.orderId)}
+                      onClick={() =>
+                        handleStatusChange("cancelled", item?.orderId)
+                      }
                       className="ml-2 px-2 py-1 text-red-500 transition border border-red-500 rounded-md"
                     >
                       Cancel

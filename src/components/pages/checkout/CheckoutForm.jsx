@@ -90,7 +90,7 @@ const CheckoutForm = () => {
   const validateForm = useCallback(() => {
     const newErrors = {};
     const requiredFields = [
-      'orderName', 'orderEmail', 'OrderPhone',
+      'orderName', 'OrderPhone',
       'division', 'district', 'city', 'shippingAddress'
     ];
 
@@ -141,6 +141,7 @@ const CheckoutForm = () => {
               value={formData.orderEmail}
               onChange={handleInputChange}
               placeholder="Enter your email"
+              
             />
             {errors.orderEmail && <FormError message={errors.orderEmail} />}
           </div>

@@ -8,13 +8,13 @@ import { useGetCheckoutQuery } from "@/components/Redux/services/checkout/checko
 const MyOrders = () => {
   const { data } = useGetCheckoutQuery();
   const orderColumns = [
-    { label: "OrderId", key: "orderId" },
+    { label: "Order Id", key: "orderId" },
     { label: "Amount", key: "price" },
     // { label: "Charge", key: "charge" },
     // { label: "District", key: "district" },
 
 
-    { label: "TransactionId", key: "TransactionId" },
+    { label: "Transaction Id", key: "TransactionId" },
     { label: "Details", key: "details", type: "button" },
     { label: "Status", key: "Status" },
     { label: "Support", key: "support", type: "button" },

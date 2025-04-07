@@ -17,11 +17,8 @@ const OrderDetails = ({ id }) => {
   const [hasCoupon, setHasCoupon] = useState(true);
 
   const { data } = useGetProductDetailsQuery(id);
-  console.log(data)
-  const orderDetails = data?.data || {}
+  const orderDetails = data?.data || {};
   const products = orderDetails.products || [];
-
-  console.log(orderDetails)
 
   const productQuantities = products.map((product) => ({
     productId: product.productId,
@@ -41,9 +38,8 @@ const OrderDetails = ({ id }) => {
     0
   );
 
-
-  const charge = orderDetails?.charge
-  const total = (subtotal - orderDetails?.discount) + (Number(charge) || 0) ;
+  const charge = orderDetails?.charge;
+  const total = subtotal - orderDetails?.discount + (Number(charge) || 0);
   return (
     <div className="w-full  mx-auto p-6 bg-gray-50">
       <div className="mb-4 flex justify-between items-center">
@@ -61,15 +57,12 @@ const OrderDetails = ({ id }) => {
       <div className="md:flex gap-3 mt-7">
         {/* Order Item */}
         <div className="bg-white w-full border rounded-md mb-4">
-          <div
-            className="p-4 flex justify-between items-center cursor-pointer"
-          >
+          <div className="p-4 flex justify-between items-center cursor-pointer">
             <div>
               <h1 className="font-semibold text-xl text-slate-700">
                 Order Item
               </h1>
             </div>
-
           </div>
           <div className="p-4">
             {products.map((product) => {
@@ -84,7 +77,8 @@ const OrderDetails = ({ id }) => {
                 <div key={product.productId} className="mb-6">
                   <div className="flex justify-between items-center">
                     <div className="flex items-center">
-                      <Image unoptimized
+                      <Image
+                        unoptimized
                         src={product.productImage}
                         alt={product.productTitle}
                         height={100}
@@ -93,7 +87,9 @@ const OrderDetails = ({ id }) => {
                       />
                       <Link href={`/product-details/${product.productId}`}>
                         <h3 className="font-bold mt-1 md:mb-4 text-xs md:text-lg text-slate-700 hover:underline">
-                          {product.productTitle.length > 100 ? `${product.productTitle.substring(0, 100)}...` : product.productTitle}
+                          {product.productTitle.length > 100
+                            ? `${product.productTitle.substring(0, 100)}...`
+                            : product.productTitle}
                         </h3>
                       </Link>
                     </div>
@@ -105,7 +101,8 @@ const OrderDetails = ({ id }) => {
                         className="flex justify-between mt-5 items-center border-b py-2"
                       >
                         <div className="flex items-center gap-3">
-                          <Image unoptimized
+                          <Image
+                            unoptimized
                             src={sku.image}
                             alt={`Sku Image`}
                             height={60}
@@ -113,43 +110,45 @@ const OrderDetails = ({ id }) => {
                             className="object-cover rounded-lg size-10 bg-slate-500"
                           />
                           <div>
-                          <p className="text-gray-600 md:text-base sm:text-sm xsm:text-[12px] text-[11px] md:flex-row flex-col flex md:gap-0 gap-2">
-  {sku?.sku?.split(";").map((part, index) => (
-    <span key={index} className="block">
-      <span className="md:inline hidden">{index == 1 && ","}</span> {part.trim()}
-    </span>
-  ))}
-</p>
+                            <p className="text-gray-600 md:text-base sm:text-sm xsm:text-[12px] text-[11px] md:flex-row flex-col flex md:gap-0 gap-2">
+                              {sku?.sku?.split(";").map((part, index) => (
+                                <span key={index} className="block">
+                                  <span className="md:inline hidden">
+                                    {index == 1 && ","}
+                                  </span>{" "}
+                                  {part.trim()}
+                                </span>
+                              ))}
+                            </p>
                           </div>
                         </div>
-                        <p className="text-gray-600 md:inline hidden" >
+                        <p className="text-gray-600 md:inline hidden">
                           {sku.quantity} X ৳{sku.price}
                         </p>
                         <div className="font-semibold md:flex hidden text-gray-600 x items-center gap-3 text-md">
                           <p className="">
-                          ৳{(sku.price * sku.quantity).toFixed(2)}
+                            ৳{(sku.price * sku.quantity).toFixed(2)}
                           </p>
                         </div>
-                           {/* For small screen */}
+                        {/* For small screen */}
 
-                        <div className="flex flex-col md:hidden gap-2"><p className="text-gray-600 md:text-base sm:text-sm text-[13px]" >
-                          {sku.quantity} X ৳{sku.price}
-                        </p>
-                        <div className="font-semibold flex  md:text-base sm:text-sm text-[13px] text-gray-600 x items-center gap-3 text-md">
-                          <p className="">
-                          ৳{(sku.price * sku.quantity).toFixed(2)}
+                        <div className="flex flex-col md:hidden gap-2">
+                          <p className="text-gray-600 md:text-base sm:text-sm text-[13px]">
+                            {sku.quantity} X ৳{sku.price}
                           </p>
-                        </div></div>
-                        
+                          <div className="font-semibold flex  md:text-base sm:text-sm text-[13px] text-gray-600 x items-center gap-3 text-md">
+                            <p className="">
+                              ৳{(sku.price * sku.quantity).toFixed(2)}
+                            </p>
+                          </div>
+                        </div>
                       </div>
                     ))}
                     <div className="flex justify-between items-center mt-5">
                       <div>
                         <p>Item details</p>
                       </div>
-                      <p className="text-gray-600">
-                        {productQuantity}
-                      </p>
+                      <p className="text-gray-600">{productQuantity}</p>
                       <div className="flex justify-between gap-5 items-center">
                         <p>৳{productTotalPrice.toFixed(2)}</p>
                       </div>
@@ -162,9 +161,7 @@ const OrderDetails = ({ id }) => {
         </div>
         {/* Order Summary */}
         <div className="bg-white border rounded-md mb-4">
-          <div
-            className="p-4 flex justify-between items-center cursor-pointer"
-          >
+          <div className="p-4 flex justify-between items-center cursor-pointer">
             <div>
               <div className="flex justify-between items-center">
                 <h2 className="font-semibold text-xl text-slate-700">
@@ -196,24 +193,34 @@ const OrderDetails = ({ id }) => {
               <span>Shipping</span>
               <span>Free shipping (৳0.00)</span>
             </div> */}
-           
+
             <div className="border-t pt-5 mt-5 text-sm md:text-md">
-            
               {/* <div className="flex justify-between items-center">
                 <span className="text-gray-600">
                   Paid due when invoice is sent
                 </span>
                 <span className="text-purple-600">Edit</span>
               </div> */}
-               <div className="flex justify-between items-center">
-              <span>Total</span>
-              <span>৳ {total}</span>
-            </div>
+              <div className="flex justify-between items-center">
+                <span>Total</span>
+                <span>৳ {total}</span>
+              </div>
+              <div className="flex justify-between items-center mt-2">
+                <span>
+                  Paid By: {orderDetails?.paymentInfo?.method}
+                  {orderDetails?.paymentInfo?.depositDate}
+                </span>
+                <span>
+                  {orderDetails?.paymentInfo?.bankName ||
+                    orderDetails?.paymentInfo?.name ||
+                    "--"}
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <DynamicVerticalStepper steps={orderDetails.orderTracking}/>
+      <DynamicVerticalStepper steps={orderDetails.orderTracking} />
     </div>
   );
 };
