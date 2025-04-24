@@ -80,7 +80,7 @@ const Wishlist = ({setOpenModal}) => {
             {wishlist?.length > 0 ? (
                 <div className={`grid  gap-2 grid-cols-1  mb-10`}>
                     {wishlist?.map((product) => (
-                        <div key={product.id} onClick={() => router.push(`/product-details/${product?.id.replace(/\s+/g, '-')}`)} className="cursor-pointer " >
+                        <div key={product.id} onClick={() => SeeDetails(`/product-details/${product?.id.replace(/\s+/g, '-')}`)} className="cursor-pointer " >
                           <WishlistItem
                             onClose={handleCloseModal}
                             onConfirm={handleConfirmRemove}

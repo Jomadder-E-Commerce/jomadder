@@ -21,7 +21,7 @@ const WalletView = ({
   const ITEMS_PER_PAGE = 10;
 
   const filteredData = data.filter((item) => {
-    console.log("Item:", item); // Log each item to inspect structure and values
+    // console.log("Item:", item); // Log each item to inspect structure and values
     const itemStatus = item.status ? item.status.toLowerCase() : "";
     const activeTabLower = activeTab ? activeTab.toLowerCase() : "";
     const filterStatusLower = filterStatus ? filterStatus.toLowerCase() : "";

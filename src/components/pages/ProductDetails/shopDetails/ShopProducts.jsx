@@ -58,7 +58,7 @@ const ShopProducts = ({id}) => {
      setCurrentPage(Number(searchParams.get("page") || 1));
    }, [searchParams]);
    const handleSortChange = (value) => {
-    console.log(value)
+    // console.log(value)
     setSort(value);
     updateURLParams({
       page: 1,
@@ -87,18 +87,18 @@ const ShopProducts = ({id}) => {
     }
   };
   const handlePageChange = (newPage) => {
-    console.log(Math.round(Number(price_start)));
+    // console.log(Math.round(Number(price_start)));
   
     // Update the current page state
     setCurrentPage(newPage);
   
     // Log the computed parameters
-    console.log({
-      page: newPage,
-      minPrice: price_start ? Number(price_start) : 0,
-      maxPrice: price_end ? Number(price_end) : 0,
-      sort,
-    });
+    // console.log({
+    //   page: newPage,
+    //   minPrice: price_start ? Number(price_start) : 0,
+    //   maxPrice: price_end ? Number(price_end) : 0,
+    //   sort,
+    // });
   
     // Construct the new parameters object
     const newObj = { page: newPage };

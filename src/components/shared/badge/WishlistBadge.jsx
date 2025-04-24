@@ -1,7 +1,6 @@
 // components/WishlistBadge.js
 const WishlistBadge = ({ count, show }) => {
   if (!show || count <= 0) return null;
-  console.log("cout the modal",count)
   return (
     <>
     {

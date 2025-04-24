@@ -10,7 +10,7 @@ export const getPricingData = async (price) => {
       }
   });
 
-  console.log(((percentage / 100) + 1) * price);
+  // console.log(((percentage / 100) + 1) * price);
 
   return ((percentage / 100) + 1) * price;
 };

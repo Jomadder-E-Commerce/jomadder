@@ -42,7 +42,7 @@ const UserSupport = ({
     try {
       const body = { status: status, id: id }
       const tryUpdate = await updateSingleSupport(body);
-      console.log(tryUpdate)
+      // console.log(tryUpdate)
     }
     catch (error) {
       console.log(error)

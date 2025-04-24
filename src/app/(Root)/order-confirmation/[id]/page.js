@@ -1,12 +1,12 @@
 "use client";
-import Image from 'next/image';
-import Transaction from '@/assets/dashboard/transaction.png';
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
-import cart from '@/assets/AllCategories/approved-delivery.png';
-import moment from 'moment';
-import { useGetProductDetailsQuery } from '@/components/Redux/services/checkout/checkoutAPi';
+import Image from "next/image";
+import Transaction from "@/assets/dashboard/transaction.png";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import cart from "@/assets/AllCategories/approved-delivery.png";
+import moment from "moment";
+import { useGetProductDetailsQuery } from "@/components/Redux/services/checkout/checkoutAPi";
 
 // Skeleton component for order confirmation
 const SkeletonOrderConfirmation = () => {
@@ -49,7 +49,7 @@ const Page = ({ params }) => {
     data: OrderDetailsData,
     isLoading,
     isSuccess: orderIsSuccess,
-    isFetching
+    isFetching,
   } = useGetProductDetailsQuery(params?.id);
 
   // Show skeleton while loading or fetching data
@@ -62,8 +62,10 @@ const Page = ({ params }) => {
       <div className="px-5 pt-5 bg-gray-100">
         <div className="p-4 mb-6 bg-white rounded-md shadow-md">
           <div className="flex flex-col items-center justify-between pb-4 border-b sm:flex-row">
-            <h1 className="text-lg font-bold sm:text-2xl">Order Confirmation</h1>
-            <p className="text-gray-600">{moment().format('ll')}</p>
+            <h1 className="text-lg font-bold sm:text-2xl">
+              Order Confirmation
+            </h1>
+            <p className="text-gray-600">{moment().format("ll")}</p>
           </div>
         </div>
         {/* Order Status */}
@@ -84,17 +86,20 @@ const Page = ({ params }) => {
           </h2>
           <p className="text-gray-500">Thanks for being with Jomadder</p>
 
-
-          <div className="text-center my-5 flex justify-center">
+          <div className="text-center my-5 flex items-center space-x-1 justify-center">
             <Link href="/">
-              <Button className="flex items-center">
+              <Button className="flex items-center bg-green-500 hover:bg-green-400">
                 Continue Shopping <ArrowRight className="ml-2" />
+              </Button>
+            </Link>
+            <Link href="/profile/order">
+              <Button className="flex items-center px-14">
+                My Order <ArrowRight className="ml-2" />
               </Button>
             </Link>
           </div>
         </div>
         {/* Continue Shopping Button */}
-
       </div>
     </div>
   );

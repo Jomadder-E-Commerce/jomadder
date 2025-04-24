@@ -11,14 +11,14 @@ const checkoutSlice = createSlice({
     initialState,
     reducers: {
         setFormValid: (state, action) => {
-            console.log("form valid",action.payload)
+            // console.log("form valid",action.payload)
             state.isFormValid = action.payload;
         },
         setMessage: (state, action) => {
             state.message = action.payload;
         },
         setFormData: (state, action) => {  
-            console.log("Checking the full data",action.payload)
+            // console.log("Checking the full data",action.payload)
             state.formData = action.payload;
         }
     },

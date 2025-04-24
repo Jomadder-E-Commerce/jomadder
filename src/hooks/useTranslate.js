@@ -15,7 +15,7 @@ const useTranslate = (text) => {
         const translate = async () => {
             try {
                 const response = await getTranslatedText({ text });
-                console.log("API Response:", response.data.data.translated);
+                // console.log("API Response:", response.data.data.translated);
                 setTranslatedText(response.data.data.translated); // Update with translation or fallback to original
             } catch (error) {
                 console.error("Translation failed:", error);

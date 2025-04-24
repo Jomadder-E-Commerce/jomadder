@@ -93,7 +93,7 @@ const MyProfile= ({ type })=> {
   };
 
   const handleGenderChange = (selectedGender)=>{
-    console.log(selectedGender)
+    // console.log(selectedGender)
     setFormData((prevState) => ({
       ...prevState,
       gender: selectedGender,

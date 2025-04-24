@@ -130,7 +130,7 @@ const LoginForm = () => {
       redirectPath = redirectPath.replace(/^"(.*)"$/, '$1');
       removeLocalStorage("redirect");
       toast.success("Login successful");
-      console.log(redirectPath)
+      // console.log(redirectPath)
       router.push(redirectPath);
     } catch (error) {
       console.error(error);

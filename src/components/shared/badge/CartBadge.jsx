@@ -1,6 +1,6 @@
 const CartBadge = ({ count, show }) => {
   if (!show || count <= 0) return null;
-  console.log("cout the modal",count)
+  // console.log("cout the modal",count)
   return (
     <>
     {

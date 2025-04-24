@@ -88,7 +88,7 @@ const ProductDetails = ({
   const AddToCart = (payload) => {
     let itemFound = false;
 
-    console.log(payload)
+    // console.log(payload)
 
     if (payload.situation == 1) {
       const update = productSku?.map((single) => {

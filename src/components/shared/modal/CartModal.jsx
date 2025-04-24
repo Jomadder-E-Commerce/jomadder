@@ -70,8 +70,8 @@ const CartModal = () => {
         open={openModal}
         onClose={toggleDrawer}
         direction="right"
-        size={drawerSize}
-        style={{ zIndex: 9999 }} // Ensure drawer is on top
+        size={"80%"}
+        style={{ zIndex: 99999 }} // Ensure drawer is on top
       >
         <div className="flex bg-white z-50 h-full w-full flex-col justify-between pb-10 drop-shadow-sm overflow-y-auto">
           <X

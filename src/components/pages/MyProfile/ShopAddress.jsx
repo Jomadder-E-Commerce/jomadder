@@ -22,7 +22,7 @@ const ShopAddress = ({
           onShopThanaChange
   }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
-     console.log(userShop);
+    //  console.log(userShop);
     const openModal = () => setIsModalOpen(true);
     const closeModal = () => setIsModalOpen(false);
   

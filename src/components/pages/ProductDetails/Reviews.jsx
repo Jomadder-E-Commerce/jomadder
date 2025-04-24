@@ -30,12 +30,12 @@ export default function Reviews() {
   const params = useParams();
   const id = params.id;
   const { data: productData } = useGetProductQuery(id);
-  console.log(rating, 'rating');
+  // console.log(rating, 'rating');
   // const review = productData?.data?.review;
-  console.log(productData?.data?.review[0], '27 all Product');
+  // console.log(productData?.data?.review[0], '27 all Product');
 
   const { data: userData, isLoading: userLoading } = useGetUserQuery();
-  console.log(userData?.data?.user, 'userData');
+  // console.log(userData?.data?.user, 'userData');
 
   // const reviewData = [
   //   {
@@ -64,7 +64,7 @@ export default function Reviews() {
       rating: rating,
       review: data.review,
     };
-    console.log(payload, 'payload');
+    // console.log(payload, 'payload');
     const response = await addToReview(payload);
     if (response) {
       setRating(0)

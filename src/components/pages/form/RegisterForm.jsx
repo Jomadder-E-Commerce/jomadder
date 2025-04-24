@@ -41,7 +41,7 @@ const RegisterForm = () => {
         let redirectPath = getLocalStorage("redirect") || "/";
         redirectPath = redirectPath.replace(/^"(.*)"$/, '$1');
         removeLocalStorage("redirect");
-        console.log(redirectPath)
+        // console.log(redirectPath)
         router.push(redirectPath);
       }
        
@@ -51,7 +51,7 @@ const RegisterForm = () => {
     }
   }
 
-  console.log(form)
+  // console.log(form)
   
   return (
     <div className="flex items-center justify-center min-h-screen py-5  md:px-5  bg-gradient-to-r from-gray-200 to-blue-200">

@@ -16,7 +16,6 @@ import useDivisions from "@/hooks/useDivisions";
 // import useLocationData from "@/hooks/useDivisions";
 import useGetDivision from "@/hooks/useGetDivision";
 import useGetDistrict from "@/hooks/useGetDistrict";
-
 const AddressEditModal = ({
   isOpen,
   onClose,
@@ -26,26 +25,18 @@ const AddressEditModal = ({
   onDistrictChange,
   onDivisionChange,
   divisionsData,
-  onThanaChange
+  onThanaChange,
 }) => {
+  const { allDivisions, getDistricts, allDistricts, needDistricts, needArea } =
+    useGetDistrict();
 
-
-  const {
-    allDivisions,
-    getDistrictsByDivision,
-    allDistricts,
-    needDistricts
-  }  = useGetDistrict();
-  
   // console.log("division data",division)
-  useEffect(()=>{
-  if(data.division){
-    const id = allDivisions?.find((div) => div?.name === data?.division)?.id;
-    getDistrictsByDivision(id);
-  }
-  },[data.division])
-
-
+  useEffect(() => {
+    if (data.division) {
+      const id = allDivisions?.find((div) => div?.name === data?.division)?.id;
+      getDistricts(id);
+    }
+  }, [data.division]);
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
@@ -79,8 +70,10 @@ const AddressEditModal = ({
                   placeholder="Select Division"
                   onValueChange={(value) => {
                     onDivisionChange(value);
-                     const id = allDivisions?.find((div) => div?.name === value)?.id;
-                     getDistrictsByDivision(id);
+                    const id = allDivisions?.find(
+                      (div) => div?.name === value
+                    )?.id;
+                    getDistricts(id);
                   }}
                 />
               </div>
@@ -94,7 +87,9 @@ const AddressEditModal = ({
                   options={needDistricts?.map((state) => state.name)}
                   value={data?.district}
                   placeholder="Select State"
-                  onValueChange={(value) => { onDistrictChange(value); }}
+                  onValueChange={(value) => {
+                    onDistrictChange(value);
+                  }}
                 />
               </div>
 

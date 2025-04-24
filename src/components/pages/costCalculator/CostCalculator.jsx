@@ -21,7 +21,7 @@ export default function CostCalculator() {
    const [pricePerKg,setPricePerKg] = useState(0);
   const { data: productListData } = useGetShipmentProductListQuery();
   const productsData = productListData?.data?.map((item) => item.product) || [];
-  console.log('lala',productsData)
+  // console.log('lala',productsData)
 
   const { data: pricingData, isFetching } = useGetPricingQuery(
     selectedProduct,

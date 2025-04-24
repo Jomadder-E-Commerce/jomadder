@@ -30,7 +30,7 @@ const CheckoutOrder = ({ data }) => {
   const [finalCoupon, setFinalCoupon] = useState("")
   const [couponAmount, setCouponAmount] = useState(0)
   const [selectedProduct, setSelectedProduct] = useState(null);
-  console.log(data,"checkout data order")
+  // console.log(data,"checkout data order")
   const path = usePathname();
   const products = Array.isArray(data) ? data : [data];
   // const { data: Checkall } = useGetCheckallQuery();
@@ -62,12 +62,12 @@ const CheckoutOrder = ({ data }) => {
   const discountPrice = payNow > 0 ? Math.round((totalPrice / 100) * couponAmount) : 0
 
     const { isFormValid, message, formData  } = useSelector((state) => state.checkout);
-    console.log(formData)
+    // console.log(formData)
     const dispatch = useDispatch();
     const router = useRouter();
     const [isModalOpen, setIsModalOpen] = useState(false);
     const handlePlaceOrder = async() => {
-      console.log(isFormValid)
+      // console.log(isFormValid)
         if (isFormValid) {
             // const price = Math.round(parseFloat(payNow).toFixed(2) + charge)
             const payload = {...formData, products:products.map(item => {
@@ -75,12 +75,12 @@ const CheckoutOrder = ({ data }) => {
             }), price:payNow,
             charge:0, 
             discount : discountPrice}
-            console.log(payload)
+            // console.log(payload)
             const res = await postcheckout(payload)
-            console.log(res?.data);
+            // console.log(res?.data);
             if(res?.data?.data?.transaction?.orderId){
               router.push(`/payment?orderId=${res?.data?.data?.transaction?.orderId}`)
-              console.log(res?.data?.data?.transaction?.orderId, "this is res");
+              // console.log(res?.data?.data?.transaction?.orderId, "this is res");
               if (path && path.includes('buyNow')){
                 removeDataFromLocalStorage("buyNowData")
               }

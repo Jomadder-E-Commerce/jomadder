@@ -52,7 +52,7 @@ export default function DetailsTab({ productData, isLoading }) {
             isLoading ? <DetailsSkeleton/> :    <div className="border rounded-md overflow-hidden">
             {productData?.product_props?.map((spec, index) => (
               <div
-                key={index}
+                key={index + spec}
                 className={`flex ${
                   index % 2 === 0 ? "bg-gray-100" : "bg-white"
                 } `}

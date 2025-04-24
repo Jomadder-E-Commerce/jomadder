@@ -33,7 +33,7 @@ const ShopEditModal = ({
     allDistricts,
     needDistricts
   }  = useGetDistrict();
-  console.log(allDivisions)
+  // console.log(allDivisions)
   useEffect(()=>{
     if(data.division){
       const id = allDivisions?.find((div) => div?.name === data?.shopDivision)?.id;

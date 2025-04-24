@@ -51,7 +51,7 @@ const PaymentPage = () => {
     isError: getUserError,
     refetch,
   } = useGetVerifyQuery();
-  console.log("user", OrderDetailsData?.data?.price);
+  // console.log("user", OrderDetailsData?.data?.price);
   const router = useRouter();
   const { data: paymentData, isLoading: paymentLoading } = useGetpaymentQuery();
   const [charge, setCharge] = useState(0);
@@ -107,7 +107,11 @@ const PaymentPage = () => {
         payment: {
           method: seletedPaymentInfo?.accountType,
           slip: imageData.url,
-          paymentInfo: seletedPaymentInfo,
+          paymentInfo: {
+            ...seletedPaymentInfo,
+            method: seletedPaymentInfo?.accountType,
+            slip: imageData.url,
+          },
         },
         charge: Math.round(
           seletedPaymentInfo?.charge * (OrderDetailsData?.data?.price / 100)
@@ -154,22 +158,21 @@ const PaymentPage = () => {
     }
   }, [orderId, orderIsSuccess, router]);
   useEffect(() => {
-    if (paymentData?.data?.length > 0) {
-      setSelectedMethod(paymentData.data[0]._id);
-      setSelectedMethodName(paymentData.data[0].name);
-      setCharge(paymentData.data[0].charge);
-      const { _id, image, createdAt, updatedAt, ...restOfData } =
-        paymentData.data[0];
-      setSeletedPaymentInfo({ ...restOfData });
+    if (OrderDetailsData?.data?.paymentInfo) {
+      setSelectedMethod(OrderDetailsData?.data?.paymentInfo?._id);
+      setSelectedMethodName(OrderDetailsData?.data?.paymentInfo?.name);
+      setCharge(OrderDetailsData?.data.charge);
+      setSeletedPaymentInfo({ ...OrderDetailsData?.data?.paymentInfo });
     }
-  }, [paymentData]);
+  }, [OrderDetailsData]);
 
   const handlePaymentMethodChange = async (data) => {
+    // console.log("data", data);
+
     setSelectedMethod(data?._id);
     setSelectedMethodName(data?.name);
     setCharge(data?.charge);
-    const { _id, id, image, createdAt, updatedAt, bankList, ...restOfData } =
-      data;
+    const { image, createdAt, updatedAt, bankList, ...restOfData } = data;
     setSeletedPaymentInfo({ ...restOfData });
   };
 
@@ -189,235 +192,536 @@ const PaymentPage = () => {
           <p className="text-gray-500">Please pay now to confirm your order.</p>
         </div> */}
         <div className="flex flex-col xl:flex-row relative gap-4">
-          <div className=" xl:w-[55%] w-full">
-            {isLoading ? (
-              <>
-                <CartProductSkeleton />
-                <CartProductSkeleton />
-                <CartProductSkeleton />
-              </>
-            ) : (
-              <div>
-                {OrderDetailsData?.data?.products.map((product) => (
-                  <div
-                    className="mb-4 bg-white w-full px-6 pb-4 border rounded-md shadow-md  "
-                    key={product._id}
-                  >
-                    <div className="pt-4 border-b">
-                      <div className="flex items-center justify-between">
-                        <div className="flex  flex-row items-start gap-4">
-                          <div className="flex gap-4 ">
-                            <div className="w-16 h-16   mb-1">
-                              <Image
-                                unoptimized
-                                src={product.productImage}
-                                alt="Product"
-                                width={100}
-                                height={40}
-                                className="object-cover w-full h-full"
-                              />
-                            </div>
-                          </div>
-                          <div>
-                            <p className="text-sm font-semibold sm:text-md">
-                              Order ID: #{product.productId}
-                            </p>
-                            <p className="text-sm pr-4">
-                              {product.productTitle}
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    {product?.skus?.map((sku) => (
-                      <div className="" key={sku._id}>
-                        <div className="flex border-b flex-col sm:flex-row py-2 sm:items-center  justify-between gap-5">
-                          <div className="items-center gap-3 flex">
-                            {sku?.image ? (
-                              <Image
-                                unoptimized
-                                src={sku.image}
-                                alt="SKU"
-                                width={40}
-                                height={40}
-                                className="object-cover sm:w-10 bg-gray-400"
-                              />
-                            ) : (
-                              <div className="sm:w-10 bg-gray-400 p-4"></div>
-                            )}
-                            <p className="text-sm">Sort by color: {sku.sku}</p>
-                          </div>
-                          <div className="flex justify-between items-end">
-                            <p className="text-sm">
-                              {sku.quantity} * ৳
-                              {parseFloat(sku.price).toFixed(2)}
-                            </p>
-                            <p className="sm:hidden block">
-                              ৳
-                              {(sku.quantity * parseFloat(sku.price)).toFixed(
-                                2
-                              )}
-                            </p>
-                          </div>
-                          <div className="flex items-center gap-3 text-sm">
-                            <p className="sm:block hidden">
-                              ৳
-                              {(sku.quantity * parseFloat(sku.price)).toFixed(
-                                2
-                              )}
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                    <div className="flex flex-row justify-between gap-5 mt-3 text-sm">
-                      <p>Item Details</p>
-                      <p>
-                        {product?.skus?.reduce(
-                          (acc, sku) => acc + sku.quantity,
-                          0
-                        )}{" "}
-                        items
-                      </p>
-                      <p>
-                        Total : ৳
-                        {Math.round(
-                          product?.skus?.reduce(
-                            (acc, sku) => acc + sku.quantity * sku.price,
-                            0
-                          )
-                        )}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-
           {/* Payment Details */}
-          <div className="flex-1 border  sticky top-0 mb-6 w-full bg-white p-4 rounded shadow-md">
+          <div className="w-[60%] border top-0 mb-6 bg-white p-4 rounded shadow-md">
             {paymentLoading ? (
               <UserPaymentSkeleton />
             ) : (
-              <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1  gap-4">
-                {paymentData?.data?.map((method) => (
-                  <label
-                    key={method._id}
-                    className="flex h-20 gap-2 border items-center justify-center space-y-2 p-2 rounded-lg cursor-pointer flex-col"
-                  >
-                    <span className="flex gap-2 items-center justify-center space-y-2 ">
-                      <input
-                        type="radio"
-                        name="paymentMethod"
-                        className="form-radio h-5 w-5 mt-2 text-blue-600"
-                        checked={selectedMethod === method._id}
-                        onChange={() => {
-                          handlePaymentMethodChange(method);
-                        }}
-                      />
-                      {method.image && method?.accountType != "bank" ? (
-                        <Image
-                          unoptimized
-                          src={method.image}
-                          alt={`${method.name} Logo`}
-                          width={60}
-                          height={50}
-                        />
-                      ) : (
-                        <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="29"
-                            height="31"
-                            viewBox="0 0 29 31"
-                            fill="none"
-                          >
-                            <g id="Group 48096573">
-                              <path
-                                id="Vector"
-                                d="M14.4963 0L0.783203 11.4786H28.2125L14.4963 0Z"
-                                fill="#83C6EF"
-                              />
-                              <path
-                                id="Vector_2"
-                                d="M0.783203 11.4785H28.2093V13.1409H0.783203V11.4785Z"
-                                fill="#1A7FC0"
-                              />
-                              <path
-                                id="Vector_3"
-                                d="M8.51087 15.3784H4.50978L3.88086 13.1377H9.13664L8.51087 15.3784ZM16.4973 15.3784H12.4962L11.8704 13.1377H17.1262L16.4973 15.3784ZM24.4236 15.3784H20.4225L19.7936 13.1377H25.0493L24.4236 15.3784Z"
-                                fill="#83C6EF"
-                              />
-                              <path
-                                id="Vector_4"
-                                d="M5.04297 15.3784H7.96952V24.9482H5.04297V15.3784ZM13.0325 15.3784H15.9591V24.9482H13.0325V15.3784ZM20.9588 15.3784H23.8854V24.9482H20.9588V15.3784Z"
-                                fill="#FECA20"
-                              />
-                              <path
-                                id="Vector_5"
-                                d="M4.49805 24.9517H8.51178V26.9901H4.49805V24.9517ZM12.4907 24.9517H16.5045V26.9901H12.4907V24.9517ZM20.4171 24.9517H24.4308V26.9901H20.4171V24.9517Z"
-                                fill="#83C6EF"
-                              />
-                              <path
-                                id="Vector_6"
-                                d="M14.4961 0V11.4786H28.2123L14.4961 0Z"
-                                fill="#429BCF"
-                              />
-                              <path
-                                id="Vector_7"
-                                d="M6.50977 15.3784H7.97304V24.9482H6.50977V15.3784ZM14.4961 15.3784H15.9594V24.9482H14.4961V15.3784ZM22.4225 15.3784H23.8857V24.9482H22.4225V15.3784Z"
-                                fill="#E7B100"
-                              />
-                              <path
-                                id="Vector_8"
-                                d="M2.83789 26.1587H26.1586V27.8211H2.83789V26.1587Z"
-                                fill="#2D416C"
-                              />
-                              <path
-                                id="Vector_9"
-                                d="M0 27.8213H29V30.1063H0V27.8213Z"
-                                fill="#1A7FC0"
-                              />
-                            </g>
-                          </svg>
-                        </span>
-                      )}
-                    </span>
-                    {method.name || "Bank"}
-                  </label>
-                ))}
-                {/* {
-                 userData?.data?.deposit >= OrderDetailsData?.data?.price
-                } */}
-                <label
-                  key={120}
-                  className="flex h-20 gap-2 border items-center justify-center space-y-2 p-2 rounded-lg cursor-pointer"
+              // <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1  gap-4">
+              //   {paymentData?.data?.map((method) => (
+              //     <label
+              //       key={method._id}
+              //       className="flex h-20 gap-2 border items-center justify-center space-y-2 p-2 rounded-lg cursor-pointer flex-col"
+              //     >
+              //       <span className="flex gap-2 items-center justify-center space-y-2 ">
+              //         <input
+              //           type="radio"
+              //           name="paymentMethod"
+              //           className="form-radio h-5 w-5 mt-2 text-blue-600"
+              //           checked={selectedMethod === method._id}
+              //           onChange={() => {
+              //             handlePaymentMethodChange(method);
+              //           }}
+              //         />
+              //         {method.image && method?.accountType != "bank" ? (
+              //           <Image
+              //             unoptimized
+              //             src={method.image}
+              //             alt={`${method.name} Logo`}
+              //             width={60}
+              //             height={50}
+              //           />
+              //         ) : (
+              //           <span>
+              //             <svg
+              //               xmlns="http://www.w3.org/2000/svg"
+              //               width="29"
+              //               height="31"
+              //               viewBox="0 0 29 31"
+              //               fill="none"
+              //             >
+              //               <g id="Group 48096573">
+              //                 <path
+              //                   id="Vector"
+              //                   d="M14.4963 0L0.783203 11.4786H28.2125L14.4963 0Z"
+              //                   fill="#83C6EF"
+              //                 />
+              //                 <path
+              //                   id="Vector_2"
+              //                   d="M0.783203 11.4785H28.2093V13.1409H0.783203V11.4785Z"
+              //                   fill="#1A7FC0"
+              //                 />
+              //                 <path
+              //                   id="Vector_3"
+              //                   d="M8.51087 15.3784H4.50978L3.88086 13.1377H9.13664L8.51087 15.3784ZM16.4973 15.3784H12.4962L11.8704 13.1377H17.1262L16.4973 15.3784ZM24.4236 15.3784H20.4225L19.7936 13.1377H25.0493L24.4236 15.3784Z"
+              //                   fill="#83C6EF"
+              //                 />
+              //                 <path
+              //                   id="Vector_4"
+              //                   d="M5.04297 15.3784H7.96952V24.9482H5.04297V15.3784ZM13.0325 15.3784H15.9591V24.9482H13.0325V15.3784ZM20.9588 15.3784H23.8854V24.9482H20.9588V15.3784Z"
+              //                   fill="#FECA20"
+              //                 />
+              //                 <path
+              //                   id="Vector_5"
+              //                   d="M4.49805 24.9517H8.51178V26.9901H4.49805V24.9517ZM12.4907 24.9517H16.5045V26.9901H12.4907V24.9517ZM20.4171 24.9517H24.4308V26.9901H20.4171V24.9517Z"
+              //                   fill="#83C6EF"
+              //                 />
+              //                 <path
+              //                   id="Vector_6"
+              //                   d="M14.4961 0V11.4786H28.2123L14.4961 0Z"
+              //                   fill="#429BCF"
+              //                 />
+              //                 <path
+              //                   id="Vector_7"
+              //                   d="M6.50977 15.3784H7.97304V24.9482H6.50977V15.3784ZM14.4961 15.3784H15.9594V24.9482H14.4961V15.3784ZM22.4225 15.3784H23.8857V24.9482H22.4225V15.3784Z"
+              //                   fill="#E7B100"
+              //                 />
+              //                 <path
+              //                   id="Vector_8"
+              //                   d="M2.83789 26.1587H26.1586V27.8211H2.83789V26.1587Z"
+              //                   fill="#2D416C"
+              //                 />
+              //                 <path
+              //                   id="Vector_9"
+              //                   d="M0 27.8213H29V30.1063H0V27.8213Z"
+              //                   fill="#1A7FC0"
+              //                 />
+              //               </g>
+              //             </svg>
+              //           </span>
+              //         )}
+              //       </span>
+              //       {method.name || "Bank"}
+              //     </label>
+              //   ))}
+              //   {/* {
+              //    userData?.data?.deposit >= OrderDetailsData?.data?.price
+              //   } */}
+              //   <label
+              //     key={120}
+              //     className="flex h-20 gap-2 border items-center justify-center space-y-2 p-2 rounded-lg cursor-pointer"
+              //   >
+              //     <input
+              //       type="radio"
+              //       name="paymentMethod"
+              //       className="form-radio h-5 w-5 text-blue-600"
+              //       checked={selectedMethod === 120}
+              //       disabled={
+              //         userData?.data?.deposit >= OrderDetailsData?.data?.price
+              //           ? false
+              //           : true
+              //       }
+              //       onChange={() => {
+              //         handlePaymentMethodChange({ _id: 120, name: "Deposit" });
+              //       }}
+              //     />
+              //     ৳ {userData?.data?.deposit || 0}
+              //     {/* {method.name} */}
+              //   </label>
+              // </div>
+
+              <AnimatePresence>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.4 }}
                 >
-                  <input
-                    type="radio"
-                    name="paymentMethod"
-                    className="form-radio h-5 w-5 text-blue-600"
-                    checked={selectedMethod === 120}
-                    disabled={
-                      userData?.data?.deposit >= OrderDetailsData?.data?.price
-                        ? false
-                        : true
-                    }
-                    onChange={() => {
-                      handlePaymentMethodChange({ _id: 120, name: "Deposit" });
+                  <Accordion
+                    type="single"
+                    collapsible
+                    className="w-full flex flex-col gap-4 mt-4 "
+                    onValueChange={(value) => {
+                      handlePaymentMethodChange({
+                        ...value,
+                      });
                     }}
-                  />
-                  ৳ {userData?.data?.deposit || 0}
-                  {/* {method.name} */}
-                </label>
-              </div>
+                  >
+                    {paymentData?.data?.map((method, index) => (
+                      <AccordionItem
+                        key={index}
+                        value={method}
+                        className={`bg-card rounded-lg shadow-md w-full ${
+                          selectedMethod === method._id
+                            ? "ring-2 ring-blue-500 rounded-lg"
+                            : ""
+                        }`}
+                        disabled={method === "ssl"}
+                      >
+                        <AccordionTrigger
+                          className={`px-4 py-2 w-full text-xl `}
+                        >
+                          <div
+                            key={method._id}
+                            className={`flex items-center w-full p-4 rounded-lg cursor-pointer `}
+                            onClick={() => handlePaymentMethodChange(method)}
+                          >
+                            <input
+                              type="radio"
+                              name="paymentMethod"
+                              className="form-radio h-5 w-5 text-blue-600"
+                              checked={selectedMethod === method._id}
+                              onChange={() => {}}
+                              readOnly
+                            />
+                            <div className="ml-3 flex-grow">
+                              <div className="flex items-center justify-between">
+                                {method.image && (
+                                  <Image
+                                    unoptimized
+                                    src={method.image}
+                                    alt={`${method.name} Logo`}
+                                    width={60}
+                                    height={50}
+                                  />
+                                )}
+                                <span className="font-medium">
+                                  {method.name}
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </AccordionTrigger>
+                        <AccordionContent className="px-4 py-2 bg-background rounded-b-lg">
+                          {/* bank payment */}
+                          {selectedMethodName &&
+                            selectedMethodName?.toLowerCase() === "bank" && (
+                              <Accordion
+                                type="single"
+                                collapsible
+                                className="w-full flex flex-col gap-4 mt-4 "
+                                onValueChange={(value) => {
+                                  handlePaymentMethodChange({
+                                    ...method,
+                                    ...value,
+                                  });
+                                }}
+                              >
+                                {method?.bankList?.map((bank, index) => (
+                                  <AccordionItem
+                                    key={index}
+                                    value={bank}
+                                    className={`bg-card rounded-lg w-full ${
+                                      bank?.bankName ==
+                                      seletedPaymentInfo?.bankName
+                                        ? "ring-2 ring-blue-400 rounded-lg"
+                                        : ""
+                                    }`}
+                                  >
+                                    <AccordionTrigger className="px-4 py-4 flex justify-between hover:bg-muted/50 shadow-md rounded-lg w-full text-xl">
+                                      <span className=" font-semibol flex items-center">
+                                        Bank Name:{" "}
+                                        <span className=" font-normal flex items-center">
+                                          <Image
+                                            unoptimized
+                                            src={bank.icon}
+                                            alt={`${bank.icon} Logo`}
+                                            width={40}
+                                            height={30}
+                                            className="mx-2"
+                                          />
+                                          <span>{bank.bankName}</span>
+                                        </span>
+                                      </span>
+                                    </AccordionTrigger>
+                                    <AccordionContent className="px-4 py-2 bg-background rounded-b-lg">
+                                      <div
+                                        className={`p-4 mt-1 border border-gray-300 rounded-lg bg-gray-100 space-y-1 ${
+                                          selectedMethod == 120 ? "hidden" : ""
+                                        }`}
+                                      >
+                                        <p className="text-lg font-semibold text-black dark:text-white">
+                                          Account Infomation:
+                                        </p>
+                                        <span className="text-base">
+                                          <div>
+                                            Account Name: {bank.accountName}
+                                          </div>
+                                          <div>
+                                            Account Number: {bank.accountNo}
+                                          </div>
+                                          <div>Branch: {bank.branch}</div>
+                                        </span>
+                                      </div>
+                                      <div
+                                        className={`p-3 mt-4 border border-gray-300 rounded-lg bg-gray-100 space-y-1 ${
+                                          selectedMethod == 120 ? "hidden" : ""
+                                        }`}
+                                      >
+                                        <PayslipUpload
+                                          charge={bank?.charge}
+                                          OrderDetailsData={OrderDetailsData}
+                                          selectedMethod={selectedMethod}
+                                          selectedImage={selectedImage}
+                                          setHover={setHover}
+                                          handleDeleteImage={handleDeleteImage}
+                                          handleFileChange={handleFileChange}
+                                          payment={payment}
+                                        >
+                                          <div>
+                                            <label
+                                              htmlFor="referenceNo"
+                                              className="block mb-2 text-sm font-medium text-gray-900"
+                                            >
+                                              Reference No:
+                                            </label>
+                                            <Input
+                                              placeholder="Enter your reference code"
+                                              name="referenceNo"
+                                              id="referenceNo"
+                                              key={"referenceNo"}
+                                              required
+                                              defaultValue={
+                                                OrderDetailsData?.data
+                                                  ?.paymentInfo?.referenceNo
+                                              }
+                                              onChange={(e) =>
+                                                setSeletedPaymentInfo(
+                                                  (prev) => ({
+                                                    ...prev,
+                                                    referenceNo: e.target.value,
+                                                  })
+                                                )
+                                              }
+                                            />
+                                          </div>
+                                          <div className="mt-2">
+                                            <label
+                                              htmlFor="depositDate"
+                                              className="block mb-2 text-sm font-medium text-gray-900"
+                                            >
+                                              Deposit date:
+                                            </label>
+                                            <Input
+                                              placeholder="Enter the deposit date"
+                                              name="depositDate"
+                                              type="date"
+                                              id="depositDate"
+                                              required
+                                              defaultValue={
+                                                OrderDetailsData?.data
+                                                  ?.paymentInfo?.referenceNo
+                                              }
+                                              onChange={(e) =>
+                                                setSeletedPaymentInfo(
+                                                  (prev) => ({
+                                                    ...prev,
+                                                    depositDate: e.target.value,
+                                                  })
+                                                )
+                                              }
+                                            />
+                                          </div>
+                                        </PayslipUpload>
+                                      </div>
+                                    </AccordionContent>
+                                  </AccordionItem>
+                                ))}
+                              </Accordion>
+                            )}
+                          {selectedMethodName &&
+                            !["bank", "visa", "online"].includes(
+                              selectedMethodName?.toLowerCase()
+                            ) && (
+                              <>
+                                {/* other payment */}
+                                <div
+                                  className={`p-4 mt-1 border border-gray-300 rounded-lg bg-gray-100 space-y-1 ${
+                                    selectedMethod == 120 ? "hidden" : ""
+                                  }`}
+                                >
+                                  <p className="text-lg font-semibold text-black dark:text-white">
+                                    Account Infomation:
+                                  </p>
+                                  <span className="text-base">
+                                    <div>
+                                      Type: {method.accountType || method.name}
+                                    </div>
+                                    <div>
+                                      Number:{" "}
+                                      {method.accountNo ||
+                                        method.personalNumber}
+                                    </div>
+                                    <div>
+                                      Name: {method.accountName || method.name}
+                                    </div>
+                                    <span className="text-red-500 font-semibold text-base">
+                                      (Please select Payment option of your{" "}
+                                      {method.name} acccount.)
+                                    </span>
+                                  </span>
+                                </div>
+                                <div
+                                  className={`p-3 mt-4 border border-gray-300 rounded-lg bg-gray-100 space-y-1 ${
+                                    selectedMethod == 120 ? "hidden" : ""
+                                  }`}
+                                >
+                                  <PayslipUpload
+                                    charge={method?.charge}
+                                    OrderDetailsData={OrderDetailsData}
+                                    selectedMethod={selectedMethod}
+                                    selectedImage={selectedImage}
+                                    setHover={setHover}
+                                    handleDeleteImage={handleDeleteImage}
+                                    handleFileChange={handleFileChange}
+                                    payment={payment}
+                                  >
+                                    <div>
+                                      <label
+                                        htmlFor="referenceNo"
+                                        className="block mb-2 text-sm font-medium text-gray-900"
+                                      >
+                                        Transation No:
+                                      </label>
+                                      <Input
+                                        placeholder="Enter your reference code"
+                                        name="referenceNo"
+                                        id="referenceNo"
+                                        key={"referenceNo"}
+                                        required
+                                        defaultValue={
+                                          OrderDetailsData?.data?.paymentInfo
+                                            ?.referenceNo
+                                        }
+                                        onChange={(e) =>
+                                          setSeletedPaymentInfo((prev) => ({
+                                            ...prev,
+                                            referenceNo: e.target.value,
+                                          }))
+                                        }
+                                      />
+                                    </div>
+                                    <div className="mt-2">
+                                      <label
+                                        htmlFor="depositDate"
+                                        className="block mb-2 text-sm font-medium text-gray-900"
+                                      >
+                                        Deposit date:
+                                      </label>
+                                      <Input
+                                        placeholder="Enter the deposit date"
+                                        name="depositDate"
+                                        type="date"
+                                        id="depositDate"
+                                        required
+                                        defaultValue={
+                                          OrderDetailsData?.data?.paymentInfo
+                                            ?.depositDate
+                                        }
+                                        onChange={(e) =>
+                                          setSeletedPaymentInfo((prev) => ({
+                                            ...prev,
+                                            depositDate: e.target.value,
+                                          }))
+                                        }
+                                      />
+                                    </div>
+                                  </PayslipUpload>
+                                </div>
+                              </>
+                            )}
+                        </AccordionContent>
+                      </AccordionItem>
+                    ))}
+                  </Accordion>
+                </motion.div>
+              </AnimatePresence>
+
+              // <div className="p-6 bg-white rounded-lg shadow-md">
+              //   <h2 className="text-lg font-semibold mb-4">Payment</h2>
+              //   <p className="text-sm text-green-600 mb-4">
+              //     Your payment information is safe with us.
+              //   </p>
+              //   <div className="space-y-4">
+              //     {paymentData?.data?.map((method, index) => (
+              //       <div
+              //         key={method._id}
+              //         className={`flex items-center p-4 border rounded-lg cursor-pointer ${
+              //           selectedMethod === method._id
+              //             ? "ring-2 ring-blue-500"
+              //             : "hover:shadow-lg"
+              //         }`}
+              //         onClick={() => handlePaymentMethodChange(method)}
+              //       >
+              //         <input
+              //           type="radio"
+              //           name="paymentMethod"
+              //           className="form-radio h-5 w-5 text-blue-600"
+              //           checked={selectedMethod === method._id}
+              //           onChange={() => {}}
+              //           readOnly
+              //         />
+              //         <div className="ml-3 flex-grow">
+              //           <div className="flex items-center justify-between">
+              //             {method.image && method.accountType !== "bank" ? (
+              //               <Image
+              //                 unoptimized
+              //                 src={method.image}
+              //                 alt={`${method.name} Logo`}
+              //                 width={60}
+              //                 height={50}
+              //               />
+              //             ) : (
+              //               <span>
+              //                 <svg
+              //                   xmlns="http://www.w3.org/2000/svg"
+              //                   width="29"
+              //                   height="31"
+              //                   viewBox="0 0 29 31"
+              //                   fill="none"
+              //                 >
+              //                   <g id="Group 48096573">
+              //                     <path
+              //                       id="Vector"
+              //                       d="M14.4963 0L0.783203 11.4786H28.2125L14.4963 0Z"
+              //                       fill="#83C6EF"
+              //                     />
+              //                     <path
+              //                       id="Vector_2"
+              //                       d="M0.783203 11.4785H28.2093V13.1409H0.783203V11.4785Z"
+              //                       fill="#1A7FC0"
+              //                     />
+              //                     <path
+              //                       id="Vector_3"
+              //                       d="M8.51087 15.3784H4.50978L3.88086 13.1377H9.13664L8.51087 15.3784ZM16.4973 15.3784H12.4962L11.8704 13.1377H17.1262L16.4973 15.3784ZM24.4236 15.3784H20.4225L19.7936 13.1377H25.0493L24.4236 15.3784Z"
+              //                       fill="#83C6EF"
+              //                     />
+              //                     <path
+              //                       id="Vector_4"
+              //                       d="M5.04297 15.3784H7.96952V24.9482H5.04297V15.3784ZM13.0325 15.3784H15.9591V24.9482H13.0325V15.3784ZM20.9588 15.3784H23.8854V24.9482H20.9588V15.3784Z"
+              //                       fill="#FECA20"
+              //                     />
+              //                     <path
+              //                       id="Vector_5"
+              //                       d="M4.49805 24.9517H8.51178V26.9901H4.49805V24.9517ZM12.4907 24.9517H16.5045V26.9901H12.4907V24.9517ZM20.4171 24.9517H24.4308V26.9901H20.4171V24.9517Z"
+              //                       fill="#83C6EF"
+              //                     />
+              //                     <path
+              //                       id="Vector_6"
+              //                       d="M14.4961 0V11.4786H28.2123L14.4961 0Z"
+              //                       fill="#429BCF"
+              //                     />
+              //                     <path
+              //                       id="Vector_7"
+              //                       d="M6.50977 15.3784H7.97304V24.9482H6.50977V15.3784ZM14.4961 15.3784H15.9594V24.9482H14.4961V15.3784ZM22.4225 15.3784H23.8857V24.9482H22.4225V15.3784Z"
+              //                       fill="#E7B100"
+              //                     />
+              //                     <path
+              //                       id="Vector_8"
+              //                       d="M2.83789 26.1587H26.1586V27.8211H2.83789V26.1587Z"
+              //                       fill="#2D416C"
+              //                     />
+              //                     <path
+              //                       id="Vector_9"
+              //                       d="M0 27.8213H29V30.1063H0V27.8213Z"
+              //                       fill="#1A7FC0"
+              //                     />
+              //                   </g>
+              //                 </svg>
+              //               </span>
+              //             )}
+              //             <span className="font-medium">{method.name}</span>
+              //           </div>
+              //         </div>
+              //       </div>
+              //     ))}
+              //   </div>
+              // </div>
             )}
 
             {/* Conditionally render payment method details based on selectedMethod */}
 
-            {selectedMethod && (
+            {/* {selectedMethod && (
               <div
                 className={`p-4 mt-4 border border-gray-300 rounded-lg bg-gray-100 space-y-1 ${
                   selectedMethod == 120 ? "hidden" : ""
@@ -587,9 +891,9 @@ const PaymentPage = () => {
                     payment={payment}
                   />
                 </div>
-              )}
+              )} */}
 
-            {selectedMethodName == "Bkash" && (
+            {/* {selectedMethodName == "Bkash" && (
               <Link
                 href={
                   "https://shop.bkash.com/parcel-trade-internationalrm10/paymentlink/default-payment"
@@ -600,8 +904,8 @@ const PaymentPage = () => {
                   Go for Bkash
                 </button>
               </Link>
-            )}
-            {selectedMethodName == "Visa" && (
+            )} */}
+            {/* {selectedMethodName == "Visa" && (
               <Link href={"https://sandbox.sslcommerz.com"} target="_blank">
                 <button
                   disabled
@@ -610,9 +914,10 @@ const PaymentPage = () => {
                   Go for Sslcommerz
                 </button>
               </Link>
-            )}
+            )} */}
+
             {/* Pay Button */}
-            {selectedMethod == 120 ? (
+            {selectedMethod == 120 && (
               <button
                 onClick={HandleDepositSubmit}
                 className="bg-blue-500 text-white p-2 rounded w-full mt-4 mb-4 disabled:bg-blue-400 disabled:cursor-not-allowed"
@@ -624,24 +929,131 @@ const PaymentPage = () => {
                   <span>Complete Payment</span>
                 )}
               </button>
+            )}
+          </div>
+
+          {/* order details */}
+          <div className=" xl:w-[40%] w-full">
+            {isLoading ? (
+              <>
+                <CartProductSkeleton />
+                <CartProductSkeleton />
+                <CartProductSkeleton />
+              </>
             ) : (
-              <button
-                onClick={handlePaymentSubmit}
-                className="bg-blue-500 text-white p-2 rounded w-full mt-4 mb-4 disabled:bg-blue-400 disabled:cursor-not-allowed"
-                disabled={
-                  (seletedPaymentInfo?.accountType == "bank" &&
-                    (!seletedPaymentInfo?.referenceNo ||
-                      !seletedPaymentInfo?.depositDate ||
-                      !selectedImage)) ||
-                  (!seletedPaymentInfo?.accountType != "bank" && !selectedImage)
-                }
-              >
-                {paymentProcess ? (
-                  <span>Payment processing...</span>
-                ) : (
-                  <span>Complete Payment</span>
-                )}
-              </button>
+              <div>
+                {OrderDetailsData?.data?.products.map((product) => (
+                  <div
+                    className="mb-2 bg-white w-full px-6 pb-4 border rounded-md shadow-md  "
+                    key={product._id}
+                  >
+                    <div className="pt-4 border-b">
+                      <div className="flex items-center justify-between">
+                        <div className="flex  flex-row items-start gap-4">
+                          <div className="flex gap-4 ">
+                            <div className="w-16 h-16   mb-1">
+                              <Image
+                                unoptimized
+                                src={product.productImage}
+                                alt="Product"
+                                width={100}
+                                height={40}
+                                className="object-cover w-full h-full"
+                              />
+                            </div>
+                          </div>
+                          <div>
+                            <p className="text-sm font-semibold sm:text-md">
+                              Order ID: #{product.productId}
+                            </p>
+                            <p className="text-sm pr-4">
+                              {product.productTitle}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {product?.skus?.map((sku) => (
+                      <div className="" key={sku._id}>
+                        <div className="flex border-b flex-col sm:flex-row py-2 sm:items-center  justify-between gap-5">
+                          <div className="items-center gap-3 flex">
+                            {sku?.image ? (
+                              <Image
+                                unoptimized
+                                src={sku.image}
+                                alt="SKU"
+                                width={40}
+                                height={40}
+                                className="object-cover sm:w-10 bg-gray-400"
+                              />
+                            ) : (
+                              <div className="sm:w-10 bg-gray-400 p-4"></div>
+                            )}
+                            <p className="text-sm">Sort by color: {sku.sku}</p>
+                          </div>
+                          <div className="flex justify-between items-end">
+                            <p className="text-sm">
+                              {sku.quantity} * ৳
+                              {parseFloat(sku.price).toFixed(2)}
+                            </p>
+                            <p className="sm:hidden block">
+                              ৳
+                              {(sku.quantity * parseFloat(sku.price)).toFixed(
+                                2
+                              )}
+                            </p>
+                          </div>
+                          <div className="flex items-center gap-3 text-sm">
+                            <p className="sm:block hidden">
+                              ৳
+                              {(sku.quantity * parseFloat(sku.price)).toFixed(
+                                2
+                              )}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                    <div className="flex flex-row justify-between gap-5 mt-3 text-sm">
+                      <p>Item Details</p>
+                      <p>
+                        {product?.skus?.reduce(
+                          (acc, sku) => acc + sku.quantity,
+                          0
+                        )}{" "}
+                        items
+                      </p>
+                      <p>
+                        Total : ৳
+                        {Math.round(
+                          product?.skus?.reduce(
+                            (acc, sku) => acc + sku.quantity * sku.price,
+                            0
+                          )
+                        )}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+                <button
+                  onClick={handlePaymentSubmit}
+                  className="bg-blue-500 text-white p-2 rounded w-full mt-1 mb-4 disabled:bg-blue-400 disabled:cursor-not-allowed"
+                  disabled={
+                    (seletedPaymentInfo?.accountType != "ssl" &&
+                      !seletedPaymentInfo?.referenceNo) ||
+                    !seletedPaymentInfo?.depositDate ||
+                    !selectedImage ||
+                    paymentProcess
+                  }
+                >
+                  {paymentProcess ? (
+                    <span>Payment processing...</span>
+                  ) : (
+                    <span>Pay Now</span>
+                  )}
+                </button>
+              </div>
             )}
           </div>
         </div>
@@ -731,7 +1143,10 @@ export const PayslipUpload = ({
             unoptimized
             width={160}
             height={200}
-            src={URL.createObjectURL(selectedImage)}
+            src={
+              URL.createObjectURL(selectedImage) ||
+              OrderDetailsData?.data?.paymentInfo?.slip
+            }
             alt="Uploaded preview"
             className="object-contain h-full w-full rounded"
           />

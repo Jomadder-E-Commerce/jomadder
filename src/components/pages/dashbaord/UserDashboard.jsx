@@ -12,7 +12,7 @@ const UserDashboard = () => {
     completed: 0,
     cancelled: 0,
   };
-  console.log(data)
+  // console.log(data)
   if (data?.data) {
     data.data.map((item) => {
       if ((item._id === "on-hold" || item._id === "pending") || item._id == "pending payment") statusCounts.pending += item.count;

@@ -25,7 +25,6 @@ const CheckOutPage = () => {
     }
   }, []);
   const checkoutData = buyNowData || data;
-console.log(checkoutData,"checkout")
   return (
     <div className="container">
       <div className=" pb-10   pt-4">

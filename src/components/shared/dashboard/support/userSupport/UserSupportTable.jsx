@@ -24,7 +24,7 @@ const UserSupportTable = ({
   onStatusChange, 
   onResolveSupport,
 }) => {
-  console.log(data)
+  // console.log(data)
   const getButtonClass = (status) => {
     const cleanedStatus = status ? status.trim() : "";
     if (cleanedStatus === "pending") {

@@ -22,7 +22,7 @@ const addNewDataIntoLocalStorage = (key, data) => {
     const existingData = getDataFromLocalStorage(key)
       ? getDataFromLocalStorage(key)
       : [];
-    console.log(existingData);
+    // console.log(existingData);
     existingData.push(data);
     localStorage.setItem(key, JSON.stringify(existingData));
   } catch (error) {
@@ -104,14 +104,14 @@ const removeDataFromLocalStorage = (key) => {
 
 
 const removeOneDataFromLocalStorage = (key, dataKey) => {
-  console.log(key, dataKey);
+  // console.log(key, dataKey);
   try {
     const existingData = getDataFromLocalStorage(key)
       ? getDataFromLocalStorage(key)
       : [];
-    console.log(existingData);
+    // console.log(existingData);
     const findData = existingData.filter((single) => single?.id != dataKey);
-    console.log(findData);
+    // console.log(findData);
     localStorage.setItem(key, JSON.stringify(findData));
   } catch (error) {
     console.error("Error removing data from Local Storage:", error);
@@ -123,7 +123,7 @@ const findDataFromLocalStorage = (key, dataKey) => {
     const existingData = getDataFromLocalStorage(key)
       ? getDataFromLocalStorage(key)
       : [];
-    console.log(existingData);
+    // console.log(existingData);
     const findData = existingData.find((single) => single?.id == dataKey);
     if (findData) {
       return findData;

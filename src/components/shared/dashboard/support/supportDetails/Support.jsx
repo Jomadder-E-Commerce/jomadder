@@ -13,7 +13,7 @@ const Support = () => {
   const [slideNumber, setSlideNumber] = useState(0);
   const {data:singleSupport,isLoading} = useGetSingleSupportQuery(id) 
   const singleData = singleSupport?.data
-  console.log(singleData)
+  // console.log(singleData)
   // Placeholder data
 
 

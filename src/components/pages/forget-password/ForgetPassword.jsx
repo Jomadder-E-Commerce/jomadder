@@ -20,7 +20,7 @@ const ForgetPassword = () => {
     }
     try{
       const res = await PostForgetPassword({email})
-      console.log(res);
+      // console.log(res);
       if(res.data){
         toast.success(`${res.data.message}`)
         router.replace("/request-reset")

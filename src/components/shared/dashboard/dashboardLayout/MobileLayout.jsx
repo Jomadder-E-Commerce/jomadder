@@ -48,7 +48,7 @@ const MobileLayout = () => {
     const matchedItem = menuData.find((menuItem) =>
       pathname.includes(menuItem?.route)
     );
- console.log(pathname, matchedItem)
+//  console.log(pathname, matchedItem)
  
     setSelectedText(matchedItem?.text || "");
   }, [pathname, menuData]);

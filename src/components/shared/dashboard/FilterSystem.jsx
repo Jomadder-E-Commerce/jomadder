@@ -45,7 +45,7 @@ const FilterSystem = () => {
         }
 
         // Log filtered products to console for verification
-        console.log('Filtered Products:', filteredProducts);
+        // console.log('Filtered Products:', filteredProducts);
     }, [selectedCategories]);
 
     return (

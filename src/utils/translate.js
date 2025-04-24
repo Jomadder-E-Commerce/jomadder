@@ -6,7 +6,7 @@ export const translateText = async(text,targetLanguage = 'en')=>{
 
     try{
         const res = await translate(text , {to: targetLanguage});
-        console.log(res.text)
+        // console.log(res.text)
         return res.text
     }
     catch(err){
@@ -15,4 +15,4 @@ export const translateText = async(text,targetLanguage = 'en')=>{
 
 }
 
-console.log(await translateText("你好"))
+// console.log(await translateText("你好"))

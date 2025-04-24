@@ -4,7 +4,7 @@ import DashboardView from '@/components/shared/dashboard/dashboardView/Dashboard
 
 const Order = () => {
     const {data}=useGetcheckoutQuery()
-    console.log(data?.data);
+    // console.log(data?.data);
     return (
         <div>
             <DashboardView data={data?.data} title={'My Orders'} tab={true}/>

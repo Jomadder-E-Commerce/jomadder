@@ -32,7 +32,7 @@ const ChangePassword = () => {
            value : email,
             newPassword: data.password, // Use password from form data
         };
-        console.log(payload);
+        // console.log(payload);
 
         const res = await changePassword(payload);
         if (res.data) {

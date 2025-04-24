@@ -4,7 +4,10 @@ import { toast } from "react-toastify";
 import { FaSearch } from "react-icons/fa";
 import { FaCamera } from "react-icons/fa6";
 import { ImageHosting } from "@/components/shared/Cloudinary";
-import { useConvertImageMutation, useFindProductByImageMutation } from "@/components/Redux/services/imageApi/imageApi";
+import {
+  useConvertImageMutation,
+  useFindProductByImageMutation,
+} from "@/components/Redux/services/imageApi/imageApi";
 import { usePathname, useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { compressImage } from "@/utils/compressImageFile";
@@ -14,11 +17,7 @@ import { setLocalStorage } from "../LocalStorage/LocalStorage";
 import SearchLoader from "../loader/SearchLoader";
 import { Sparkles } from "lucide-react";
 
-const textList = [
-  "Search by link",
-  "Search by keyword",
-  "Search by image",
-];
+const textList = ["Search by link", "Search by keyword", "Search by image"];
 
 const Search = ({ loading, setLoading }) => {
   const [placeholder, setPlaceholder] = useState(0);
@@ -40,18 +39,16 @@ const Search = ({ loading, setLoading }) => {
     try {
       const file = e.target.files[0];
       if (file) {
-
         const compressedFile = await compressImage(file);
         const formData = new FormData();
         formData.append("file", compressedFile);
-
 
         const data = await findProductByImage(formData).unwrap();
 
         const imageUri = data?.data?.imageUri?.data?.image_url;
 
         if (imageUri) {
-          setLocalStorage('search-image_uri', imageUri);
+          setLocalStorage("search-image_uri", imageUri);
         }
 
         dispatch(setSearchByImageProducts(data?.data?.data?.data?.items || []));
@@ -105,14 +102,29 @@ const Search = ({ loading, setLoading }) => {
     }
   };
 
+  useEffect(() => {
+    const parsedUrl = new URL(window.location.href || "");
+
+    // Access the search parameters
+    const params = new URLSearchParams(parsedUrl.search);
+
+    // Get the value of 'q'
+    const qValue = params.get("q");
+    if (qValue) {
+      setText(decodeURIComponent(qValue))
+    }
+  }, []);
+
   // Cycle through the placeholder texts every 5 seconds only if no input is provided and no image upload is in progress.
   useEffect(() => {
-    if (text !== "" || loading) return;
+    if (text !== "" || loading) {
+      // const searchText = decodeURIComponent(encodedString);
+    }
     const interval = setInterval(() => {
       setPlaceholder((prev) => (prev + 1) % textList.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, [text, loading]);
+  }, [text, loading, router]);
 
   return (
     <>
@@ -168,7 +180,9 @@ const Search = ({ loading, setLoading }) => {
 
         <button
           onClick={CheckingDataType}
-          className={`cursor-pointer bg-primary rounded-md rounded-l-none border-2 text-white  flex items-center border-primary ${loading ? "px-2 py-2" : "px-3 py-3"} hover:bg-sky-500 hover:border-sky-500 duration-200`}
+          className={`cursor-pointer bg-primary rounded-md rounded-l-none border-2 text-white  flex items-center border-primary ${
+            loading ? "px-2 py-2" : "px-3 py-3"
+          } hover:bg-sky-500 hover:border-sky-500 duration-200`}
         >
           {loading ? (
             <div className="w-6 h-6 animate-[spin_2s_linear_infinite] rounded-full border-4 border-dashed border-white"></div>
@@ -180,9 +194,7 @@ const Search = ({ loading, setLoading }) => {
           )}
         </button>
       </div>
-
     </>
-
   );
 };
 

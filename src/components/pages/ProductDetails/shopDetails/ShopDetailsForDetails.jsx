@@ -5,7 +5,7 @@ import ShopSkeleton from './ShopSkeleton';
 
 const ShopDetailsForDetails = ({id}) => {
    const { data } = useGetSingleProductChinessQuery(id);
-   console.log(data?.data)
+//    console.log(data?.data)
     return (
         <div>
             {

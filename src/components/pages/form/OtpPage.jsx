@@ -51,13 +51,13 @@ const OtpPage = ({ baseApi, setPage, form,setForm }) => {
     }
 
     const handleOtpSubmit = async () => {
-        console.log(otpValue)
+        // console.log(otpValue)
         setIsLoading(true)
         const value = form.loginBy === "Email" ? form?.email : form?.phone
         try {
             const response = await axios.post(`${baseApi}/auth/verify/code`, { code:otpValue, value })
             const data = response.data
-            console.log(data)
+            // console.log(data)
             if (data.success) {
                 toast.success("OTP verified successfully!")
                 setForm({token:data.data,...form})

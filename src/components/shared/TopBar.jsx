@@ -42,9 +42,9 @@ const TopBar = () => {
     setLoading(true);
     setTimeout(() => {
       dispatch(logout());
-      setLoading(false)
+      setLoading(false);
       toast.success("Log out successfully");
-      setDropdownOpen(false)
+      setDropdownOpen(false);
     }, 2000);
   };
 
@@ -64,28 +64,25 @@ const TopBar = () => {
 
   const RefreshPage = () => {
     if (window.location.href == "/") {
-      window.location.reload()
-    }
-    else {
+      window.location.reload();
+    } else {
       window.location.href = "/";
     }
-  }
+  };
   const toggleDropdown = (state) => setDropdownOpen(state);
   return (
     <>
       {loading && (
         <div className="fixed inset-0 z-[50] flex items-center justify-center bg-black bg-opacity-70">
-
           <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-white"></div>
         </div>
       )}
-      <div className="bg-primary md:relative sticky top-0 z-50 sm:h-[40px] h-[45px] flex items-center">
-        <div className="z-50 w-full md:py-3  md:bg-primary  text-primary border-b-2 md:border-none border-primary container no-padding ">
+      <div className="bg-primary z-30 md:relative sticky top-0 sm:h-[40px] h-[45px] flex items-center">
+        <div className=" w-full z-30 md:py-3  md:bg-primary  text-primary border-b-2 md:border-none border-primary container no-padding ">
           <div className="md:flex hidden items-center  justify-between gap-4 container no-padding">
             <p className="block text-sm text-white">
               Welcome to Jomadder, Explore your best experience
             </p>
-
 
             <div className=" items-center justify-end text-sm flex  text-white">
               <nav className="flex items-center gap-5">
@@ -124,14 +121,20 @@ const TopBar = () => {
                   </Link>
                 </div>
 
-                <Link href={"/contact-us"} className="hidden whitespace-nowrap md:block">
+                <Link
+                  href={"/contact-us"}
+                  className="hidden whitespace-nowrap md:block"
+                >
                   Contact Us
                 </Link>
               </nav>
             </div>
           </div>
           <div className="flex items-center justify-between container w-full md:hidden">
-            <div onClick={RefreshPage} className="flex items-center justify-center gap-1" >
+            <div
+              onClick={RefreshPage}
+              className="flex items-center justify-center gap-1"
+            >
               <Image
                 priority
                 width={50}
@@ -151,10 +154,10 @@ const TopBar = () => {
             </div>
 
             <div className="flex gap-4 items-center ">
-              <Link className="text-white" href="/profile/order" >
+              <Link className="text-white" href="/profile/order">
                 <ClipboardList className="text-lg text-white" />
               </Link>
-              <Link className="text-white" href="tel:8801767559231" >
+              <Link className="text-white" href="tel:8801767559231">
                 <FaPhoneVolume className="text-lg text-white" />
               </Link>
               <div
@@ -164,7 +167,6 @@ const TopBar = () => {
                 // onMouseLeave={() => toggleDropdown(false)}
                 className="relative "
               >
-
                 {user?.photoURL ? (
                   <Image
                     src={user?.photoURL}
@@ -178,33 +180,45 @@ const TopBar = () => {
                   <FaUserCircle className="text-white size-5" />
                 )}
 
-                <UserDropdown dropdownOpen={dropdownOpen} handleLogout={handleLogout} token={token} userRole={userRole} />
+                <UserDropdown
+                  dropdownOpen={dropdownOpen}
+                  handleLogout={handleLogout}
+                  token={token}
+                  userRole={userRole}
+                />
               </div>
             </div>
           </div>
         </div>
-        <Drawer open={isDrawerOpen} onClose={toggleDrawer} direction="right" className="p-4">
+        <Drawer
+          open={isDrawerOpen}
+          onClose={toggleDrawer}
+          direction="right"
+          className="p-4"
+        >
           <div className="flex flex-col gap-4">
-            {token &&
-              <Link href="/profile/dashboard" className="flex items-center gap-2">
-                <MdOutlineSpaceDashboard /> Dashboard
-              </Link>
-            }
-            {token ? (
+            {token && (
               <Link
-                href={"/profile"}
+                href="/profile/dashboard"
                 className="flex items-center gap-2"
               >
+                <MdOutlineSpaceDashboard /> Dashboard
+              </Link>
+            )}
+            {token ? (
+              <Link href={"/profile"} className="flex items-center gap-2">
                 <FaUserCircle /> My Profile
               </Link>
             ) : (
               <Link href="/login" className="flex items-center gap-2">
-                <FaUserCircle />   Sign In
-
+                <FaUserCircle /> Sign In
               </Link>
             )}
             {token && (
-              <div onClick={handleLogout} className="flex items-center gap-2 cursor-pointer">
+              <div
+                onClick={handleLogout}
+                className="flex items-center gap-2 cursor-pointer"
+              >
                 <CiLogout /> Logout
               </div>
             )}
@@ -212,8 +226,6 @@ const TopBar = () => {
         </Drawer>
       </div>
     </>
-
-
   );
 };
 

@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
 
           <ToastContainer autoClose={1999} closeOnClick />
 
-          <Script src={`https://chatapi.majjicon.com/widget2/load?id=e12bbab8-9035-3578-8244-315815a7a3e3&r='}`} strategy="lazyOnload" />
+          {/* <Script src={`https://chatapi.majjicon.com/widget2/load?id=e12bbab8-9035-3578-8244-315815a7a3e3&r='}`} strategy="lazyOnload" /> */}
 
         </body>
 

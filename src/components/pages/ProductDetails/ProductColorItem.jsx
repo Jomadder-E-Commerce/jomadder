@@ -14,7 +14,7 @@ const ProductColorItem = ({ item,handleChooseProductJustText,selected, handleCho
     if(find?.length){
         for (let int = 0; int < find.length; int++) {
           newQuantity = newQuantity + find[int]?.quantity   
-          console.log(find[int]?.quantity)
+          // console.log(find[int]?.quantity)
         }
         
         setQuantity(newQuantity)

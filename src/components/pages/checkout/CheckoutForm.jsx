@@ -1,6 +1,9 @@
 import React, { useEffect, useState, useCallback } from "react";
 import { useDispatch } from "react-redux";
-import { setFormData, setFormValid } from "@/components/Redux/features/AllSlice/checkoutSlice";
+import {
+  setFormData,
+  setFormValid,
+} from "@/components/Redux/features/AllSlice/checkoutSlice";
 import { useGetUserQuery } from "@/components/Redux/services/AuthenticationApi/AuthenticationApi";
 import { DynamicSelect } from "@/components/ui/DynamicSelect";
 import { Input } from "@/components/ui/input";
@@ -8,6 +11,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import CheckoutSkeleton from "./CheckoutSkeleton";
 import useGetDistrict from "@/hooks/useGetDistrict";
+import SearchSelect from "@/components/ui/SearchSelect";
 
 const CheckoutForm = () => {
   const { data, isLoading, error } = useGetUserQuery();
@@ -18,36 +22,50 @@ const CheckoutForm = () => {
     orderName: "",
     orderEmail: "",
     OrderPhone: "",
-    division: "",
+    // division: "",
     district: "",
-    city: "",
+    area: "",
     shippingAddress: "",
     orderNote: "",
     postCode: "",
   });
 
   const [errors, setErrors] = useState({});
-  const { allDivisions, getDistrictsByDivision, needDistricts } = useGetDistrict();
+  const {
+    // allDivisions,
+    getDistricts,
+    getAreaByDistricts,
+    // getUnionsByUpazilla,
+    needDistricts,
+    needArea,
+    needUnions,
+  } = useGetDistrict();
 
   // Fixed initialization with stable dependencies
   useEffect(() => {
     if (userData) {
       const address = userData?.address || {};
-      const userDivision = allDivisions.find(d => d.name == address.division);
+      // const userDivision = allDivisions.find((d) => d.name == address.division);
 
       // Only update if division exists in current divisions
-      if (userDivision) {
-        getDistrictsByDivision(userDivision.id);
+      if (userData) {
+        getDistricts();
+        const selectedDistrict = needDistricts.find(
+          (d) => d.name === address.district
+        );
+        if (selectedDistrict) {
+          getAreaByDistricts(selectedDistrict.id);
+        }
       }
-
       // Prevent unnecessary state updates
-      setFormDataFull(prev => ({
+      setFormDataFull((prev) => ({
         ...prev,
         orderName: userData.name || "",
         orderEmail: userData.email || "",
         OrderPhone: userData.phone || "",
-        division: address.division || "",
+        division: address?.division || "",
         district: address.district || "",
+        area: address.area || "",
         city: address.city || "",
         shippingAddress: address.address || "",
         postCode: address.postCode || "",
@@ -55,48 +73,79 @@ const CheckoutForm = () => {
     }
   }, [userData]); // Removed getDistrictsByDivision from dependencies
 
-  const handleSelectChange = useCallback((name, value) => {
-    name && value && setFormDataFull(prev => {
-      const newData = { ...prev, [name]: value };
-
-      if (name === "division") {
-        newData.district = "";
-        newData.city = "";
-        const selectedDivision = allDivisions.find(d => d.name === value);
-        if (selectedDivision) {
-          getDistrictsByDivision(selectedDivision.id);
-        }
+  useEffect(() => {
+    if (userData) {
+      const selectedDistrict = needDistricts.find(
+        (d) => d.name === userData?.address.district
+      );
+      if (selectedDistrict) {
+        getAreaByDistricts(selectedDistrict.id);
       }
-      if (name === "district") {
-        newData.city = "";
-      }
+    }
+  }, [needDistricts]);
+  const handleSelectChange = useCallback(
+    (name, value) => {
+      name &&
+        value &&
+        setFormDataFull((prev) => {
+          const newData = { ...prev, [name]: value };
 
-      return newData;
-    });
-    setErrors(prev => ({ ...prev, [name]: "" }));
-  }, [allDivisions, userData]);
+          // if (name === "division") {
+          //   newData.district = "";
+          //   const selectedDivision = allDivisions.find((d) => d.name === value);
+          //   if (selectedDivision) {
+          //     getDistrictsByDivision(selectedDivision.id);
+          //   }
+          // }
+          if (name === "district") {
+            newData.area = ""
+            const selectedDistrict = needDistricts.find(
+              (d) => d.name === value
+            );
+            if (selectedDistrict) {
+              getAreaByDistricts(selectedDistrict.id);
+            }
+          }
+
+          // if (name === "area") {
+          //   const selectedUpazilla = needArea.find((d) => d.name === value);
+          //   if (selectedUpazilla) {
+          //     getUnionsByUpazilla(selectedUpazilla.id);
+          //   }
+          // }
+
+          return newData;
+        });
+      setErrors((prev) => ({ ...prev, [name]: "" }));
+    },
+    [userData, needDistricts, needArea]
+  );
 
   // Handle select changes with proper data fetching
-
 
   // Handle input changes
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormDataFull(prev => ({ ...prev, [name]: value }));
-    setErrors(prev => ({ ...prev, [name]: "" }));
+    setFormDataFull((prev) => ({ ...prev, [name]: value }));
+    setErrors((prev) => ({ ...prev, [name]: "" }));
   };
 
   // Form validation
   const validateForm = useCallback(() => {
     const newErrors = {};
     const requiredFields = [
-      'orderName', 'OrderPhone',
-      'division', 'district', 'city', 'shippingAddress'
+      "orderName",
+      "OrderPhone",
+      "district",
+      "area",
+      "shippingAddress",
     ];
 
-    requiredFields.forEach(field => {
+    requiredFields.forEach((field) => {
       if (!formData[field]?.trim()) {
-        newErrors[field] = `Please ${field.startsWith('order') ? 'provide' : 'select'} ${field.replace(/[A-Z]/g, m => " " + m.toLowerCase())}`;
+        newErrors[field] = `Please ${
+          field.startsWith("order") ? "provide" : "select"
+        } ${field.replace(/[A-Z]/g, (m) => " " + m.toLowerCase())}`;
       }
     });
 
@@ -108,10 +157,24 @@ const CheckoutForm = () => {
   useEffect(() => {
     const isValid = validateForm();
     dispatch(setFormValid(isValid));
-    console.log('I am coming here.')
+    // console.log("I am coming here.");
 
     dispatch(setFormData(formData));
   }, [formData]);
+
+  function formatPhoneNumber(phoneNumber) {
+    // Remove all non-numeric characters
+    phoneNumber = phoneNumber.replace(/\D/g, "");
+
+    // Check if the number already has the international prefix, if not add it
+    if (phoneNumber.startsWith("880")) {
+      return `+${phoneNumber}`;
+    } else if (phoneNumber.startsWith("0")) {
+      return `+88${phoneNumber.substring(1)}`;
+    } else {
+      return `+880${phoneNumber}`;
+    }
+  }
 
   if (isLoading) return <CheckoutSkeleton />;
   if (error) return <div>Error loading user data</div>;
@@ -134,31 +197,19 @@ const CheckoutForm = () => {
             {errors.orderName && <FormError message={errors.orderName} />}
           </div>
           <div>
-            <Label>Email *</Label>
-            <Input
-              type="email"
-              name="orderEmail"
-              value={formData.orderEmail}
-              onChange={handleInputChange}
-              placeholder="Enter your email"
-              
-            />
-            {errors.orderEmail && <FormError message={errors.orderEmail} />}
-          </div>
-        </div>
-
-        {/* Contact Information */}
-        <div className="grid grid-cols-1 gap-4 mb-4 md:grid-cols-2">
-          <div>
             <Label>Phone *</Label>
             <Input
               name="OrderPhone"
-              value={formData.OrderPhone}
+              value={formatPhoneNumber(formData.OrderPhone)}
               onChange={handleInputChange}
               placeholder="Enter your phone number"
             />
             {errors.OrderPhone && <FormError message={errors.OrderPhone} />}
           </div>
+        </div>
+
+        {/* Contact Information */}
+        <div className="grid grid-cols-1 gap-4 mb-4 md:grid-cols-2">
           <div>
             <Label>Country *</Label>
             <DynamicSelect
@@ -168,44 +219,46 @@ const CheckoutForm = () => {
               disabled
             />
           </div>
+          <div>
+            <Label>District *</Label>
+            <SearchSelect
+              options={needDistricts}
+              value={{
+                label: formData.district,
+                value: formData.district,
+              }}
+              onValueChange={(value) =>
+                handleSelectChange("district", value?.value)
+              }
+              placeholder="Select District"
+              // disabled={!formData.division}
+            />
+            {errors.district && <FormError message={errors.district} />}
+          </div>
+          {/* <div>
+            <Label>Division *</Label>
+            <DynamicSelect
+              options={allDivisions?.map((d) => d.name)}
+              value={formData.division}
+              onValueChange={(value) => handleSelectChange("division", value)}
+              placeholder="Select Division"
+            />
+            {errors.division && <FormError message={errors.division} />}
+          </div> */}
         </div>
 
         {/* Location Information */}
         <div className="grid grid-cols-1 gap-4 mb-4 md:grid-cols-2">
           <div>
-            <Label>Division *</Label>
-            <DynamicSelect
-              options={allDivisions?.map(d => d.name)}
-              value={formData.division}
-              onValueChange={value => handleSelectChange("division", value)}
-              placeholder="Select Division"
+            <Label>Area *</Label>
+            <SearchSelect
+              options={needArea}
+              value={{ label: formData.area, value: formData.area }}
+              onValueChange={(e) => handleSelectChange("area", e?.value)}
+              placeholder="Select Area"
+              key={formData.area}
             />
-            {errors.division && <FormError message={errors.division} />}
-          </div>
-          <div>
-            <Label>District *</Label>
-            <DynamicSelect
-              options={needDistricts?.map(d => d.name)}
-              value={formData.district}
-              onValueChange={value => handleSelectChange("district", value)}
-              placeholder="Select District"
-              disabled={!formData.division}
-            />
-            {errors.district && <FormError message={errors.district} />}
-          </div>
-        </div>
-
-        {/* Address Details */}
-        <div className="grid grid-cols-1 gap-4 mb-4 md:grid-cols-2">
-          <div>
-            <Label>Thana *</Label>
-            <Input
-              name="city"
-              value={formData.city}
-              onChange={handleInputChange}
-              placeholder="Your city or thana"
-            />
-            {errors.city && <FormError message={errors.city} />}
+            {errors.area && <FormError message={errors.area} />}
           </div>
           <div>
             <Label>Post Code (Optional)</Label>
@@ -218,6 +271,44 @@ const CheckoutForm = () => {
           </div>
         </div>
 
+        {/* Address Details */}
+        {/* <div className="grid grid-cols-1 gap-4 mb-4 md:grid-cols-2">
+          <div>
+            <Label>Unions *</Label>
+            <DynamicSelect
+              options={needUnions?.map((d) => d.name)}
+              value={formData.unions}
+              onValueChange={(value) => handleSelectChange("unions", value)}
+              placeholder="Select Unions"
+              disabled={!formData.upazilla}
+            />
+            {errors.unions && <FormError message={errors.unions} />}
+          </div>
+          <div>
+            <Label>Post Code (Optional)</Label>
+            <Input
+              name="postCode"
+              value={formData.postCode}
+              onChange={handleInputChange}
+              placeholder="Enter Post Code"
+            />
+          </div>
+        </div> */}
+
+        <div className="mb-4">
+          <Label>
+            Email <span className=" opacity-50">(Optional)</span>
+          </Label>
+          <Input
+            type="email"
+            name="orderEmail"
+            value={formData.orderEmail}
+            onChange={handleInputChange}
+            placeholder="Enter your email"
+          />
+          {errors.orderEmail && <FormError message={errors.orderEmail} />}
+        </div>
+
         {/* Shipping Address */}
         <div className="mb-4">
           <Label>Shipping Address *</Label>
@@ -228,7 +319,9 @@ const CheckoutForm = () => {
             placeholder="Enter your address"
             rows="3"
           />
-          {errors.shippingAddress && <FormError message={errors.shippingAddress} />}
+          {errors.shippingAddress && (
+            <FormError message={errors.shippingAddress} />
+          )}
         </div>
 
         {/* Order Notes */}

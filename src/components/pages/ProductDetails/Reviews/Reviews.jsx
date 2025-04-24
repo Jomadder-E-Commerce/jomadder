@@ -5,7 +5,7 @@ import ReviewSkeleton from '@/components/shared/skeleton/ReviewSkeleton';
 
 const Reviews = ({id}) => {
     const {data, isLoading, isError} = useGetReviewsQuery(id)
-    console.log("reviews",data?.data?.data?.list)
+    // console.log("reviews",data?.data?.data?.list)
     return (
         <>
         {
