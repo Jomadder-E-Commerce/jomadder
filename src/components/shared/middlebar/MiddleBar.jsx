@@ -198,7 +198,7 @@ const MiddleBar = () => {
         </div>
       </div>
 
-      <div className={` w-full gap-5 py-1 md:hidden container sticky top-[46px] ${!dropdownOpen && "z-[40]"} bg-white`}>
+      <div className={` w-full gap-5 py-1 md:hidden container sticky top-[46px] z-[28] bg-white`}>
         <Search loading={loading} setLoading={setLoading} />
       </div>
     </>
